@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 
-public class TowerBolt : MonoBehaviour
+public class TowerAttack : MonoBehaviour
 {
     public float MovementSpeed = 5.0f;
+    public int Damage = 1;
     public Vector3 Target;
 
     private void Update()
@@ -15,5 +16,12 @@ public class TowerBolt : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void OnTriggerEnter2D(Collider2D col)
+    {
+        Health hp = col.gameObject.GetComponent<Health>();
+        hp.TakeDamage(Damage);
+        Destroy(gameObject);
     }
 }

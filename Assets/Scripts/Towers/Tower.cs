@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode]
@@ -37,10 +36,11 @@ public class Tower : MonoBehaviour
         if (!_currentTarget || !(_attackCooldown <= 0)) return;
 
         _attackCooldown = AttackRate;
-        GameObject bolt  = Instantiate(BoltPrefab, transform.position, Quaternion.identity);
-        TowerBolt  tbolt = bolt.GetComponent<TowerBolt>();
+        GameObject  bolt  = Instantiate(BoltPrefab, transform.position, Quaternion.identity);
+        TowerAttack tbolt = bolt.GetComponent<TowerAttack>();
         tbolt.Target        = _currentTarget.transform.position;
         tbolt.MovementSpeed = AttackMovementSpeed;
+        tbolt.Damage        = Damage;
     }
 
     private void OnValidate()

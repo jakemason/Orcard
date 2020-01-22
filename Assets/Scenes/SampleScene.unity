@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 64935863}
   - component: {fileID: 64935864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DebugTiles_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 217828507}
   - component: {fileID: 217828508}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DebugTiles_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,9 +292,10 @@ GameObject:
   m_Component:
   - component: {fileID: 308089142}
   - component: {fileID: 308089141}
+  - component: {fileID: 308089145}
   - component: {fileID: 308089143}
   - component: {fileID: 308089144}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,6 +378,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &308089145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308089140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e73a80c86d682e14083acbaa75f075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 5
+  CurrentHealth: 0
+  MarkedForDeath: 0
 --- !u!1 &456159428
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +504,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -532,7 +548,7 @@ GameObject:
   - component: {fileID: 528500441}
   - component: {fileID: 528500444}
   - component: {fileID: 528500445}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -781,9 +797,10 @@ GameObject:
   m_Component:
   - component: {fileID: 619323079}
   - component: {fileID: 619323078}
+  - component: {fileID: 619323080}
   - component: {fileID: 619323077}
   - component: {fileID: 619323076}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -866,6 +883,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &619323080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619323075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e73a80c86d682e14083acbaa75f075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 5
+  CurrentHealth: 0
+  MarkedForDeath: 0
 --- !u!1 &793012120
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,7 +908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 793012121}
   - component: {fileID: 793012122}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DebugTiles_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -957,7 +989,7 @@ GameObject:
   m_Component:
   - component: {fileID: 886631046}
   - component: {fileID: 886631047}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DebugTiles_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1098,9 +1130,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1195563630}
   - component: {fileID: 1195563629}
+  - component: {fileID: 1195563631}
   - component: {fileID: 1195563628}
   - component: {fileID: 1195563627}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1183,6 +1216,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1195563631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195563626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e73a80c86d682e14083acbaa75f075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 5
+  CurrentHealth: 0
+  MarkedForDeath: 0
 --- !u!1 &1264836708
 GameObject:
   m_ObjectHideFlags: 0

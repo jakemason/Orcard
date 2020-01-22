@@ -1,18 +1,20 @@
-﻿using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Health : MonoBehaviour
 {
     public int MaxHealth;
     public int CurrentHealth;
     public bool MarkedForDeath;
-    public TextMeshProUGUI HP;
+
+    private void Start()
+    {
+        SetStartingHealth(MaxHealth);
+    }
 
     public void SetStartingHealth(int health)
     {
         MaxHealth     = health;
         CurrentHealth = health;
-        UpdateHealthText();
     }
 
     public void Heal(int amountToHeal)
@@ -22,26 +24,16 @@ public class Health : MonoBehaviour
         {
             CurrentHealth = MaxHealth;
         }
-
-        UpdateHealthText();
     }
 
     public void TakeDamage(int damageToTake)
     {
         CurrentHealth -= damageToTake;
-        UpdateHealthText();
 
         if (CurrentHealth <= 0)
         {
             MarkedForDeath = true;
-        }
-    }
-
-    private void UpdateHealthText()
-    {
-        if (HP)
-        {
-            HP.text = CurrentHealth.ToString();
+            Destroy(gameObject);
         }
     }
 }
