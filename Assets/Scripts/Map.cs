@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Map : MonoBehaviour
@@ -7,7 +6,7 @@ public class Map : MonoBehaviour
     public static Map Instance;
     public List<Transform> Waypoints;
 
-    private void Start()
+    private void Awake()
     {
         if (Instance == null)
         {

@@ -5,16 +5,42 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class Tower : MonoBehaviour
 {
+    public GameObject BoltPrefab;
     public int Damage = 1;
     public float AttackRate = 0.25f;
+    public float AttackMovementSpeed = 10f;
     private float _attackCooldown = 0f;
     public float Range = 5f;
 
     public List<GameObject> EnemiesInRange;
 
+    private GameObject _currentTarget = null;
+
     private void Start()
     {
         EnemiesInRange = new List<GameObject>();
+    }
+
+    private void Update()
+    {
+        if (_currentTarget == null && EnemiesInRange.Count > 0)
+        {
+            _currentTarget = EnemiesInRange[0];
+        }
+
+        _attackCooldown -= Time.deltaTime;
+        Fire();
+    }
+
+    private void Fire()
+    {
+        if (!_currentTarget || !(_attackCooldown <= 0)) return;
+
+        _attackCooldown = AttackRate;
+        GameObject bolt  = Instantiate(BoltPrefab, transform.position, Quaternion.identity);
+        TowerBolt  tbolt = bolt.GetComponent<TowerBolt>();
+        tbolt.Target        = _currentTarget.transform.position;
+        tbolt.MovementSpeed = AttackMovementSpeed;
     }
 
     private void OnValidate()
@@ -36,6 +62,11 @@ public class Tower : MonoBehaviour
 
     public void OnTriggerExit2D(Collider2D col)
     {
+        if (col.gameObject == _currentTarget)
+        {
+            _currentTarget = null;
+        }
+
         EnemiesInRange.Remove(col.gameObject);
     }
 }
