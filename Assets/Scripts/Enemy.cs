@@ -12,8 +12,9 @@ public class Enemy : MonoBehaviour
 
     public void Start()
     {
-        WaypointsToFollow = new Stack<Transform>(Map.GetWaypoints());
-        _waypointsBackup  = new Stack<Transform>(WaypointsToFollow);
+        WaypointsToFollow  = new Stack<Transform>(Map.GetWaypoints());
+        _waypointsBackup   = new Stack<Transform>(WaypointsToFollow);
+        transform.position = WaypointsToFollow.Peek().position;
     }
 
     private void Update()

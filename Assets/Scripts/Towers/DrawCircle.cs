@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 
+[ExecuteInEditMode]
 [RequireComponent(typeof(LineRenderer))]
 public class DrawCircle : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class DrawCircle : MonoBehaviour
     [Range(0, 50)] public float Xradius = 5;
     [Range(0, 50)] public float Yradius = 5;
 
-    [FormerlySerializedAs("_line")] public LineRenderer Line;
+    public LineRenderer Line;
 
     private void Start()
     {
