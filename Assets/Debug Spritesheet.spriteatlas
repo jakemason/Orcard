@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Sprite Atlas
+  m_Name: Debug Spritesheet
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -15,7 +15,7 @@ SpriteAtlas:
       compressionQuality: 50
       maxTextureSize: 2048
       textureCompression: 0
-      filterMode: 1
+      filterMode: 0
       generateMipMaps: 0
       readable: 0
       crunchedCompression: 0
@@ -71,5 +71,5 @@ SpriteAtlas:
   - DebugTiles_10
   - DebugTiles_13
   - DebugTiles_12
-  m_Tag: New Sprite Atlas
+  m_Tag: Debug Spritesheet
   m_IsVariant: 0

@@ -43,4 +43,15 @@ public class EnemyController : MonoBehaviour
 
         transform.position = Vector3.MoveTowards(transform.position, _currentTarget.position, _speed * Time.deltaTime);
     }
+
+    public void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("Core"))
+        {
+            Core core = col.gameObject.GetComponent<Core>();
+            core.TakeDamage(Model.Damage);
+            WaveController.Instance.EnemiesSpawned.Remove(gameObject);
+            Destroy(gameObject);
+        }
+    }
 }

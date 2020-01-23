@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37409aeed135ebc478a0d1700ccb93c9, type: 3}
-  m_Name: Orc
+  m_Name: Ruhroh
   m_EditorClassIdentifier: 
   Name: Orc
-  Speed: 3
-  HP: 5
+  Speed: 15
+  HP: 55
   MinSize: 1
   MaxSize: 1
   Sprite: {fileID: -5717171647778754098, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
-  Damage: 3
+  Damage: 15
