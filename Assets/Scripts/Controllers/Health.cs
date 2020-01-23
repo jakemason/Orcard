@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+//TODO: Collapse this into EnemyController imo
 public class Health : MonoBehaviour
 {
     public int MaxHealth;
@@ -33,6 +34,8 @@ public class Health : MonoBehaviour
         if (CurrentHealth <= 0)
         {
             MarkedForDeath = true;
+            //TODO: Do a better job with this
+            WaveController.Instance.EnemiesSpawned.Remove(gameObject);
             Destroy(gameObject);
         }
     }

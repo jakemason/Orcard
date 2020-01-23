@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 public class Tower : MonoBehaviour
 {
     public GameObject BoltPrefab;
@@ -46,12 +46,19 @@ public class Tower : MonoBehaviour
     private void OnValidate()
     {
         DrawCircle rangeIndicator = GetComponent<DrawCircle>();
-        rangeIndicator.Xradius = Range;
-        rangeIndicator.Yradius = Range;
-        rangeIndicator.CreatePoints();
+        if (rangeIndicator)
+        {
+            rangeIndicator.Xradius = Range;
+            rangeIndicator.Yradius = Range;
+            rangeIndicator.CreatePoints();
+        }
+
 
         CircleCollider2D collider2D = GetComponent<CircleCollider2D>();
-        collider2D.radius = Range;
+        if (collider2D)
+        {
+            collider2D.radius = Range;
+        }
     }
 
     //TODO: DO a layer check and setup the layer matrix appropriately

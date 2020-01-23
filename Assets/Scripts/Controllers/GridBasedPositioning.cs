@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 [ExecuteInEditMode]
 public class GridBasedPositioning : MonoBehaviour
@@ -8,7 +7,6 @@ public class GridBasedPositioning : MonoBehaviour
     {
         Vector3 pos     = transform.position;
         Vector3 rounded = new Vector3(Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.y), Mathf.RoundToInt(pos.z));
-        Debug.Log(rounded);
         transform.position = rounded;
     }
 }

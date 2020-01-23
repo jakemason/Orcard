@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-[ExecuteInEditMode]
 public class Map : MonoBehaviour
 {
     public static Map Instance;
     public List<Transform> Waypoints;
+    public GameObject Road;
 
     private void Awake()
     {
@@ -26,11 +27,29 @@ public class Map : MonoBehaviour
             if (child.gameObject == gameObject) continue;
             Waypoints.Add(child);
         }
+
+        SpawnRoads();
     }
 
     private void Update()
     {
         DrawDebugLines();
+    }
+
+    private void SpawnRoads()
+    {
+        for (int i = 0; i < Waypoints.Count - 1; i++)
+        {
+            Transform current = Waypoints[i];
+            Transform next    = Waypoints[i + 1];
+            float     dist    = Vector3.Distance(current.position, next.position);
+            Vector3   unit    = next.position - current.position;
+            unit.Normalize();
+            for (int j = 0; j < dist; j++)
+            {
+                Instantiate(Road, current.position + (unit * j), Quaternion.identity, this.gameObject.transform);
+            }
+        }
     }
 
     private void OnValidate()
