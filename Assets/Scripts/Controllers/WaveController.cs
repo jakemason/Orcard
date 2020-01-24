@@ -49,7 +49,6 @@ public class WaveController : MonoBehaviour
         }
     }
 
-
     public void SpawnEnemies()
     {
         WaveActive = true;
