@@ -9,13 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37409aeed135ebc478a0d1700ccb93c9, type: 3}
-  m_Name: Ruhroh
+  m_Script: {fileID: 11500000, guid: b713678ef93fc4a40ab4facc712bc06e, type: 3}
+  m_Name: Ballista Tower
   m_EditorClassIdentifier: 
-  Name: Orc
-  Speed: 15
-  HP: 55
-  MinSize: 1
-  MaxSize: 1
-  Sprite: {fileID: -5717171647778754098, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
-  Damage: 15
+  BoltPrefab: {fileID: 4748081343559320588, guid: be2befc9997d8c749997b5c06b973628,
+    type: 3}
+  Damage: 1
+  AttackRate: 0.25
+  AttackMovementSpeed: 10
+  Range: 5

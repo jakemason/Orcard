@@ -4,15 +4,10 @@ using UnityEngine;
 //[ExecuteInEditMode]
 public class Tower : MonoBehaviour
 {
-    public GameObject BoltPrefab;
-    public int Damage = 1;
-    public float AttackRate = 0.25f;
-    public float AttackMovementSpeed = 10f;
-    private float _attackCooldown = 0f;
-    public float Range = 5f;
-
+    public TowerModel Model;
     public List<GameObject> EnemiesInRange;
 
+    private float _attackCooldown = 0f;
     private GameObject _currentTarget = null;
 
     private void Start()
@@ -35,12 +30,12 @@ public class Tower : MonoBehaviour
     {
         if (!_currentTarget || !(_attackCooldown <= 0)) return;
 
-        _attackCooldown = AttackRate;
-        GameObject  bolt  = Instantiate(BoltPrefab, transform.position, Quaternion.identity);
+        _attackCooldown = Model.AttackRate;
+        GameObject  bolt  = Instantiate(Model.BoltPrefab, transform.position, Quaternion.identity);
         TowerAttack tbolt = bolt.GetComponent<TowerAttack>();
         tbolt.Target        = _currentTarget.transform.position;
-        tbolt.MovementSpeed = AttackMovementSpeed;
-        tbolt.Damage        = Damage;
+        tbolt.MovementSpeed = Model.AttackMovementSpeed;
+        tbolt.Damage        = Model.Damage;
     }
 
     private void OnValidate()
@@ -48,16 +43,16 @@ public class Tower : MonoBehaviour
         DrawCircle rangeIndicator = GetComponent<DrawCircle>();
         if (rangeIndicator)
         {
-            rangeIndicator.Xradius = Range;
-            rangeIndicator.Yradius = Range;
+            rangeIndicator.Xradius = Model.Range;
+            rangeIndicator.Yradius = Model.Range;
             rangeIndicator.CreatePoints();
         }
 
 
-        CircleCollider2D collider2D = GetComponent<CircleCollider2D>();
-        if (collider2D)
+        CircleCollider2D circleCollider2D = GetComponent<CircleCollider2D>();
+        if (circleCollider2D)
         {
-            collider2D.radius = Range;
+            circleCollider2D.radius = Model.Range;
         }
     }
 

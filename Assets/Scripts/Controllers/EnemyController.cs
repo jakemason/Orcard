@@ -18,7 +18,7 @@ public class EnemyController : MonoBehaviour
 
     public void MarkAlive()
     {
-        WaypointsToFollow = new Stack<Transform>(Map.GetWaypoints());
+        WaypointsToFollow = new Stack<Transform>(MapController.GetWaypoints());
         _waypointsBackup  = new Stack<Transform>(WaypointsToFollow);
         _speed            = Model.Speed;
         Health hp = GetComponent<Health>();

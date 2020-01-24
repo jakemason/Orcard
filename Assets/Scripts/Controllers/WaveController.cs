@@ -12,6 +12,8 @@ public class WaveController : MonoBehaviour
     public int CurrentWave = 0;
     public List<GameObject> EnemiesSpawned;
     public GameObject EnemyPrefab;
+    public GameObject NextWaveButton;
+    public bool WaveActive = false;
 
     private void Start()
     {
@@ -27,21 +29,35 @@ public class WaveController : MonoBehaviour
         EnemiesSpawned = new List<GameObject>();
     }
 
-    private void Update()
+    private void LateUpdate()
     {
-        SpawnEnemies();
+        if (WaveActive)
+        {
+            CheckForClear();
+        }
     }
 
-    private void SpawnEnemies()
+    private void CheckForClear()
     {
         if (EnemiesSpawned.Count == 0)
         {
-            for (int i = 0; i < EnemiesToSpawn + (CurrentWave * AdditionalEnemiesPerWave); i++)
-            {
-                Invoke("SpawnRandomEnemy", TimeBetweenIndividualSpawns * i);
-            }
-
+            NextWaveButton.SetActive(true);
+            PlayerResources.NextTurn();
             CurrentWave++;
+            WaveActive                        = false;
+            TowerPlacementController.Disabled = false;
+        }
+    }
+
+
+    public void SpawnEnemies()
+    {
+        WaveActive = true;
+        NextWaveButton.SetActive(false);
+        PlayerResources.ModifyPlayerEnergy(-99);
+        for (int i = 0; i < EnemiesToSpawn + (CurrentWave * AdditionalEnemiesPerWave); i++)
+        {
+            Invoke("SpawnRandomEnemy", TimeBetweenIndividualSpawns * i);
         }
     }
 

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Core : MonoBehaviour
 {
@@ -8,15 +9,15 @@ public class Core : MonoBehaviour
     private void Start()
     {
         Health             = MaxHealth;
-        transform.position = Map.Instance.Waypoints[0].position;
+        transform.position = MapController.Instance.Waypoints[0].position;
     }
 
     public void TakeDamage(int damageToTake)
     {
         Health -= damageToTake;
-        if (Health <= 0)
-        {
-            Debug.Log("So long, sailor man.");
-        }
+        if (Health > 0) return;
+
+        Debug.Log("So long, sailor man.");
+        SceneManager.LoadScene("You Died");
     }
 }

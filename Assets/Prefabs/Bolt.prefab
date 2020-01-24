@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementSpeed: 5
+  Damage: 1
   Target: {x: 0, y: 0, z: 0}
 --- !u!212 &5170905914059943127
 SpriteRenderer:
@@ -82,8 +83,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -716471105
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -5177699080859021490, guid: 3570e2dc4f548ff4194f59df297187e2,
     type: 3}

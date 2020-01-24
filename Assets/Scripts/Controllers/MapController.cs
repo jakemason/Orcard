@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class Map : MonoBehaviour
+public class MapController : MonoBehaviour
 {
-    public static Map Instance;
+    public static MapController Instance;
     public List<Transform> Waypoints;
     public GameObject Road;
 
