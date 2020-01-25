@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Players;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -42,10 +43,9 @@ public class WaveController : MonoBehaviour
         if (EnemiesSpawned.Count == 0)
         {
             NextWaveButton.SetActive(true);
-            PlayerResources.NextTurn();
+            Player.StartTurn();
             CurrentWave++;
-            WaveActive                        = false;
-            TowerPlacementController.Disabled = false;
+            WaveActive = false;
         }
     }
 
@@ -53,7 +53,7 @@ public class WaveController : MonoBehaviour
     {
         WaveActive = true;
         NextWaveButton.SetActive(false);
-        PlayerResources.ModifyPlayerEnergy(-99);
+        Player.ModifyEnergy(-99);
         for (int i = 0; i < EnemiesToSpawn + (CurrentWave * AdditionalEnemiesPerWave); i++)
         {
             Invoke("SpawnRandomEnemy", TimeBetweenIndividualSpawns * i);

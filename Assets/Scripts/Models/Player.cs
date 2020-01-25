@@ -69,7 +69,7 @@ namespace Players
         {
             Instance.DeckForCurrentEncounter = Instance.DeckForCurrentRun;
             Instance.DeckForCurrentEncounter.Cards.Shuffle();
-            Instance.StartTurn();
+            StartTurn();
         }
 
         public void EndTurn()
@@ -78,10 +78,10 @@ namespace Players
             StartTurn();
         }
 
-        public void StartTurn()
+        public static void StartTurn()
         {
-            RefillEnergy();
-            Draw(CardsToDrawEachTurn);
+            Instance.RefillEnergy();
+            Instance.Draw(Instance.CardsToDrawEachTurn);
         }
 
         public void Update()
@@ -99,9 +99,20 @@ namespace Players
             UpdateEnergyCounter();
         }
 
-        public void UpdateEnergyCounter()
+        public static void ModifyEnergy(int modifier)
         {
-            EnergyCounter.text = Instance.RemainingEnergy.ToString();
+            Instance.RemainingEnergy += modifier;
+            UpdateEnergyCounter();
+        }
+
+        public static bool HasEnergy()
+        {
+            return Instance.RemainingEnergy > 0;
+        }
+
+        public static void UpdateEnergyCounter()
+        {
+            Instance.EnergyCounter.text = Instance.RemainingEnergy.ToString();
         }
 
         /// <summary>

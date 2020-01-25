@@ -435,7 +435,7 @@ MonoBehaviour:
   MovementDisabled: 0
   TargetPosition: {x: -Infinity, y: -Infinity, z: -Infinity}
   TargetRotation: {x: -Infinity, y: -Infinity, z: -Infinity}
-  TargetScale: {x: 1, y: 1, z: 1}
+  TargetScale: {x: 0.8, y: 0.8, z: 0.8}
   MovementSpeed: 5
   DestroyMovementSpeed: 2
   MarkedForDestruction: 0

@@ -25,4 +25,6 @@ MonoBehaviour:
   OverrideDefaultInstructionText: 
   FlavorText: 
   OnDrawEffects: []
-  PlayEffects: []
+  PlayEffects:
+  - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
+  Model: {fileID: 11400000, guid: 284febc5cff366641b3fde2c131caad5, type: 2}

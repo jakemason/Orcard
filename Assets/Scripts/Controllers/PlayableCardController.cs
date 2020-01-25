@@ -110,8 +110,10 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
     public void OnDrag(PointerEventData eventData)
     {
-        MovementDisabled   = true;
-        transform.position = Input.mousePosition;
+        MovementDisabled     = true;
+        transform.position   = Input.mousePosition;
+        TargetScale          = Vector3.zero;
+        transform.localScale = Vector3.zero;
     }
 
     public void OnEndDrag(PointerEventData eventData)
