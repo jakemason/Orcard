@@ -72,10 +72,10 @@ namespace Players
             StartTurn();
         }
 
-        public void EndTurn()
+        public static void EndTurn()
         {
             PlayerHand.DiscardHand();
-            StartTurn();
+            Instance.RemainingEnergy = 0;
         }
 
         public static void StartTurn()

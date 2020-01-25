@@ -10,6 +10,6 @@ public class ConstructionEffect : Effect
         GameObject go    = Instantiate(ConstructionPrefab, SpellCast.CastPosition, Quaternion.identity);
         Tower      tower = go.GetComponent<Tower>();
         TowerCard  card  = (TowerCard) SpellCast.AttemptingToCast;
-        tower.Model = card.Model;
+        tower.Model = card;
     }
 }

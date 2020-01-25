@@ -4,7 +4,7 @@ using UnityEngine;
 //[ExecuteInEditMode]
 public class Tower : MonoBehaviour
 {
-    public TowerModel Model;
+    public TowerCard Model;
     public List<GameObject> EnemiesInRange;
 
     private float _attackCooldown = 0f;

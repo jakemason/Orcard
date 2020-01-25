@@ -53,7 +53,7 @@ public class WaveController : MonoBehaviour
     {
         WaveActive = true;
         NextWaveButton.SetActive(false);
-        Player.ModifyEnergy(-99);
+        Player.EndTurn();
         for (int i = 0; i < EnemiesToSpawn + (CurrentWave * AdditionalEnemiesPerWave); i++)
         {
             Invoke("SpawnRandomEnemy", TimeBetweenIndividualSpawns * i);

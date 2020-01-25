@@ -8,7 +8,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     // @formatter:off 
     [Header("Card Movement")]
     public Card CardObject;
-    public bool MovementDisabled = false;
+    public bool MovementDisabled;
     public Vector3 TargetPosition = Vector3.negativeInfinity;
     public Vector3 TargetRotation = Vector3.negativeInfinity;
     public Vector3 TargetScale = new Vector3(1, 1, 1);
@@ -18,7 +18,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     public float MovementSpeed = 5.0f;
 
     [Tooltip("How quickly cards react once marked for death. We go to the discard pile quicker than to hand.")]
-    public float DestroyMovementSpeed = 2.0f;
+    public float DestroyMovementSpeed = 12.0f;
 
     [Tooltip("Denotes when a card is animating into the discard pile and is about to be removed from the object hierarchy.")]
     public bool MarkedForDestruction = false;

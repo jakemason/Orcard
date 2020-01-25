@@ -437,7 +437,7 @@ MonoBehaviour:
   TargetRotation: {x: -Infinity, y: -Infinity, z: -Infinity}
   TargetScale: {x: 0.8, y: 0.8, z: 0.8}
   MovementSpeed: 5
-  DestroyMovementSpeed: 2
+  DestroyMovementSpeed: 12
   MarkedForDestruction: 0
   HoverOffset: {x: 0, y: 80, z: 0}
   RestingPosition: {x: 0, y: 0, z: 0}
