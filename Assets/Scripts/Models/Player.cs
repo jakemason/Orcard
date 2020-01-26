@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,19 +10,28 @@ namespace Players
         public static Player Instance;
 
         // @formatter:off
-        [Header("Player Card Info")]
+        [Header("Player Card Info")] 
         [Space(20)]
         public Deck DeckTemplate;
         public Deck DeckForCurrentRun;
-        public Deck DeckForCurrentEncounter;
         public List<Card> DiscardPile;
         public int CardsToDrawEachTurn = 3;
-        
-        [Header("Player Energy")] 
+
+        [Header("Player Energy")]
         [Space(20)]
+        private int _remainingEnergy;
         public int MaximumEnergy = 4;
-        public int RemainingEnergy;
-        
+        public int RemainingEnergy
+        {
+            get => _remainingEnergy;
+            set
+            {
+                _remainingEnergy = value;
+                UpdateEnergyCounter();
+            }
+        }
+
+
         [Header("Player Health")]
         [Space(20)]
         public int StartingHealth = 55;
@@ -35,7 +43,7 @@ namespace Players
         public GameObject HandGameObject;
         public GameObject CardRendererTemplate;
         public TextMeshProUGUI EnergyCounter;
-        public TextMeshProUGUI DeckCount;
+        public GameObject TargettingIndicator;
         // @formatter:on
 
         public void Awake()
@@ -52,23 +60,13 @@ namespace Players
             Health = GetComponent<Health>();
             Health.SetStartingHealth(StartingHealth);
 
-            DeckForCurrentEncounter = Instantiate(DeckTemplate);
-            DeckForCurrentRun       = Instantiate(DeckTemplate);
+            DeckForCurrentRun = Instantiate(DeckTemplate);
             DeckForCurrentRun.Cards.Shuffle();
-            DeckForCurrentEncounter.Cards.Shuffle();
             RemainingEnergy = MaximumEnergy;
-            UpdateEnergyCounter();
         }
 
         private void Start()
         {
-            StartTurn();
-        }
-
-        public static void StartNewBattle()
-        {
-            Instance.DeckForCurrentEncounter = Instance.DeckForCurrentRun;
-            Instance.DeckForCurrentEncounter.Cards.Shuffle();
             StartTurn();
         }
 
@@ -96,13 +94,11 @@ namespace Players
         public void RefillEnergy()
         {
             RemainingEnergy = MaximumEnergy;
-            UpdateEnergyCounter();
         }
 
         public static void ModifyEnergy(int modifier)
         {
             Instance.RemainingEnergy += modifier;
-            UpdateEnergyCounter();
         }
 
         public static bool HasEnergy()
@@ -112,7 +108,7 @@ namespace Players
 
         public static void UpdateEnergyCounter()
         {
-            Instance.EnergyCounter.text = Instance.RemainingEnergy.ToString();
+            Instance.EnergyCounter.text = "Energy: " + Instance._remainingEnergy;
         }
 
         /// <summary>
@@ -125,8 +121,6 @@ namespace Players
             {
                 DrawSingleCard();
             }
-
-            DeckCount.text = DeckForCurrentEncounter.Cards.Count.ToString();
         }
 
         /// <summary>
@@ -135,11 +129,11 @@ namespace Players
         /// </summary>
         private void DrawSingleCard()
         {
-            if (DeckForCurrentEncounter.Cards.Count <= 0) ShuffleDiscardIntoDeck();
-            if (DeckForCurrentEncounter.Cards.Count <= 0) return;
+            if (DeckForCurrentRun.Cards.Count <= 0) ShuffleDiscardIntoDeck();
+            if (DeckForCurrentRun.Cards.Count <= 0) return;
 
-            Card card = DeckForCurrentEncounter.Cards[0];
-            DeckForCurrentEncounter.Cards.RemoveAt(0);
+            Card card = DeckForCurrentRun.Cards[0];
+            DeckForCurrentRun.Cards.RemoveAt(0);
 
             foreach (Effect effect in card.OnDrawEffects)
             {
@@ -166,10 +160,9 @@ namespace Players
                 return;
             }
 
-            DeckForCurrentEncounter.Cards.AddRange(DiscardPile);
+            DeckForCurrentRun.Cards.AddRange(DiscardPile);
             DiscardPile.Clear();
-            DeckForCurrentEncounter.Cards.Shuffle();
-            DeckCount.text = DeckForCurrentEncounter.Cards.Count.ToString();
+            DeckForCurrentRun.Cards.Shuffle();
         }
     }
 }

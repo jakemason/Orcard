@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public abstract class Card : ScriptableObject
 {
@@ -48,5 +49,7 @@ public abstract class Card : ScriptableObject
     public List<Effect> OnDrawEffects;
     [Tooltip("The immediate effects of the card. Example: Deal 2 damage to target.")]
     public List<Effect> PlayEffects;
+    [Tooltip("The effects this card generates at the end of every turn.")]
+    public List<Effect> StartOfTurnEffects;
     // @formatter:on 
 }

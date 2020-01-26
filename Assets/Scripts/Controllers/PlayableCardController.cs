@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Players;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(CardRenderer))]
@@ -114,6 +115,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         transform.position   = Input.mousePosition;
         TargetScale          = Vector3.zero;
         transform.localScale = Vector3.zero;
+        Player.Instance.TargettingIndicator.SetActive(true);
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -124,6 +126,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         TargetRotation   = RestingRotation;
         TargetScale      = Vector3.one;
         transform.SetSiblingIndex(RestingSiblingIndex);
+        Player.Instance.TargettingIndicator.SetActive(false);
     }
 
     public void OnBeginDrag(PointerEventData eventData)

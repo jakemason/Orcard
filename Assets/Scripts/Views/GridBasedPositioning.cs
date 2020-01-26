@@ -3,7 +3,7 @@
 [ExecuteInEditMode]
 public class GridBasedPositioning : MonoBehaviour
 {
-    private void Update()
+    private void LateUpdate()
     {
         Vector3 pos     = transform.position;
         Vector3 rounded = new Vector3(Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.y), Mathf.RoundToInt(pos.z));

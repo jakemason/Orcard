@@ -46,8 +46,7 @@ public static class SpellCast
         }
 
         Player.Instance.RemainingEnergy -= AttemptingToCast.CastingCost;
-        Player.UpdateEnergyCounter();
-
+        Player.Instance.TargettingIndicator.SetActive(false);
         Clear();
     }
 

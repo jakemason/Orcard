@@ -28,7 +28,7 @@ public class Tower : MonoBehaviour
 
     private void Fire()
     {
-        if (!_currentTarget || !(_attackCooldown <= 0)) return;
+        if (Model.Damage == 0 || !_currentTarget || !(_attackCooldown <= 0)) return;
 
         _attackCooldown = Model.AttackRate;
         GameObject  bolt  = Instantiate(Model.BoltPrefab, transform.position, Quaternion.identity);
@@ -53,6 +53,14 @@ public class Tower : MonoBehaviour
         if (circleCollider2D)
         {
             circleCollider2D.radius = Model.Range;
+        }
+    }
+
+    public void DoStartOfTurnEffects()
+    {
+        foreach (Effect effect in Model.StartOfTurnEffects)
+        {
+            effect.Activate();
         }
     }
 

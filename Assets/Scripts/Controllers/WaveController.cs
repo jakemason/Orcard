@@ -32,6 +32,8 @@ public class WaveController : MonoBehaviour
 
     private void LateUpdate()
     {
+        //TODO: Can't do this, instead we should decrement a counter every time an enemy is
+        //TODO: killed and once the counter is 0 we know we're in the clear
         if (WaveActive)
         {
             CheckForClear();
@@ -42,10 +44,11 @@ public class WaveController : MonoBehaviour
     {
         if (EnemiesSpawned.Count == 0)
         {
+            TowerManager.StartTurn();
             NextWaveButton.SetActive(true);
-            Player.StartTurn();
             CurrentWave++;
             WaveActive = false;
+            RewardsManager.OpenRewardsPanel();
         }
     }
 
