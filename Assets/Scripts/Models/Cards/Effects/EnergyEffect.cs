@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Energy Effect", menuName = "Effects/Energy Effect")]
 public class EnergyEffect : Effect
 {
-    public int EnergyModifier = 0;
+    public int EnergyModifier = 1;
 
     public override void Activate()
     {
@@ -13,13 +13,6 @@ public class EnergyEffect : Effect
 
     public void OnValidate()
     {
-        if (EnergyModifier > 0)
-        {
-            InstructionText = $"+{EnergyModifier} Energy.";
-        }
-        else
-        {
-            InstructionText = $"-{EnergyModifier} Energy.";
-        }
+        InstructionText = EnergyModifier > 0 ? $"+{EnergyModifier} Energy." : $"-{EnergyModifier} Energy.";
     }
 }

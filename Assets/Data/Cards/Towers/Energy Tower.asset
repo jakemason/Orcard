@@ -20,7 +20,7 @@ MonoBehaviour:
   CastingCost: 3
   CastingRequirements: []
   DestroyOnCast: 0
-  InstructionText: 'Build this tower. On the start of each turn, Gain 1 Energy '
+  InstructionText: 'Build this tower. On the start of each turn, +1 Energy. '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
