@@ -10,4 +10,16 @@ public class EnergyEffect : Effect
     {
         Player.Instance.RemainingEnergy += EnergyModifier;
     }
+
+    public void OnValidate()
+    {
+        if (EnergyModifier > 0)
+        {
+            InstructionText = $"+{EnergyModifier} Energy.";
+        }
+        else
+        {
+            InstructionText = $"-{EnergyModifier} Energy.";
+        }
+    }
 }

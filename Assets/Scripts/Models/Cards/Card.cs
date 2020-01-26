@@ -52,4 +52,43 @@ public abstract class Card : ScriptableObject
     [Tooltip("The effects this card generates at the end of every turn.")]
     public List<Effect> StartOfTurnEffects;
     // @formatter:on 
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        // this makes the editor typing experience feel a little weird, but saves us from having to manually
+        // rename the file to match the name of the card. I feel this is useful enough to keep for now.
+        string playEffects = "";
+        if (PlayEffects.Count > 0 && OverrideDefaultInstructionText == "")
+        {
+            foreach (Effect effect in PlayEffects)
+            {
+                if (effect == null) continue;
+                playEffects += effect.InstructionText + " ";
+            }
+        }
+
+        string startEffects = "";
+        if (StartOfTurnEffects.Count > 0 && OverrideDefaultInstructionText == "")
+        {
+            startEffects = "On the start of each turn, ";
+            foreach (Effect effect in StartOfTurnEffects)
+            {
+                if (effect == null) continue;
+                startEffects += effect.InstructionText + " ";
+            }
+        }
+
+        InstructionText = playEffects + startEffects;
+        if (DestroyOnCast)
+        {
+            InstructionText += "Destroy this card.";
+        }
+
+        if (OverrideDefaultInstructionText != "")
+        {
+            InstructionText = OverrideDefaultInstructionText;
+        }
+    }
+#endif
 }

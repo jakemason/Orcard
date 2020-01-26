@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Construction Effect", menuName = "Effects/Construction Effect")]
 public class ConstructionEffect : Effect
@@ -14,5 +15,10 @@ public class ConstructionEffect : Effect
         rend.sprite = card.Artwork;
         tower.Model = card;
         TowerManager.Instance.ConstructedTowers.Add(tower);
+    }
+
+    private void OnValidate()
+    {
+        InstructionText = "Build this tower.";
     }
 }

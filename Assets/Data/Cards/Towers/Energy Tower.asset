@@ -15,12 +15,12 @@ MonoBehaviour:
   Name: Energy Tower
   Artwork: {fileID: -6634155156685202195, guid: 3570e2dc4f548ff4194f59df297187e2,
     type: 3}
-  Rarity: 0
+  Rarity: 2
   Set: 0
-  CastingCost: 1
+  CastingCost: 3
   CastingRequirements: []
   DestroyOnCast: 0
-  InstructionText: Instruction text test
+  InstructionText: 'Build this tower. On the start of each turn, Gain 1 Energy '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
