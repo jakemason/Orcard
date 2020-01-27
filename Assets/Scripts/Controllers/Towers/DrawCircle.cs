@@ -10,16 +10,24 @@ public class DrawCircle : MonoBehaviour
 
     public LineRenderer Line;
 
-    private void Start()
+    private void Awake()
     {
-        Line = gameObject.GetComponent<LineRenderer>();
-
+        Line               = gameObject.GetComponent<LineRenderer>();
         Line.positionCount = (Segments + 1);
         Line.useWorldSpace = false;
+        Line.startWidth    = 0.1f;
+        Line.endWidth      = 0.1f;
+    }
+
+    public void Update()
+    {
+        CreatePoints();
     }
 
     public void CreatePoints()
     {
+        if (!Line) return;
+
         float x;
         float y;
 
@@ -32,7 +40,7 @@ public class DrawCircle : MonoBehaviour
             x = Mathf.Sin(angle) * Xradius;
             y = Mathf.Cos(angle) * Yradius;
 
-            Line.SetPosition(i, new Vector3(x, y, 0));
+            Line.SetPosition(i, new Vector3(x, y, -1));
 
             angle += change;
         }

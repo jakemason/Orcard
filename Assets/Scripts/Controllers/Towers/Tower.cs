@@ -9,10 +9,12 @@ public class Tower : MonoBehaviour
 
     private float _attackCooldown = 0f;
     private GameObject _currentTarget = null;
+    public DrawCircle RangeIndicator;
 
     private void Start()
     {
         EnemiesInRange = new List<GameObject>();
+        SetRange();
     }
 
     private void Update()
@@ -38,7 +40,7 @@ public class Tower : MonoBehaviour
         tbolt.Damage        = Model.Damage;
     }
 
-    private void OnValidate()
+    private void SetRange()
     {
         DrawCircle rangeIndicator = GetComponent<DrawCircle>();
         if (rangeIndicator)
