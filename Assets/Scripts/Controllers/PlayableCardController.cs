@@ -92,6 +92,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        Debug.Log(eventData);
         if (MarkedForDestruction || _isDragging) return;
         TargetPosition      = RestingPosition + HoverOffset;
         TargetRotation      = Vector3.zero;

@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 [ExecuteInEditMode]
 [RequireComponent(typeof(RectTransform))]
-[RequireComponent(typeof(Image))]
 public class CardRenderer : MonoBehaviour
 {
     // @formatter:off
