@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Goblin
   Speed: 5
-  HP: 3
+  HP: 5
   MinSize: 1
   MaxSize: 1
-  Sprite: {fileID: -5717171647778754098, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
+  Sprite: {fileID: 6845930069172643336, guid: e7258ff8e7f52a546ae0c3c579adafd1, type: 3}
   Damage: 2

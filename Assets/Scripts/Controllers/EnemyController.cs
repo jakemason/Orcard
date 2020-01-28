@@ -13,6 +13,8 @@ public class EnemyController : MonoBehaviour
 
     private void Start()
     {
+        SpriteRenderer rend = GetComponent<SpriteRenderer>();
+        rend.sprite = Model.Sprite;
         MarkAlive();
     }
 

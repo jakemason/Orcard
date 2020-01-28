@@ -26,7 +26,7 @@ public class MapController : MonoBehaviour
             Waypoints.Add(child);
         }
 
-        SpawnRoads();
+        // SpawnRoads();
     }
 
     private void Update()
