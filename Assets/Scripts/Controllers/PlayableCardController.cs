@@ -1,6 +1,8 @@
 ﻿using Players;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(CardRenderer))]
 public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IDragHandler,
@@ -30,6 +32,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     public Vector3 RestingRotation;
     public int RestingSiblingIndex;
     public float HoverScale = 1.5f;
+    public Image HoverCollider;
     
     private RectTransform _trans;
     // @formatter:on 
@@ -92,7 +95,6 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log(eventData);
         if (MarkedForDestruction || _isDragging) return;
         TargetPosition      = RestingPosition + HoverOffset;
         TargetRotation      = Vector3.zero;
@@ -117,6 +119,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         TargetScale          = Vector3.zero;
         transform.localScale = Vector3.zero;
         Player.Instance.TargettingIndicator.SetActive(true);
+        HoverCollider.raycastTarget = false;
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -128,6 +131,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         TargetScale      = Vector3.one;
         transform.SetSiblingIndex(RestingSiblingIndex);
         Player.Instance.TargettingIndicator.SetActive(false);
+        HoverCollider.raycastTarget = true;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
