@@ -17,7 +17,8 @@ public class RewardsManager : MonoBehaviour
     
     [Header("Prefabs and Holders")]
     [Space(20)]
-    public GameObject RewardsGameObjectHolder;
+    public GameObject RewardsPanel;
+    public GameObject CardSelectionBox;
     public GameObject CardRendererPrefab;
     [ReadOnly] private List<GameObject> _rewardsOfferedGameObjects;
     [ReadOnly] private List<Card> _rewardsOffered;
@@ -102,14 +103,19 @@ public class RewardsManager : MonoBehaviour
         PickRewards();
         for (int i = 0; i < _rewardsOffered.Count; i++)
         {
-            GameObject   reward = Instantiate(CardRendererPrefab, RewardsGameObjectHolder.transform, false);
+            GameObject   reward = Instantiate(CardRendererPrefab, CardSelectionBox.transform, false);
             CardRenderer rend   = reward.GetComponent<CardRenderer>();
             rend.CardObject = _rewardsOffered[i];
             rend.UpdateCardDetails();
             _rewardsOfferedGameObjects.Add(reward);
         }
 
-        RewardsGameObjectHolder.SetActive(true);
+        RewardsPanel.SetActive(true);
+    }
+
+    public void SkipReward()
+    {
+        ClearRewardGameObjects();
     }
 
     private void ClearRewardGameObjects()
@@ -122,6 +128,6 @@ public class RewardsManager : MonoBehaviour
         }
 
         _rewardsOffered.Clear();
-        RewardsGameObjectHolder.SetActive(false);
+        RewardsPanel.SetActive(false);
     }
 }

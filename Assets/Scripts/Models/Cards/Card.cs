@@ -54,7 +54,7 @@ public abstract class Card : ScriptableObject
     // @formatter:on 
 
 #if UNITY_EDITOR
-    private void OnValidate()
+    public virtual void OnValidate()
     {
         // this makes the editor typing experience feel a little weird, but saves us from having to manually
         // rename the file to match the name of the card. I feel this is useful enough to keep for now.

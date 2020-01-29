@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,31 +16,28 @@ public class CardRenderer : MonoBehaviour
     public Image Artwork;
     public Image Background;
     public TextMeshProUGUI InstructionText;
-    public TextMeshProUGUI Attack;
-    public TextMeshProUGUI Health;
-    public TextMeshProUGUI Armor;
-    public TextMeshProUGUI CardType;
     
     private PlayableCardController _playable;
-
     // @formatter:on
+
     private static readonly Dictionary<Card.CardRarity, Color> RarityColors = new Dictionary<Card.CardRarity, Color>
     {
-        {Card.CardRarity.Common, Color.gray},
-        {Card.CardRarity.Uncommon, Color.cyan},
-        {Card.CardRarity.Rare, Color.blue},
-        {Card.CardRarity.Epic, Color.magenta},
-        {Card.CardRarity.Legendary, Color.yellow},
+        {Card.CardRarity.Common, new Color32(71,     106, 111, 255)},
+        {Card.CardRarity.Uncommon, new Color32(81,   158, 138, 255)},
+        {Card.CardRarity.Rare, new Color32(126,      176, 155, 255)},
+        {Card.CardRarity.Epic, new Color32(197,      201, 164, 255)},
+        {Card.CardRarity.Legendary, new Color32(236, 190, 180, 255)},
     };
 
     private void Awake()
     {
-        UpdateCardDetails();
         _playable = GetComponent<PlayableCardController>();
         if (_playable)
         {
             _playable.CardObject = CardObject;
         }
+
+        UpdateCardDetails();
     }
 
     public void UpdateCardDetails()

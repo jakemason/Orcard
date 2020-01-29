@@ -30,7 +30,9 @@ MonoBehaviour:
   StartOfTurnEffects: []
   BoltPrefab: {fileID: 4748081343559320588, guid: be2befc9997d8c749997b5c06b973628,
     type: 3}
-  Damage: 3
-  AttackRate: 1
+  Damage: 5
+  AttacksPerSecond: 0.5
   AttackMovementSpeed: 10
   Range: 2
+  DamagePerSecond: 2.5
+  AttackRate: 2
