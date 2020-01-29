@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 [ExecuteInEditMode]
@@ -14,7 +15,7 @@ public class CardRenderer : MonoBehaviour
     public TextMeshProUGUI Name;
     public TextMeshProUGUI Cost;
     public Image Artwork;
-    public Image Background;
+    [FormerlySerializedAs("Background")]public Image RarityBorder;
     public TextMeshProUGUI InstructionText;
     
     private PlayableCardController _playable;
@@ -22,11 +23,11 @@ public class CardRenderer : MonoBehaviour
 
     private static readonly Dictionary<Card.CardRarity, Color> RarityColors = new Dictionary<Card.CardRarity, Color>
     {
-        {Card.CardRarity.Common, new Color32(71,     106, 111, 255)},
-        {Card.CardRarity.Uncommon, new Color32(81,   158, 138, 255)},
-        {Card.CardRarity.Rare, new Color32(126,      176, 155, 255)},
-        {Card.CardRarity.Epic, new Color32(197,      201, 164, 255)},
-        {Card.CardRarity.Legendary, new Color32(236, 190, 180, 255)},
+        {Card.CardRarity.Common, Color.white},
+        {Card.CardRarity.Uncommon, Color.grey},
+        {Card.CardRarity.Rare, Color.blue},
+        {Card.CardRarity.Epic, Color.magenta},
+        {Card.CardRarity.Legendary, Color.yellow},
     };
 
     private void Awake()
@@ -48,8 +49,8 @@ public class CardRenderer : MonoBehaviour
         InstructionText.text = CardObject.InstructionText;
         Artwork.sprite       = CardObject.Artwork;
 
-        gameObject.name  = Name.text;
-        Background.color = RarityColors[CardObject.Rarity];
+        gameObject.name    = Name.text;
+        RarityBorder.color = RarityColors[CardObject.Rarity];
     }
 
 #if UNITY_EDITOR

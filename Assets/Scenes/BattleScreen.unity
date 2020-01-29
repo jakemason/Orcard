@@ -687,7 +687,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 55.95
+  m_fontSize: 56.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1186,7 +1186,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 25
-      m_TileSpriteIndex: 25
+      m_TileSpriteIndex: 26
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1204,7 +1204,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 21
-      m_TileSpriteIndex: 22
+      m_TileSpriteIndex: 25
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1213,7 +1213,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 20
-      m_TileSpriteIndex: 21
+      m_TileSpriteIndex: 23
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1461,22 +1461,22 @@ Tilemap:
   - m_RefCount: 3
     m_Data: {fileID: -1328498083773065220, guid: 40926fd235e07a7479c66eb50ed63b8d,
       type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 3390595978412315445, guid: 2951ac457d47cc343908b1148b4fd143,
       type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -634261278993669134, guid: 2951ac457d47cc343908b1148b4fd143,
-      type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 1
     m_Data: {fileID: -2974862440142313869, guid: 40926fd235e07a7479c66eb50ed63b8d,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -634261278993669134, guid: 2951ac457d47cc343908b1148b4fd143,
       type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 7465855713940309216, guid: 40926fd235e07a7479c66eb50ed63b8d,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -6354593127074315725, guid: 40926fd235e07a7479c66eb50ed63b8d,
       type: 3}
@@ -2421,7 +2421,7 @@ MonoBehaviour:
   Legendaries: {fileID: 11400000, guid: fe4b0f0809588554cbafbfe11482ae24, type: 2}
   RewardsPanel: {fileID: 1054272452}
   CardSelectionBox: {fileID: 2081550281}
-  CardRendererPrefab: {fileID: 9162847070692476976, guid: 8fe752a41cf2b724495f18b92e1531f2,
+  CardRendererPrefab: {fileID: 9162847070692476976, guid: 8b42649ff3c292449b03e12573326129,
     type: 3}
 --- !u!114 &1511839239
 MonoBehaviour:
