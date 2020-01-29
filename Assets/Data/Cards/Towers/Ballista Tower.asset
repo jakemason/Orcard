@@ -20,9 +20,10 @@ MonoBehaviour:
   CastingCost: 2
   CastingRequirements: []
   DestroyOnCast: 0
-  InstructionText: 'Build this tower. '
+  InstructionText: A heavy tower that does great damage, but fires slowly.
   AdditionalInstructionText: 
-  OverrideDefaultInstructionText: 
+  OverrideDefaultInstructionText: A heavy tower that does great damage, but fires
+    slowly.
   FlavorText: 
   OnDrawEffects: []
   PlayEffects:

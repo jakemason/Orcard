@@ -513,7 +513,7 @@ MonoBehaviour:
   MovementSpeed: 5
   DestroyMovementSpeed: 12
   MarkedForDestruction: 0
-  HoverOffset: {x: 0, y: 80, z: 0}
+  HoverOffset: {x: 0, y: 115, z: 0}
   RestingPosition: {x: 0, y: 0, z: 0}
   RestingRotation: {x: 0, y: 0, z: 0}
   RestingSiblingIndex: 0
@@ -537,10 +537,6 @@ MonoBehaviour:
   Artwork: {fileID: 9162847070632354178}
   Background: {fileID: 4601219149210038435}
   InstructionText: {fileID: 9162847070532323466}
-  Attack: {fileID: 0}
-  Health: {fileID: 0}
-  Armor: {fileID: 0}
-  CardType: {fileID: 0}
 --- !u!222 &9162847070692477389
 CanvasRenderer:
   m_ObjectHideFlags: 0

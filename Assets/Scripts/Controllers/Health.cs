@@ -36,6 +36,7 @@ public class Health : MonoBehaviour
             MarkedForDeath = true;
             //TODO: Do a better job with this
             WaveController.Instance.EnemiesSpawned.Remove(gameObject);
+            WaveController.Instance.EnemiesRemainingInWave -= 1;
             Destroy(gameObject);
         }
     }

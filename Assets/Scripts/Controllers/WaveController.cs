@@ -5,17 +5,24 @@ using Random = UnityEngine.Random;
 
 public class WaveController : MonoBehaviour
 {
+    // @formatter:off 
     public static WaveController Instance;
+    [Header("Enemy Info")]
     public List<Enemy> EnemiesToPullFrom;
     public int EnemiesToSpawn = 5;
-    public int AdditionalEnemiesPerWave = 2;
+    
+    [Header("Wave Info")]
     public float TimeBetweenIndividualSpawns = 0.5f;
     public int CurrentWave = 0;
+    public bool WaveActive = false;
+    public int EnemiesRemainingInWave;
+    public int AdditionalEnemiesPerWave = 2;
     public List<GameObject> EnemiesSpawned;
+    
+    [Header("GameObject References")]
     public GameObject EnemyPrefab;
     public GameObject NextWaveButton;
-    public bool WaveActive = false;
-
+    // @formatter:on 
     private void Start()
     {
         if (Instance == null)
@@ -32,24 +39,19 @@ public class WaveController : MonoBehaviour
 
     private void LateUpdate()
     {
-        //TODO: Can't do this, instead we should decrement a counter every time an enemy is
-        //TODO: killed and once the counter is 0 we know we're in the clear
-        if (WaveActive)
+        if (WaveActive && EnemiesRemainingInWave == 0)
         {
-            CheckForClear();
+            EndEncounter();
         }
     }
 
-    private void CheckForClear()
+    private void EndEncounter()
     {
-        if (EnemiesSpawned.Count == 0)
-        {
-            TowerManager.StartTurn();
-            NextWaveButton.SetActive(true);
-            CurrentWave++;
-            WaveActive = false;
-            RewardsManager.OpenRewardsPanel();
-        }
+        TowerManager.StartTurn();
+        NextWaveButton.SetActive(true);
+        CurrentWave++;
+        WaveActive = false;
+        RewardsManager.OpenRewardsPanel();
     }
 
     public void SpawnEnemies()
@@ -61,6 +63,8 @@ public class WaveController : MonoBehaviour
         {
             Invoke("SpawnRandomEnemy", TimeBetweenIndividualSpawns * i);
         }
+
+        EnemiesRemainingInWave = EnemiesToSpawn + (CurrentWave * AdditionalEnemiesPerWave);
     }
 
     private void SpawnRandomEnemy()

@@ -20,7 +20,7 @@ public class TowerCard : Card
     public override void OnValidate()
     {
         base.OnValidate();
-        AttackRate      = 1                / (float) AttacksPerSecond;
+        AttackRate      = 1                / AttacksPerSecond;
         DamagePerSecond = (1 / AttackRate) * Damage;
     }
 }

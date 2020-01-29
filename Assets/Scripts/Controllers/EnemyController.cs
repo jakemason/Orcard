@@ -52,6 +52,7 @@ public class EnemyController : MonoBehaviour
         {
             Core core = col.gameObject.GetComponent<Core>();
             core.TakeDamage(Model.Damage);
+            WaveController.Instance.EnemiesRemainingInWave -= 1;
             WaveController.Instance.EnemiesSpawned.Remove(gameObject);
             Destroy(gameObject);
         }

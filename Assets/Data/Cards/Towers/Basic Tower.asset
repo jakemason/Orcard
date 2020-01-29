@@ -19,9 +19,9 @@ MonoBehaviour:
   CastingCost: 1
   CastingRequirements: []
   DestroyOnCast: 0
-  InstructionText: 'Build this tower. '
+  InstructionText: Average damage, high fire rate.
   AdditionalInstructionText: 
-  OverrideDefaultInstructionText: 
+  OverrideDefaultInstructionText: Average damage, high fire rate.
   FlavorText: 
   OnDrawEffects: []
   PlayEffects:

@@ -100,6 +100,7 @@ public class RewardsManager : MonoBehaviour
 
     private void CreateRewardGameObjects()
     {
+        ClearRewardGameObjects();
         PickRewards();
         for (int i = 0; i < _rewardsOffered.Count; i++)
         {
