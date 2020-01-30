@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
+  m_Name: Surge
+  m_EditorClassIdentifier: 
+  Name: Surge
+  Artwork: {fileID: 8768893368382487233, guid: 5f0019badba37db42a20b696a8868333, type: 3}
+  Rarity: 0
+  Set: 0
+  CastingCost: 0
+  GoldCost: 0
+  CastingRequirements: []
+  DestroyOnCast: 0
+  InstructionText: '+1 Energy. '
+  AdditionalInstructionText: 
+  OverrideDefaultInstructionText: 
+  FlavorText: 
+  OnDrawEffects: []
+  PlayEffects:
+  - {fileID: 11400000, guid: 248404457d20cca4787dd61fe3a92e97, type: 2}
+  StartOfTurnEffects: []

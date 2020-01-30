@@ -38,7 +38,7 @@ public abstract class Card : ScriptableObject
     
     [Header("Card Instruction Text")]
     [Space(20)]
-    public string InstructionText;
+    [ReadOnly] public string InstructionText;
     [Tooltip("Additional text that is appended to the default instruction text.")]
     public string AdditionalInstructionText;
     public string OverrideDefaultInstructionText;
@@ -90,6 +90,9 @@ public abstract class Card : ScriptableObject
         {
             InstructionText = OverrideDefaultInstructionText;
         }
+
+        string assetPath = AssetDatabase.GetAssetPath(GetInstanceID());
+        AssetDatabase.RenameAsset(assetPath, Name);
     }
 #endif
 }

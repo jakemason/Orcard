@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Health Effect", menuName = "Effects/Health Effect")]
 public class HealthEffect : Effect
@@ -12,6 +13,8 @@ public class HealthEffect : Effect
 
     public void OnValidate()
     {
-        InstructionText = HealthModifier > 0 ? $"+{HealthModifier} HP." : $"-{HealthModifier} HP.";
+        InstructionText = HealthModifier > 0 ? $"+{HealthModifier} HP." : $"{HealthModifier} HP.";
+        string assetPath = AssetDatabase.GetAssetPath(GetInstanceID());
+        AssetDatabase.RenameAsset(assetPath, InstructionText);
     }
 }

@@ -23,8 +23,6 @@ public class RewardsManager : MonoBehaviour
     [ReadOnly] private List<GameObject> _rewardsOfferedGameObjects;
     [ReadOnly] private List<Card> _rewardsOffered;
     // @formatter:on 
-
-    private Dictionary<Card.CardRarity, Card.CardRarity> _rarityUpgrades;
     private Dictionary<Card.CardRarity, Deck> _rewardTiers;
 
     public static void OpenRewardsPanel()
@@ -58,16 +56,6 @@ public class RewardsManager : MonoBehaviour
     {
         //TODO: Can we just increment the enum instead and just make sure we keep them in order?
         //TODO: Make an upgrade method of some sort?
-        _rarityUpgrades =
-            new Dictionary<Card.CardRarity, Card.CardRarity>()
-            {
-                {Card.CardRarity.Common, Card.CardRarity.Uncommon},
-                {Card.CardRarity.Uncommon, Card.CardRarity.Rare},
-                {Card.CardRarity.Rare, Card.CardRarity.Epic},
-                {Card.CardRarity.Epic, Card.CardRarity.Legendary},
-                {Card.CardRarity.Legendary, Card.CardRarity.Legendary} //safety check
-            };
-
         _rewardTiers =
             new Dictionary<Card.CardRarity, Deck>()
             {
@@ -83,11 +71,28 @@ public class RewardsManager : MonoBehaviour
     {
         for (int i = 0; i < NumberOfRewardChoices; i++)
         {
-            Card.CardRarity rarity         = Card.CardRarity.Common;
-            float           rollForUpgrade = Random.Range(0.0f, 1.0f);
-            if (rollForUpgrade <= ChanceForRandomRarityUpgrade)
+            Card.CardRarity rarity     = Card.CardRarity.Common;
+            float           cardRarity = Random.Range(0.0f, 1.0f);
+            Debug.Log(cardRarity);
+            if (cardRarity >= 0.95f)
             {
-                rarity = _rarityUpgrades[rarity];
+                rarity = Card.CardRarity.Legendary;
+            }
+            else if (cardRarity >= 0.8f)
+            {
+                rarity = Card.CardRarity.Epic;
+            }
+            else if (cardRarity >= 0.7f)
+            {
+                rarity = Card.CardRarity.Rare;
+            }
+            else if (cardRarity >= 0.5f)
+            {
+                rarity = Card.CardRarity.Uncommon;
+            }
+            else if (cardRarity >= 0.3f)
+            {
+                rarity = Card.CardRarity.Common;
             }
 
             Deck setToPullFrom = _rewardTiers[rarity];

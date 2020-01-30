@@ -1,4 +1,5 @@
 ﻿using Players;
+using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Energy Effect", menuName = "Effects/Energy Effect")]
@@ -13,6 +14,8 @@ public class EnergyEffect : Effect
 
     public void OnValidate()
     {
-        InstructionText = EnergyModifier > 0 ? $"+{EnergyModifier} Energy." : $"-{EnergyModifier} Energy.";
+        InstructionText = EnergyModifier > 0 ? $"Gain {EnergyModifier} Energy." : $"Lose {EnergyModifier} Energy.";
+        string assetPath = AssetDatabase.GetAssetPath(GetInstanceID());
+        AssetDatabase.RenameAsset(assetPath, InstructionText);
     }
 }

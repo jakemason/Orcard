@@ -2376,9 +2376,17 @@ MonoBehaviour:
   Waves:
   - {fileID: 11400000, guid: d616011a342e4974fa18f22d10acfcc3, type: 2}
   - {fileID: 11400000, guid: 0e62e7d510bc37c4e8939396724ffc9e, type: 2}
+  - {fileID: 11400000, guid: 0e62e7d510bc37c4e8939396724ffc9e, type: 2}
+  - {fileID: 11400000, guid: 0e62e7d510bc37c4e8939396724ffc9e, type: 2}
+  - {fileID: 11400000, guid: 0e62e7d510bc37c4e8939396724ffc9e, type: 2}
+  - {fileID: 11400000, guid: 0e62e7d510bc37c4e8939396724ffc9e, type: 2}
+  - {fileID: 11400000, guid: 0e62e7d510bc37c4e8939396724ffc9e, type: 2}
+  - {fileID: 11400000, guid: 0e62e7d510bc37c4e8939396724ffc9e, type: 2}
+  - {fileID: 11400000, guid: 0e62e7d510bc37c4e8939396724ffc9e, type: 2}
+  - {fileID: 11400000, guid: 0e62e7d510bc37c4e8939396724ffc9e, type: 2}
+  - {fileID: 11400000, guid: 0e62e7d510bc37c4e8939396724ffc9e, type: 2}
+  - {fileID: 11400000, guid: 0e62e7d510bc37c4e8939396724ffc9e, type: 2}
   EnemiesInCurrentWave: []
-  EnemiesToSpawn: 5
-  TimeBetweenIndividualSpawns: 0.5
   CurrentWave: 0
   WaveActive: 0
   EnemiesRemainingInWave: 0
@@ -2415,11 +2423,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChanceForRandomRarityUpgrade: 0.2
   NumberOfRewardChoices: 3
-  Commons: {fileID: 11400000, guid: fe4b0f0809588554cbafbfe11482ae24, type: 2}
-  Uncommons: {fileID: 11400000, guid: fe4b0f0809588554cbafbfe11482ae24, type: 2}
-  Rares: {fileID: 11400000, guid: fe4b0f0809588554cbafbfe11482ae24, type: 2}
-  Epics: {fileID: 11400000, guid: fe4b0f0809588554cbafbfe11482ae24, type: 2}
-  Legendaries: {fileID: 11400000, guid: fe4b0f0809588554cbafbfe11482ae24, type: 2}
+  Commons: {fileID: 11400000, guid: 82067f111ed6bb94ab692713b7b50b90, type: 2}
+  Uncommons: {fileID: 11400000, guid: ecad73f57119f3e48ad28cf21dadebd5, type: 2}
+  Rares: {fileID: 11400000, guid: 1f8682d4142a7184c95cb13a3cda3c76, type: 2}
+  Epics: {fileID: 11400000, guid: 85c4035c4890565479647334edb093ae, type: 2}
+  Legendaries: {fileID: 11400000, guid: 4c3999e660de5f747bf2bcb014517313, type: 2}
   RewardsPanel: {fileID: 1054272452}
   CardSelectionBox: {fileID: 2081550281}
   CardRendererPrefab: {fileID: 9162847070692476976, guid: 8b42649ff3c292449b03e12573326129,
