@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using Players;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class WaveController : MonoBehaviour
@@ -8,11 +10,10 @@ public class WaveController : MonoBehaviour
     // @formatter:off 
     public static WaveController Instance;
     [Header("Enemy Info")]
-    public List<Enemy> EnemiesToPullFrom;
-    public int EnemiesToSpawn = 5;
+    public List<Wave> Waves;
+    [ReadOnly] public List<Enemy> EnemiesInCurrentWave;
     
     [Header("Wave Info")]
-    public float TimeBetweenIndividualSpawns = 0.5f;
     public int CurrentWave = 0;
     public bool WaveActive = false;
     public int EnemiesRemainingInWave;
@@ -58,21 +59,28 @@ public class WaveController : MonoBehaviour
     {
         WaveActive = true;
         NextWaveButton.SetActive(false);
-        Player.EndTurn();
-        for (int i = 0; i < EnemiesToSpawn + (CurrentWave * AdditionalEnemiesPerWave); i++)
+        if (CurrentWave > Waves.Count - 1)
         {
-            Invoke("SpawnRandomEnemy", TimeBetweenIndividualSpawns * i);
+            SceneManager.LoadScene("Winner");
+            return;
         }
 
-        EnemiesRemainingInWave = EnemiesToSpawn + (CurrentWave * AdditionalEnemiesPerWave);
+        EnemiesInCurrentWave = Waves[CurrentWave].EnemiesInWave;
+        Player.EndTurn();
+        for (int i = 0; i < EnemiesInCurrentWave.Count; i++)
+        {
+            StartCoroutine(SpawnEnemy(EnemiesInCurrentWave[i], Waves[CurrentWave].TimeBetweenSpawns * i));
+        }
+
+        EnemiesRemainingInWave = EnemiesInCurrentWave.Count;
     }
 
-    private void SpawnRandomEnemy()
+    IEnumerator SpawnEnemy(Enemy toSpawn, float delay)
     {
-        int             enemyToSpawnIndex = Random.Range(0, EnemiesToPullFrom.Count);
-        GameObject      newSpawn          = Instantiate(EnemyPrefab);
-        EnemyController enemyController   = newSpawn.GetComponent<EnemyController>();
-        enemyController.Model = EnemiesToPullFrom[enemyToSpawnIndex];
+        yield return new WaitForSeconds(delay);
+        GameObject      newSpawn        = Instantiate(EnemyPrefab);
+        EnemyController enemyController = newSpawn.GetComponent<EnemyController>();
+        enemyController.Model = toSpawn;
         enemyController.MarkAlive();
         EnemiesSpawned.Add(newSpawn);
     }

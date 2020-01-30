@@ -2373,9 +2373,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2dbf3f1fee4c24d96e8049486d7b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemiesToPullFrom:
-  - {fileID: 11400000, guid: 96b80f5b611509c4a80494b86f0879f8, type: 2}
-  - {fileID: 11400000, guid: f9f00ea5a9bdf7143a165849c652eeed, type: 2}
+  Waves:
+  - {fileID: 11400000, guid: d616011a342e4974fa18f22d10acfcc3, type: 2}
+  - {fileID: 11400000, guid: 0e62e7d510bc37c4e8939396724ffc9e, type: 2}
+  EnemiesInCurrentWave: []
   EnemiesToSpawn: 5
   TimeBetweenIndividualSpawns: 0.5
   CurrentWave: 0
