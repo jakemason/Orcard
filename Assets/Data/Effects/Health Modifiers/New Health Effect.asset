@@ -9,13 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37409aeed135ebc478a0d1700ccb93c9, type: 3}
-  m_Name: Orc
+  m_Script: {fileID: 11500000, guid: 5d8fd1f99e31ba3499ed43379805e884, type: 3}
+  m_Name: New Health Effect
   m_EditorClassIdentifier: 
-  Name: Orc
-  Speed: 2
-  HP: 10
-  MinSize: 1.2
-  MaxSize: 1.5
-  Sprite: {fileID: -5982631482569217063, guid: d6c6fe0d0d3705d4da9237152926bcfe, type: 3}
-  Damage: 3
+  InstructionText: +1 HP.
+  HealthModifier: 1

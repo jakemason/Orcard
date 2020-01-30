@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Core : MonoBehaviour
 {
+    public static Core Instance;
     public int MaxHealth = 50;
     private int _health;
     public TextMeshProUGUI HealthText;
@@ -19,12 +20,26 @@ public class Core : MonoBehaviour
                 _health = MaxHealth;
             }
 
+            if (_health < 0)
+            {
+                SceneManager.LoadScene("You Died");
+            }
+
             UpdateText();
         }
     }
 
     private void Start()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+
         Health             = MaxHealth;
         transform.position = MapController.Instance.Waypoints[0].position;
     }
@@ -34,10 +49,10 @@ public class Core : MonoBehaviour
         HealthText.text = "Health: " + _health + " / " + MaxHealth;
     }
 
-    public void TakeDamage(int damageToTake)
+    public static void TakeDamage(int damageToTake)
     {
-        Health -= damageToTake;
-        if (Health > 0) return;
+        Instance.Health -= damageToTake;
+        if (Instance.Health > 0) return;
 
         Debug.Log("So long, sailor man.");
         SceneManager.LoadScene("You Died");

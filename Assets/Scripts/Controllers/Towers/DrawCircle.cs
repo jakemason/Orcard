@@ -12,15 +12,10 @@ public class DrawCircle : MonoBehaviour
 
     private void Awake()
     {
-        Line               = gameObject.GetComponent<LineRenderer>();
         Line.positionCount = (Segments + 1);
         Line.useWorldSpace = false;
         Line.startWidth    = 0.1f;
         Line.endWidth      = 0.1f;
-    }
-
-    public void Update()
-    {
         CreatePoints();
     }
 
@@ -49,5 +44,16 @@ public class DrawCircle : MonoBehaviour
     private void OnValidate()
     {
         CreatePoints();
+    }
+
+    //TODO: No idea why OnMouseOver and OnMouseExit just occasionally stop responding.
+    public void OnMouseOver()
+    {
+        Line.enabled = true;
+    }
+
+    public void OnMouseExit()
+    {
+        Line.enabled = false;
     }
 }

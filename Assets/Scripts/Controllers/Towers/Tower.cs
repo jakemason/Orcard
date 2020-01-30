@@ -47,12 +47,11 @@ public class Tower : MonoBehaviour
 
     private void SetRange()
     {
-        DrawCircle rangeIndicator = GetComponent<DrawCircle>();
-        if (rangeIndicator)
+        if (RangeIndicator)
         {
-            rangeIndicator.Xradius = Model.Range;
-            rangeIndicator.Yradius = Model.Range;
-            rangeIndicator.CreatePoints();
+            RangeIndicator.Xradius = Model.Range;
+            RangeIndicator.Yradius = Model.Range;
+            RangeIndicator.CreatePoints();
         }
 
 

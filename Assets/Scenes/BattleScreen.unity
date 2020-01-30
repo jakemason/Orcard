@@ -2209,7 +2209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 0.92156863}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2245,7 +2245,7 @@ GameObject:
   - component: {fileID: 1145203174}
   - component: {fileID: 1145203173}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2435,6 +2435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2513233bf418d694c821a4c984120704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ConstructedTowers: []
 --- !u!114 &1511839240
 MonoBehaviour:
   m_ObjectHideFlags: 0

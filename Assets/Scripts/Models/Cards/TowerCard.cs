@@ -12,15 +12,20 @@ public class TowerCard : Card
     public float AttackMovementSpeed = 10f;
     public float Range = 5f;
     
+    //TODO: This is just a temporary way to quickly differentiate different towers
+    public Color Tint = Color.white;
+    
     [Header("Calculated Tower Stats")] 
     [ReadOnly] public float DamagePerSecond;
     [ReadOnly] public float AttackRate = 0.25f;
     // @formatter:on
 
+#if UNITY_EDITOR
     public override void OnValidate()
     {
         base.OnValidate();
         AttackRate      = 1                / AttacksPerSecond;
         DamagePerSecond = (1 / AttackRate) * Damage;
     }
+#endif
 }

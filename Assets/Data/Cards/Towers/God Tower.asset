@@ -16,7 +16,8 @@ MonoBehaviour:
   Artwork: {fileID: 21300000, guid: 21e0f2bffbc084e4d8e70e7340f279ab, type: 3}
   Rarity: 0
   Set: 0
-  CastingCost: 1
+  CastingCost: 0
+  GoldCost: 0
   CastingRequirements: []
   DestroyOnCast: 0
   InstructionText: Developer cheaty face.
@@ -33,5 +34,6 @@ MonoBehaviour:
   AttacksPerSecond: 15
   AttackMovementSpeed: 10
   Range: 7
+  Tint: {r: 1, g: 1, b: 1, a: 1}
   DamagePerSecond: 824.99994
   AttackRate: 0.06666667

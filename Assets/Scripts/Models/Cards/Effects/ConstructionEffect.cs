@@ -13,6 +13,7 @@ public class ConstructionEffect : Effect
         TowerCard      card  = (TowerCard) SpellCast.AttemptingToCast;
         SpriteRenderer rend  = go.GetComponent<SpriteRenderer>();
         rend.sprite = card.Artwork;
+        rend.color  = card.Tint;
         tower.Model = card;
         TowerManager.Instance.ConstructedTowers.Add(tower);
     }
