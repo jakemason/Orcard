@@ -31,7 +31,7 @@ public class Health : MonoBehaviour
     {
         CurrentHealth -= damageToTake;
 
-        if (CurrentHealth <= 0)
+        if (CurrentHealth <= 0 && !MarkedForDeath)
         {
             MarkedForDeath = true;
             //TODO: Do a better job with this

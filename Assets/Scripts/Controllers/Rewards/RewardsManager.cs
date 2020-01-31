@@ -73,7 +73,6 @@ public class RewardsManager : MonoBehaviour
         {
             Card.CardRarity rarity     = Card.CardRarity.Common;
             float           cardRarity = Random.Range(0.0f, 1.0f);
-            Debug.Log(cardRarity);
             if (cardRarity >= 0.95f)
             {
                 rarity = Card.CardRarity.Legendary;
