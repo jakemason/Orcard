@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Player Starting Deck
   Cards:
-  - {fileID: 11400000, guid: 1b0b4c78c3006bc4e81f57b01fc35be6, type: 2}
-  - {fileID: 11400000, guid: 14eb2d32d82781a488085c905374f185, type: 2}
-  - {fileID: 11400000, guid: 740ac45e44ced9b4c9edf8545ea9a659, type: 2}
+  - {fileID: 11400000, guid: fd7b96f31b38e524482797a246218111, type: 2}
+  - {fileID: 11400000, guid: fd7b96f31b38e524482797a246218111, type: 2}
+  - {fileID: 11400000, guid: fd7b96f31b38e524482797a246218111, type: 2}

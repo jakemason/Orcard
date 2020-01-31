@@ -78,7 +78,7 @@ public class RewardsManager : MonoBehaviour
             {
                 rarity = Card.CardRarity.Legendary;
             }
-            else if (cardRarity >= 0.8f)
+            else if (cardRarity >= 0.9f)
             {
                 rarity = Card.CardRarity.Epic;
             }

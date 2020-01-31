@@ -3,6 +3,7 @@
 [ExecuteInEditMode]
 public class GridBasedPositioning : MonoBehaviour
 {
+    //TODO: Does not need to be in an Update() call
     private void LateUpdate()
     {
         Vector3 pos     = transform.position;

@@ -114,11 +114,17 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
     public void OnDrag(PointerEventData eventData)
     {
-        MovementDisabled     = true;
-        transform.position   = Input.mousePosition;
-        TargetScale          = Vector3.zero;
-        transform.localScale = Vector3.zero;
-        Player.Instance.TargettingIndicator.SetActive(true);
+        MovementDisabled   = true;
+        transform.position = Input.mousePosition;
+
+        TowerCard isTowerCard = CardObject as TowerCard;
+        if (isTowerCard)
+        {
+            Player.Instance.TargettingIndicator.SetActive(true);
+            TargetScale          = Vector3.zero;
+            transform.localScale = Vector3.zero;
+        }
+
         HoverCollider.raycastTarget = false;
     }
 
