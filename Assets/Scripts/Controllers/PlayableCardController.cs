@@ -117,10 +117,11 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         MovementDisabled   = true;
         transform.position = Input.mousePosition;
 
-        TowerCard isTowerCard = CardObject as TowerCard;
-        if (isTowerCard)
+        TowerCard towerCard = CardObject as TowerCard;
+        if (towerCard)
         {
-            Player.Instance.TargettingIndicator.SetActive(true);
+            ConstructionIndicator.Enable(towerCard);
+            //Player.Instance.TargettingIndicator.SetActive(true);
             TargetScale          = Vector3.zero;
             transform.localScale = Vector3.zero;
         }
@@ -136,7 +137,8 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         TargetRotation   = RestingRotation;
         TargetScale      = Vector3.one;
         transform.SetSiblingIndex(RestingSiblingIndex);
-        Player.Instance.TargettingIndicator.SetActive(false);
+        ConstructionIndicator.Disable();
+        //Player.Instance.TargettingIndicator.SetActive(false);
         HoverCollider.raycastTarget = true;
     }
 

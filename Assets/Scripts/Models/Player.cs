@@ -43,7 +43,7 @@ namespace Players
         public GameObject HandGameObject;
         public GameObject CardRendererTemplate;
         public TextMeshProUGUI EnergyCounter;
-        public GameObject TargettingIndicator;
+        //public GameObject TargettingIndicator;
         // @formatter:on
 
         public void Awake()

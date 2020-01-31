@@ -19,6 +19,11 @@ public class DrawCircle : MonoBehaviour
         CreatePoints();
     }
 
+    public void Change()
+    {
+        CreatePoints();
+    }
+
     public void CreatePoints()
     {
         if (!Line) return;
@@ -43,10 +48,9 @@ public class DrawCircle : MonoBehaviour
 
     private void OnValidate()
     {
-        CreatePoints();
+        Change();
     }
 
-    //TODO: No idea why OnMouseOver and OnMouseExit just occasionally stop responding.
     public void OnMouseOver()
     {
         Line.enabled = true;
