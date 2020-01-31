@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37409aeed135ebc478a0d1700ccb93c9, type: 3}
+  m_Name: Squirrel
+  m_EditorClassIdentifier: 
+  Name: Squirrel
+  Speed: 3
+  HP: 2
+  MinSize: 0.8
+  MaxSize: 1
+  Sprite: {fileID: 813611542079530029, guid: f60b44d2623f03c4d97daa8f11b557e5, type: 3}
+  Damage: 1
