@@ -18,9 +18,11 @@ MonoBehaviour:
   Rarity: 2
   Set: 0
   CastingCost: 3
-  CastingRequirements: []
+  GoldCost: 0
+  CastingRequirements:
+  - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 0
-  InstructionText: 'Build this tower. On the start of each turn, +1 Energy. '
+  InstructionText: 'Build this tower. On the start of each turn, Gain 2 Energy. '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
@@ -31,6 +33,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 248404457d20cca4787dd61fe3a92e97, type: 2}
   BoltPrefab: {fileID: 0}
   Damage: 0
-  AttackRate: 0
+  AttacksPerSecond: 1
   AttackMovementSpeed: 0
   Range: 0
+  Tint: {r: 1, g: 1, b: 1, a: 1}
+  DamagePerSecond: 0
+  AttackRate: 1

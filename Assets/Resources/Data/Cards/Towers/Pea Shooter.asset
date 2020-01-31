@@ -18,7 +18,8 @@ MonoBehaviour:
   Set: 0
   CastingCost: 2
   GoldCost: 0
-  CastingRequirements: []
+  CastingRequirements:
+  - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 0
   InstructionText: Low damage, average rate.
   AdditionalInstructionText: 

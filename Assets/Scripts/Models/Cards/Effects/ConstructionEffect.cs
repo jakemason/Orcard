@@ -15,7 +15,7 @@ public class ConstructionEffect : Effect
         rend.sprite = card.Artwork;
         rend.color  = card.Tint;
         tower.Model = card;
-        TowerManager.Instance.ConstructedTowers.Add(tower);
+        TowerManager.Instance.ConstructedTowers.Add(SpellCast.CastPosition, tower);
     }
 
     private void OnValidate()

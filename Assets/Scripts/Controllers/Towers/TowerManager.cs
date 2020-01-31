@@ -4,7 +4,7 @@ using UnityEngine;
 public class TowerManager : MonoBehaviour
 {
     public static TowerManager Instance;
-    public List<Tower> ConstructedTowers;
+    public Dictionary<Vector2, Tower> ConstructedTowers;
 
     private void Start()
     {
@@ -17,14 +17,14 @@ public class TowerManager : MonoBehaviour
             Destroy(this);
         }
 
-        ConstructedTowers = new List<Tower>();
+        ConstructedTowers = new Dictionary<Vector2, Tower>();
     }
 
     public static void StartTurn()
     {
-        foreach (Tower tower in Instance.ConstructedTowers)
+        foreach (KeyValuePair<Vector2, Tower> tower in Instance.ConstructedTowers)
         {
-            tower.DoStartOfTurnEffects();
+            tower.Value.DoStartOfTurnEffects();
         }
     }
 }

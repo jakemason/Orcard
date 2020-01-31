@@ -2,7 +2,7 @@
 using UnityEngine;
 
 //[ExecuteInEditMode]
-public class Tower : MonoBehaviour
+public class Tower : MonoBehaviour, ITargetable
 {
     public TowerCard Model;
     public List<GameObject> EnemiesInRange;
