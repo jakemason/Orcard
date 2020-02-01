@@ -118,6 +118,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         transform.position = Input.mousePosition;
 
         TowerCard towerCard = CardObject as TowerCard;
+        
         if (towerCard)
         {
             ConstructionIndicator.Enable(towerCard);

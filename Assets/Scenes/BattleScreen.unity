@@ -6221,6 +6221,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8695211081002607934, guid: ecc4bc2d6f2cfa54b9e20830423ad253,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4818fceab9a1b6c4caf07369af3d6e46,
+        type: 3}
     - target: {fileID: 8918614055007497320, guid: ecc4bc2d6f2cfa54b9e20830423ad253,
         type: 3}
       propertyPath: m_Positions.Array.size

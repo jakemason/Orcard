@@ -14,7 +14,8 @@ public class ConstructionEffect : Effect
         SpriteRenderer rend  = go.GetComponent<SpriteRenderer>();
         rend.sprite = card.Artwork;
         rend.color  = card.Tint;
-        tower.Model = card;
+        //We need to use a copy here because Upgrade cards alter the stats of the model throughout gameplay
+        tower.Model = Instantiate(card);
         TowerManager.Instance.ConstructedTowers.Add(SpellCast.CastPosition, tower);
     }
 

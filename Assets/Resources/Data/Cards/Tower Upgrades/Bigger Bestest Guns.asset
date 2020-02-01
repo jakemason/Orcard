@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 803c8e835c795ec4fa28bafff19c52af, type: 3}
+  m_Name: Bigger Bestest Guns
+  m_EditorClassIdentifier: 
+  Name: Bigger Bestest Guns
+  Artwork: {fileID: -7247093643878132343, guid: e2a9c1048ca98374f966d1496e0165f8,
+    type: 3}
+  Rarity: 0
+  Set: 0
+  CastingCost: 1
+  GoldCost: 0
+  CastingRequirements:
+  - {fileID: 11400000, guid: 45b01165b5d0e5542a9273a6622ac5ca, type: 2}
+  DestroyOnCast: 0
+  InstructionText: '+1 Tower Attack. '
+  AdditionalInstructionText: 
+  OverrideDefaultInstructionText: 
+  FlavorText: 
+  OnDrawEffects: []
+  PlayEffects:
+  - {fileID: 11400000, guid: d3e06c6c383f2184598ce518932625f1, type: 2}
+  StartOfTurnEffects: []
+  BoltPrefab: {fileID: 0}
+  Damage: 0
+  AttacksPerSecond: 0
+  AttackMovementSpeed: 0
+  Range: 0
+  Tint: {r: 1, g: 1, b: 1, a: 1}
+  DamagePerSecond: 0
+  AttackRate: Infinity
