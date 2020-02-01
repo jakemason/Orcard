@@ -1,16 +1,19 @@
 ﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 //[ExecuteInEditMode]
 public class Tower : MonoBehaviour, ITargetable
 {
+    // @formatter:off 
     public TowerCard Model;
     public List<GameObject> EnemiesInRange;
 
     private float _attackCooldown = 0f;
     private GameObject _currentTarget = null;
     public DrawCircle RangeIndicator;
-
+    // @formatter:on 
     private void Start()
     {
         EnemiesInRange = new List<GameObject>();
