@@ -6,6 +6,7 @@ public class MapController : MonoBehaviour
     public static MapController Instance;
     public List<Transform> Waypoints;
     public GameObject Road;
+    public Dictionary<Vector2, bool> IsSpaceOccupied;
 
     private void Awake()
     {
@@ -19,14 +20,15 @@ public class MapController : MonoBehaviour
         }
 
         Transform[] children = GetComponentsInChildren<Transform>();
-        Waypoints = new List<Transform>();
+        Waypoints       = new List<Transform>();
+        IsSpaceOccupied = new Dictionary<Vector2, bool>();
         foreach (Transform child in children)
         {
             if (child.gameObject == gameObject) continue;
             Waypoints.Add(child);
         }
 
-        // SpawnRoads();
+        SetupOccupiedSpaces();
     }
 
     private void Update()
@@ -34,7 +36,12 @@ public class MapController : MonoBehaviour
         DrawDebugLines();
     }
 
-    private void SpawnRoads()
+    public static bool IsOccupied(Vector2 pos)
+    {
+        return Instance.IsSpaceOccupied.ContainsKey(pos);
+    }
+
+    private void SetupOccupiedSpaces()
     {
         for (int i = 0; i < Waypoints.Count - 1; i++)
         {
@@ -45,7 +52,9 @@ public class MapController : MonoBehaviour
             unit.Normalize();
             for (int j = 0; j < dist; j++)
             {
-                Instantiate(Road, current.position + (unit * j), Quaternion.identity, this.gameObject.transform);
+                IsSpaceOccupied.Add(current.position + (unit * j), true);
+                //Note: Uncomment to spawn in GameObjects per "tile" occupied. Occasionally useful for debugging.
+                //Instantiate(Road, current.position + (unit * j), Quaternion.identity, this.gameObject.transform);
             }
         }
     }

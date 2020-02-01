@@ -11,6 +11,10 @@ public class RequiresEmptyTile : CastingRequirement
     public override bool RequirementMet()
     {
         bool requirementMet = SpellCast.Target == null;
+        if (MapController.IsOccupied(SpellCast.CastPosition))
+        {
+            requirementMet = false;
+        }
 
         return requirementMet;
     }
