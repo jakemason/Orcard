@@ -84,10 +84,9 @@ namespace Players
 
         public void Update()
         {
-            //TODO: Find a better way to handle this than Update()
-            if (Health.CurrentHealth <= 0)
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                SceneManager.LoadScene("You Died");
+                Application.Quit();
             }
         }
 
