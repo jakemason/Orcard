@@ -9,6 +9,5 @@ public class RewardCardController : MonoBehaviour, IPointerDownHandler
     {
         Player.Instance.DeckForCurrentRun.Cards.Add(GetComponent<CardRenderer>().CardObject);
         RewardsManager.CloseRewardsPanel();
-        TurnManager.StartTurn();
     }
 }

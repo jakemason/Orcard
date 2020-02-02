@@ -33,6 +33,7 @@ public class RewardsManager : MonoBehaviour
     public static void CloseRewardsPanel()
     {
         Instance.ClearRewardGameObjects();
+        TurnManager.StartTurn();
     }
 
     private void Start()
@@ -120,7 +121,7 @@ public class RewardsManager : MonoBehaviour
 
     public void SkipReward()
     {
-        ClearRewardGameObjects();
+        CloseRewardsPanel();
     }
 
     private void ClearRewardGameObjects()

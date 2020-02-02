@@ -21,6 +21,6 @@ public class ConstructionEffect : Effect
 
     private void OnValidate()
     {
-        InstructionText = "Build this tower.";
+        InstructionText = "";
     }
 }

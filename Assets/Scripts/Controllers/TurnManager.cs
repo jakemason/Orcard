@@ -7,5 +7,6 @@ public class TurnManager : MonoBehaviour
     {
         Player.StartTurn();
         TowerManager.StartTurn();
+        WaveController.Instance.NextWaveButton.SetActive(true);
     }
 }

@@ -15,11 +15,12 @@ public class TowerInspector : MonoBehaviour, IInspectable
         InspectorManager.Instance.Sprite.sprite = _model.Artwork;
         InspectorManager.Instance.Name.text     = "<b>" + _model.Name + "</b>";
 
-        string details = "<b>Damage</b>: " + _model.Damage + "\n";
-        details += "<b>Attack Rate</b>: " + _model.AttackRate.ToString("n2") + "\n";
-        details += "<b>DPS (Est.)</b>: " + _model.DamagePerSecond            + "\n";
-
-        InspectorManager.Instance.Details.text = details;
+        string details = "";
+        details                                += "<b>Damage</b>: " + _model.Damage                         + "\n";
+        details                                += "<b>Attack Rate</b>: " + _model.AttackRate.ToString("n2") + "\n";
+        details                                += "<b>DPS (Est.)</b>: " + _model.DamagePerSecond            + "\n";
+        details                                += _model.InstructionText;
+        InspectorManager.Instance.Details.text =  details;
         InspectorManager.Enable();
     }
 

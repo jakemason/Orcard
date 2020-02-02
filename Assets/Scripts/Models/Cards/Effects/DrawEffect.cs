@@ -18,6 +18,7 @@ public class DrawEffect : Effect
 
     public override void Activate()
     {
+        Debug.Log("Draw Effect Fired.");
         Player.Instance.Draw(CardsToDraw);
     }
 }

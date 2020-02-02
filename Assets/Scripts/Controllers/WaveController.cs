@@ -48,8 +48,6 @@ public class WaveController : MonoBehaviour
 
     private void EndEncounter()
     {
-        TowerManager.StartTurn();
-        NextWaveButton.SetActive(true);
         CurrentWave++;
         WaveActive = false;
         RewardsManager.OpenRewardsPanel();
