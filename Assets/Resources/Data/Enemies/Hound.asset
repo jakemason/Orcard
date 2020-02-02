@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37409aeed135ebc478a0d1700ccb93c9, type: 3}
-  m_Name: Orc
+  m_Name: Hound
   m_EditorClassIdentifier: 
-  Name: Orc
-  Speed: 2
-  HP: 20
-  MinSize: 1.2
-  MaxSize: 1.5
-  Sprite: {fileID: 3530585542218416079, guid: a14e483842bcc154dbf573a6caca11b1, type: 3}
-  Damage: 3
+  Name: Hound
+  Speed: 4
+  HP: 3
+  MinSize: 0.8
+  MaxSize: 1
+  Sprite: {fileID: 4496897274793324232, guid: eb2542dbff1d82f48905897a3aa22750, type: 3}
+  Damage: 1
