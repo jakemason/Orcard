@@ -21,7 +21,7 @@ MonoBehaviour:
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 0
-  InstructionText: 'Build this tower. On the start of each turn, Gain 2 Energy. '
+  InstructionText: 'Build this tower. On the start of each turn, Gain 1 Energy. '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
@@ -29,7 +29,7 @@ MonoBehaviour:
   PlayEffects:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
   StartOfTurnEffects:
-  - {fileID: 11400000, guid: 248404457d20cca4787dd61fe3a92e97, type: 2}
+  - {fileID: 11400000, guid: 9990a7dfeb23e9a4184cf41d74d7d0db, type: 2}
   BoltPrefab: {fileID: 0}
   Damage: 0
   AttacksPerSecond: 1

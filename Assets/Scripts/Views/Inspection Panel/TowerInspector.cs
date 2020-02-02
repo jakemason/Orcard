@@ -23,18 +23,8 @@ public class TowerInspector : MonoBehaviour, IInspectable
         InspectorManager.Enable();
     }
 
-    public void DisableInspection()
-    {
-        InspectorManager.Disable();
-    }
-
     public void OnMouseOver()
     {
         EnableInspection();
-    }
-
-    public void OnMouseExit()
-    {
-        DisableInspection();
     }
 }
