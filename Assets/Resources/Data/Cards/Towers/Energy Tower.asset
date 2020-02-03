@@ -21,7 +21,7 @@ MonoBehaviour:
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 0
-  InstructionText: 'Build this tower. On the start of each turn, Gain 1 Energy. '
+  InstructionText: ' On the start of each turn, Gain 1 Energy. '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 

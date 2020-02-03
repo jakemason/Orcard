@@ -33,7 +33,7 @@ public class InspectorManager : MonoBehaviour
         Instance.InspectionPanel.SetActive(true);
     }
 
-    public void Disable()
+    public static void Disable()
     {
         Instance.InspectionPanel.SetActive(false);
     }

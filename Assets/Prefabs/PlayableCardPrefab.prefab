@@ -533,6 +533,7 @@ GameObject:
   - component: {fileID: 9162847070692477388}
   - component: {fileID: 2055308530604179678}
   - component: {fileID: 7780651014592276927}
+  - component: {fileID: 3211725596952985577}
   - component: {fileID: 9162847070692477389}
   m_Layer: 5
   m_Name: PlayableCardPrefab
@@ -580,6 +581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardObject: {fileID: 0}
+  OriginalCard: {fileID: 0}
   MovementDisabled: 0
   TargetPosition: {x: -Infinity, y: -Infinity, z: -Infinity}
   TargetRotation: {x: -Infinity, y: -Infinity, z: -Infinity}
@@ -611,6 +613,19 @@ MonoBehaviour:
   Artwork: {fileID: 9162847070632354178}
   RarityBorder: {fileID: 4601219149210038435}
   InstructionText: {fileID: 9162847070532323466}
+--- !u!114 &3211725596952985577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9162847070692476976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4869522f2f370e849a0901ba07432569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CardReference: {fileID: 7780651014592276927}
 --- !u!222 &9162847070692477389
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -64,7 +64,7 @@ public abstract class Card : ScriptableObject
         {
             foreach (Effect effect in PlayEffects)
             {
-                if (effect == null) continue;
+                if (effect == null || effect.InstructionText == "") continue;
                 playEffects += effect.InstructionText + " ";
             }
         }

@@ -2358,7 +2358,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5926041, y: 0.5284278}
-  m_AnchoredPosition: {x: -0.000030517578, y: -363}
+  m_AnchoredPosition: {x: -697, y: -3.4906}
   m_SizeDelta: {x: 71.1, y: 78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &907945926
@@ -2865,7 +2865,8 @@ MonoBehaviour:
   DeckForCurrentRun: {fileID: 0}
   DiscardPile: []
   CardsToDrawEachTurn: 3
-  MaximumEnergy: 3
+  EnergyGainedPerTurn: 3
+  MaxEnergy: 10
   StartingHealth: 55
   Health: {fileID: 0}
   DeckPosition: {fileID: 626625766}
@@ -7228,17 +7229,17 @@ PrefabInstance:
     - target: {fileID: 7215319092455482621, guid: 061fcf84809418241a8bc97061910995,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -541.42
+      value: -566.4125
       objectReference: {fileID: 0}
     - target: {fileID: 7215319092455482621, guid: 061fcf84809418241a8bc97061910995,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -287.5
+      value: -312.49
       objectReference: {fileID: 0}
     - target: {fileID: 7215319092455482621, guid: 061fcf84809418241a8bc97061910995,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -1132.83
+      value: -1132.825
       objectReference: {fileID: 0}
     - target: {fileID: 7215319092455482621, guid: 061fcf84809418241a8bc97061910995,
         type: 3}

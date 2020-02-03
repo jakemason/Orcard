@@ -1,16 +1,15 @@
-﻿using Players;
-using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(CardRenderer))]
 public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IDragHandler,
-    IBeginDragHandler, IEndDragHandler
+    IBeginDragHandler, IEndDragHandler, ITargetable
 {
     // @formatter:off 
     [Header("Card Movement")]
     public Card CardObject;
+    [ReadOnly] public Card OriginalCard;
     public bool MovementDisabled;
     public Vector3 TargetPosition = Vector3.negativeInfinity;
     public Vector3 TargetRotation = Vector3.negativeInfinity;
@@ -35,13 +34,23 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     public Image HoverCollider;
     
     private RectTransform _trans;
-    // @formatter:on 
+    // @formatter:on
 
     private void Start()
     {
         _trans = GetComponent<RectTransform>();
         CardRenderer cardRenderer = GetComponent<CardRenderer>();
         CardObject = cardRenderer.CardObject;
+
+        //NOTE: 
+        //Here we keep an original copy of the card so that we can create effects that modify the card,
+        //but do not persist through turns. For example, you might reduce the cost of a random card in your hand
+        //FOR THIS TURN but you don't want it to cost 0 the next time you draw that card. We achieve this by not
+        //"discarding" the card we're playing, but instead we discard the OriginalCard so that we can draw a fresh card
+        //the next time.
+        //
+        //If we DO want permanent effects (for this run) we just target the OriginalCard as well as the CardObject.
+        OriginalCard = Instantiate(cardRenderer.CardObject);
     }
 
     private void Update()
@@ -87,8 +96,6 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         }
         else if (MarkedForDestruction)
         {
-            //if we're marked for Destruction and at our Target scale of 0,0,0 as we shrink to the discard pile,
-            //we can destroy ourselves
             Destroy(gameObject);
         }
     }
@@ -118,11 +125,10 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         transform.position = Input.mousePosition;
 
         TowerCard towerCard = CardObject as TowerCard;
-        
+
         if (towerCard)
         {
             ConstructionIndicator.Enable(towerCard);
-            //Player.Instance.TargettingIndicator.SetActive(true);
             TargetScale          = Vector3.zero;
             transform.localScale = Vector3.zero;
         }
@@ -134,12 +140,14 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     {
         _isDragging      = false;
         MovementDisabled = false;
-        TargetPosition   = RestingPosition;
-        TargetRotation   = RestingRotation;
-        TargetScale      = Vector3.one;
+
+
+        if (MarkedForDestruction) return;
+        TargetPosition = RestingPosition;
+        TargetRotation = RestingRotation;
+        TargetScale    = Vector3.one;
         transform.SetSiblingIndex(RestingSiblingIndex);
         ConstructionIndicator.Disable();
-        //Player.Instance.TargettingIndicator.SetActive(false);
         HoverCollider.raycastTarget = true;
     }
 

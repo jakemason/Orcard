@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 [ExecuteInEditMode]
 [RequireComponent(typeof(RectTransform))]
-public class CardRenderer : MonoBehaviour
+public class CardRenderer : MonoBehaviour, ITargetable
 {
     // @formatter:off
     [Header("Card Data")] 
@@ -15,7 +13,7 @@ public class CardRenderer : MonoBehaviour
     public TextMeshProUGUI Name;
     public TextMeshProUGUI Cost;
     public Image Artwork;
-    [FormerlySerializedAs("Background")]public Image RarityBorder;
+    public Image RarityBorder;
     public TextMeshProUGUI InstructionText;
     
     private PlayableCardController _playable;
@@ -23,8 +21,8 @@ public class CardRenderer : MonoBehaviour
 
     private static readonly Dictionary<Card.CardRarity, Color> RarityColors = new Dictionary<Card.CardRarity, Color>
     {
-        {Card.CardRarity.Common, Color.white},
-        {Card.CardRarity.Uncommon, Color.grey},
+        {Card.CardRarity.Common, Color.grey},
+        {Card.CardRarity.Uncommon, Color.white},
         {Card.CardRarity.Rare, Color.blue},
         {Card.CardRarity.Epic, Color.magenta},
         {Card.CardRarity.Legendary, Color.yellow},

@@ -4,6 +4,7 @@ using UnityEngine;
 public static class SpellCast
 {
     public static ITargetable Target = null;
+    public static PlayableCardController LastCardPlayed;
     public static Card AttemptingToCast = null;
     public static Vector2 CastPosition;
 
@@ -15,16 +16,6 @@ public static class SpellCast
     public static void ClearTarget()
     {
         Target = null;
-    }
-
-    public static bool HasValidTarget()
-    {
-        return Target != null;
-    }
-
-    public static void SetCastingCard(Card wantToCast)
-    {
-        AttemptingToCast = wantToCast;
     }
 
     public static void ClearCard()
@@ -47,7 +38,6 @@ public static class SpellCast
 
         Player.Instance.RemainingEnergy -= AttemptingToCast.CastingCost;
         ConstructionIndicator.Disable();
-        //Player.Instance.TargettingIndicator.SetActive(false);
         Clear();
     }
 

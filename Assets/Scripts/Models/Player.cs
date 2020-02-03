@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Players
 {
@@ -20,17 +19,24 @@ namespace Players
         [Header("Player Energy")]
         [Space(20)]
         private int _remainingEnergy;
-        public int MaximumEnergy = 4;
+        public int EnergyGainedPerTurn = 3;
+        public int MaxEnergy = 10;
+        // @formatter:on 
         public int RemainingEnergy
         {
             get => _remainingEnergy;
             set
             {
                 _remainingEnergy = value;
+                if (_remainingEnergy > MaxEnergy)
+                {
+                    _remainingEnergy = MaxEnergy;
+                }
+
                 UpdateEnergyCounter();
             }
         }
-
+        // @formatter:off
 
         [Header("Player Health")]
         [Space(20)]
@@ -62,7 +68,6 @@ namespace Players
 
             DeckForCurrentRun = Instantiate(DeckTemplate);
             DeckForCurrentRun.Cards.Shuffle();
-            RemainingEnergy = MaximumEnergy;
         }
 
         private void Start()
@@ -73,7 +78,6 @@ namespace Players
         public static void EndTurn()
         {
             PlayerHand.DiscardHand();
-            Instance.RemainingEnergy = 0;
         }
 
         public static void StartTurn()
@@ -92,7 +96,7 @@ namespace Players
 
         public void RefillEnergy()
         {
-            RemainingEnergy = MaximumEnergy;
+            RemainingEnergy += EnergyGainedPerTurn;
         }
 
         public static void ModifyEnergy(int modifier)
@@ -107,7 +111,7 @@ namespace Players
 
         public static void UpdateEnergyCounter()
         {
-            Instance.EnergyCounter.text = "Energy: " + Instance._remainingEnergy;
+            Instance.EnergyCounter.text = "Energy: " + Instance._remainingEnergy + " / " + Instance.MaxEnergy;
         }
 
         /// <summary>
@@ -131,7 +135,7 @@ namespace Players
             if (DeckForCurrentRun.Cards.Count <= 0) ShuffleDiscardIntoDeck();
             if (DeckForCurrentRun.Cards.Count <= 0) return;
 
-            Card card = DeckForCurrentRun.Cards[0];
+            Card card = Instantiate(DeckForCurrentRun.Cards[0]);
             DeckForCurrentRun.Cards.RemoveAt(0);
 
             foreach (Effect effect in card.OnDrawEffects)
@@ -143,7 +147,6 @@ namespace Players
             drawnCard.transform.position = DeckPosition.position;
             PlayerHand.Instance.AddCardToHand(drawnCard);
             CardRenderer drawnCardRenderer = drawnCard.GetComponent<CardRenderer>();
-            Debug.Assert(drawnCardRenderer != null);
             drawnCardRenderer.CardObject = card;
             drawnCardRenderer.UpdateCardDetails();
         }

@@ -1,25 +1,42 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class TowerInspector : MonoBehaviour, IInspectable
+public class TowerInspector : MonoBehaviour, IInspectable, IPointerEnterHandler, IPointerExitHandler
 {
     public Tower TowerReference;
-    private TowerCard _model;
+    public TowerCard Model;
 
     private void Start()
     {
-        _model = TowerReference.Model;
+        if (TowerReference != null)
+        {
+            Model = TowerReference.Model;
+        }
     }
 
     public void EnableInspection()
     {
-        InspectorManager.Instance.Sprite.sprite = _model.Artwork;
-        InspectorManager.Instance.Name.text     = "<b>" + _model.Name + "</b>";
+        InspectorManager.Instance.Sprite.sprite = Model.Artwork;
+        InspectorManager.Instance.Name.text     = "<b>" + Model.Name + "</b>";
 
         string details = "";
-        details                                += "<b>Damage</b>: " + _model.Damage                         + "\n";
-        details                                += "<b>Attack Rate</b>: " + _model.AttackRate.ToString("n2") + "\n";
-        details                                += "<b>DPS (Est.)</b>: " + _model.DamagePerSecond            + "\n";
-        details                                += _model.InstructionText;
+        if (Model.Damage != 0)
+        {
+            details += "<b>Damage</b>: " + Model.Damage + "\n";
+        }
+
+        if (Model.AttackRate != 0.0f)
+        {
+            details += "<b>Attack Rate</b>: " + Model.AttackRate.ToString("n2") + "\n";
+        }
+
+        if (Model.DamagePerSecond != 0.0f)
+        {
+            details += "<b>DPS (Est.)</b>: " + Model.DamagePerSecond + "\n";
+        }
+
+        details                                += Model.InstructionText;
         InspectorManager.Instance.Details.text =  details;
         InspectorManager.Enable();
     }
@@ -27,5 +44,20 @@ public class TowerInspector : MonoBehaviour, IInspectable
     public void OnMouseOver()
     {
         EnableInspection();
+    }
+
+    public void OnMouseExit()
+    {
+        InspectorManager.Disable();
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        EnableInspection();
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        InspectorManager.Disable();
     }
 }

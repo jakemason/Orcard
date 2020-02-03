@@ -21,7 +21,7 @@ MonoBehaviour:
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 0
-  InstructionText: 'Build this tower. On the start of each turn, Draw 1 Cards. '
+  InstructionText: ' On the start of each turn, Draw 1 Cards. '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
@@ -32,9 +32,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2142345634738f24db8c8b16370f4c9e, type: 2}
   BoltPrefab: {fileID: 0}
   Damage: 0
-  AttacksPerSecond: 1
+  AttacksPerSecond: 0
   AttackMovementSpeed: 0
   Range: 0
   Tint: {r: 1, g: 0.91975254, b: 0, a: 1}
   DamagePerSecond: 0
-  AttackRate: 1
+  AttackRate: Infinity

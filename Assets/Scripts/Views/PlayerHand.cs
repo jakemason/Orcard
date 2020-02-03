@@ -9,8 +9,8 @@ public class PlayerHand : MonoBehaviour
     public static PlayerHand Instance;
     
     [Header("Held Card Positioning")]
-    public float HorizontalOffset = 25f;
-    public float VerticalOffset = -4.5f;
+    public float HorizontalOffset = 85f;
+    public float VerticalOffset = -7.5f;
     public float RotationOffset = -3.5f;
     
     public RectTransform DiscardPile;
@@ -56,13 +56,13 @@ public class PlayerHand : MonoBehaviour
         cardToDiscard.TargetScale          = Vector3.zero;
         cardToDiscard.MarkedForDestruction = true;
         cardToDiscard.TargetPosition       = Instance.DiscardPile.anchoredPosition;
+
         Card card = cardToDiscard.CardObject;
         if (!card.DestroyOnCast)
         {
-            Player.Instance.DiscardPile.Add(card);
+            Player.Instance.DiscardPile.Add(cardToDiscard.OriginalCard);
         }
 
-        go.SetActive(false);
         Instance.AlignCards();
     }
 

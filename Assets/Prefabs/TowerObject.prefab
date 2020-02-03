@@ -235,6 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TowerReference: {fileID: 988547076366149460}
+  Model: {fileID: 0}
 --- !u!1 &988547076366149480
 GameObject:
   m_ObjectHideFlags: 0

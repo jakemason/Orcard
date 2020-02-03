@@ -16,6 +16,7 @@ public class CardPlayableArea : MonoBehaviour, IDropHandler
         if (!c) return;
 
         SpellCast.AttemptingToCast = c.CardObject;
+        SpellCast.LastCardPlayed   = c;
         SpellCast.CastPosition     = _camera.ScreenPointToRay(eventData.position).origin;
 
         SpellCast.CastPosition = new Vector2(
