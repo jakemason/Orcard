@@ -33,7 +33,7 @@ public class TowerInspector : MonoBehaviour, IInspectable, IPointerEnterHandler,
 
         if (Model.DamagePerSecond != 0.0f)
         {
-            details += "<b>DPS (Est.)</b>: " + Model.DamagePerSecond + "\n";
+            details += "<b>DPS</b>: " + Model.DamagePerSecond + "\n";
         }
 
         details                                += Model.InstructionText;

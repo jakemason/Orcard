@@ -109,6 +109,11 @@ namespace Players
             return Instance.RemainingEnergy > 0;
         }
 
+        public static int GetEnergy()
+        {
+            return Instance._remainingEnergy;
+        }
+
         public static void UpdateEnergyCounter()
         {
             Instance.EnergyCounter.text = "Energy: " + Instance._remainingEnergy + " / " + Instance.MaxEnergy;

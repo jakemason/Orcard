@@ -78,7 +78,8 @@ public class WaveController : MonoBehaviour
         yield return new WaitForSeconds(delay);
         GameObject      newSpawn        = Instantiate(EnemyPrefab);
         EnemyController enemyController = newSpawn.GetComponent<EnemyController>();
-        enemyController.Model = toSpawn;
+        enemyController.Model    =  Instantiate(toSpawn);
+        enemyController.Model.HP += CurrentWave;
         enemyController.MarkAlive();
         EnemiesSpawned.Add(newSpawn);
     }

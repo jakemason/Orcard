@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Players;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -121,6 +122,11 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
     public void OnDrag(PointerEventData eventData)
     {
+        if (Player.GetEnergy() < CardObject.CastingCost)
+        {
+            return;
+        }
+
         MovementDisabled   = true;
         transform.position = Input.mousePosition;
 
@@ -153,6 +159,11 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (Player.GetEnergy() < CardObject.CastingCost)
+        {
+            return;
+        }
+
         _isDragging = true;
     }
 }

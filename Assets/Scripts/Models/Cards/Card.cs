@@ -38,11 +38,11 @@ public abstract class Card : ScriptableObject
     
     [Header("Card Instruction Text")]
     [Space(20)]
-    [ReadOnly] public string InstructionText;
+    [ReadOnly, TextArea]  public string InstructionText;
     [Tooltip("Additional text that is appended to the default instruction text.")]
-    public string AdditionalInstructionText;
-    public string OverrideDefaultInstructionText;
-    public string FlavorText;
+    [TextArea] public string AdditionalInstructionText;
+    [TextArea] public string OverrideDefaultInstructionText;
+    [TextArea] public string FlavorText;
     
     [Header("Card Effects")]
     [Space(20)]
