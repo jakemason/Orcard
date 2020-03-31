@@ -21,15 +21,16 @@ MonoBehaviour:
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 0
-  InstructionText: ' On the start of each turn, Draw 1 Cards. '
+  InstructionText: 'Each turn +1 Energy. '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
   OnDrawEffects: []
   PlayEffects:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
-  StartOfTurnEffects:
-  - {fileID: 11400000, guid: 2142345634738f24db8c8b16370f4c9e, type: 2}
+  PermanentStartOfTurnEffects:
+  - {fileID: 11400000, guid: 9990a7dfeb23e9a4184cf41d74d7d0db, type: 2}
+  StartOfNextTurnEffects: []
   BoltPrefab: {fileID: 0}
   Damage: 0
   AttacksPerSecond: 0

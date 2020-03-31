@@ -25,17 +25,6 @@ public class RewardsManager : MonoBehaviour
     // @formatter:on 
     private Dictionary<Card.CardRarity, Deck> _rewardTiers;
 
-    public static void OpenRewardsPanel()
-    {
-        Instance.CreateRewardGameObjects();
-    }
-
-    public static void CloseRewardsPanel()
-    {
-        Instance.ClearRewardGameObjects();
-        TurnManager.StartTurn();
-    }
-
     private void Start()
     {
         if (Instance == null)
@@ -51,6 +40,17 @@ public class RewardsManager : MonoBehaviour
         _rewardsOffered            = new List<Card>();
 
         SetupDecks();
+    }
+
+    public static void OpenRewardsPanel()
+    {
+        Instance.CreateRewardGameObjects();
+    }
+
+    public static void CloseRewardsPanel()
+    {
+        Instance.ClearRewardGameObjects();
+        TurnManager.StartTurn();
     }
 
     private void SetupDecks()
@@ -102,11 +102,30 @@ public class RewardsManager : MonoBehaviour
         }
     }
 
+    private void PickRewardsOfRarity(Card.CardRarity rarity)
+    {
+        for (int i = 0; i < NumberOfRewardChoices; i++)
+        {
+            Deck setToPullFrom = _rewardTiers[rarity];
+
+            int cardIndex = Random.Range(0, setToPullFrom.Cards.Count);
+            _rewardsOffered.Add(setToPullFrom.Cards[cardIndex]);
+        }
+    }
+
 
     private void CreateRewardGameObjects()
     {
         ClearRewardGameObjects();
-        PickRewards();
+        if (WaveController.GetCurrentWave().RewardsSpecificRarity)
+        {
+            PickRewardsOfRarity(WaveController.GetCurrentWave().ToReward);
+        }
+        else
+        {
+            PickRewards();
+        }
+
         for (int i = 0; i < _rewardsOffered.Count; i++)
         {
             GameObject   reward = Instantiate(CardRendererPrefab, CardSelectionBox.transform, false);

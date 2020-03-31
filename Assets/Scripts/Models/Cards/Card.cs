@@ -11,7 +11,7 @@ public abstract class Card : ScriptableObject
         Uncommon,
         Rare,
         Epic,
-        Legendary
+        Legendary,
     }
 
     public enum CardSet
@@ -38,7 +38,7 @@ public abstract class Card : ScriptableObject
     
     [Header("Card Instruction Text")]
     [Space(20)]
-    [ReadOnly, TextArea]  public string InstructionText;
+    [TextArea]  public string InstructionText;
     [Tooltip("Additional text that is appended to the default instruction text.")]
     [TextArea] public string AdditionalInstructionText;
     [TextArea] public string OverrideDefaultInstructionText;
@@ -51,7 +51,9 @@ public abstract class Card : ScriptableObject
     [Tooltip("The immediate effects of the card. Example: Deal 2 damage to target.")]
     public List<Effect> PlayEffects;
     [Tooltip("The effects this card generates at the end of every turn.")]
-    public List<Effect> StartOfTurnEffects;
+    public List<Effect> PermanentStartOfTurnEffects;
+    [Tooltip("These effects apply at the start of the next turn, and then are disabled.")]
+    public List<Effect> StartOfNextTurnEffects;
     // @formatter:on 
 
 #if UNITY_EDITOR
@@ -70,17 +72,28 @@ public abstract class Card : ScriptableObject
         }
 
         string startEffects = "";
-        if (StartOfTurnEffects.Count > 0 && OverrideDefaultInstructionText == "")
+        if (PermanentStartOfTurnEffects.Count > 0 && OverrideDefaultInstructionText == "")
         {
-            startEffects = "On the start of each turn, ";
-            foreach (Effect effect in StartOfTurnEffects)
+            startEffects = "Each turn ";
+            foreach (Effect effect in PermanentStartOfTurnEffects)
             {
                 if (effect == null) continue;
                 startEffects += effect.InstructionText + " ";
             }
         }
 
-        InstructionText = playEffects + startEffects;
+        string nextTurnEffects = "";
+        if (StartOfNextTurnEffects.Count > 0 && OverrideDefaultInstructionText == "")
+        {
+            nextTurnEffects = "Next turn ";
+            foreach (Effect effect in StartOfNextTurnEffects)
+            {
+                if (effect == null) continue;
+                nextTurnEffects += effect.InstructionText + " ";
+            }
+        }
+
+        InstructionText = playEffects + startEffects + nextTurnEffects;
         if (DestroyOnCast)
         {
             InstructionText += "Destroy this card.";

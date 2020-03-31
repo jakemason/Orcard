@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7cad3834d30c7848934833db707c67e, type: 3}
-  m_Name: Gain 1 Energy.
+  m_Name: +2 Energy.
   m_EditorClassIdentifier: 
-  InstructionText: Gain 1 Energy.
-  EnergyModifier: 1
+  InstructionText: +2 Energy.
+  EnergyModifier: 2

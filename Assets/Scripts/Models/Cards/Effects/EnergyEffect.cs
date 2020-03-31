@@ -14,7 +14,7 @@ public class EnergyEffect : Effect
 #if UNITY_EDITOR
     public void OnValidate()
     {
-        InstructionText = EnergyModifier > 0 ? $"Gain {EnergyModifier} Energy." : $"Lose {EnergyModifier} Energy.";
+        InstructionText = EnergyModifier > 0 ? $"+{EnergyModifier} Energy." : $"-{EnergyModifier} Energy.";
         string assetPath = AssetDatabase.GetAssetPath(GetInstanceID());
         AssetDatabase.RenameAsset(assetPath, InstructionText);
     }

@@ -21,6 +21,11 @@ namespace Players
         private int _remainingEnergy;
         public int EnergyGainedPerTurn = 3;
         public int MaxEnergy = 10;
+        
+        [Header("Delayed Effeccts")]
+        [Space(20)]
+        public List<Effect> TemporaryOnTurnStartEffects = new List<Effect>();
+        public List<Effect> PermanentOnTurnStartEffects = new List<Effect>();
         // @formatter:on 
         public int RemainingEnergy
         {
@@ -84,6 +89,18 @@ namespace Players
         {
             Instance.RefillEnergy();
             Instance.Draw(Instance.CardsToDrawEachTurn);
+
+            foreach (Effect effect in Instance.PermanentOnTurnStartEffects)
+            {
+                effect.Activate();
+            }
+
+            foreach (Effect effect in Instance.TemporaryOnTurnStartEffects)
+            {
+                effect.Activate();
+            }
+
+            Instance.TemporaryOnTurnStartEffects = new List<Effect>();
         }
 
         public void Update()
@@ -92,6 +109,16 @@ namespace Players
             {
                 Application.Quit();
             }
+        }
+
+        public void RegisterTemporaryOnTurnEffect(Effect toRegister)
+        {
+            TemporaryOnTurnStartEffects.Add(toRegister);
+        }
+
+        public void RegisterPermanentOnTurnEffect(Effect toRegister)
+        {
+            PermanentOnTurnStartEffects.Add(toRegister);
         }
 
         public void RefillEnergy()

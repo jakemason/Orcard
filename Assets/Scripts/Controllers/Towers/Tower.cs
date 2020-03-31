@@ -67,7 +67,7 @@ public class Tower : MonoBehaviour, ITargetable
 
     public void DoStartOfTurnEffects()
     {
-        foreach (Effect effect in Model.StartOfTurnEffects)
+        foreach (Effect effect in Model.PermanentStartOfTurnEffects)
         {
             effect.Activate();
         }
