@@ -31,6 +31,7 @@ public class TowerCard : Card
     {
         base.OnValidate();
         UpdateComputedValues();
+        IsTargeted = true;
     }
 #endif
 }

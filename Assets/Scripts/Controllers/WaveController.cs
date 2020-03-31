@@ -11,7 +11,7 @@ public class WaveController : MonoBehaviour
     // @formatter:off 
     public static WaveController Instance;
     [Header("Wave Timings")]
-    public float TimeBetweenWavesInSeconds = 120.0f;
+    public float TimeBetweenWavesInSeconds = 60.0f;
      public float TimeBetweenWavesTracker;
     
     [Header("Enemy Info")]

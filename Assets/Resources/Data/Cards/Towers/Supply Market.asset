@@ -21,10 +21,11 @@ MonoBehaviour:
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 0
+  IsTargeted: 1
   InstructionText: 'Each turn +1 Energy. '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
-  FlavorText: 
+  FlavorText: The merchants of Elandia are known for their haggling.
   OnDrawEffects: []
   PlayEffects:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}

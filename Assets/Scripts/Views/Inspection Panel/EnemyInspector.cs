@@ -19,6 +19,7 @@ public class EnemyInspector : MonoBehaviour, IInspectable
         details += "<b>HP</b>: " + _model.HP         + "\n";
         details += "<b>Speed</b>: " + _model.Speed   + "\n";
         details += "<b>Damage</b>: " + _model.Damage + "\n";
+        details += "<i>" + _model.FlavorText         + "</i>\n";
 
         InspectorManager.Instance.Details.text = details;
         InspectorManager.Enable();

@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 803c8e835c795ec4fa28bafff19c52af, type: 3}
-  m_Name: Bigger Guns
+  m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
+  m_Name: Calibration
   m_EditorClassIdentifier: 
-  Name: Bigger Guns
-  Artwork: {fileID: -3793011851370327956, guid: 075bfcb955b583e458d656add7718275,
-    type: 3}
+  Name: Calibration
+  Artwork: {fileID: 3355172955315020000, guid: fae3beae0334790438393168d3410343, type: 3}
   Rarity: 0
   Set: 0
   CastingCost: 1
@@ -29,12 +28,5 @@ MonoBehaviour:
   OnDrawEffects: []
   PlayEffects:
   - {fileID: 11400000, guid: d3e06c6c383f2184598ce518932625f1, type: 2}
-  StartOfTurnEffects: []
-  BoltPrefab: {fileID: 0}
-  Damage: 0
-  AttacksPerSecond: 0
-  AttackMovementSpeed: 0
-  Range: 0
-  Tint: {r: 1, g: 1, b: 1, a: 1}
-  DamagePerSecond: 0
-  AttackRate: Infinity
+  PermanentStartOfTurnEffects: []
+  StartOfNextTurnEffects: []

@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   Cards:
+  - {fileID: 11400000, guid: b89eed2e3916f354a8662ebcbb5afa58, type: 2}
+  - {fileID: 11400000, guid: 740204d6e1ecac14b9bb7648c61cffe9, type: 2}
   - {fileID: 11400000, guid: efb7e3bf7327cbc49aa2d6007e8ec4d1, type: 2}
+  - {fileID: 11400000, guid: fdb36ecce213f9f4fba6c142d0ed9be4, type: 2}
   - {fileID: 11400000, guid: fd7b96f31b38e524482797a246218111, type: 2}
   FilterByRarity: 1
   RarityToPull: 0

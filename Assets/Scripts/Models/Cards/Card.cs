@@ -35,6 +35,7 @@ public abstract class Card : ScriptableObject
     public List<CastingRequirement> CastingRequirements;
     // if this card should "burn" after being played so it cannot be drawn again.
     public bool DestroyOnCast = false;
+    public bool IsTargeted = false;
     
     [Header("Card Instruction Text")]
     [Space(20)]

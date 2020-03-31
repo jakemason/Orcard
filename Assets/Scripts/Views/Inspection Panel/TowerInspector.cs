@@ -21,22 +21,28 @@ public class TowerInspector : MonoBehaviour, IInspectable, IPointerEnterHandler,
         InspectorManager.Instance.Name.text     = "<b>" + Model.Name + "</b>";
 
         string details = "";
-        if (Model.Damage != 0)
+        //only show damage values if we actually fire a bolt of some sort
+        //this isn't super robust, may need a better means of checking this in the future.
+        if (Model.BoltPrefab != null)
         {
-            details += "<b>Damage</b>: " + Model.Damage + "\n";
-        }
+            if (Model.Damage != 0)
+            {
+                details += "<b>Damage</b>: " + Model.Damage + "\n";
+            }
 
-        if (Model.AttackRate != 0.0f)
-        {
-            details += "<b>Attack Rate</b>: " + Model.AttackRate.ToString("n2") + "\n";
-        }
+            if (Model.AttackRate != 0.0f)
+            {
+                details += "<b>Attack Rate</b>: " + Model.AttackRate.ToString("n2") + "\n";
+            }
 
-        if (Model.DamagePerSecond != 0.0f)
-        {
-            details += "<b>DPS</b>: " + Model.DamagePerSecond + "\n";
+            if (Model.DamagePerSecond != 0.0f)
+            {
+                details += "<b>DPS</b>: " + Model.DamagePerSecond + "\n";
+            }
         }
 
         details                                += Model.InstructionText;
+        details                                += "\n<i>" + Model.FlavorText + "</i>";
         InspectorManager.Instance.Details.text =  details;
         InspectorManager.Enable();
     }
