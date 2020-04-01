@@ -50,11 +50,7 @@ public abstract class Card : ScriptableObject
     [Tooltip("Any effects the card has when the player draws them.")]
     public List<Effect> OnDrawEffects;
     [Tooltip("The immediate effects of the card. Example: Deal 2 damage to target.")]
-    public List<Effect> PlayEffects;
-    [Tooltip("The effects this card generates at the end of every turn.")]
-    public List<Effect> PermanentStartOfTurnEffects;
-    [Tooltip("These effects apply at the start of the next turn, and then are disabled.")]
-    public List<Effect> StartOfNextTurnEffects;
+    public List<Effect> ImmediateEffects;
     // @formatter:on 
 
 #if UNITY_EDITOR
@@ -63,9 +59,9 @@ public abstract class Card : ScriptableObject
         // this makes the editor typing experience feel a little weird, but saves us from having to manually
         // rename the file to match the name of the card. I feel this is useful enough to keep for now.
         string playEffects = "";
-        if (PlayEffects.Count > 0 && OverrideDefaultInstructionText == "")
+        if (ImmediateEffects.Count > 0 && OverrideDefaultInstructionText == "")
         {
-            foreach (Effect effect in PlayEffects)
+            foreach (Effect effect in ImmediateEffects)
             {
                 if (effect == null || effect.InstructionText == "") continue;
                 playEffects += effect.InstructionText + " ";
@@ -73,7 +69,7 @@ public abstract class Card : ScriptableObject
         }
 
         string startEffects = "";
-        if (PermanentStartOfTurnEffects.Count > 0 && OverrideDefaultInstructionText == "")
+        /*if (PermanentStartOfTurnEffects.Count > 0 && OverrideDefaultInstructionText == "")
         {
             startEffects = "Each turn ";
             foreach (Effect effect in PermanentStartOfTurnEffects)
@@ -92,9 +88,9 @@ public abstract class Card : ScriptableObject
                 if (effect == null) continue;
                 nextTurnEffects += effect.InstructionText + " ";
             }
-        }
+        }*/
 
-        InstructionText = playEffects + startEffects + nextTurnEffects;
+        InstructionText = playEffects + startEffects; // + nextTurnEffects;
         if (DestroyOnCast)
         {
             InstructionText += "Destroy this card.";

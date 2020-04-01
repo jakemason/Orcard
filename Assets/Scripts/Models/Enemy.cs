@@ -12,7 +12,7 @@ public class Enemy : ScriptableObject
     [Range(0.5f, 1.5f)] public float MaxSize = 1.0f;
     public Sprite Sprite;
     public int Damage;
-    public string FlavorText;
+    [TextArea] public string FlavorText;
     
     [Header("Computed Values")]
     [Space(20)]

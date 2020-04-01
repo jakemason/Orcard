@@ -19,3 +19,5 @@ MonoBehaviour:
   MaxSize: 1
   Sprite: {fileID: 813611542079530029, guid: f60b44d2623f03c4d97daa8f11b557e5, type: 3}
   Damage: 1
+  FlavorText: 
+  OverallStrength: 6

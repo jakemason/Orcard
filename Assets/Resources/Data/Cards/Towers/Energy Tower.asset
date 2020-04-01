@@ -22,16 +22,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 0
   IsTargeted: 1
-  InstructionText: 'Each turn +1 Energy. '
+  InstructionText: 
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
   OnDrawEffects: []
-  PlayEffects:
+  ImmediateEffects:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
-  PermanentStartOfTurnEffects:
+  EachTurnEffects:
   - {fileID: 11400000, guid: 9990a7dfeb23e9a4184cf41d74d7d0db, type: 2}
-  StartOfNextTurnEffects: []
   BoltPrefab: {fileID: 0}
   Damage: 0
   AttacksPerSecond: 1

@@ -1,9 +1,15 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Tower Card", menuName = "Cards/Tower Card")]
 public class TowerCard : Card
 {
     // @formatter:off 
+    [Header("Building Effects")] 
+    [Space(20)]
+    [Tooltip("These effects apply at the start of the each turn while the tower is alive.")]
+    public List<Effect> EachTurnEffects;
+    
     [Header("Tower Attributes")] 
     [Space(20)]
     public GameObject BoltPrefab;
@@ -32,6 +38,19 @@ public class TowerCard : Card
         base.OnValidate();
         UpdateComputedValues();
         IsTargeted = true;
+
+        string startEffects = " ";
+        if (EachTurnEffects.Count > 0 && OverrideDefaultInstructionText == "")
+        {
+            startEffects = "Each turn ";
+            foreach (Effect effect in EachTurnEffects)
+            {
+                if (effect == null) continue;
+                startEffects += effect.InstructionText + " ";
+            }
+        }
+
+        InstructionText += startEffects;
     }
 #endif
 }

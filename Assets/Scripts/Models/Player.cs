@@ -22,7 +22,7 @@ namespace Players
         public int EnergyGainedPerTurn = 3;
         public int MaxEnergy = 10;
         
-        [Header("Delayed Effeccts")]
+        [Header("Delayed Effects")]
         [Space(20)]
         public List<Effect> TemporaryOnTurnStartEffects = new List<Effect>();
         public List<Effect> PermanentOnTurnStartEffects = new List<Effect>();
@@ -111,14 +111,14 @@ namespace Players
             }
         }
 
-        public void RegisterTemporaryOnTurnEffect(Effect toRegister)
+        public static void RegisterTemporaryOnTurnEffect(Effect toRegister)
         {
-            TemporaryOnTurnStartEffects.Add(toRegister);
+            Instance.TemporaryOnTurnStartEffects.Add(toRegister);
         }
 
-        public void RegisterPermanentOnTurnEffect(Effect toRegister)
+        public static void RegisterPermanentOnTurnEffect(Effect toRegister)
         {
-            PermanentOnTurnStartEffects.Add(toRegister);
+            Instance.PermanentOnTurnStartEffects.Add(toRegister);
         }
 
         public void RefillEnergy()

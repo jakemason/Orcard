@@ -12,8 +12,9 @@ public class WaveController : MonoBehaviour
     public static WaveController Instance;
     [Header("Wave Timings")]
     public float TimeBetweenWavesInSeconds = 60.0f;
-     public float TimeBetweenWavesTracker;
-    
+    public float TimeBetweenWavesTracker;
+    public AnimationCurve DifficultyCurve;
+     
     [Header("Enemy Info")]
     public List<Wave> Waves;
     [ReadOnly] public List<Enemy> EnemiesInCurrentWave;
@@ -71,6 +72,7 @@ public class WaveController : MonoBehaviour
 
     public void StartNextWave()
     {
+        Debug.Log(DifficultyCurve.Evaluate(CurrentWaveNumber / (float) Waves.Count));
         TimeBetweenWavesTracker = TimeBetweenWavesInSeconds;
         WaveActive              = true;
         NextWaveButton.SetActive(false);

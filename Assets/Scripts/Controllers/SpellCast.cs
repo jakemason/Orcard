@@ -31,9 +31,23 @@ public static class SpellCast
 
     public static void Resolve()
     {
-        foreach (Effect playEffect in AttemptingToCast.PlayEffects)
+        foreach (Effect playEffect in AttemptingToCast.ImmediateEffects)
         {
             playEffect.Activate();
+        }
+
+        SpellCard spellCard = (SpellCard) AttemptingToCast;
+        if (spellCard != null)
+        {
+            foreach (Effect effect in spellCard.PermanentStartOfTurnEffects)
+            {
+                Player.RegisterPermanentOnTurnEffect(effect);
+            }
+
+            foreach (Effect effect in spellCard.StartOfNextTurnEffects)
+            {
+                Player.RegisterTemporaryOnTurnEffect(effect);
+            }
         }
 
         Player.Instance.RemainingEnergy -= AttemptingToCast.CastingCost;
