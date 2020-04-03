@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 803c8e835c795ec4fa28bafff19c52af, type: 3}
-  m_Name: Archer Tower
+  m_Name: Supply Market
   m_EditorClassIdentifier: 
-  Name: Archer Tower
+  Name: Supply Market
   Artwork: {fileID: 21300000, guid: 21e0f2bffbc084e4d8e70e7340f279ab, type: 3}
-  Rarity: 1
+  Rarity: 2
   Set: 0
   CastingCost: 3
   GoldCost: 0
@@ -22,20 +22,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 0
   IsTargeted: 1
-  InstructionText: 'Average damage, high fire rate. '
+  InstructionText: 'Each turn Draw 1 Cards. '
   AdditionalInstructionText: 
-  OverrideDefaultInstructionText: Average damage, high fire rate.
-  FlavorText: 
+  OverrideDefaultInstructionText: 
+  FlavorText: The merchants of Elandia are known for their haggling.
   OnDrawEffects: []
   ImmediateEffects:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
-  EachTurnEffects: []
-  BoltPrefab: {fileID: 4748081343559320588, guid: be2befc9997d8c749997b5c06b973628,
-    type: 3}
-  Damage: 2
-  AttacksPerSecond: 4
-  AttackMovementSpeed: 10
-  Range: 4
-  Tint: {r: 1, g: 1, b: 1, a: 1}
-  DamagePerSecond: 8
-  AttackRate: 0.25
+  EachTurnEffects:
+  - {fileID: 11400000, guid: 2142345634738f24db8c8b16370f4c9e, type: 2}
+  Tint: {r: 1, g: 0.91975254, b: 0, a: 1}

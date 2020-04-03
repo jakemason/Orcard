@@ -8,15 +8,34 @@ public class ConstructionEffect : Effect
 
     public override void Activate()
     {
-        GameObject     go    = Instantiate(ConstructionPrefab, SpellCast.CastPosition, Quaternion.identity);
-        Tower          tower = go.GetComponent<Tower>();
-        TowerCard      card  = (TowerCard) SpellCast.AttemptingToCast;
-        SpriteRenderer rend  = go.GetComponent<SpriteRenderer>();
-        rend.sprite = card.Artwork;
-        rend.color  = card.Tint;
-        //We need to use a copy here because Upgrade cards alter the stats of the model throughout gameplay
-        tower.Model = Instantiate(card);
-        TowerManager.Instance.ConstructedTowers.Add(SpellCast.CastPosition, tower);
+        //TODO: Maybe just two different Construction Effects with separate Prefabs would be easiest?
+        GameObject     go        = Instantiate(ConstructionPrefab, SpellCast.CastPosition, Quaternion.identity);
+        SpriteRenderer rend      = go.GetComponent<SpriteRenderer>();
+        TowerCard      towerCard = SpellCast.AttemptingToCast as TowerCard;
+        if (towerCard != null)
+        {
+            Tower     tower = go.AddComponent<Tower>();
+            TowerCard card  = (TowerCard) SpellCast.AttemptingToCast;
+            rend.sprite = card.Artwork;
+            rend.color  = card.Tint;
+            //We need to use a copy here because Upgrade cards alter the stats of the model throughout gameplay
+            tower.Model = Instantiate(card);
+            BuildingManager.Instance.ConstructedBuildings.Add(SpellCast.CastPosition, tower);
+            TowerInspector inspector = go.transform.GetChild(0).gameObject.AddComponent<TowerInspector>();
+            inspector.TowerReference = tower;
+        }
+        else
+        {
+            Building     building = go.AddComponent<Building>();
+            BuildingCard card     = (BuildingCard) SpellCast.AttemptingToCast;
+            rend.sprite = card.Artwork;
+            rend.color  = card.Tint;
+            //We need to use a copy here because Upgrade cards alter the stats of the model throughout gameplay
+            building.Model = Instantiate(card);
+            BuildingManager.Instance.ConstructedBuildings.Add(SpellCast.CastPosition, building);
+            BuildingInspector inspector = go.transform.GetChild(0).gameObject.AddComponent<BuildingInspector>();
+            inspector.BuildingReference = building;
+        }
     }
 
     private void OnValidate()

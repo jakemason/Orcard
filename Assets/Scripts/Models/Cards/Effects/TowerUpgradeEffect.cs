@@ -31,9 +31,13 @@ public class TowerUpgradeEffect : Effect
                 UpgradeSingleTower(tower);
                 break;
             case TargetType.All:
-                foreach (KeyValuePair<Vector2, Tower> valuePair in TowerManager.Instance.ConstructedTowers)
+                foreach (KeyValuePair<Vector2, Building> valuePair in BuildingManager.Instance.ConstructedBuildings)
                 {
-                    UpgradeSingleTower(valuePair.Value);
+                    Tower towerCast = valuePair.Value as Tower;
+                    if (towerCast != null)
+                    {
+                        UpgradeSingleTower(towerCast);
+                    }
                 }
 
                 break;

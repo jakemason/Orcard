@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 //[ExecuteInEditMode]
-public class Tower : MonoBehaviour, ITargetable
+public class Tower : Building, ITargetable
 {
     // @formatter:off 
-    public TowerCard Model;
+    public new TowerCard Model;
     public List<GameObject> EnemiesInRange;
 
     private float _attackCooldown = 0f;
@@ -65,7 +65,7 @@ public class Tower : MonoBehaviour, ITargetable
         }
     }
 
-    public void DoStartOfTurnEffects()
+    public new void DoStartOfTurnEffects()
     {
         foreach (Effect effect in Model.EachTurnEffects)
         {

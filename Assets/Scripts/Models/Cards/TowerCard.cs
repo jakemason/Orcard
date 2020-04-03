@@ -1,28 +1,22 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Tower Card", menuName = "Cards/Tower Card")]
-public class TowerCard : Card
+public class TowerCard : BuildingCard
 {
-    // @formatter:off 
-    [Header("Building Effects")] 
-    [Space(20)]
-    [Tooltip("These effects apply at the start of the each turn while the tower is alive.")]
-    public List<Effect> EachTurnEffects;
-    
+    // @formatter:off
     [Header("Tower Attributes")] 
     [Space(20)]
     public GameObject BoltPrefab;
+    [ReadOnly] public Effect ConstructionEffect;
+
     public int Damage = 0;
     public float AttacksPerSecond = 0;
     public float AttackMovementSpeed = 0f;
     public float Range = 0f;
-    
-    //TODO: This is just a temporary way to quickly differentiate different towers while we don't have art assets
-    public Color Tint = Color.white;
-    
-    [Header("Calculated Tower Stats")] 
-    [ReadOnly] public float DamagePerSecond;
+
+    [Header("Calculated Tower Stats")] [ReadOnly]
+    public float DamagePerSecond;
+
     [ReadOnly] public float AttackRate = 0.25f;
     // @formatter:on
 
@@ -32,25 +26,14 @@ public class TowerCard : Card
         DamagePerSecond = (1 / AttackRate) * Damage;
     }
 
-#if UNITY_EDITOR
     public override void OnValidate()
     {
-        base.OnValidate();
         UpdateComputedValues();
-        IsTargeted = true;
-
-        string startEffects = " ";
-        if (EachTurnEffects.Count > 0 && OverrideDefaultInstructionText == "")
+        if (!ImmediateEffects.Contains(ConstructionEffect))
         {
-            startEffects = "Each turn ";
-            foreach (Effect effect in EachTurnEffects)
-            {
-                if (effect == null) continue;
-                startEffects += effect.InstructionText + " ";
-            }
+            ImmediateEffects.Add(ConstructionEffect);
         }
 
-        InstructionText += startEffects;
+        base.OnValidate();
     }
-#endif
 }

@@ -19,11 +19,16 @@ public class ConstructionIndicator : MonoBehaviour
         }
     }
 
-    public static void Enable(TowerCard model)
+    public static void Enable(BuildingCard model)
     {
         Instance.Indicator.SetActive(true);
-        Instance.RangeDrawer.Xradius = model.Range;
-        Instance.RangeDrawer.Yradius = model.Range;
+        TowerCard tower = model as TowerCard;
+        if (tower != null)
+        {
+            Instance.RangeDrawer.Xradius = tower.Range;
+            Instance.RangeDrawer.Yradius = tower.Range;
+        }
+
         Instance.RangeDrawer.Change();
         Instance.Line.enabled = true;
     }

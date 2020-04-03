@@ -1,10 +1,13 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 
 public class TowerInspector : MonoBehaviour, IInspectable, IPointerEnterHandler, IPointerExitHandler
 {
+    [FormerlySerializedAs("BuildingReference")]
     public Tower TowerReference;
+
     public TowerCard Model;
 
     private void Start()

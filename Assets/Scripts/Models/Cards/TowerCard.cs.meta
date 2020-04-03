@@ -1,9 +1,13 @@
 fileFormatVersion: 2
-guid: 803c8e835c795ec4fa28bafff19c52af
+guid: 4731244ff9c864e43b691fbdfab4d381
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Artwork: {instanceID: 0}
+  - ConstructionEffect: {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46,
+      type: 2}
+  - BoltPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

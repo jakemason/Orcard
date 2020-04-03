@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8297594592722647743}
   - component: {fileID: 4067432108643618425}
   - component: {fileID: 4108920002985993604}
-  - component: {fileID: 1149496218834541896}
   m_Layer: 9
   m_Name: Hover Area
   m_TagString: Untagged
@@ -72,9 +71,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eb32cfe65698cd4abdcf8940c70f77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Segments: 50
-  Xradius: 5
-  Yradius: 5
+  Segments: 0
+  Xradius: 0
+  Yradius: 0
   Line: {fileID: 4108920002985993604}
 --- !u!120 &4108920002985993604
 LineRenderer:
@@ -116,57 +115,7 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 0.6266662, y: 4.9605737, z: -1}
-  - {x: 1.2434496, y: 4.842916, z: -1}
-  - {x: 1.8406229, y: 4.6488824, z: -1}
-  - {x: 2.4087687, y: 4.381533, z: -1}
-  - {x: 2.9389262, y: 4.045085, z: -1}
-  - {x: 3.4227357, y: 3.644843, z: -1}
-  - {x: 3.8525662, y: 3.18712, z: -1}
-  - {x: 4.2216396, y: 2.6791337, z: -1}
-  - {x: 4.5241356, y: 2.128896, z: -1}
-  - {x: 4.755283, y: 1.5450842, z: -1}
-  - {x: 4.9114366, y: 0.9369056, z: -1}
-  - {x: 4.990134, y: 0.31395134, z: -1}
-  - {x: 4.990134, y: -0.31395411, z: -1}
-  - {x: 4.911436, y: -0.93690836, z: -1}
-  - {x: 4.755282, y: -1.545087, z: -1}
-  - {x: 4.5241346, y: -2.1288981, z: -1}
-  - {x: 4.2216387, y: -2.6791356, z: -1}
-  - {x: 3.8525648, y: -3.1871219, z: -1}
-  - {x: 3.4227338, y: -3.644845, z: -1}
-  - {x: 2.938924, y: -4.0450864, z: -1}
-  - {x: 2.4087658, y: -4.3815346, z: -1}
-  - {x: 1.8406198, y: -4.648884, z: -1}
-  - {x: 1.243446, y: -4.8429165, z: -1}
-  - {x: 0.62666243, y: -4.960574, z: -1}
-  - {x: -0.0000040133928, y: -5, z: -1}
-  - {x: -0.6266704, y: -4.960573, z: -1}
-  - {x: -1.2434539, y: -4.8429146, z: -1}
-  - {x: -1.8406272, y: -4.6488805, z: -1}
-  - {x: -2.408773, y: -4.381531, z: -1}
-  - {x: -2.9389307, y: -4.0450816, z: -1}
-  - {x: -3.4227395, y: -3.6448393, z: -1}
-  - {x: -3.85257, y: -3.1871154, z: -1}
-  - {x: -4.221643, y: -2.679129, z: -1}
-  - {x: -4.524138, y: -2.1288908, z: -1}
-  - {x: -4.7552843, y: -1.5450788, z: -1}
-  - {x: -4.9114375, y: -0.93689984, z: -1}
-  - {x: -4.990134, y: -0.31394553, z: -1}
-  - {x: -4.9901333, y: 0.31395996, z: -1}
-  - {x: -4.911435, y: 0.936914, z: -1}
-  - {x: -4.75528, y: 1.5450925, z: -1}
-  - {x: -4.524132, y: 2.1289039, z: -1}
-  - {x: -4.2216353, y: 2.679141, z: -1}
-  - {x: -3.8525608, y: 3.1871266, z: -1}
-  - {x: -3.422729, y: 3.6448493, z: -1}
-  - {x: -2.9389188, y: 4.04509, z: -1}
-  - {x: -2.40876, y: 4.381538, z: -1}
-  - {x: -1.8406138, y: 4.648886, z: -1}
-  - {x: -1.2434398, y: 4.8429184, z: -1}
-  - {x: -0.6266561, y: 4.9605746, z: -1}
-  - {x: 0.000010410971, y: 5, z: -1}
-  - {x: 0.62667674, y: 4.9605722, z: -1}
+  - {x: NaN, y: NaN, z: -1}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -222,20 +171,6 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &1149496218834541896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710925536067604983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09a5206ef5806bc4d8d115bdfccc531e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TowerReference: {fileID: 988547076366149460}
-  Model: {fileID: 0}
 --- !u!1 &988547076366149480
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,12 +180,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 988547076366149461}
-  - component: {fileID: 988547076366149460}
   - component: {fileID: 988547076366149458}
   - component: {fileID: 988547076366149459}
   - component: {fileID: 988547076366149463}
   m_Layer: 2
-  m_Name: TowerObject
+  m_Name: BuildingPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -271,21 +205,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &988547076366149460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988547076366149480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae5875c9142931146b87777cb1851a0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Model: {fileID: 11400000, guid: 740ac45e44ced9b4c9edf8545ea9a659, type: 2}
-  EnemiesInRange: []
-  RangeIndicator: {fileID: 4067432108643618425}
 --- !u!114 &988547076366149458
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -130,11 +130,11 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         MovementDisabled   = true;
         transform.position = Input.mousePosition;
 
-        TowerCard towerCard = CardObject as TowerCard;
+        BuildingCard buildingCard = CardObject as BuildingCard;
 
-        if (towerCard)
+        if (buildingCard)
         {
-            ConstructionIndicator.Enable(towerCard);
+            ConstructionIndicator.Enable(buildingCard);
             TargetScale          = Vector3.zero;
             transform.localScale = Vector3.zero;
         }

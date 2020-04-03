@@ -23,8 +23,8 @@ public class CardPlayableArea : MonoBehaviour, IDropHandler
             Mathf.RoundToInt(SpellCast.CastPosition.x),
             Mathf.RoundToInt(SpellCast.CastPosition.y));
 
-        SpellCast.Target = TowerManager.Instance.ConstructedTowers.ContainsKey(SpellCast.CastPosition)
-            ? TowerManager.Instance.ConstructedTowers[SpellCast.CastPosition]
+        SpellCast.Target = BuildingManager.Instance.ConstructedBuildings.ContainsKey(SpellCast.CastPosition)
+            ? BuildingManager.Instance.ConstructedBuildings[SpellCast.CastPosition]
             : null;
 
         if (!SpellCast.CastingRequirementsMet()) return;

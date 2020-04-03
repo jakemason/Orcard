@@ -193,9 +193,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eb32cfe65698cd4abdcf8940c70f77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Segments: 50
-  Xradius: 5
-  Yradius: 5
+  Segments: 0
+  Xradius: 0
+  Yradius: 0
   Line: {fileID: 0}
 --- !u!1 &4320908690500010706
 GameObject:
@@ -256,3 +256,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Indicator: {fileID: 8450921176656873}
   RangeDrawer: {fileID: 4163294492594788352}
+  Line: {fileID: 0}
