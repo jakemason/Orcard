@@ -17,6 +17,7 @@ public class Tower : Building, ITargetable
     private void Start()
     {
         EnemiesInRange = new List<GameObject>();
+        RangeIndicator = GetComponentInChildren<DrawCircle>();
         SetRange();
     }
 
