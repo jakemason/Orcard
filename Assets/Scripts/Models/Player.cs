@@ -123,7 +123,7 @@ namespace Players
 
         public void RefillEnergy()
         {
-            RemainingEnergy += EnergyGainedPerTurn;
+            RemainingEnergy = EnergyGainedPerTurn;
         }
 
         public static void ModifyEnergy(int modifier)

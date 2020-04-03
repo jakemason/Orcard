@@ -16,28 +16,27 @@ MonoBehaviour:
   Artwork: {fileID: 21300000, guid: 21e0f2bffbc084e4d8e70e7340f279ab, type: 3}
   Rarity: 0
   Set: 0
-  CastingCost: 0
+  CastingCost: 2
   GoldCost: 0
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 0
   IsTargeted: 1
-  InstructionText: 'Developer Cheaty Face. '
+  InstructionText: 'Developer Chearty Face '
   AdditionalInstructionText: 
-  OverrideDefaultInstructionText: Developer Cheaty Face.
-  FlavorText: 
+  OverrideDefaultInstructionText: Developer Chearty Face
+  FlavorText: Useful for debugging.
   OnDrawEffects: []
   ImmediateEffects:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
-  - {fileID: 0}
   EachTurnEffects: []
-  Tint: {r: 1, g: 0.9564916, b: 0, a: 1}
+  Tint: {r: 1, g: 1, b: 1, a: 1}
   BoltPrefab: {fileID: 4748081343559320588, guid: be2befc9997d8c749997b5c06b973628,
     type: 3}
-  ConstructionEffect: {fileID: 0}
+  ConstructionEffect: {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
   Damage: 55
   AttacksPerSecond: 55
   AttackMovementSpeed: 55
-  Range: 15
+  Range: 55
   DamagePerSecond: 3025
   AttackRate: 0.018181818

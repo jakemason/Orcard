@@ -6,6 +6,7 @@ public class RewardsManager : MonoBehaviour
 {
     // @formatter:off 
     public static RewardsManager Instance;
+    public static bool IsOpen;
     [Header("Rewards Offered")]
     [Range(0,1)] public float ChanceForRandomRarityUpgrade = 0.2f;
     public int NumberOfRewardChoices = 3;
@@ -45,12 +46,14 @@ public class RewardsManager : MonoBehaviour
     public static void OpenRewardsPanel()
     {
         Instance.CreateRewardGameObjects();
+        IsOpen = true;
     }
 
     public static void CloseRewardsPanel()
     {
         Instance.ClearRewardGameObjects();
         TurnManager.StartTurn();
+        IsOpen = false;
     }
 
     private void SetupDecks()

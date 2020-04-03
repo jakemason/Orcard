@@ -10,7 +10,7 @@ public class BuildingCard : Card
     [Tooltip("These effects apply at the start of the each turn while the building is alive.")]
     public List<Effect> EachTurnEffects;
     
-    //TODO: This is just a temporary way to quickly differentiate different towers while we don't have art assets
+    [Tooltip("This is just a temporary way to quickly differentiate different towers while we don't have art assets.")]
     public Color Tint = Color.white;
     
 #if UNITY_EDITOR

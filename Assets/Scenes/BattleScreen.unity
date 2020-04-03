@@ -328,7 +328,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 56.15
+  m_fontSize: 56.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -933,7 +933,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 56.8
+  m_fontSize: 56.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12328,6 +12328,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 45.29
       objectReference: {fileID: 0}
+    - target: {fileID: 7215319091371049480, guid: 061fcf84809418241a8bc97061910995,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7215319091968331735, guid: 061fcf84809418241a8bc97061910995,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -12357,6 +12362,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7215319091968331736, guid: 061fcf84809418241a8bc97061910995,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7215319092455482620, guid: 061fcf84809418241a8bc97061910995,
         type: 3}
@@ -12472,6 +12482,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7215319092455482622, guid: 061fcf84809418241a8bc97061910995,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 061fcf84809418241a8bc97061910995, type: 3}

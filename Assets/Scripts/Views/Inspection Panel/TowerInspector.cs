@@ -51,6 +51,8 @@ public class TowerInspector : MonoBehaviour, IInspectable, IPointerEnterHandler,
 
     public void OnMouseOver()
     {
+        if (RewardsManager.IsOpen) return;
+
         EnableInspection();
     }
 

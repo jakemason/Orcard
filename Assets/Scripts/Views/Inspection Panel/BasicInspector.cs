@@ -31,6 +31,7 @@ public class BasicInspector : MonoBehaviour, IInspectable, IPointerEnterHandler,
 
     public void OnMouseOver()
     {
+        if (RewardsManager.IsOpen) return;
         EnableInspection();
     }
 

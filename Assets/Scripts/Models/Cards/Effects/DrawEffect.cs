@@ -10,7 +10,13 @@ public class DrawEffect : Effect
 #if UNITY_EDITOR
     public void OnValidate()
     {
-        InstructionText = $"Draw {CardsToDraw} Cards.";
+        InstructionText = $"Draw {CardsToDraw} Card";
+        if (CardsToDraw > 1)
+        {
+            InstructionText += "s";
+        }
+
+        InstructionText += ".";
         string assetPath = AssetDatabase.GetAssetPath(GetInstanceID());
         AssetDatabase.RenameAsset(assetPath, InstructionText);
     }

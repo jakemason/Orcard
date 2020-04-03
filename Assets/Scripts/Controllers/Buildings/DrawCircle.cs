@@ -53,6 +53,7 @@ public class DrawCircle : MonoBehaviour
 
     public void OnMouseOver()
     {
+        if (RewardsManager.IsOpen) return;
         Line.enabled = true;
     }
 
