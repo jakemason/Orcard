@@ -20,12 +20,13 @@ MonoBehaviour:
   GoldCost: 0
   CastingRequirements: []
   DestroyOnCast: 0
-  InstructionText: 'Reduce card cost by -1. '
+  IsTargeted: 0
+  InstructionText: 'Reduce card cost by -1.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
   OnDrawEffects: []
-  PlayEffects:
-  - {fileID: 11400000, guid: 146324a2d8c6794418652c019e869c60, type: 2}
+  ImmediateEffects:
   - {fileID: 11400000, guid: ea549ab3ca4181940a586218264e9e9e, type: 2}
-  StartOfTurnEffects: []
+  PermanentStartOfTurnEffects: []
+  StartOfNextTurnEffects: []

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75e19c0ab0140cd43b63508e05688423, type: 3}
-  m_Name: Reduce card cost by -1.
+  m_Name: Reduce a random card's cost by -1 permanently.
   m_EditorClassIdentifier: 
-  InstructionText: Reduce card cost by -1.
+  InstructionText: Reduce a random card's cost by -1 permanently.
   CardCostModifier: -1
   EffectDuration: 1

@@ -1,12 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Tower Upgrade Effect", menuName = "Effects/Tower Upgrade Effect")]
 public class TowerUpgradeEffect : Effect
 {
+    public enum TargetType
+    {
+        Single,
+        All
+    }
+
     public float Modifier = 1.0f;
     public TowerAttribute AttributeToAlter;
+    public TargetType Target = TargetType.Single;
 
     public enum TowerAttribute
     {
@@ -16,7 +24,26 @@ public class TowerUpgradeEffect : Effect
 
     public override void Activate()
     {
-        Tower tower = SpellCast.Target as Tower;
+        switch (Target)
+        {
+            case TargetType.Single:
+                Tower tower = SpellCast.Target as Tower;
+                UpgradeSingleTower(tower);
+                break;
+            case TargetType.All:
+                foreach (KeyValuePair<Vector2, Tower> valuePair in TowerManager.Instance.ConstructedTowers)
+                {
+                    UpgradeSingleTower(valuePair.Value);
+                }
+
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+    }
+
+    private void UpgradeSingleTower(Tower tower)
+    {
         if (!tower) return;
 
         switch (AttributeToAlter)
@@ -44,6 +71,17 @@ public class TowerUpgradeEffect : Effect
                 break;
             case TowerAttribute.AttackRate:
                 InstructionText = Modifier > 0 ? $"+{Modifier} Tower Attack Rate." : $"{Modifier}  Tower Attack Rate.";
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+
+        switch (Target)
+        {
+            case TargetType.Single:
+                break;
+            case TargetType.All:
+                InstructionText += " Affects all towers.";
                 break;
             default:
                 throw new ArgumentOutOfRangeException();

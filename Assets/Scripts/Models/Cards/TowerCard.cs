@@ -18,7 +18,7 @@ public class TowerCard : Card
     public float AttackMovementSpeed = 0f;
     public float Range = 0f;
     
-    //TODO: This is just a temporary way to quickly differentiate different towers
+    //TODO: This is just a temporary way to quickly differentiate different towers while we don't have art assets
     public Color Tint = Color.white;
     
     [Header("Calculated Tower Stats")] 

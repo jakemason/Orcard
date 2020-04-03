@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿using System;
+using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Card Cost Effect", menuName = "Effects/Card Cost Effect")]
@@ -33,8 +34,21 @@ public class CardCostEffect : Effect
     public void OnValidate()
     {
         InstructionText = CardCostModifier > 0
-            ? $"Increase card cost by {CardCostModifier}."
-            : $"Reduce card cost by {CardCostModifier}.";
+            ? $"Increase a random card's cost by {CardCostModifier}"
+            : $"Reduce a random card's cost by {CardCostModifier}";
+
+        switch (EffectDuration)
+        {
+            case Type.Temp:
+                InstructionText += " temporarily.";
+                break;
+            case Type.Permanent:
+                InstructionText += " permanently.";
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+
         string assetPath = AssetDatabase.GetAssetPath(GetInstanceID());
         AssetDatabase.RenameAsset(assetPath, InstructionText);
     }

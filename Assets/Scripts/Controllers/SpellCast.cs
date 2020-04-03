@@ -36,7 +36,7 @@ public static class SpellCast
             playEffect.Activate();
         }
 
-        SpellCard spellCard = (SpellCard) AttemptingToCast;
+        SpellCard spellCard = AttemptingToCast as SpellCard;
         if (spellCard != null)
         {
             foreach (Effect effect in spellCard.PermanentStartOfTurnEffects)

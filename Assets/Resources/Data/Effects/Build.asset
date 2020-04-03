@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3531576bc42b2fe408105a9e8cdf50fb, type: 3}
-  m_Name: Build Tower
+  m_Name: Build
   m_EditorClassIdentifier: 
   InstructionText: 
   ConstructionPrefab: {fileID: 988547076366149480, guid: 431a6127b97b7884fb15b8757b21a294,

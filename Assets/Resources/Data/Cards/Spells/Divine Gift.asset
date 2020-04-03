@@ -19,12 +19,14 @@ MonoBehaviour:
   CastingCost: 1
   GoldCost: 0
   CastingRequirements: []
-  DestroyOnCast: 0
-  InstructionText: 'Draw 5 Cards. '
+  DestroyOnCast: 1
+  IsTargeted: 0
+  InstructionText: 'Draw 3 Cards. Destroy this card. '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
   OnDrawEffects: []
-  PlayEffects:
-  - {fileID: 11400000, guid: 6bd19e0389bd3af4da5c182dd1d7b9ef, type: 2}
-  StartOfTurnEffects: []
+  ImmediateEffects:
+  - {fileID: 11400000, guid: 1e6fb30a0d9298b489562966ba0d2f5d, type: 2}
+  PermanentStartOfTurnEffects: []
+  StartOfNextTurnEffects: []

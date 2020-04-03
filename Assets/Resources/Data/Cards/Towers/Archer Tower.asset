@@ -21,14 +21,15 @@ MonoBehaviour:
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 0
-  InstructionText: Average damage, high fire rate.
+  IsTargeted: 1
+  InstructionText: 'Average damage, high fire rate. '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: Average damage, high fire rate.
   FlavorText: 
   OnDrawEffects: []
-  PlayEffects:
+  ImmediateEffects:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
-  StartOfTurnEffects: []
+  EachTurnEffects: []
   BoltPrefab: {fileID: 4748081343559320588, guid: be2befc9997d8c749997b5c06b973628,
     type: 3}
   Damage: 2

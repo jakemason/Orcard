@@ -20,11 +20,13 @@ MonoBehaviour:
   GoldCost: 0
   CastingRequirements: []
   DestroyOnCast: 1
-  InstructionText: +50 HP. Destroy this card.
+  IsTargeted: 0
+  InstructionText: '+50 HP. Destroy this card. '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
   OnDrawEffects: []
-  PlayEffects:
+  ImmediateEffects:
   - {fileID: 11400000, guid: 54f71eb1544417e42a494d4da768e741, type: 2}
-  StartOfTurnEffects: []
+  PermanentStartOfTurnEffects: []
+  StartOfNextTurnEffects: []

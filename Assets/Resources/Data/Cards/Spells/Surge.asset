@@ -20,11 +20,13 @@ MonoBehaviour:
   GoldCost: 0
   CastingRequirements: []
   DestroyOnCast: 0
-  InstructionText: '+1 Energy. '
+  IsTargeted: 0
+  InstructionText: '+1 Energy.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
   OnDrawEffects: []
-  PlayEffects:
-  - {fileID: 11400000, guid: 248404457d20cca4787dd61fe3a92e97, type: 2}
-  StartOfTurnEffects: []
+  ImmediateEffects:
+  - {fileID: 11400000, guid: 9990a7dfeb23e9a4184cf41d74d7d0db, type: 2}
+  PermanentStartOfTurnEffects: []
+  StartOfNextTurnEffects: []
