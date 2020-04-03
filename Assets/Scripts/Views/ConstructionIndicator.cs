@@ -28,6 +28,11 @@ public class ConstructionIndicator : MonoBehaviour
             Instance.RangeDrawer.Xradius = tower.Range;
             Instance.RangeDrawer.Yradius = tower.Range;
         }
+        else
+        {
+            Instance.RangeDrawer.Xradius = 0;
+            Instance.RangeDrawer.Yradius = 0;
+        }
 
         Instance.RangeDrawer.Change();
         Instance.Line.enabled = true;

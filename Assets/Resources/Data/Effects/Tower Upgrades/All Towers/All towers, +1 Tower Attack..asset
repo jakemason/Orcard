@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3587134413d1d64f949ccb1d97293b0, type: 3}
-  m_Name: +1 Tower Attack.
+  m_Name: All towers, +1 Tower Attack.
   m_EditorClassIdentifier: 
-  InstructionText: +1 Tower Attack.
+  InstructionText: All towers, +1 Tower Attack.
   Modifier: 1
   AttributeToAlter: 0
+  Target: 1

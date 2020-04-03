@@ -2,12 +2,12 @@
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 
-public class BuildingInspector : MonoBehaviour, IInspectable, IPointerEnterHandler, IPointerExitHandler
+public class BasicInspector : MonoBehaviour, IInspectable, IPointerEnterHandler, IPointerExitHandler
 {
     [FormerlySerializedAs("TowerReference")]
     public Building BuildingReference;
 
-    public BuildingCard Model;
+    public Card Model;
 
     private void Start()
     {

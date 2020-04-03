@@ -31,7 +31,7 @@ public class SpellCard : Card
         string tempEffects = "";
         if (StartOfNextTurnEffects.Count > 0 && OverrideDefaultInstructionText == "")
         {
-            tempEffects = "Each turn ";
+            tempEffects = "Next turn ";
             foreach (Effect effect in StartOfNextTurnEffects)
             {
                 if (effect == null) continue;

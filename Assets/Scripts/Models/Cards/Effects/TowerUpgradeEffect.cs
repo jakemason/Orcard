@@ -68,24 +68,15 @@ public class TowerUpgradeEffect : Effect
 #if UNITY_EDITOR
     public void OnValidate()
     {
+        InstructionText = Target == TargetType.All ? "All towers, " : "";
+
         switch (AttributeToAlter)
         {
             case TowerAttribute.Attack:
-                InstructionText = Modifier > 0 ? $"+{Modifier} Tower Attack." : $"{Modifier} Tower Attack.";
+                InstructionText += Modifier > 0 ? $"+{Modifier} Tower Attack." : $"{Modifier} Tower Attack.";
                 break;
             case TowerAttribute.AttackRate:
-                InstructionText = Modifier > 0 ? $"+{Modifier} Tower Attack Rate." : $"{Modifier}  Tower Attack Rate.";
-                break;
-            default:
-                throw new ArgumentOutOfRangeException();
-        }
-
-        switch (Target)
-        {
-            case TargetType.Single:
-                break;
-            case TargetType.All:
-                InstructionText += " Affects all towers.";
+                InstructionText += Modifier > 0 ? $"+{Modifier} Tower Attack Rate." : $"{Modifier}  Tower Attack Rate.";
                 break;
             default:
                 throw new ArgumentOutOfRangeException();

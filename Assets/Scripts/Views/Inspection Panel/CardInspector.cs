@@ -15,12 +15,7 @@ public class CardInspector : MonoBehaviour
         }
 
 
-        BuildingCard buildingCast = CardReference.CardObject as BuildingCard;
-        if (buildingCast != null)
-        {
-            BuildingInspector inspector = gameObject.AddComponent<BuildingInspector>();
-            inspector.Model = buildingCast;
-            return;
-        }
+        BasicInspector basic = gameObject.AddComponent<BasicInspector>();
+        basic.Model = CardReference.CardObject;
     }
 }

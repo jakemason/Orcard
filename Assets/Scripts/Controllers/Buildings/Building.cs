@@ -4,14 +4,17 @@
 public class Building : MonoBehaviour, ITargetable
 {
     // @formatter:off 
-    public  BuildingCard Model;
+    public BuildingCard Model;
     // @formatter:on 
 
     public void DoStartOfTurnEffects()
     {
-        foreach (Effect effect in Model.EachTurnEffects)
+        if (Model != null)
         {
-            effect.Activate();
+            foreach (Effect effect in Model.EachTurnEffects)
+            {
+                effect.Activate();
+            }
         }
     }
 }

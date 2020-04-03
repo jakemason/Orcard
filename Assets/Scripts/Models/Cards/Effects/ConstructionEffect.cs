@@ -33,7 +33,7 @@ public class ConstructionEffect : Effect
             //We need to use a copy here because Upgrade cards alter the stats of the model throughout gameplay
             building.Model = Instantiate(card);
             BuildingManager.Instance.ConstructedBuildings.Add(SpellCast.CastPosition, building);
-            BuildingInspector inspector = go.transform.GetChild(0).gameObject.AddComponent<BuildingInspector>();
+            BasicInspector inspector = go.transform.GetChild(0).gameObject.AddComponent<BasicInspector>();
             inspector.BuildingReference = building;
         }
     }

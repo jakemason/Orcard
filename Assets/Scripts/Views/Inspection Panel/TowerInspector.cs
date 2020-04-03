@@ -44,7 +44,6 @@ public class TowerInspector : MonoBehaviour, IInspectable, IPointerEnterHandler,
             }
         }
 
-        details                                += Model.InstructionText;
         details                                += "\n<i>" + Model.FlavorText + "</i>";
         InspectorManager.Instance.Details.text =  details;
         InspectorManager.Enable();
