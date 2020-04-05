@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 182748ccc39d4ea44bc248590a3ab32d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Commons: {fileID: 11400000, guid: 82067f111ed6bb94ab692713b7b50b90, type: 2}
+  - Uncommons: {fileID: 11400000, guid: ecad73f57119f3e48ad28cf21dadebd5, type: 2}
+  - Rares: {fileID: 11400000, guid: 1f8682d4142a7184c95cb13a3cda3c76, type: 2}
+  - Epics: {fileID: 11400000, guid: 85c4035c4890565479647334edb093ae, type: 2}
+  - Legendaries: {fileID: 11400000, guid: 4c3999e660de5f747bf2bcb014517313, type: 2}
+  - AllCards: {fileID: 11400000, guid: 1b053172a6584bb44be3ebfb9ac752d2, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -10,11 +10,6 @@ public class RewardsManager : MonoBehaviour
     [Header("Rewards Offered")]
     [Range(0,1)] public float ChanceForRandomRarityUpgrade = 0.2f;
     public int NumberOfRewardChoices = 3;
-    public Deck Commons;
-    public Deck Uncommons;
-    public Deck Rares;
-    public Deck Epics;
-    public Deck Legendaries;
     
     [Header("Prefabs and Holders")]
     [Space(20)]
@@ -24,7 +19,6 @@ public class RewardsManager : MonoBehaviour
     [ReadOnly] private List<GameObject> _rewardsOfferedGameObjects;
     [ReadOnly] private List<Card> _rewardsOffered;
     // @formatter:on 
-    private Dictionary<Card.CardRarity, Deck> _rewardTiers;
 
     private void Start()
     {
@@ -39,8 +33,6 @@ public class RewardsManager : MonoBehaviour
 
         _rewardsOfferedGameObjects = new List<GameObject>();
         _rewardsOffered            = new List<Card>();
-
-        SetupDecks();
     }
 
     public static void OpenRewardsPanel()
@@ -54,21 +46,6 @@ public class RewardsManager : MonoBehaviour
         Instance.ClearRewardGameObjects();
         TurnManager.StartTurn();
         IsOpen = false;
-    }
-
-    private void SetupDecks()
-    {
-        //TODO: Can we just increment the enum instead and just make sure we keep them in order?
-        //TODO: Make an upgrade method of some sort?
-        _rewardTiers =
-            new Dictionary<Card.CardRarity, Deck>()
-            {
-                {Card.CardRarity.Common, Commons},
-                {Card.CardRarity.Uncommon, Uncommons},
-                {Card.CardRarity.Rare, Rares},
-                {Card.CardRarity.Epic, Epics},
-                {Card.CardRarity.Legendary, Legendaries},
-            };
     }
 
     private void PickRewards()
@@ -98,7 +75,7 @@ public class RewardsManager : MonoBehaviour
                 rarity = Card.CardRarity.Common;
             }
 
-            Deck setToPullFrom = _rewardTiers[rarity];
+            Deck setToPullFrom = CardList.GetCardsByRarity(rarity);
 
             int cardIndex = Random.Range(0, setToPullFrom.Cards.Count);
             _rewardsOffered.Add(setToPullFrom.Cards[cardIndex]);
@@ -109,7 +86,7 @@ public class RewardsManager : MonoBehaviour
     {
         for (int i = 0; i < NumberOfRewardChoices; i++)
         {
-            Deck setToPullFrom = _rewardTiers[rarity];
+            Deck setToPullFrom = CardList.GetCardsByRarity(rarity);
 
             int cardIndex = Random.Range(0, setToPullFrom.Cards.Count);
             _rewardsOffered.Add(setToPullFrom.Cards[cardIndex]);
