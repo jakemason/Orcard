@@ -1,4 +1,4 @@
-﻿using Boo.Lang;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +12,7 @@ public class Event : ScriptableObject
     public string AcceptText;
 
     public List<Effect> NegativeOutcomes;
-    public string RejectText;
+    public string DeclineText;
 
     public Image EventImage;
     public string EventDescription;
@@ -25,7 +25,7 @@ public class Event : ScriptableObject
         }
     }
 
-    public void Reject()
+    public void Decline()
     {
         foreach (Effect negativeOutcome in NegativeOutcomes)
         {
