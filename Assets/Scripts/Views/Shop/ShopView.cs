@@ -1,4 +1,4 @@
-﻿using Boo.Lang;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class ShopView : MonoBehaviour
@@ -33,6 +33,11 @@ public class ShopView : MonoBehaviour
 
     public static void CreateCards(List<Card> toCreate)
     {
+        foreach (Transform child in Instance.CardGridRoot.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
         foreach (Card card in toCreate)
         {
             GameObject   cardObject = Instantiate(Instance.ShopCardPrefab, Instance.CardGridRoot.transform, false);

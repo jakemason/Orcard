@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -118,6 +119,10 @@ public class RewardsManager : MonoBehaviour
         RewardsPanel.SetActive(true);
     }
 
+    /// <summary>
+    /// Called from Unity button
+    /// </summary>
+    [UsedImplicitly]
     public void SkipReward()
     {
         CloseRewardsPanel();
