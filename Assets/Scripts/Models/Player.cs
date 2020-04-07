@@ -43,10 +43,10 @@ namespace Players
         }
         // @formatter:off
 
-        [Header("Player Health")]
+        [Header("Player Gold")]
         [Space(20)]
-        public int StartingHealth = 55;
-        public Health Health;
+        public int CurrentGold = 0;
+        public TextMeshProUGUI GoldText;
 
         [Header("Visuals")]
         [Space(20)]
@@ -68,9 +68,6 @@ namespace Players
                 Destroy(this);
             }
 
-            Health = GetComponent<Health>();
-            Health.SetStartingHealth(StartingHealth);
-
             DeckForCurrentRun = Instantiate(DeckTemplate);
             DeckForCurrentRun.Cards.Shuffle();
         }
@@ -78,6 +75,7 @@ namespace Players
         private void Start()
         {
             StartTurn();
+            ModifyGold(0);
         }
 
         public static void EndTurn()
@@ -124,6 +122,12 @@ namespace Players
         public void RefillEnergy()
         {
             RemainingEnergy = EnergyGainedPerTurn;
+        }
+
+        public static void ModifyGold(int modifier)
+        {
+            Instance.CurrentGold   += modifier;
+            Instance.GoldText.text =  "Gold: " + modifier;
         }
 
         public static void ModifyEnergy(int modifier)
