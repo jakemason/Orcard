@@ -185,7 +185,6 @@ namespace Players
 
         /// <summary>
         /// Shuffles the player's discard pile into their hand.
-        /// Unsure if we'll keep this mechanic or not.
         /// </summary>
         private void ShuffleDiscardIntoDeck()
         {
