@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059ef7aa6fa947340a5d301e2b395c88, type: 3}
+  m_Name: Travelling Sage
+  m_EditorClassIdentifier: 
+  EventTitle: Travelling Sage
+  EventDescription: A sage from a distant land comes before you and offers to teach
+    you one of the secrets he has learned from his travels.
+  EventImage: {fileID: 0}
+  AcceptOutcomes:
+  - {fileID: 11400000, guid: 6c60e82642b9d4d409643dafcc24eda9, type: 2}
+  DeclineOutcomes: []
+  DeclineText: Politely refuse their offer.
+  AcceptText: <color="green">Add a Rare card to your deck. </color><color="red">Lose
+    50 gold.</color>

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,18 +9,18 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "New Event", menuName = "Event")]
 public class Event : ScriptableObject
 {
-    public List<Effect> PositiveOutcomes;
-    public string AcceptText;
-
-    public List<Effect> NegativeOutcomes;
-    public string DeclineText;
-
+    public string EventTitle;
+    [TextArea] public string EventDescription;
     public Image EventImage;
-    public string EventDescription;
+    public List<Effect> AcceptOutcomes;
+    public List<Effect> DeclineOutcomes;
+    [TextArea] public string DeclineText;
+    [TextArea] public string AcceptText;
+
 
     public void Accept()
     {
-        foreach (Effect positiveOutcome in PositiveOutcomes)
+        foreach (Effect positiveOutcome in AcceptOutcomes)
         {
             positiveOutcome.Activate();
         }
@@ -27,9 +28,17 @@ public class Event : ScriptableObject
 
     public void Decline()
     {
-        foreach (Effect negativeOutcome in NegativeOutcomes)
+        foreach (Effect negativeOutcome in DeclineOutcomes)
         {
             negativeOutcome.Activate();
         }
     }
+
+#if UNITY_EDITOR
+    public void OnValidate()
+    {
+        string assetPath = AssetDatabase.GetAssetPath(GetInstanceID());
+        AssetDatabase.RenameAsset(assetPath, EventTitle);
+    }
+#endif
 }

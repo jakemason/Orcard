@@ -9044,9 +9044,9 @@ GameObject:
   - component: {fileID: 1511839238}
   - component: {fileID: 1511839239}
   - component: {fileID: 1511839242}
-  - component: {fileID: 1511839243}
   - component: {fileID: 1511839244}
   - component: {fileID: 1511839245}
+  - component: {fileID: 1511839243}
   - component: {fileID: 1511839247}
   - component: {fileID: 1511839246}
   m_Layer: 0
@@ -9276,7 +9276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31131693417a5d444bb6a8c4d32319eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentEvent: {fileID: 11400000, guid: f578527b258456443a1115b5dcd21f75, type: 2}
+  CurrentEvent: {fileID: 11400000, guid: 2bdc2306b2e106f47874bf8c558947de, type: 2}
 --- !u!114 &1511839247
 MonoBehaviour:
   m_ObjectHideFlags: 0
