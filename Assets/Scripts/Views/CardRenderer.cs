@@ -13,20 +13,10 @@ public class CardRenderer : MonoBehaviour, ITargetable
     public TextMeshProUGUI Name;
     public TextMeshProUGUI Cost;
     public Image Artwork;
-    public Image RarityBorder;
     public TextMeshProUGUI InstructionText;
     
     private PlayableCardController _playable;
     // @formatter:on
-
-    private static readonly Dictionary<Card.CardRarity, Color> RarityColors = new Dictionary<Card.CardRarity, Color>
-    {
-        {Card.CardRarity.Common, Color.grey},
-        {Card.CardRarity.Uncommon, Color.white},
-        {Card.CardRarity.Rare, Color.blue},
-        {Card.CardRarity.Epic, Color.magenta},
-        {Card.CardRarity.Legendary, Color.yellow},
-    };
 
     private void Awake()
     {
@@ -47,8 +37,7 @@ public class CardRenderer : MonoBehaviour, ITargetable
         InstructionText.text = CardObject.InstructionText;
         Artwork.sprite       = CardObject.Artwork;
 
-        gameObject.name    = Name.text;
-        RarityBorder.color = RarityColors[CardObject.Rarity];
+        gameObject.name = Name.text;
     }
 
 #if UNITY_EDITOR

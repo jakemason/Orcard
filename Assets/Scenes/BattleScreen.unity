@@ -9302,7 +9302,7 @@ MonoBehaviour:
   NumberOfRewardChoices: 3
   RewardsPanel: {fileID: 1054272452}
   CardSelectionBox: {fileID: 2081550281}
-  CardRendererPrefab: {fileID: 9162847070692476976, guid: 8b42649ff3c292449b03e12573326129,
+  CardRendererPrefab: {fileID: 9162847070692476976, guid: 6847b8d122cda9747be7a4d19f2bc821,
     type: 3}
 --- !u!114 &1511839239
 MonoBehaviour:
@@ -9418,7 +9418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShopRoot: {fileID: 1970618266}
   CardGridRoot: {fileID: 1507065014}
-  ShopCardPrefab: {fileID: 9162847070692476976, guid: 8b42649ff3c292449b03e12573326129,
+  ShopCardPrefab: {fileID: 9162847070692476976, guid: 6847b8d122cda9747be7a4d19f2bc821,
     type: 3}
 --- !u!114 &1511839246
 MonoBehaviour:
