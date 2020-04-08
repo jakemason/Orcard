@@ -63,6 +63,15 @@ public class PlayerHand : MonoBehaviour
             Player.Instance.DiscardPile.Add(cardToDiscard.OriginalCard);
         }
 
+        SpellCard spellCard = card as SpellCard;
+        if (spellCard != null)
+        {
+            foreach (Effect discardEffect in spellCard.DiscardEffects)
+            {
+                discardEffect.Activate();
+            }
+        }
+
         Instance.AlignCards();
     }
 

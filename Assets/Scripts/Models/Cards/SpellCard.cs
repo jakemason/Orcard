@@ -12,6 +12,11 @@ public class SpellCard : Card
 
     [Tooltip("These effects apply at the start of the next turn, and then are disabled.")]
     public List<Effect> StartOfNextTurnEffects;
+    
+    [Header("Discard Effects:")]
+    [Space(20)]
+    [Tooltip("The effects this card generates if discarded from your hand.")]
+    public List<Effect> DiscardEffects;
     // @formatter:on
 
     public override void OnValidate()
@@ -36,6 +41,17 @@ public class SpellCard : Card
             {
                 if (effect == null) continue;
                 tempEffects += effect.InstructionText + " ";
+            }
+        }
+
+        string discardEffects = "";
+        if (DiscardEffects.Count > 0 && OverrideDefaultInstructionText == "")
+        {
+            discardEffects = "If this card is discarded, ";
+            foreach (Effect effect in DiscardEffects)
+            {
+                if (effect == null) continue;
+                discardEffects += effect.InstructionText + " ";
             }
         }
 
