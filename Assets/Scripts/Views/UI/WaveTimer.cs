@@ -1,6 +1,8 @@
 ﻿using TMPro;
 using UnityEngine;
 
+
+//TODO: Honestly not even sure this is a good idea as a mechanic?
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class WaveTimer : MonoBehaviour
 {

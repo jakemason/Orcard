@@ -12,11 +12,11 @@ public class Event : ScriptableObject
     public string EventTitle;
     [TextArea] public string EventDescription;
     public Image EventImage;
+    public List<Requirement> EventRequirements;
     public List<Effect> AcceptOutcomes;
     public List<Effect> DeclineOutcomes;
     [TextArea] public string DeclineText;
     [TextArea] public string AcceptText;
-
 
     public void Accept()
     {

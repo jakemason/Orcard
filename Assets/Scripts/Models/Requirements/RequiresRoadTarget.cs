@@ -5,8 +5,8 @@
 /// these through the inspector interface and allows us to mix and match them
 /// with other CastingRequirements.
 /// </summary>
-[CreateAssetMenu(fileName = "New Requires Road Target", menuName = "Card Requirements/Requires Road Target")]
-public class RequiresRoadTarget : CastingRequirement
+[CreateAssetMenu(fileName = "New Requires Road Target", menuName = "Requirements/Requires Road Target")]
+public class RequiresRoadTarget : Requirement
 {
     public override bool RequirementMet()
     {

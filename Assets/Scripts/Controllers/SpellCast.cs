@@ -62,7 +62,7 @@ public static class SpellCast
             return false;
         }
 
-        foreach (CastingRequirement requirement in AttemptingToCast.CastingRequirements)
+        foreach (Requirement requirement in AttemptingToCast.CastingRequirements)
         {
             if (!requirement.RequirementMet())
             {

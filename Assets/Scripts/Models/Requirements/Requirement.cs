@@ -5,7 +5,7 @@
 /// these through the inspector interface and allows us to mix and match them
 /// with other CastingRequirements.
 /// </summary>
-public abstract class CastingRequirement : ScriptableObject
+public abstract class Requirement : ScriptableObject
 {
     public abstract bool RequirementMet();
 }

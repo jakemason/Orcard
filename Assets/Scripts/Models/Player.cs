@@ -127,7 +127,7 @@ namespace Players
         public static void ModifyGold(int modifier)
         {
             Instance.CurrentGold   += modifier;
-            Instance.GoldText.text =  "Gold: " + modifier;
+            Instance.GoldText.text =  "Gold: " + Instance.CurrentGold;
         }
 
         public static void ModifyEnergy(int modifier)

@@ -32,7 +32,7 @@ public abstract class Card : ScriptableObject
     public CardSet Set = CardSet.Basic;
     public int CastingCost;
     public int GoldCost;
-    public List<CastingRequirement> CastingRequirements;
+    public List<Requirement> CastingRequirements;
     // if this card should "burn" after being played so it cannot be drawn again.
     public bool DestroyOnCast = false;
     public bool IsTargeted = false;

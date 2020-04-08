@@ -23,9 +23,7 @@ public class CardPlayableArea : MonoBehaviour, IDropHandler
             Mathf.RoundToInt(SpellCast.CastPosition.x),
             Mathf.RoundToInt(SpellCast.CastPosition.y));
 
-        SpellCast.Target = BuildingManager.Instance.ConstructedBuildings.ContainsKey(SpellCast.CastPosition)
-            ? BuildingManager.Instance.ConstructedBuildings[SpellCast.CastPosition]
-            : null;
+        SpellCast.Target = BuildingManager.GetBuildingAt(SpellCast.CastPosition);
 
         if (!SpellCast.CastingRequirementsMet()) return;
         PlayerHand.DiscardCard(c);

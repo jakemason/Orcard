@@ -30,4 +30,9 @@ public class BuildingManager : MonoBehaviour
             tower.Value.DoStartOfTurnEffects();
         }
     }
+
+    public static Building GetBuildingAt(Vector2 pos)
+    {
+        return Instance.ConstructedBuildings.ContainsKey(pos) ? Instance.ConstructedBuildings[pos] : null;
+    }
 }

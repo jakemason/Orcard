@@ -23,9 +23,9 @@ public class EventView : MonoBehaviour
 
     public TextMeshProUGUI Description;
     public Image EventImage;
+    public Button AcceptButton;
     public TextMeshProUGUI AcceptText;
     public TextMeshProUGUI DeclineText;
-
     public GameObject EventPanelRoot;
 
     public static void Close()
@@ -35,10 +35,23 @@ public class EventView : MonoBehaviour
 
     public static void Open(Event toPresent)
     {
+        Instance.AcceptButton.interactable = true;
         Instance.EventPanelRoot.SetActive(true);
         Instance.Description.text = toPresent.EventDescription;
         Instance.EventImage       = toPresent.EventImage;
         Instance.AcceptText.text  = toPresent.AcceptText;
+        bool acceptRequirementsMet = true;
+
+        foreach (Requirement requirement in toPresent.EventRequirements)
+        {
+            acceptRequirementsMet = acceptRequirementsMet && requirement.RequirementMet();
+        }
+
+        if (!acceptRequirementsMet)
+        {
+            Instance.AcceptButton.interactable = false;
+        }
+
         Instance.DeclineText.text = toPresent.DeclineText;
     }
 }

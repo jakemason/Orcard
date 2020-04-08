@@ -5,8 +5,8 @@
 /// these through the inspector interface and allows us to mix and match them
 /// with other CastingRequirements.
 /// </summary>
-[CreateAssetMenu(fileName = "New Requires Empty Tile", menuName = "Card Requirements/Requires Empty Tile")]
-public class RequiresEmptyTile : CastingRequirement
+[CreateAssetMenu(fileName = "New Requires Empty Tile", menuName = "Requirements/Requires Empty Tile")]
+public class RequiresEmptyTile : Requirement
 {
     public override bool RequirementMet()
     {

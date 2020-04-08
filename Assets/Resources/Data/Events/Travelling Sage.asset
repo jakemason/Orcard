@@ -16,8 +16,11 @@ MonoBehaviour:
   EventDescription: A sage from a distant land comes before you and offers to teach
     you one of the secrets he has learned from his travels.
   EventImage: {fileID: 0}
+  EventRequirements:
+  - {fileID: 11400000, guid: 006f706a52a1f5f43b404651ba1bdb27, type: 2}
   AcceptOutcomes:
   - {fileID: 11400000, guid: 6c60e82642b9d4d409643dafcc24eda9, type: 2}
+  - {fileID: 11400000, guid: d2e4714fe53a8b34f9b2d198302caa7c, type: 2}
   DeclineOutcomes: []
   DeclineText: Politely refuse their offer.
   AcceptText: <color="green">Add a Rare card to your deck. </color><color="red">Lose

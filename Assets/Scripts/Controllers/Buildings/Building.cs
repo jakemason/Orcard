@@ -17,4 +17,9 @@ public class Building : MonoBehaviour, ITargetable
             }
         }
     }
+
+    public void DestroyBuilding()
+    {
+        Destroy(gameObject);
+    }
 }
