@@ -19,6 +19,7 @@ public class SpellCard : Card
     public List<Effect> DiscardEffects;
     // @formatter:on
 
+#if UNITY_EDITOR
     public override void OnValidate()
     {
         base.OnValidate();
@@ -57,4 +58,5 @@ public class SpellCard : Card
 
         InstructionText += tempEffects + " " + permanentEffects;
     }
+#endif
 }

@@ -26,6 +26,7 @@ public class TowerCard : BuildingCard
         DamagePerSecond = (1 / AttackRate) * Damage;
     }
 
+#if UNITY_EDITOR
     public override void OnValidate()
     {
         UpdateComputedValues();
@@ -36,4 +37,5 @@ public class TowerCard : BuildingCard
 
         base.OnValidate();
     }
+#endif
 }
