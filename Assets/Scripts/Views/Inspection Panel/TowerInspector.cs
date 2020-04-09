@@ -20,8 +20,7 @@ public class TowerInspector : MonoBehaviour, IInspectable, IPointerEnterHandler,
 
     public void EnableInspection()
     {
-        InspectorManager.Instance.Sprite.sprite = Model.Artwork;
-        InspectorManager.Instance.Name.text     = "<b>" + Model.Name + "</b>";
+        InspectorManager.Instance.Name.text = "<b>" + Model.Name + "</b>";
 
         string details = "";
         //only show damage values if we actually fire a bolt of some sort

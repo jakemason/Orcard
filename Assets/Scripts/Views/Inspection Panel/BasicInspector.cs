@@ -19,8 +19,7 @@ public class BasicInspector : MonoBehaviour, IInspectable, IPointerEnterHandler,
 
     public void EnableInspection()
     {
-        InspectorManager.Instance.Sprite.sprite = Model.Artwork;
-        InspectorManager.Instance.Name.text     = "<b>" + Model.Name + "</b>";
+        InspectorManager.Instance.Name.text = "<b>" + Model.Name + "</b>";
 
         string details = "";
         details                                += Model.InstructionText;

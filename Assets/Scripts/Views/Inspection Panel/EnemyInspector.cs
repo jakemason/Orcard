@@ -12,8 +12,7 @@ public class EnemyInspector : MonoBehaviour, IInspectable
 
     public void EnableInspection()
     {
-        InspectorManager.Instance.Sprite.sprite = _model.Sprite;
-        InspectorManager.Instance.Name.text     = "<b>" + _model.Name + "</b>";
+        InspectorManager.Instance.Name.text = "<b>" + _model.Name + "</b>";
 
         string details = "<b>Damage</b>: " + _model.Damage + "\n";
         details += "<b>HP</b>: " + _model.HP         + "\n";

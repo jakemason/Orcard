@@ -11,7 +11,6 @@ public class InspectorManager : MonoBehaviour
     // @formatter:off 
     [Header("Inspection Targets")]
     public GameObject InspectionPanel;
-    public Image Sprite;
     public TextMeshProUGUI Name;
     public TextMeshProUGUI Details;
     // @formatter:on 
