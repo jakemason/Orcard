@@ -28,6 +28,7 @@ public abstract class Card : ScriptableObject
     [Header("Card Info")] 
     public string Name;
     public Sprite Artwork;
+    public Sprite ArtworkBackground;
     public CardRarity Rarity = CardRarity.Common;
     public CardSet Set = CardSet.Basic;
     public int CastingCost;

@@ -9332,7 +9332,7 @@ MonoBehaviour:
   DeckForCurrentRun: {fileID: 0}
   DiscardPile: []
   CardsToDrawEachTurn: 3
-  EnergyGainedPerTurn: 3
+  EnergyGainedPerTurn: 55
   MaxEnergy: 10
   TemporaryOnTurnStartEffects: []
   PermanentOnTurnStartEffects: []

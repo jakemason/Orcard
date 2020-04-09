@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +14,14 @@ public class CardRenderer : MonoBehaviour, ITargetable
     public TextMeshProUGUI Name;
     public TextMeshProUGUI Cost;
     public Image Artwork;
+    public Image ArtworkBackground;
+    public Image CardBorder;
     public TextMeshProUGUI InstructionText;
+    
+    public Color32 CommonColor;
+    public Color32 RareColor;
+    public Color32 EpicColor;
+    public Color32 LegendaryColor;
     
     private PlayableCardController _playable;
     // @formatter:on
@@ -36,6 +44,31 @@ public class CardRenderer : MonoBehaviour, ITargetable
         Cost.text            = CardObject.CastingCost.ToString();
         InstructionText.text = CardObject.InstructionText;
         Artwork.sprite       = CardObject.Artwork;
+        if (CardObject.ArtworkBackground != null)
+        {
+            ArtworkBackground.sprite = CardObject.ArtworkBackground;
+        }
+
+        switch (CardObject.Rarity)
+        {
+            case Card.CardRarity.Common:
+                CardBorder.color = CommonColor;
+                break;
+            case Card.CardRarity.Uncommon:
+                CardBorder.color = CommonColor;
+                break;
+            case Card.CardRarity.Rare:
+                CardBorder.color = RareColor;
+                break;
+            case Card.CardRarity.Epic:
+                CardBorder.color = EpicColor;
+                break;
+            case Card.CardRarity.Legendary:
+                CardBorder.color = LegendaryColor;
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
 
         gameObject.name = Name.text;
     }
