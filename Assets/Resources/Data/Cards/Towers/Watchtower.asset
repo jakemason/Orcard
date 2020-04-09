@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Watchtower
   Artwork: {fileID: 21300000, guid: 8a2ed769065b483468ebcf80773727c8, type: 3}
-  ArtworkBackground: {fileID: 0}
+  ArtworkBackground: {fileID: 21300000, guid: 54897e4e20210dc4fa43d6ca3acf93b3, type: 3}
   Rarity: 0
   Set: 0
   CastingCost: 2
