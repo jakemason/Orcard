@@ -20,7 +20,19 @@ SpriteAtlas:
       readable: 0
       crunchedCompression: 0
       sRGB: 1
-    platformSettings: []
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Standalone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 4
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
     packingSettings:
       serializedVersion: 2
       padding: 4
@@ -33,10 +45,11 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 647b82cd6114bc94688a9e68c41e119e, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 694484
+    totalSpriteSurfaceArea: 717284
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 93deb840df6e37f44a581c1a39d38404, type: 3}
   - {fileID: 21300000, guid: 2cb0c050e44492d4abc29b7b1d9eec8e, type: 3}
   - {fileID: 7719484646038406711, guid: ad1d68d04aa456249ab0b50d55d42201, type: 3}
   - {fileID: 111379456438006879, guid: ad1d68d04aa456249ab0b50d55d42201, type: 3}
@@ -1509,6 +1522,7 @@ SpriteAtlas:
   - {fileID: 2669716188305241430, guid: 2951ac457d47cc343908b1148b4fd143, type: 3}
   - {fileID: 8459111649431749855, guid: 2951ac457d47cc343908b1148b4fd143, type: 3}
   - {fileID: 8955487377275479350, guid: 2951ac457d47cc343908b1148b4fd143, type: 3}
+  - {fileID: 21300000, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: 21300000, guid: 19e279164cfcbc542b5f60d9f2ba5415, type: 3}
   - {fileID: -3459351823847574333, guid: bf7a9b27d4e55d441a6d2d7ec29e82ee, type: 3}
   - {fileID: 8894958842127616405, guid: bf7a9b27d4e55d441a6d2d7ec29e82ee, type: 3}
@@ -1593,6 +1607,7 @@ SpriteAtlas:
   - {fileID: 978164514415817937, guid: bf7a9b27d4e55d441a6d2d7ec29e82ee, type: 3}
   - {fileID: -8310734474933681206, guid: bf7a9b27d4e55d441a6d2d7ec29e82ee, type: 3}
   - {fileID: -834552179275879119, guid: bf7a9b27d4e55d441a6d2d7ec29e82ee, type: 3}
+  - {fileID: 21300000, guid: 72d0c577c9158aa4dad4ee1f7b62650d, type: 3}
   - {fileID: 2876166294870969482, guid: d15245e78e5609048a65bf584bb5193a, type: 3}
   - {fileID: 3903063331988083098, guid: d15245e78e5609048a65bf584bb5193a, type: 3}
   - {fileID: 696298955139333377, guid: d15245e78e5609048a65bf584bb5193a, type: 3}
@@ -1937,6 +1952,7 @@ SpriteAtlas:
   - {fileID: -4213060732436170965, guid: 3239094acfdf39d42abd594c2bcedcc1, type: 3}
   - {fileID: -5125318459181415827, guid: 3239094acfdf39d42abd594c2bcedcc1, type: 3}
   - {fileID: -6041980372888493847, guid: 3239094acfdf39d42abd594c2bcedcc1, type: 3}
+  - {fileID: 21300000, guid: ea8ded5a51206ac4ca7f3f58a4581470, type: 3}
   - {fileID: 21300000, guid: ddeb8a6a86fde974c83e4472f06b8ed7, type: 3}
   - {fileID: -796703908314518480, guid: 5f0019badba37db42a20b696a8868333, type: 3}
   - {fileID: 4120631713342508869, guid: 5f0019badba37db42a20b696a8868333, type: 3}
@@ -1984,6 +2000,7 @@ SpriteAtlas:
   - {fileID: 5286708159577924493, guid: 5f0019badba37db42a20b696a8868333, type: 3}
   - {fileID: 8768893368382487233, guid: 5f0019badba37db42a20b696a8868333, type: 3}
   - {fileID: 3101331019158360973, guid: 5f0019badba37db42a20b696a8868333, type: 3}
+  - {fileID: 21300000, guid: d26ea8dadab609946a7c14d388f76a51, type: 3}
   - {fileID: 6224056798280817161, guid: eb2542dbff1d82f48905897a3aa22750, type: 3}
   - {fileID: -7853403667995611972, guid: eb2542dbff1d82f48905897a3aa22750, type: 3}
   - {fileID: -4906626349902838716, guid: eb2542dbff1d82f48905897a3aa22750, type: 3}
@@ -2602,6 +2619,7 @@ SpriteAtlas:
   - {fileID: 8286064699241354725, guid: fae3beae0334790438393168d3410343, type: 3}
   - {fileID: 3355172955315020000, guid: fae3beae0334790438393168d3410343, type: 3}
   m_PackedSpriteNamesToIndex:
+  - ButtonDark
   - CardTitle
   - Undead0_9
   - Undead0_8
@@ -4074,6 +4092,7 @@ SpriteAtlas:
   - Tree0_38
   - Tree0_9
   - Tree0_48
+  - UI
   - EnergySymbol
   - Reptile0_2
   - Reptile0_5
@@ -4158,6 +4177,7 @@ SpriteAtlas:
   - Reptile0_1
   - Reptile0_0
   - Reptile0_3
+  - UI 1
   - Avian0_63
   - Avian0_62
   - Avian0_61
@@ -4502,6 +4522,7 @@ SpriteAtlas:
   - Plant0_13
   - Plant0_10
   - Plant0_11
+  - Button
   - CardBack
   - Pest0_17
   - Pest0_16
@@ -4549,6 +4570,7 @@ SpriteAtlas:
   - Pest0_30
   - Pest0_33
   - Pest0_32
+  - Panel
   - Dog0_10
   - Dog0_1
   - Dog0_2
