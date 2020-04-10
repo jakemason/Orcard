@@ -124,7 +124,7 @@ Material:
     - _VerticalSkew: 0
     - _WaveAmp: 1
     - _WaveSpeed: 1
-    - _WindFrecuency: 8.7
+    - _WindFrecuency: 60
     - _WindGustDistance: 0.4
     - _WindStrength: 0.02
     - _ZWrite: 1
