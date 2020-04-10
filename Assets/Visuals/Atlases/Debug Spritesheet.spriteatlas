@@ -45,7 +45,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 647b82cd6114bc94688a9e68c41e119e, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 717284
+    totalSpriteSurfaceArea: 711004
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -1522,7 +1522,26 @@ SpriteAtlas:
   - {fileID: 2669716188305241430, guid: 2951ac457d47cc343908b1148b4fd143, type: 3}
   - {fileID: 8459111649431749855, guid: 2951ac457d47cc343908b1148b4fd143, type: 3}
   - {fileID: 8955487377275479350, guid: 2951ac457d47cc343908b1148b4fd143, type: 3}
-  - {fileID: 21300000, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 388057999756033245, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 1652299931923453484, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 7301787903208175943, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: -6595680761151332689, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: -343943630576144839, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: -273060469431498887, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: -8346291274449466048, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: -4532114073746202998, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 9094600903545770030, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 8586885197115800619, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 8391660652416901024, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 8160775752198118580, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 7448113381798972013, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 7843416716369364892, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: -1557013538026691241, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 82707731993968007, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 1080825480604336155, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: -9136572144232859775, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 228940821244427079, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: -5481780447360278658, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: 21300000, guid: 19e279164cfcbc542b5f60d9f2ba5415, type: 3}
   - {fileID: -3459351823847574333, guid: bf7a9b27d4e55d441a6d2d7ec29e82ee, type: 3}
   - {fileID: 8894958842127616405, guid: bf7a9b27d4e55d441a6d2d7ec29e82ee, type: 3}
@@ -1607,7 +1626,6 @@ SpriteAtlas:
   - {fileID: 978164514415817937, guid: bf7a9b27d4e55d441a6d2d7ec29e82ee, type: 3}
   - {fileID: -8310734474933681206, guid: bf7a9b27d4e55d441a6d2d7ec29e82ee, type: 3}
   - {fileID: -834552179275879119, guid: bf7a9b27d4e55d441a6d2d7ec29e82ee, type: 3}
-  - {fileID: 21300000, guid: 72d0c577c9158aa4dad4ee1f7b62650d, type: 3}
   - {fileID: 2876166294870969482, guid: d15245e78e5609048a65bf584bb5193a, type: 3}
   - {fileID: 3903063331988083098, guid: d15245e78e5609048a65bf584bb5193a, type: 3}
   - {fileID: 696298955139333377, guid: d15245e78e5609048a65bf584bb5193a, type: 3}
@@ -2592,6 +2610,7 @@ SpriteAtlas:
   - {fileID: 2220182432409199933, guid: f88f0e3e55e7aae488307fe7acc6da93, type: 3}
   - {fileID: 7118490549636077819, guid: f88f0e3e55e7aae488307fe7acc6da93, type: 3}
   - {fileID: 21300000, guid: 54897e4e20210dc4fa43d6ca3acf93b3, type: 3}
+  - {fileID: 21300000, guid: 81e4cd7e458562d48bc84644a17d8866, type: 3}
   - {fileID: 3747452307735245596, guid: fae3beae0334790438393168d3410343, type: 3}
   - {fileID: -8663575413618177380, guid: fae3beae0334790438393168d3410343, type: 3}
   - {fileID: 5579069075528026889, guid: fae3beae0334790438393168d3410343, type: 3}
@@ -4092,7 +4111,26 @@ SpriteAtlas:
   - Tree0_38
   - Tree0_9
   - Tree0_48
-  - UI
+  - UI_17
+  - UI_16
+  - UI_15
+  - UI_8
+  - UI_14
+  - UI_9
+  - UI_13
+  - UI_12
+  - UI_11
+  - UI_4
+  - UI_10
+  - UI_5
+  - UI_6
+  - UI_7
+  - UI_0
+  - UI_1
+  - UI_2
+  - UI_3
+  - UI_19
+  - UI_18
   - EnergySymbol
   - Reptile0_2
   - Reptile0_5
@@ -4177,7 +4215,6 @@ SpriteAtlas:
   - Reptile0_1
   - Reptile0_0
   - Reptile0_3
-  - UI 1
   - Avian0_63
   - Avian0_62
   - Avian0_61
@@ -5162,6 +5199,7 @@ SpriteAtlas:
   - Floor_379
   - Floor_369
   - BGArtwork
+  - UI-Resources
   - Aquatic1_12
   - Aquatic1_13
   - Aquatic1_10

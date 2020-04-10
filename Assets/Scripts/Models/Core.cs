@@ -46,7 +46,7 @@ public class Core : MonoBehaviour
 
     public void UpdateText()
     {
-        HealthText.text = "Health: " + _health + " / " + MaxHealth;
+        HealthText.text = _health.ToString();
     }
 
     public static void TakeDamage(int damageToTake)

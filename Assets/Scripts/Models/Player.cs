@@ -132,7 +132,7 @@ namespace Players
                 Instance.CurrentGold = 0;
             }
 
-            Instance.GoldText.text = "Gold: " + Instance.CurrentGold;
+            Instance.GoldText.text = Instance.CurrentGold.ToString();
         }
 
         public static void ModifyEnergy(int modifier)
@@ -152,7 +152,7 @@ namespace Players
 
         public static void UpdateEnergyCounter()
         {
-            Instance.EnergyCounter.text = "Energy: " + Instance._remainingEnergy + " / " + Instance.MaxEnergy;
+            Instance.EnergyCounter.text = Instance._remainingEnergy.ToString();
         }
 
         /// <summary>
