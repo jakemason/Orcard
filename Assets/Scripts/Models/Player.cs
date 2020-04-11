@@ -41,13 +41,8 @@ namespace Players
                 UpdateEnergyCounter();
             }
         }
+
         // @formatter:off
-
-        [Header("Player Gold")]
-        [Space(20)]
-        public int CurrentGold = 0;
-        public TextMeshProUGUI GoldText;
-
         [Header("Visuals")]
         [Space(20)]
         public Transform DeckPosition;
@@ -75,7 +70,6 @@ namespace Players
         private void Start()
         {
             StartTurn();
-            ModifyGold(0);
         }
 
         public static void EndTurn()
@@ -122,17 +116,6 @@ namespace Players
         public void RefillEnergy()
         {
             RemainingEnergy = EnergyGainedPerTurn;
-        }
-
-        public static void ModifyGold(int modifier)
-        {
-            Instance.CurrentGold += modifier;
-            if (Instance.CurrentGold < 0)
-            {
-                Instance.CurrentGold = 0;
-            }
-
-            Instance.GoldText.text = Instance.CurrentGold.ToString();
         }
 
         public static void ModifyEnergy(int modifier)

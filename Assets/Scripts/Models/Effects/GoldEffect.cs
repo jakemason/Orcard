@@ -9,7 +9,7 @@ public class GoldEffect : Effect
 
     public override void Activate()
     {
-        Player.ModifyGold(GoldModifier);
+        IncomeController.ModifyGold(GoldModifier);
     }
 
 #if UNITY_EDITOR

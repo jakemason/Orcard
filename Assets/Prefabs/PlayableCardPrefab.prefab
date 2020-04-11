@@ -767,10 +767,10 @@ MonoBehaviour:
     rgba: 4294967295
   RareColor:
     serializedVersion: 2
-    rgba: 4292898149
+    rgba: 4283486120
   EpicColor:
     serializedVersion: 2
-    rgba: 4293034943
+    rgba: 4292898149
   LegendaryColor:
     serializedVersion: 2
     rgba: 4282424288

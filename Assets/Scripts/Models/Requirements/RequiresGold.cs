@@ -8,6 +8,6 @@ public class RequiresGold : Requirement
 
     public override bool RequirementMet()
     {
-        return Player.Instance.CurrentGold >= GoldRequirement;
+        return IncomeController.GetCurrentGold() >= GoldRequirement;
     }
 }

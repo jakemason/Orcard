@@ -45,7 +45,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 647b82cd6114bc94688a9e68c41e119e, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 711004
+    totalSpriteSurfaceArea: 711784
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -232,6 +232,7 @@ SpriteAtlas:
   - {fileID: 5466513050914969912, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: -3609481462354183055, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: 2754166249532621872, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
+  - {fileID: 2954375008193183143, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: 7729756209463198850, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: -330298551221417898, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: 8420516166525891949, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
@@ -260,6 +261,7 @@ SpriteAtlas:
   - {fileID: -4079613656910075694, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: -6138230866663154418, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: -7642852196986143308, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
+  - {fileID: -1583952302052483730, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: 48797513864888106, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: -8516813793510556873, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: -1654640935651171487, guid: eefe64139fcddd144b518ccfd222a544, type: 3}
@@ -2821,6 +2823,7 @@ SpriteAtlas:
   - ForestTiles_54
   - ForestTiles_26
   - ForestTiles_87
+  - ForestTiles_97
   - ForestTiles_57
   - ForestTiles_27
   - ForestTiles_37
@@ -2849,6 +2852,7 @@ SpriteAtlas:
   - ForestTiles_30
   - ForestTiles_28
   - ForestTiles_29
+  - ForestTiles_98
   - ForestTiles_39
   - ForestTiles_38
   - GUI0_61

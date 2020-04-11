@@ -114,7 +114,7 @@ Shader "Custom/Wind"
 				#endif
 				
                 #if defined(PIXELSNAP_ON)
-                OUT.vertex = UnityPixelSnap (v.vertex);
+                OUT.vertex = UnityPixelSnap (OUT.vertex);
                 #endif
 				
 				OUT.color = IN.color * _Color;
