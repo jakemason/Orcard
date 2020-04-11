@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class TurnManager : MonoBehaviour
 {
-    public int TimeBetweenTurnsInSeconds = 25;
+    public int TimeBetweenTurnsInSeconds = 5;
     private float _timeCountdown;
 
     public void Start()
@@ -13,7 +13,7 @@ public class TurnManager : MonoBehaviour
 
     public void Update()
     {
-        _timeCountdown -= TimeBetweenTurnsInSeconds;
+        _timeCountdown -= Time.deltaTime;
         if (_timeCountdown <= 0f)
         {
             StartTurn();
@@ -26,5 +26,6 @@ public class TurnManager : MonoBehaviour
         Player.StartTurn();
         BuildingManager.StartTurn();
         //TODO: Conditional checks for Events and Shop goes here most likely. WaveControllerButton conditional on those being completed
+        //TODO: Do IncomeController from here as well?
     }
 }

@@ -45,7 +45,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 647b82cd6114bc94688a9e68c41e119e, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 711784
+    totalSpriteSurfaceArea: 712184
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -1541,6 +1541,7 @@ SpriteAtlas:
   - {fileID: -1557013538026691241, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: 82707731993968007, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: 1080825480604336155, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 6620621745411573659, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: -9136572144232859775, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: 228940821244427079, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: -5481780447360278658, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
@@ -4132,6 +4133,7 @@ SpriteAtlas:
   - UI_0
   - UI_1
   - UI_2
+  - UI_20
   - UI_3
   - UI_19
   - UI_18
