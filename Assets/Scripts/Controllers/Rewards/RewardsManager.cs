@@ -45,7 +45,6 @@ public class RewardsManager : MonoBehaviour
     public static void CloseRewardsPanel()
     {
         Instance.ClearRewardGameObjects();
-        TurnManager.StartTurn();
         IsOpen = false;
     }
 

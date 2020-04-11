@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Players
 {
@@ -14,7 +15,14 @@ namespace Players
         public Deck DeckTemplate;
         public Deck DeckForCurrentRun;
         public List<Card> DiscardPile;
-        public int CardsToDrawEachTurn = 3;
+        
+        [Header("Player Draws")] 
+        [Space(20)]
+        public int CardsToDraw = 3;
+        public int RedrawGoldCost = 25;
+        public int FreeDrawCooldownInSeconds = 15;
+        public Button DrawButton;
+        private float _freeDrawCooldown;
 
         [Header("Player Energy")]
         [Space(20)]
@@ -70,17 +78,41 @@ namespace Players
         private void Start()
         {
             StartTurn();
+            DrawNewHand();
+            _freeDrawCooldown = FreeDrawCooldownInSeconds;
         }
 
-        public static void EndTurn()
+        public void Update()
         {
-            PlayerHand.DiscardHand();
+            _freeDrawCooldown       -= Time.deltaTime;
+            DrawButton.interactable =  _freeDrawCooldown <= 0f || IncomeController.GetCurrentGold() >= RedrawGoldCost;
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
+        }
+
+        public void DrawNewHand()
+        {
+            if (_freeDrawCooldown <= 0f)
+            {
+                PlayerHand.DiscardHand();
+                Instance.Draw(Instance.CardsToDraw);
+            }
+            else if (IncomeController.GetCurrentGold() >= RedrawGoldCost)
+            {
+                PlayerHand.DiscardHand();
+                Instance.Draw(Instance.CardsToDraw);
+                IncomeController.ModifyGold(-RedrawGoldCost);
+            }
+
+            _freeDrawCooldown = FreeDrawCooldownInSeconds;
         }
 
         public static void StartTurn()
         {
             Instance.RefillEnergy();
-            Instance.Draw(Instance.CardsToDrawEachTurn);
 
             foreach (Effect effect in Instance.PermanentOnTurnStartEffects)
             {
@@ -95,14 +127,6 @@ namespace Players
             Instance.TemporaryOnTurnStartEffects = new List<Effect>();
         }
 
-        public void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                Application.Quit();
-            }
-        }
-
         public static void RegisterTemporaryOnTurnEffect(Effect toRegister)
         {
             Instance.TemporaryOnTurnStartEffects.Add(toRegister);
@@ -115,7 +139,7 @@ namespace Players
 
         public void RefillEnergy()
         {
-            RemainingEnergy = EnergyGainedPerTurn;
+            RemainingEnergy += EnergyGainedPerTurn;
         }
 
         public static void ModifyEnergy(int modifier)

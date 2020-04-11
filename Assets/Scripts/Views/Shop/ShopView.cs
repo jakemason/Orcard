@@ -31,6 +31,11 @@ public class ShopView : MonoBehaviour
         Instance.ShopRoot.SetActive(false);
     }
 
+    public static bool IsEnabled()
+    {
+        return Instance.ShopRoot.activeSelf;
+    }
+
     public static void CreateCards(List<Card> toCreate)
     {
         foreach (Transform child in Instance.CardGridRoot.transform)

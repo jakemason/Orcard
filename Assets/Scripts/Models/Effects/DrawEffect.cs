@@ -10,7 +10,7 @@ public class DrawEffect : Effect
 #if UNITY_EDITOR
     public void OnValidate()
     {
-        InstructionText = $"Draw {CardsToDraw} Card";
+        InstructionText = $"+{CardsToDraw} Card";
         if (CardsToDraw > 1)
         {
             InstructionText += "s";

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Supply Market
   Artwork: {fileID: 21300000, guid: 21e0f2bffbc084e4d8e70e7340f279ab, type: 3}
+  ArtworkBackground: {fileID: 0}
   Rarity: 2
   Set: 0
   CastingCost: 3
@@ -22,7 +23,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 0
   IsTargeted: 1
-  InstructionText: 'Each turn Draw 1 Card. '
+  InstructionText: 'Generates: +1 Card. '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: The merchants of Elandia are known for their exotic goods and tireless

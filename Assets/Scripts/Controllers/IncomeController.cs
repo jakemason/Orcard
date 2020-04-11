@@ -23,8 +23,8 @@ public class IncomeController : MonoBehaviour
 
         _tickCountdown          = SecondsBetweenIncomeTicks;
         _instance.GoldText.text = CurrentGold.ToString();
+        ModifyGold(Income);
     }
-
 
     private void Update()
     {

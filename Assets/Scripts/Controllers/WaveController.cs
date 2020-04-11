@@ -28,7 +28,6 @@ public class WaveController : MonoBehaviour
     
     [Header("GameObject References")]
     public GameObject EnemyPrefab;
-    public GameObject NextWaveButton;
     // @formatter:on 
     private void Start()
     {
@@ -67,15 +66,13 @@ public class WaveController : MonoBehaviour
     {
         CurrentWaveNumber++;
         WaveActive = false;
-        RewardsManager.OpenRewardsPanel();
+        //RewardsManager.OpenRewardsPanel();
     }
 
     public void StartNextWave()
     {
-        Debug.Log(DifficultyCurve.Evaluate(CurrentWaveNumber / (float) Waves.Count));
         TimeBetweenWavesTracker = TimeBetweenWavesInSeconds;
         WaveActive              = true;
-        NextWaveButton.SetActive(false);
         if (CurrentWaveNumber > Waves.Count - 1)
         {
             SceneManager.LoadScene("Winner");
@@ -83,7 +80,6 @@ public class WaveController : MonoBehaviour
         }
 
         EnemiesInCurrentWave = Waves[CurrentWaveNumber].EnemiesInWave;
-        Player.EndTurn();
         for (int i = 0; i < EnemiesInCurrentWave.Count; i++)
         {
             StartCoroutine(SpawnEnemy(EnemiesInCurrentWave[i], Waves[CurrentWaveNumber].TimeBetweenSpawns * i));

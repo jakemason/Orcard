@@ -2198,7 +2198,7 @@ GameObject:
   - component: {fileID: 299553216}
   - component: {fileID: 299553215}
   m_Layer: 5
-  m_Name: Next Wave
+  m_Name: Draw New Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2267,8 +2267,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1511839236}
-        m_MethodName: StartNextWave
+      - m_Target: {fileID: 1511839240}
+        m_MethodName: DrawNewHand
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3729,9 +3729,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Next Wave
-
-'
+  m_text: Draw New Hand
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3800,10 +3798,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 634373613}
-    characterCount: 10
+    characterCount: 13
     spriteCount: 0
     spaceCount: 2
-    wordCount: 2
+    wordCount: 3
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -10156,7 +10154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2dbf3f1fee4c24d96e8049486d7b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeBetweenWavesInSeconds: 600
+  TimeBetweenWavesInSeconds: 30
   TimeBetweenWavesTracker: 0
   DifficultyCurve:
     serializedVersion: 2
@@ -10263,13 +10261,14 @@ MonoBehaviour:
   DeckTemplate: {fileID: 11400000, guid: f6275abce4d403d4fa05cef47d610683, type: 2}
   DeckForCurrentRun: {fileID: 0}
   DiscardPile: []
-  CardsToDrawEachTurn: 3
+  CardsToDraw: 3
+  RedrawGoldCost: 25
+  FreeDrawCooldownInSeconds: 15
+  DrawButton: {fileID: 299553215}
   EnergyGainedPerTurn: 3
   MaxEnergy: 10
   TemporaryOnTurnStartEffects: []
   PermanentOnTurnStartEffects: []
-  CurrentGold: 125
-  GoldText: {fileID: 202445682}
   DeckPosition: {fileID: 626625766}
   HandGameObject: {fileID: 875782279}
   CardRendererTemplate: {fileID: 9162847070692476976, guid: 2ad7840c37d5abd4b8a2b0d849cd6dc8,
