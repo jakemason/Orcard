@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Players;
 using UnityEditor;
 using UnityEngine;
 
@@ -15,7 +14,7 @@ public class TimedEffect : Effect
     {
         DelayCoolddown  = Delay;
         InstructionText = $"After {Delay} seconds, ";
-        foreach (Effect effect in effects)
+        foreach (Effect effect in Effects)
         {
             InstructionText += effect.InstructionText;
         }

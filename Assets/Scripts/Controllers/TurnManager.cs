@@ -5,7 +5,7 @@ using UnityEngine;
 public class TurnManager : MonoBehaviour
 {
     public int TimeBetweenTurnsInSeconds = 5;
-    public static List<TimedEffect> TimedEffects;
+    public static List<TimedEffect> TimedEffects = new List<TimedEffect>();
     private float _timeCountdown;
 
     public void Start()

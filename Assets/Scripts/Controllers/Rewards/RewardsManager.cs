@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class RewardsManager : MonoBehaviour
@@ -11,6 +12,10 @@ public class RewardsManager : MonoBehaviour
     [Header("Rewards Offered")]
     [Range(0,1)] public float ChanceForRandomRarityUpgrade = 0.2f;
     public int NumberOfRewardChoices = 3;
+    
+    [Header("UI")]
+    [Space(20)]
+    public Button Button;
     
     [Header("Prefabs and Holders")]
     [Space(20)]
@@ -36,16 +41,23 @@ public class RewardsManager : MonoBehaviour
         _rewardsOffered            = new List<Card>();
     }
 
-    public static void OpenRewardsPanel()
+    public static void MakeNewRewardAvailable()
     {
+        Instance.Button.interactable = true;
         Instance.CreateRewardGameObjects();
+    }
+
+    public void OpenRewardsPanel()
+    {
         IsOpen = true;
+        RewardsPanel.SetActive(true);
     }
 
     public static void CloseRewardsPanel()
     {
         Instance.ClearRewardGameObjects();
-        IsOpen = false;
+        IsOpen                       = false;
+        Instance.Button.interactable = false;
     }
 
     private void PickRewards()
@@ -114,8 +126,6 @@ public class RewardsManager : MonoBehaviour
             rend.UpdateCardDetails();
             _rewardsOfferedGameObjects.Add(reward);
         }
-
-        RewardsPanel.SetActive(true);
     }
 
     /// <summary>

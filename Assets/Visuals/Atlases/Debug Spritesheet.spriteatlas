@@ -45,7 +45,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 647b82cd6114bc94688a9e68c41e119e, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 712184
+    totalSpriteSurfaceArea: 714984
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -1539,11 +1539,14 @@ SpriteAtlas:
   - {fileID: 7448113381798972013, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: 7843416716369364892, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: -1557013538026691241, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 238177201661318622, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: 82707731993968007, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 9084407170249120912, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: 1080825480604336155, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: 6620621745411573659, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: -9136572144232859775, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: 228940821244427079, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: -256003546741158619, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: -5481780447360278658, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: 21300000, guid: 19e279164cfcbc542b5f60d9f2ba5415, type: 3}
   - {fileID: -3459351823847574333, guid: bf7a9b27d4e55d441a6d2d7ec29e82ee, type: 3}
@@ -2132,6 +2135,10 @@ SpriteAtlas:
   - {fileID: 2508079549269557659, guid: d6c6fe0d0d3705d4da9237152926bcfe, type: 3}
   - {fileID: -5982631482569217063, guid: d6c6fe0d0d3705d4da9237152926bcfe, type: 3}
   - {fileID: 8778142817780594289, guid: d6c6fe0d0d3705d4da9237152926bcfe, type: 3}
+  - {fileID: -6223486697744503835, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
+  - {fileID: -1919371625736947961, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
+  - {fileID: -7091710371065449763, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
+  - {fileID: -4914975280773618118, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
   - {fileID: -4928692205983056614, guid: f88f0e3e55e7aae488307fe7acc6da93, type: 3}
   - {fileID: -9094701772626701120, guid: f88f0e3e55e7aae488307fe7acc6da93, type: 3}
   - {fileID: 573713574668750834, guid: f88f0e3e55e7aae488307fe7acc6da93, type: 3}
@@ -4131,11 +4138,14 @@ SpriteAtlas:
   - UI_6
   - UI_7
   - UI_0
+  - UI_22
   - UI_1
+  - UI_23
   - UI_2
   - UI_20
   - UI_3
   - UI_19
+  - UI_21
   - UI_18
   - EnergySymbol
   - Reptile0_2
@@ -4724,6 +4734,10 @@ SpriteAtlas:
   - Demon0_11
   - Demon0_12
   - Demon0_13
+  - Orc
+  - khelz_enemies_1
+  - khelz_enemies_0
+  - khelz_enemies_3
   - Floor_368
   - Floor_370
   - Floor_371

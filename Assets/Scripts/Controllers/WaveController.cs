@@ -66,6 +66,7 @@ public class WaveController : MonoBehaviour
     {
         CurrentWaveNumber++;
         WaveActive = false;
+        RewardsManager.MakeNewRewardAvailable();
         //RewardsManager.OpenRewardsPanel();
     }
 
