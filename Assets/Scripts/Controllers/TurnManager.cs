@@ -1,9 +1,11 @@
-﻿using Players;
+﻿using System.Collections.Generic;
+using Players;
 using UnityEngine;
 
 public class TurnManager : MonoBehaviour
 {
     public int TimeBetweenTurnsInSeconds = 5;
+    public static List<TimedEffect> TimedEffects;
     private float _timeCountdown;
 
     public void Start()
@@ -18,6 +20,20 @@ public class TurnManager : MonoBehaviour
         {
             StartTurn();
             _timeCountdown = TimeBetweenTurnsInSeconds;
+        }
+
+        for (int i = TimedEffects.Count - 1; i >= 0; i--)
+        {
+            TimedEffects[i].DelayCoolddown -= Time.deltaTime;
+            if (TimedEffects[i].DelayCoolddown <= 0.0f)
+            {
+                foreach (Effect effect in TimedEffects[i].Effects)
+                {
+                    effect.Activate();
+                }
+
+                TimedEffects.RemoveAt(i);
+            }
         }
     }
 

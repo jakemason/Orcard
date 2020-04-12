@@ -20,6 +20,7 @@ namespace Players
         [Space(20)]
         public int CardsToDraw = 3;
         public int RedrawGoldCost = 25;
+        public int RedrawGoldIncrease = 5;
         public int FreeDrawCooldownInSeconds = 15;
         public Button DrawButton;
         private float _freeDrawCooldown;
@@ -105,6 +106,7 @@ namespace Players
                 PlayerHand.DiscardHand();
                 Instance.Draw(Instance.CardsToDraw);
                 IncomeController.ModifyGold(-RedrawGoldCost);
+                RedrawGoldCost += RedrawGoldIncrease;
             }
 
             _freeDrawCooldown = FreeDrawCooldownInSeconds;

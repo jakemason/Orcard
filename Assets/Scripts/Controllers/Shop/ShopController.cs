@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class ShopController : MonoBehaviour
 {
     public int ShopRefreshInSeconds = 60;
     [SerializeField] private float _shopRefreshTimer;
-    public static List<Card> OnSale;
+    public static List<Card> OnSale = new List<Card>();
     public static float CostMultiplier = 1.0f; //cards can manipulate this to go for a "shop" strat
 
     public static int CardsToGenerate = 6;
@@ -43,6 +42,12 @@ public class ShopController : MonoBehaviour
     /// </summary>
     public void Open()
     {
+        if (OnSale.Count == 0)
+        {
+            GenerateNewCardsForSale();
+            ShopView.CreateCards(OnSale);
+        }
+
         ShopView.Enable();
     }
 
@@ -53,6 +58,12 @@ public class ShopController : MonoBehaviour
     /// </summary>
     public void Close()
     {
+        if (OnSale.Count == 0)
+        {
+            GenerateNewCardsForSale();
+            ShopView.CreateCards(OnSale);
+        }
+
         ShopView.Disable();
     }
 

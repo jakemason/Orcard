@@ -9,6 +9,8 @@ public class IncomeController : MonoBehaviour
     public int CurrentGold;
     public int Income = 25;
     public TextMeshProUGUI GoldText;
+    public AudioClip ToPlay;
+    public AudioSource AudioSource;
 
     private void Start()
     {
@@ -32,7 +34,9 @@ public class IncomeController : MonoBehaviour
         if (_tickCountdown <= 0f)
         {
             ModifyGold(Income);
-            _tickCountdown = SecondsBetweenIncomeTicks;
+            _tickCountdown    = SecondsBetweenIncomeTicks;
+            AudioSource.pitch = Random.Range(0.8f, 1.2f);
+            AudioSource.PlayOneShot(ToPlay);
         }
     }
 

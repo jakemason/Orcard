@@ -10,7 +10,7 @@ public class DrawEffect : Effect
 #if UNITY_EDITOR
     public void OnValidate()
     {
-        InstructionText = $"+{CardsToDraw} Card";
+        InstructionText = $"+{CardsToDraw} Card Per Draw";
         if (CardsToDraw > 1)
         {
             InstructionText += "s";
@@ -24,6 +24,6 @@ public class DrawEffect : Effect
 
     public override void Activate()
     {
-        Player.Instance.Draw(CardsToDraw);
+        Player.Instance.CardsToDraw += CardsToDraw;
     }
 }
