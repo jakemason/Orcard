@@ -5,9 +5,11 @@ public class ClearEffect : Effect
 {
     public override void Activate()
     {
-        Building target = BuildingManager.GetBuildingAt(SpellCast.CastPosition);
+        Vector2  pos    = new Vector2((int) SpellCast.CastPosition.x, (int) SpellCast.CastPosition.y);
+        Building target = BuildingManager.GetBuildingAt(pos);
         if (target != null)
         {
+            BuildingManager.Instance.ConstructedBuildings.Remove(pos);
             target.DestroyBuilding();
         }
     }
