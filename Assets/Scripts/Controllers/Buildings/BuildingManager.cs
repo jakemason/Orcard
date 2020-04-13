@@ -9,7 +9,7 @@ public class BuildingManager : MonoBehaviour
     [FormerlySerializedAs("ConstructedTowers")]
     public Dictionary<Vector2, Building> ConstructedBuildings;
 
-    private void Start()
+    private void Awake()
     {
         if (Instance == null)
         {
