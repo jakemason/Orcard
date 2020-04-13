@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3531576bc42b2fe408105a9e8cdf50fb, type: 3}
-  m_Name: Build
+  m_Script: {fileID: 11500000, guid: c698432d009e32d44b1b5426cf2067e7, type: 3}
+  m_Name: RequiresDestructableTarget
   m_EditorClassIdentifier: 
-  InstructionText: 
-  ConstructionPrefab: {fileID: 988547076366149480, guid: 431a6127b97b7884fb15b8757b21a294,
-    type: 3}

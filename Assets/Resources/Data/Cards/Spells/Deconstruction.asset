@@ -14,15 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Deconstruction
   Artwork: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  ArtworkBackground: {fileID: 0}
   Rarity: 0
   Set: 0
   CastingCost: 0
   GoldCost: 0
   CastingRequirements:
-  - {fileID: 11400000, guid: f720eea304a55dd4c9b4df5141ebca6f, type: 2}
+  - {fileID: 11400000, guid: bb8039ff0cebbfa46b9d8f5e541f1bd7, type: 2}
   DestroyOnCast: 0
   IsTargeted: 0
-  InstructionText: 'Destroy any buildings at target location  '
+  InstructionText: 'Destroy target building.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 

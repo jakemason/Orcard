@@ -5,14 +5,16 @@ using UnityEngine;
 public class BuildingCard : Card
 {
     // @formatter:off 
-    [Header("Building Effects")] 
+    [Header("Building Effects")]
     [Space(20)]
     [Tooltip("These effects apply at the start of the each turn while the building is alive.")]
     public List<Effect> EachTurnEffects;
+    public bool IsIndestructible; //Indestructible buildings cannot be removed by other cards.
     
     [Tooltip("This is just a temporary way to quickly differentiate different towers while we don't have art assets.")]
     public Color Tint = Color.white;
-    
+    // @formatter:on 
+
 #if UNITY_EDITOR
     public override void OnValidate()
     {
@@ -31,6 +33,10 @@ public class BuildingCard : Card
         }
 
         InstructionText += startEffects;
+        if (IsIndestructible)
+        {
+            InstructionText += "Indestructible.";
+        }
     }
 #endif
 }

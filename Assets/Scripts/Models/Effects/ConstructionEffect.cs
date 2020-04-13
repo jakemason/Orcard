@@ -16,9 +16,10 @@ public class ConstructionEffect : Effect
         {
             Tower     tower = go.AddComponent<Tower>();
             TowerCard card  = (TowerCard) SpellCast.AttemptingToCast;
-            rend.sprite       = card.Artwork;
-            rend.sortingOrder = (int) -go.transform.position.y;
-            rend.color        = card.Tint;
+            tower.IsIndestructable = card.IsIndestructible;
+            rend.sprite            = card.Artwork;
+            rend.sortingOrder      = (int) -go.transform.position.y;
+            rend.color             = card.Tint;
             //We need to use a copy here because Upgrade cards alter the stats of the model throughout gameplay
             tower.Model = Instantiate(card);
             BuildingManager.Instance.ConstructedBuildings.Add(SpellCast.CastPosition, tower);
@@ -29,9 +30,10 @@ public class ConstructionEffect : Effect
         {
             Building     building = go.AddComponent<Building>();
             BuildingCard card     = (BuildingCard) SpellCast.AttemptingToCast;
-            rend.sprite       = card.Artwork;
-            rend.sortingOrder = (int) -go.transform.position.y;
-            rend.color        = card.Tint;
+            building.IsIndestructable = card.IsIndestructible;
+            rend.sprite               = card.Artwork;
+            rend.sortingOrder         = (int) -go.transform.position.y;
+            rend.color                = card.Tint;
             //We need to use a copy here because Upgrade cards alter the stats of the model throughout gameplay
             building.Model = Instantiate(card);
             BuildingManager.Instance.ConstructedBuildings.Add(SpellCast.CastPosition, building);

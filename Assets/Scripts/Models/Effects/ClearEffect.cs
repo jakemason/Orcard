@@ -7,7 +7,7 @@ public class ClearEffect : Effect
     {
         Vector2  pos    = new Vector2((int) SpellCast.CastPosition.x, (int) SpellCast.CastPosition.y);
         Building target = BuildingManager.GetBuildingAt(pos);
-        if (target != null)
+        if (target != null && !target.IsIndestructable)
         {
             BuildingManager.Instance.ConstructedBuildings.Remove(pos);
             target.DestroyBuilding();

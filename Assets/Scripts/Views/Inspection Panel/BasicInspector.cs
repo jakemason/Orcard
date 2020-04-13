@@ -22,9 +22,10 @@ public class BasicInspector : MonoBehaviour, IInspectable, IPointerEnterHandler,
         InspectorManager.Instance.Name.text = "<b>" + Model.Name + "</b>";
 
         string details = "";
-        details                                += Model.InstructionText;
-        details                                += "\n<i>" + Model.FlavorText + "</i>";
-        InspectorManager.Instance.Details.text =  details;
+        details += Model.InstructionText;
+        details += "\n<i>" + Model.FlavorText + "</i>";
+
+        InspectorManager.Instance.Details.text = details;
         InspectorManager.Enable();
     }
 

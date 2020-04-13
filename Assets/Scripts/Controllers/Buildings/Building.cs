@@ -5,6 +5,7 @@ public class Building : MonoBehaviour, ITargetable
 {
     // @formatter:off 
     public BuildingCard Model;
+    public bool IsIndestructable;
     // @formatter:on 
 
     public void DoStartOfTurnEffects()

@@ -43,6 +43,11 @@ public class TowerInspector : MonoBehaviour, IInspectable, IPointerEnterHandler,
             }
         }
 
+        if (Model.IsIndestructible)
+        {
+            details += "<b>Indestructible.</b>" + "\n";
+        }
+
         details                                += "\n<i>" + Model.FlavorText + "</i>";
         InspectorManager.Instance.Details.text =  details;
         InspectorManager.Enable();
