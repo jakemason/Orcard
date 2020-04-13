@@ -45,7 +45,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 647b82cd6114bc94688a9e68c41e119e, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 714984
+    totalSpriteSurfaceArea: 715384
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -2139,6 +2139,7 @@ SpriteAtlas:
   - {fileID: -1919371625736947961, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
   - {fileID: -7091710371065449763, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
   - {fileID: -4914975280773618118, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
+  - {fileID: 3110829806665180078, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
   - {fileID: -4928692205983056614, guid: f88f0e3e55e7aae488307fe7acc6da93, type: 3}
   - {fileID: -9094701772626701120, guid: f88f0e3e55e7aae488307fe7acc6da93, type: 3}
   - {fileID: 573713574668750834, guid: f88f0e3e55e7aae488307fe7acc6da93, type: 3}
@@ -4738,6 +4739,7 @@ SpriteAtlas:
   - khelz_enemies_1
   - khelz_enemies_0
   - khelz_enemies_3
+  - Enemy Shadow
   - Floor_368
   - Floor_370
   - Floor_371

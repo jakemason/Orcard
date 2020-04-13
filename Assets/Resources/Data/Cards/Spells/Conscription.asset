@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
-  m_Name: Blood Pact
+  m_Name: Conscription
   m_EditorClassIdentifier: 
-  Name: Blood Pact
+  Name: Conscription
   Artwork: {fileID: -9212518133173021794, guid: 075bfcb955b583e458d656add7718275,
     type: 3}
+  ArtworkBackground: {fileID: 0}
   Rarity: 3
   Set: 0
   CastingCost: 0
@@ -22,13 +23,15 @@ MonoBehaviour:
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0
-  InstructionText: '-3 HP. +1 Energy.  '
+  InstructionText: '-5 HP. +2 Energy.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
-  FlavorText: 
+  FlavorText: '"More soliders are needed on the frontlines, bring me your strongest
+    warriors" - Sergeant Talia'
   OnDrawEffects: []
   ImmediateEffects:
-  - {fileID: 11400000, guid: 4c36c884706495741bd08022cc91dad1, type: 2}
-  - {fileID: 11400000, guid: 9990a7dfeb23e9a4184cf41d74d7d0db, type: 2}
+  - {fileID: 11400000, guid: b6c1119386ef6f041a8b005e42f2c408, type: 2}
+  - {fileID: 11400000, guid: 248404457d20cca4787dd61fe3a92e97, type: 2}
   PermanentStartOfTurnEffects: []
   StartOfNextTurnEffects: []
+  DiscardEffects: []

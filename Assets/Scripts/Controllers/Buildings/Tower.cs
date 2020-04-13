@@ -10,6 +10,7 @@ public class Tower : Building, ITargetable
     private float _attackCooldown = 0f;
     private GameObject _currentTarget = null;
     public DrawCircle RangeIndicator;
+    
     // @formatter:on 
     private void Start()
     {
@@ -31,15 +32,17 @@ public class Tower : Building, ITargetable
 
     private void Fire()
     {
+        Vector3 boltOffset = new Vector3(0.0f, 0.5f, 0.0f);
         if (Model.Damage == 0 || !_currentTarget || !(_attackCooldown <= 0)) return;
         Vector3 targetPosition = _currentTarget.transform.position;
-        Vector3 position       = transform.position;
-        Vector3 vectorToTarget = targetPosition - position;
+        Vector3 position       = transform.position + boltOffset;
+        Vector3 vectorToTarget = targetPosition     - position;
         float   angle          = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
 
         _attackCooldown = Model.AttackRate;
         GameObject bolt =
-            Instantiate(Model.BoltPrefab, position, Quaternion.Euler(new Vector3(0, 0, angle)));
+            Instantiate(Model.BoltPrefab, position + boltOffset,
+                Quaternion.Euler(new Vector3(0, 0, angle)));
         TowerAttack tbolt = bolt.GetComponent<TowerAttack>();
         tbolt.Target        = targetPosition;
         tbolt.MovementSpeed = Model.AttackMovementSpeed;

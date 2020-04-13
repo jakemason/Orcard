@@ -14,6 +14,21 @@ TextureImporter:
   - first:
       213: -4914975280773618118
     second: khelz_enemies_3
+  - first:
+      213: -7992887573166771557
+    second: khelz_enemies_0
+  - first:
+      213: 5374700571997857420
+    second: khelz_enemies_1
+  - first:
+      213: 5898829148487910177
+    second: Orc
+  - first:
+      213: 2092505193910856347
+    second: khelz_enemies_3
+  - first:
+      213: 3110829806665180078
+    second: Enemy Shadow
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -112,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd2b0b2bdfe259d90800000000000000
-      internalID: -7091710371065449763
+      spriteID: b92b2cfa91f831190800000000000000
+      internalID: -7992887573166771557
       vertices: []
       indices: 
       edges: []
@@ -133,8 +148,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7073cf7fca50d55e0800000000000000
-      internalID: -1919371625736947961
+      spriteID: c866500a1b5c69a40800000000000000
+      internalID: 5374700571997857420
       vertices: []
       indices: 
       edges: []
@@ -147,15 +162,15 @@ TextureImporter:
         y: 0
         width: 20
         height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49999982, y: 0.062482804}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ebe19462dbb1a9a0800000000000000
-      internalID: -6223486697744503835
+      spriteID: 12387527bd9dcd150800000000000000
+      internalID: 5898829148487910177
       vertices: []
       indices: 
       edges: []
@@ -175,8 +190,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a36a9a5d5008acbb0800000000000000
-      internalID: -4914975280773618118
+      spriteID: b9a67b523621a0d10800000000000000
+      internalID: 2092505193910856347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Shadow
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3a9fe2a33eb2b20800000000000000
+      internalID: 3110829806665180078
       vertices: []
       indices: 
       edges: []
