@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Orc
   Speed: 2
-  HP: 20
-  MinSize: 1.2
-  MaxSize: 1.5
-  Sprite: {fileID: 3530585542218416079, guid: a14e483842bcc154dbf573a6caca11b1, type: 3}
+  HP: 5
+  MinSize: 1
+  MaxSize: 1
+  Sprite: {fileID: -6223486697744503835, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
   Damage: 3
+  FlavorText: 
+  OverallStrength: 10

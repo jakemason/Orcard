@@ -13,14 +13,15 @@ public class WaveController : MonoBehaviour
     [Header("Wave Timings")]
     public float TimeBetweenWavesInSeconds = 60.0f;
     public float TimeBetweenWavesTracker;
+    public float TimeBetweenSpawns = 1.0f;
     public AnimationCurve DifficultyCurve;
      
     [Header("Enemy Info")]
-    public List<Wave> Waves;
-    [ReadOnly] public List<Enemy> EnemiesInCurrentWave;
+    public Enemy EnemyToSpawn;
+   // [ReadOnly] public List<Enemy> EnemiesInCurrentWave;
     
     [Header("Wave Info")]
-    public int CurrentWaveNumber = 0;
+    public int CurrentWaveNumber = 1;
     public bool WaveActive = false;
     public int EnemiesRemainingInWave;
     public int AdditionalEnemiesPerWave = 2;
@@ -74,24 +75,20 @@ public class WaveController : MonoBehaviour
     {
         TimeBetweenWavesTracker = TimeBetweenWavesInSeconds;
         WaveActive              = true;
-        if (CurrentWaveNumber > Waves.Count - 1)
+        if (CurrentWaveNumber > 50)
         {
             SceneManager.LoadScene("Winner");
             return;
         }
 
-        EnemiesInCurrentWave = Waves[CurrentWaveNumber].EnemiesInWave;
-        for (int i = 0; i < EnemiesInCurrentWave.Count; i++)
+        int toSpawn = CurrentWaveNumber;
+
+        for (int i = 0; i < toSpawn; i++)
         {
-            StartCoroutine(SpawnEnemy(EnemiesInCurrentWave[i], Waves[CurrentWaveNumber].TimeBetweenSpawns * i));
+            StartCoroutine(SpawnEnemy(EnemyToSpawn, TimeBetweenSpawns * i));
         }
 
-        EnemiesRemainingInWave = EnemiesInCurrentWave.Count;
-    }
-
-    public static Wave GetCurrentWave()
-    {
-        return Instance.Waves[Instance.CurrentWaveNumber];
+        EnemiesRemainingInWave = toSpawn;
     }
 
     private IEnumerator SpawnEnemy(Enemy toSpawn, float delay)

@@ -9,13 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37409aeed135ebc478a0d1700ccb93c9, type: 3}
-  m_Name: Slime
+  m_Script: {fileID: 11500000, guid: 089e420f753f5164fad2d8fd405664a5, type: 3}
+  m_Name: Single Orc
   m_EditorClassIdentifier: 
-  Name: Slime
-  Speed: 4
-  HP: 4
-  MinSize: 0.8
-  MaxSize: 1
-  Sprite: {fileID: -4444460581680513124, guid: 6d890adb1b5021a4f82dd746cf9a1c5f, type: 3}
-  Damage: 1
+  EnemiesInWave:
+  - {fileID: 11400000, guid: f9f00ea5a9bdf7143a165849c652eeed, type: 2}
+  TimeBetweenSpawns: 0.5
+  RewardsSpecificRarity: 0
+  WaveDifficulty: 0
+  ToReward: 0

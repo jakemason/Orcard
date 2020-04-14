@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Arm The Towers
   Artwork: {fileID: 5664825439308274393, guid: e7258ff8e7f52a546ae0c3c579adafd1, type: 3}
-  Rarity: 0
+  ArtworkBackground: {fileID: 0}
+  Rarity: 4
   Set: 0
   CastingCost: 1
   GoldCost: 0
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0
-  InstructionText: '+1 Tower Attack. Affects all towers.  '
+  InstructionText: 'All towers, +1 Tower Attack.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
@@ -30,3 +31,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 264941033222ad8459c3823a2632c97d, type: 2}
   PermanentStartOfTurnEffects: []
   StartOfNextTurnEffects: []
+  DiscardEffects: []

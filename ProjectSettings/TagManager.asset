@@ -48,14 +48,14 @@ TagManager:
   - name: Doodads
     uniqueID: 2116586849
     locked: 0
-  - name: Enemies
-    uniqueID: 1370460231
-    locked: 0
   - name: Bolts
     uniqueID: 3578496191
     locked: 0
   - name: Towers
     uniqueID: 3820543149
+    locked: 0
+  - name: Enemies
+    uniqueID: 1370460231
     locked: 0
   - name: Clouds
     uniqueID: 2942953159

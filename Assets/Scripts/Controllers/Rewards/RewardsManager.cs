@@ -109,14 +109,8 @@ public class RewardsManager : MonoBehaviour
     private void CreateRewardGameObjects()
     {
         ClearRewardGameObjects();
-        if (WaveController.GetCurrentWave().RewardsSpecificRarity)
-        {
-            PickRewardsOfRarity(WaveController.GetCurrentWave().ToReward);
-        }
-        else
-        {
-            PickRewards();
-        }
+        PickRewards();
+
 
         for (int i = 0; i < _rewardsOffered.Count; i++)
         {

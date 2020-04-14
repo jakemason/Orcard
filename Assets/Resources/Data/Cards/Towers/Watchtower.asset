@@ -21,7 +21,7 @@ MonoBehaviour:
   GoldCost: 150
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
-  DestroyOnCast: 0
+  DestroyOnCast: 1
   IsTargeted: 1
   InstructionText: Simple, effective. Indestructible.
   AdditionalInstructionText: 
