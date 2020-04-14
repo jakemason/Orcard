@@ -42,8 +42,10 @@ public class TowerInspector : MonoBehaviour, IInspectable, IPointerEnterHandler,
                 details += "<b>DPS</b>: " + Model.DamagePerSecond + "\n";
             }
 
-            details += "<b>Ammo:</b> " + TowerReference.RemainingAmmo + " / " + TowerReference.MaxAmmo + "\n";
-            ;
+            if (TowerReference != null)
+            {
+                details += "<b>Ammo:</b> " + TowerReference.RemainingAmmo + " / " + TowerReference.MaxAmmo + "\n";
+            }
         }
 
         if (Model.IsIndestructible)

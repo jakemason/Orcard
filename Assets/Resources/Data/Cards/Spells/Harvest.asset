@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
+  m_Name: Harvest
+  m_EditorClassIdentifier: 
+  Name: Harvest
+  Artwork: {fileID: 6046889547396123030, guid: e7258ff8e7f52a546ae0c3c579adafd1, type: 3}
+  ArtworkBackground: {fileID: 0}
+  Rarity: 0
+  Set: 0
+  CastingCost: 0
+  GoldCost: 0
+  CastingRequirements: []
+  DestroyOnCast: 0
+  IsTargeted: 0
+  InstructionText: 'For each Wheat Field currently built, +25 Gold.  '
+  AdditionalInstructionText: 
+  OverrideDefaultInstructionText: 
+  FlavorText: 
+  OnDrawEffects: []
+  ImmediateEffects:
+  - {fileID: 11400000, guid: 864f752669813fa49b8532546ae30fb2, type: 2}
+  PermanentStartOfTurnEffects: []
+  StartOfNextTurnEffects: []
+  DiscardEffects: []
