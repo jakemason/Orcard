@@ -24,7 +24,7 @@ public class PerBuildingEffect : Effect
 #if UNITY_EDITOR
     public void OnValidate()
     {
-        InstructionText = "For each " + BuildingToCount.Name + " currently built, ";
+        InstructionText = "For each " + BuildingToCount.Name + ", ";
         foreach (Effect effect in EffectsPerBuilding)
         {
             InstructionText += effect.InstructionText;

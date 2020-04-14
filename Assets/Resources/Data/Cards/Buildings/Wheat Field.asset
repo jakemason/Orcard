@@ -23,14 +23,13 @@ MonoBehaviour:
   CastingRequirements: []
   DestroyOnCast: 1
   IsTargeted: 1
-  InstructionText: 'Destroy this card. Generates: +25 Gold. '
+  InstructionText: "A staple in all bakeries.\t "
   AdditionalInstructionText: 
-  OverrideDefaultInstructionText: 
-  FlavorText: 
+  OverrideDefaultInstructionText: "A staple in all bakeries.\t"
+  FlavorText: A staple of all war efforts is food to feed the soldiers.
   OnDrawEffects: []
   ImmediateEffects:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
-  EachTurnEffects:
-  - {fileID: 11400000, guid: b991d97f3e31bb3419e2e894f2b64360, type: 2}
+  EachTurnEffects: []
   IsIndestructible: 0
   Tint: {r: 1, g: 1, b: 1, a: 1}
