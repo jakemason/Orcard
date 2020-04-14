@@ -10,23 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
-  m_Name: Meditation
+  m_Name: Invest
   m_EditorClassIdentifier: 
-  Name: Meditation
-  Artwork: {fileID: 6845930069172643336, guid: e7258ff8e7f52a546ae0c3c579adafd1, type: 3}
-  Rarity: 1
+  Name: Invest
+  Artwork: {fileID: -8663575413618177380, guid: fae3beae0334790438393168d3410343,
+    type: 3}
+  ArtworkBackground: {fileID: 0}
+  Rarity: 0
   Set: 0
   CastingCost: 1
-  GoldCost: 0
+  GoldCost: 75
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0
-  InstructionText: 'Next turn +2 Energy.  '
+  InstructionText: 'After 45 seconds, +1 Energy..  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
-  FlavorText: '"A calm mind is the ultimate weapon" - General Zhizah'
+  FlavorText: 
   OnDrawEffects: []
-  ImmediateEffects: []
+  ImmediateEffects:
+  - {fileID: 11400000, guid: 910afb82349e83449b7fbf0b3cbec741, type: 2}
   PermanentStartOfTurnEffects: []
-  StartOfNextTurnEffects:
-  - {fileID: 11400000, guid: 248404457d20cca4787dd61fe3a92e97, type: 2}
+  StartOfNextTurnEffects: []
+  DiscardEffects: []

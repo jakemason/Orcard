@@ -15,5 +15,5 @@ MonoBehaviour:
   Name: Player Starting Deck
   Cards:
   - {fileID: 11400000, guid: 3268b45770a696645a267338995a219c, type: 2}
-  - {fileID: 11400000, guid: 0de70fcf43fab3c4089a3e659059f1fd, type: 2}
-  - {fileID: 11400000, guid: c0ff97563eb83bf49bb9462c039cfe08, type: 2}
+  - {fileID: 11400000, guid: b76da1f9c0e7e4d4e8b82cc4d7528981, type: 2}
+  - {fileID: 11400000, guid: 23b7f6bacd66bf741a40cba54df3a14d, type: 2}

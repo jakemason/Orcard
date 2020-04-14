@@ -20,7 +20,11 @@ public class TimedEffect : Effect
             InstructionText += effect.InstructionText;
         }
 
-        InstructionText += ".";
+        if (InstructionText[InstructionText.Length - 1] != '.')
+        {
+            InstructionText += ".";
+        }
+
         string assetPath = AssetDatabase.GetAssetPath(GetInstanceID());
         AssetDatabase.RenameAsset(assetPath, InstructionText);
     }

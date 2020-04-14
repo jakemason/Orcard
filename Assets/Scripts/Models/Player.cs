@@ -28,6 +28,7 @@ namespace Players
         [Header("Player Energy")]
         [Space(20)]
         private int _remainingEnergy;
+        private int _startingEnergy = 2;
         public int EnergyGainedPerTurn = 1;
         public int MaxEnergy = 10;
         
@@ -74,6 +75,7 @@ namespace Players
 
             DeckForCurrentRun = Instantiate(DeckTemplate);
             DeckForCurrentRun.Cards.Shuffle();
+            ModifyEnergy(_startingEnergy);
         }
 
         private void Start()
