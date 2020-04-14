@@ -28,7 +28,7 @@ namespace Players
         [Header("Player Energy")]
         [Space(20)]
         private int _remainingEnergy;
-        public int EnergyGainedPerTurn = 3;
+        public int EnergyGainedPerTurn = 1;
         public int MaxEnergy = 10;
         
         [Header("Delayed Effects")]

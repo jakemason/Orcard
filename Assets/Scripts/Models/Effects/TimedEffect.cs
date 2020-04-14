@@ -7,6 +7,7 @@ public class TimedEffect : Effect
 {
     public float Delay = 20f;
     public float DelayCoolddown;
+    public bool IsPermanent;
     public List<Effect> Effects;
 
 #if UNITY_EDITOR

@@ -17371,7 +17371,7 @@ MonoBehaviour:
   RedrawGoldIncrease: 5
   FreeDrawCooldownInSeconds: 15
   DrawButton: {fileID: 299553215}
-  EnergyGainedPerTurn: 3
+  EnergyGainedPerTurn: 1
   MaxEnergy: 10
   TemporaryOnTurnStartEffects: []
   PermanentOnTurnStartEffects: []

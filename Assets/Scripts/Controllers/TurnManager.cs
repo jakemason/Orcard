@@ -32,7 +32,10 @@ public class TurnManager : MonoBehaviour
                     effect.Activate();
                 }
 
-                TimedEffects.RemoveAt(i);
+                if (!TimedEffects[i].IsPermanent)
+                {
+                    TimedEffects.RemoveAt(i);
+                }
             }
         }
     }

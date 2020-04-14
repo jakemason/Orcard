@@ -94,7 +94,7 @@ public abstract class Card : ScriptableObject
         InstructionText = playEffects + startEffects; // + nextTurnEffects;
         if (DestroyOnCast)
         {
-            InstructionText += "Destroy this card.";
+            InstructionText += "Destroy this card. ";
         }
 
         if (OverrideDefaultInstructionText != "")

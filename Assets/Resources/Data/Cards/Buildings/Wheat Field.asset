@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 803c8e835c795ec4fa28bafff19c52af, type: 3}
+  m_Name: Wheat Field
+  m_EditorClassIdentifier: 
+  Name: Wheat Field
+  Artwork: {fileID: -4108474652813135402, guid: 3570e2dc4f548ff4194f59df297187e2,
+    type: 3}
+  ArtworkBackground: {fileID: 0}
+  Rarity: 0
+  Set: 0
+  CastingCost: 3
+  GoldCost: 80
+  CastingRequirements: []
+  DestroyOnCast: 1
+  IsTargeted: 1
+  InstructionText: 'Destroy this card. Generates: +25 Gold. '
+  AdditionalInstructionText: 
+  OverrideDefaultInstructionText: 
+  FlavorText: 
+  OnDrawEffects: []
+  ImmediateEffects:
+  - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
+  EachTurnEffects:
+  - {fileID: 11400000, guid: b991d97f3e31bb3419e2e894f2b64360, type: 2}
+  IsIndestructible: 0
+  Tint: {r: 1, g: 1, b: 1, a: 1}
