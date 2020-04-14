@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopView : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class ShopView : MonoBehaviour
     public GameObject ShopRoot;
     public GameObject CardGridRoot;
     public GameObject ShopCardPrefab;
+    private GridLayoutGroup _layoutGroup;
 
     private void Start()
     {
@@ -18,17 +20,22 @@ public class ShopView : MonoBehaviour
         {
             Destroy(this);
         }
+
+        _layoutGroup = ShopRoot.GetComponentInChildren<GridLayoutGroup>();
     }
 
 
     public static void Enable()
     {
         Instance.ShopRoot.SetActive(true);
+        Canvas.ForceUpdateCanvases();
+        Instance._layoutGroup.enabled = false;
     }
 
     public static void Disable()
     {
         Instance.ShopRoot.SetActive(false);
+        Instance._layoutGroup.enabled = true;
     }
 
     public static bool IsEnabled()

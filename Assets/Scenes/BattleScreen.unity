@@ -191,7 +191,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -474424147
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -8626739113913384763, guid: a14e483842bcc154dbf573a6caca11b1,
     type: 3}
@@ -2536,7 +2536,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.90997, y: -20.743}
+  m_AnchoredPosition: {x: 0.90997, y: -20.743042}
   m_SizeDelta: {x: 435.2, y: 40.713}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &169700697
@@ -10447,7 +10447,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -716471105
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -17443,7 +17443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShopRoot: {fileID: 1970618266}
   CardGridRoot: {fileID: 1507065014}
-  ShopCardPrefab: {fileID: 9162847070692476976, guid: 6847b8d122cda9747be7a4d19f2bc821,
+  ShopCardPrefab: {fileID: 9162847070692476976, guid: f4d7b55dd8f30c041a5604514a52d994,
     type: 3}
 --- !u!114 &1511839246
 MonoBehaviour:
