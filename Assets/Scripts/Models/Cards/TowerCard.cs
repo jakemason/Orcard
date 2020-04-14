@@ -13,6 +13,7 @@ public class TowerCard : BuildingCard
     public float AttacksPerSecond = 0;
     public float AttackMovementSpeed = 0f;
     public float Range = 0f;
+    public int MaxAmmo;
 
     [Header("Calculated Tower Stats")] [ReadOnly]
     public float DamagePerSecond;

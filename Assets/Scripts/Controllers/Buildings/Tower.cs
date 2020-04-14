@@ -10,12 +10,17 @@ public class Tower : Building, ITargetable
     private float _attackCooldown = 0f;
     private GameObject _currentTarget = null;
     public DrawCircle RangeIndicator;
+    public int MaxAmmo;
+    private GameObject _reloadAnimation;
+    public int RemainingAmmo;
     
     // @formatter:on 
     private void Start()
     {
         EnemiesInRange = new List<GameObject>();
         RangeIndicator = GetComponentInChildren<DrawCircle>();
+        MaxAmmo        = Model.MaxAmmo;
+        RemainingAmmo  = MaxAmmo;
         SetRange();
     }
 
@@ -32,8 +37,10 @@ public class Tower : Building, ITargetable
 
     private void Fire()
     {
-        Vector3 boltOffset = new Vector3(0.0f, 0.5f, 0.0f);
+        if (RemainingAmmo <= 0) return;
         if (Model.Damage == 0 || !_currentTarget || !(_attackCooldown <= 0)) return;
+
+        Vector3 boltOffset     = new Vector3(0.0f, 0.5f, 0.0f);
         Vector3 targetPosition = _currentTarget.transform.position;
         Vector3 position       = transform.position + boltOffset;
         Vector3 vectorToTarget = targetPosition     - position;
@@ -47,6 +54,18 @@ public class Tower : Building, ITargetable
         tbolt.Target        = targetPosition;
         tbolt.MovementSpeed = Model.AttackMovementSpeed;
         tbolt.Damage        = Model.Damage;
+        RemainingAmmo--;
+        if (RemainingAmmo <= 0)
+        {
+            _reloadAnimation = Instantiate(BuildingManager.Instance.ReloadAnimation, transform.position,
+                Quaternion.identity);
+        }
+    }
+
+    public void Reload()
+    {
+        RemainingAmmo = MaxAmmo;
+        Destroy(_reloadAnimation);
     }
 
     private void SetRange()

@@ -3,7 +3,12 @@ guid: a55fdd36df386f144a2042221424a3d4
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Model: {instanceID: 0}
+  - Model: {instanceID: 0}
+  - RangeIndicator: {instanceID: 0}
+  - ReloadAnimationPrefab: {fileID: 5467805974045521163, guid: 12157cb6854f1444a805fff1b943a620,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

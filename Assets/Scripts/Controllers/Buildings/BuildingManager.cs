@@ -5,6 +5,7 @@ using UnityEngine.Serialization;
 public class BuildingManager : MonoBehaviour
 {
     public static BuildingManager Instance;
+    public GameObject ReloadAnimation;
 
     [FormerlySerializedAs("ConstructedTowers")]
     public Dictionary<Vector2, Building> ConstructedBuildings;
