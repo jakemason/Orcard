@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 namespace Players
 {
-    public class Player : MonoBehaviour, ITargetable
+    public class PlayerController : MonoBehaviour, ITargetable
     {
-        public static Player Instance;
+        public static PlayerController Instance;
 
         // @formatter:off
         [Header("Player Card Info")] 

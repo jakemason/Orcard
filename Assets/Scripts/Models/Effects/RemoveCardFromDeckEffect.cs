@@ -7,11 +7,11 @@ public class RemoveCardFromDeckEffect : Effect
 {
     public override void Activate()
     {
-        int cardsInDeck = Player.Instance.DeckForCurrentRun.Cards.Count;
+        int cardsInDeck = PlayerController.Instance.DeckForCurrentRun.Cards.Count;
         if (cardsInDeck == 0) return;
 
         int index = Random.Range(0, cardsInDeck);
-        Player.Instance.DeckForCurrentRun.Cards.RemoveAt(index);
+        PlayerController.Instance.DeckForCurrentRun.Cards.RemoveAt(index);
     }
 
 #if UNITY_EDITOR

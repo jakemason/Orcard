@@ -24,6 +24,6 @@ public class DrawEffect : Effect
 
     public override void Activate()
     {
-        Player.Instance.CardsToDraw += CardsToDraw;
+        PlayerController.Instance.CardsToDraw += CardsToDraw;
     }
 }

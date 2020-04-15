@@ -20,7 +20,7 @@ public class ShopCardController : MonoBehaviour, IPointerDownHandler
     {
         if (IncomeController.GetCurrentGold() >= _card.GoldCost)
         {
-            Player.Instance.DeckForCurrentRun.Cards.Add(GetComponent<CardRenderer>().CardObject);
+            PlayerController.Instance.DeckForCurrentRun.Cards.Add(GetComponent<CardRenderer>().CardObject);
             IncomeController.ModifyGold(-_card.GoldCost);
             Destroy(gameObject);
         }

@@ -20,7 +20,8 @@ MonoBehaviour:
   Set: 0
   CastingCost: 3
   GoldCost: 80
-  CastingRequirements: []
+  CastingRequirements:
+  - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 1
   IsTargeted: 1
   InstructionText: "A staple in all bakeries.\t "

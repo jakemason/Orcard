@@ -41,23 +41,23 @@ public static class SpellCast
         {
             foreach (Effect effect in spellCard.PermanentStartOfTurnEffects)
             {
-                Player.RegisterPermanentOnTurnEffect(effect);
+                PlayerController.RegisterPermanentOnTurnEffect(effect);
             }
 
             foreach (Effect effect in spellCard.StartOfNextTurnEffects)
             {
-                Player.RegisterTemporaryOnTurnEffect(effect);
+                PlayerController.RegisterTemporaryOnTurnEffect(effect);
             }
         }
 
-        Player.Instance.RemainingEnergy -= AttemptingToCast.CastingCost;
-        ConstructionIndicator.Disable();
+        PlayerController.Instance.RemainingEnergy -= AttemptingToCast.CastingCost;
+        TargetIndicator.Disable();
         Clear();
     }
 
     public static bool CastingRequirementsMet()
     {
-        if (Player.Instance.RemainingEnergy < AttemptingToCast.CastingCost)
+        if (PlayerController.Instance.RemainingEnergy < AttemptingToCast.CastingCost)
         {
             return false;
         }

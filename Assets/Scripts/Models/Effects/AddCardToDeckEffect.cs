@@ -10,7 +10,7 @@ public class AddCardToDeckEffect : Effect
     public override void Activate()
     {
         Card toAdd = CardList.GetRandomCardOfRarity(RarityToAdd);
-        Player.Instance.DeckForCurrentRun.Cards.Add(toAdd);
+        PlayerController.Instance.DeckForCurrentRun.Cards.Add(toAdd);
     }
 
 #if UNITY_EDITOR

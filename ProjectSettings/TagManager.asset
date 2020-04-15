@@ -57,6 +57,9 @@ TagManager:
   - name: Enemies
     uniqueID: 1370460231
     locked: 0
+  - name: Targetting
+    uniqueID: 276914335
+    locked: 0
   - name: Clouds
     uniqueID: 2942953159
     locked: 0

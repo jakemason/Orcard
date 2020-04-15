@@ -122,7 +122,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (Player.GetEnergy() < CardObject.CastingCost)
+        if (PlayerController.GetEnergy() < CardObject.CastingCost)
         {
             return;
         }
@@ -132,9 +132,9 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
         BuildingCard buildingCard = CardObject as BuildingCard;
 
-        if (buildingCard)
+        if (buildingCard || CardObject.IsTargeted)
         {
-            ConstructionIndicator.Enable(buildingCard);
+            TargetIndicator.Enable(buildingCard);
             TargetScale          = Vector3.zero;
             transform.localScale = Vector3.zero;
         }
@@ -153,13 +153,13 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         TargetRotation = RestingRotation;
         TargetScale    = Vector3.one;
         transform.SetSiblingIndex(RestingSiblingIndex);
-        ConstructionIndicator.Disable();
+        TargetIndicator.Disable();
         HoverCollider.raycastTarget = true;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (Player.GetEnergy() < CardObject.CastingCost)
+        if (PlayerController.GetEnergy() < CardObject.CastingCost)
         {
             return;
         }

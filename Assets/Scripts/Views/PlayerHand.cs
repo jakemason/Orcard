@@ -60,7 +60,7 @@ public class PlayerHand : MonoBehaviour
         Card card = cardToDiscard.CardObject;
         if (!card.DestroyOnCast)
         {
-            Player.Instance.DiscardPile.Add(cardToDiscard.OriginalCard);
+            PlayerController.Instance.DiscardPile.Add(cardToDiscard.OriginalCard);
         }
 
         SpellCard spellCard = card as SpellCard;
@@ -88,7 +88,7 @@ public class PlayerHand : MonoBehaviour
             rend.TargetPosition       = Instance.DiscardPile.anchoredPosition;
             rend.MarkedForDestruction = true;
             Card card = rend.CardObject;
-            Player.Instance.DiscardPile.Add(card);
+            PlayerController.Instance.DiscardPile.Add(card);
         }
 
         Instance.HeldCards = new List<GameObject>();

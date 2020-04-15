@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-public class ConstructionIndicator : MonoBehaviour
+public class TargetIndicator : MonoBehaviour
 {
-    public static ConstructionIndicator Instance;
+    public static TargetIndicator Instance;
     public GameObject Indicator;
     public DrawCircle RangeDrawer;
     public LineRenderer Line;
