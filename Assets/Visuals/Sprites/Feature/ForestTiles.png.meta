@@ -299,6 +299,9 @@ TextureImporter:
   - first:
       213: -1583952302052483730
     second: ForestTiles_98
+  - first:
+      213: -7268568924079025400
+    second: ForestTiles_99
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -2428,7 +2431,7 @@ TextureImporter:
         width: 20
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2449,7 +2452,7 @@ TextureImporter:
         width: 19
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2457,6 +2460,27 @@ TextureImporter:
       bones: []
       spriteID: e6ddffef5cba40ae0800000000000000
       internalID: -1583952302052483730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTiles_99
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 120
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80393d6f21bd02b90800000000000000
+      internalID: -7268568924079025400
       vertices: []
       indices: 
       edges: []
