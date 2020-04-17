@@ -22,7 +22,7 @@ MonoBehaviour:
   CastingRequirements:
   - {fileID: 11400000, guid: bb8039ff0cebbfa46b9d8f5e541f1bd7, type: 2}
   DestroyOnCast: 0
-  IsTargeted: 0
+  IsTargeted: 1
   InstructionText: 'Destroy target building.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Calibration
   Artwork: {fileID: 3355172955315020000, guid: fae3beae0334790438393168d3410343, type: 3}
+  ArtworkBackground: {fileID: 0}
   Rarity: 0
   Set: 0
   CastingCost: 1
@@ -21,7 +22,7 @@ MonoBehaviour:
   CastingRequirements:
   - {fileID: 11400000, guid: 45b01165b5d0e5542a9273a6622ac5ca, type: 2}
   DestroyOnCast: 0
-  IsTargeted: 0
+  IsTargeted: 1
   InstructionText: '+1 Tower Attack.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
@@ -31,3 +32,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d3e06c6c383f2184598ce518932625f1, type: 2}
   PermanentStartOfTurnEffects: []
   StartOfNextTurnEffects: []
+  DiscardEffects: []
