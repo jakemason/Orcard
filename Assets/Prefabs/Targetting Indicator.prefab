@@ -12,13 +12,14 @@ GameObject:
   - component: {fileID: 8695211081002607934}
   - component: {fileID: 8918614055007497320}
   - component: {fileID: 4163294492594788352}
+  - component: {fileID: 1055211298}
   m_Layer: 0
   m_Name: Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2201514491481500114
 Transform:
   m_ObjectHideFlags: 0
@@ -69,16 +70,16 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -474424147
-  m_SortingLayer: 4
+  m_SortingLayerID: 276914335
+  m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3937024861772926632, guid: eefe64139fcddd144b518ccfd222a544,
+  m_Sprite: {fileID: 1610527113630239303, guid: 4818fceab9a1b6c4caf07369af3d6e46,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.2, y: 0.2}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -102,7 +103,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -120,12 +121,61 @@ LineRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1352014137
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: -0, z: -1}
+  - {x: 0, y: -0, z: -1}
+  - {x: 0, y: -0, z: -1}
+  - {x: 0, y: -0, z: -1}
+  - {x: 0, y: -0, z: -1}
+  - {x: 0, y: -0, z: -1}
+  - {x: 0, y: -0, z: -1}
+  - {x: 0, y: -0, z: -1}
+  - {x: 0, y: -0, z: -1}
+  - {x: 0, y: -0, z: -1}
+  - {x: 0, y: -0, z: -1}
+  - {x: 0, y: -0, z: -1}
+  - {x: -0, y: -0, z: -1}
+  - {x: -0, y: -0, z: -1}
+  - {x: -0, y: -0, z: -1}
+  - {x: -0, y: -0, z: -1}
+  - {x: -0, y: -0, z: -1}
+  - {x: -0, y: -0, z: -1}
+  - {x: -0, y: -0, z: -1}
+  - {x: -0, y: -0, z: -1}
+  - {x: -0, y: -0, z: -1}
+  - {x: -0, y: -0, z: -1}
+  - {x: -0, y: -0, z: -1}
+  - {x: -0, y: -0, z: -1}
+  - {x: -0, y: -0, z: -1}
+  - {x: -0, y: 0, z: -1}
+  - {x: -0, y: 0, z: -1}
+  - {x: -0, y: 0, z: -1}
+  - {x: -0, y: 0, z: -1}
+  - {x: -0, y: 0, z: -1}
+  - {x: -0, y: 0, z: -1}
+  - {x: -0, y: 0, z: -1}
+  - {x: -0, y: 0, z: -1}
+  - {x: -0, y: 0, z: -1}
+  - {x: -0, y: 0, z: -1}
+  - {x: -0, y: 0, z: -1}
+  - {x: -0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -134,7 +184,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.03
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -193,10 +243,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eb32cfe65698cd4abdcf8940c70f77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Segments: 0
+  Segments: 50
   Xradius: 0
   Yradius: 0
-  Line: {fileID: 0}
+  Line: {fileID: 8918614055007497320}
+--- !u!95 &1055211298
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8450921176656873}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 188f175a498038344bf1c082bef473da, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4320908690500010706
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,6 +277,7 @@ GameObject:
   - component: {fileID: 4320908690500010704}
   - component: {fileID: 4320908690500010705}
   - component: {fileID: 562573576271520831}
+  - component: {fileID: 2140906966}
   m_Layer: 0
   m_Name: Targetting Indicator
   m_TagString: Untagged
@@ -256,4 +326,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Indicator: {fileID: 8450921176656873}
   RangeDrawer: {fileID: 4163294492594788352}
-  Line: {fileID: 0}
+  Line: {fileID: 8918614055007497320}
+--- !u!114 &2140906966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4320908690500010706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c79e4dbca39574468d2ecdd1882f29c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

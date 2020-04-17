@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Players;
 using UnityEngine;
 
@@ -13,6 +14,12 @@ public class PlayerHand : MonoBehaviour
     public float VerticalOffset = -7.5f;
     public float RotationOffset = -3.5f;
     
+    [Header("Hand Positioning")]
+    public float EvenCardsHandOffset = 50.0f;
+    public int HandOffsetSpeed = 5;
+    private float _targetHandOffset = 0.0f;
+    private RectTransform _handTransform;
+    
     public RectTransform DiscardPile;
     // @formatter:on
 
@@ -25,6 +32,19 @@ public class PlayerHand : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+
+        _handTransform = GetComponent<RectTransform>();
+    }
+
+    private void Update()
+    {
+        if (Math.Abs(_handTransform.position.x - _targetHandOffset) > 0.01f)
+        {
+            Vector3 position = _handTransform.anchoredPosition;
+            float   newX     = Mathf.Lerp(position.x, _targetHandOffset, HandOffsetSpeed * Time.deltaTime);
+            position                        = new Vector3(newX, position.y, position.z);
+            _handTransform.anchoredPosition = position;
         }
     }
 
@@ -104,6 +124,8 @@ public class PlayerHand : MonoBehaviour
         {
             return;
         }
+
+        _targetHandOffset = cardsInHand % 2 == 0 ? EvenCardsHandOffset : 0.0f;
 
         int                    midPoint = cardsInHand / 2;
         GameObject             mid;

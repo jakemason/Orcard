@@ -14,8 +14,8 @@ public class DrawCircle : MonoBehaviour
     {
         Line.positionCount = (Segments + 1);
         Line.useWorldSpace = false;
-        Line.startWidth    = 0.1f;
-        Line.endWidth      = 0.1f;
+        Line.startWidth    = 0.05f;
+        Line.endWidth      = 0.05f;
         CreatePoints();
     }
 
