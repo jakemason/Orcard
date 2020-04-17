@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -13,8 +14,9 @@ public class EnemyController : MonoBehaviour
 
     private void Start()
     {
-        SpriteRenderer rend = GetComponent<SpriteRenderer>();
-        rend.sprite = Model.Sprite;
+        Animator animator = GetComponent<Animator>();
+        animator.runtimeAnimatorController = Model.AnimatorController;
+        Debug.Log(animator);
         MarkAlive();
     }
 

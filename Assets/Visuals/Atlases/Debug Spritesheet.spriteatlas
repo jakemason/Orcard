@@ -45,7 +45,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 647b82cd6114bc94688a9e68c41e119e, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 742984
+    totalSpriteSurfaceArea: 744984
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -2093,6 +2093,11 @@ SpriteAtlas:
   - {fileID: 5286708159577924493, guid: 5f0019badba37db42a20b696a8868333, type: 3}
   - {fileID: 8768893368382487233, guid: 5f0019badba37db42a20b696a8868333, type: 3}
   - {fileID: 3101331019158360973, guid: 5f0019badba37db42a20b696a8868333, type: 3}
+  - {fileID: 5813271414626854330, guid: 7b1171da432fd154c911865c3c036125, type: 3}
+  - {fileID: -4048028670941725383, guid: 7b1171da432fd154c911865c3c036125, type: 3}
+  - {fileID: -3522093265501685102, guid: 7b1171da432fd154c911865c3c036125, type: 3}
+  - {fileID: 5985956242139829448, guid: 7b1171da432fd154c911865c3c036125, type: 3}
+  - {fileID: -7618121031060936969, guid: 7b1171da432fd154c911865c3c036125, type: 3}
   - {fileID: 21300000, guid: d26ea8dadab609946a7c14d388f76a51, type: 3}
   - {fileID: 6224056798280817161, guid: eb2542dbff1d82f48905897a3aa22750, type: 3}
   - {fileID: -7853403667995611972, guid: eb2542dbff1d82f48905897a3aa22750, type: 3}
@@ -4762,6 +4767,11 @@ SpriteAtlas:
   - Pest0_30
   - Pest0_33
   - Pest0_32
+  - naked_orc_4
+  - naked_orc_2
+  - naked_orc_3
+  - naked_orc_0
+  - naked_orc_1
   - Panel
   - Dog0_10
   - Dog0_1
