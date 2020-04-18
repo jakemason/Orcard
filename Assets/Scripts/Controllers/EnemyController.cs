@@ -14,9 +14,6 @@ public class EnemyController : MonoBehaviour
 
     private void Start()
     {
-        Animator animator = GetComponent<Animator>();
-        animator.runtimeAnimatorController = Model.AnimatorController;
-        Debug.Log(animator);
         MarkAlive();
     }
 

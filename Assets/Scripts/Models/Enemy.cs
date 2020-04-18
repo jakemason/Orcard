@@ -1,5 +1,4 @@
 ﻿using UnityEditor;
-using UnityEditor.Animations;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Enemy", menuName = "Enemies/Enemy")]
@@ -11,7 +10,6 @@ public class Enemy : ScriptableObject
     public int HP;
     [Range(0.5f, 1.5f)] public float MinSize = 1.0f;
     [Range(0.5f, 1.5f)] public float MaxSize = 1.0f;
-    public AnimatorController AnimatorController;
     public int Damage;
     [TextArea] public string FlavorText;
     
