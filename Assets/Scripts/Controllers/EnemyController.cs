@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -7,6 +6,7 @@ public class EnemyController : MonoBehaviour
 {
     public Enemy Model;
     public Stack<Transform> WaypointsToFollow;
+    public EnemyHeadView HeadView;
 
     private Transform _currentTarget;
     private Stack<Transform> _waypointsBackup;

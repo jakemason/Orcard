@@ -20,7 +20,13 @@ public class TowerAttack : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D col)
     {
-        Health hp = col.gameObject.GetComponent<Health>();
+        Health        hp            = col.gameObject.GetComponent<Health>();
+        EnemyHeadView enemyHeadView = col.gameObject.GetComponentInChildren<EnemyHeadView>();
+        if (enemyHeadView != null)
+        {
+            enemyHeadView.Activate();
+        }
+
         hp.TakeDamage(Damage);
         Destroy(gameObject);
     }
