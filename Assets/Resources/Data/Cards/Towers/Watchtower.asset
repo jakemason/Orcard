@@ -40,6 +40,6 @@ MonoBehaviour:
   AttacksPerSecond: 3
   AttackMovementSpeed: 5
   Range: 3
-  MaxAmmo: 15
+  MaxAmmo: 10
   DamagePerSecond: 6
   AttackRate: 0.33333334

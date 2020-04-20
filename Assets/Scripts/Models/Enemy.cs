@@ -19,6 +19,16 @@ public class Enemy : ScriptableObject
     private static float _damageValueWeight = 1.0f;
     private static float _hpValueWeight = 1.0f;
     
+    [Header("Accessories")]
+    public bool HasSword;
+    public bool HasSmallHelm;
+    public bool HasLargeHelm;
+    public bool HasShield;
+    public bool HasBoots;
+    public bool HasSmallShoulders;
+    public bool HasLargeShoulders;
+    public bool HasWarBanner;
+    
     [ReadOnly] public float OverallStrength = 1.0f;
     // @formatter:on 
 

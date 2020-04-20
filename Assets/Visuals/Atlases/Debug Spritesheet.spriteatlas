@@ -44,7 +44,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 124264
+    totalSpriteSurfaceArea: 145564
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -174,7 +174,39 @@ SpriteAtlas:
   - {fileID: 228940821244427079, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: -256003546741158619, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: -5481780447360278658, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: 1650081454704481361, guid: 8b1ab806887713e489696181a034e5e3, type: 3}
+  - {fileID: -8352166673674622796, guid: 8b1ab806887713e489696181a034e5e3, type: 3}
+  - {fileID: 1631041585622142961, guid: 8b1ab806887713e489696181a034e5e3, type: 3}
+  - {fileID: -4795465833082762128, guid: 8b1ab806887713e489696181a034e5e3, type: 3}
   - {fileID: 21300000, guid: 19e279164cfcbc542b5f60d9f2ba5415, type: 3}
+  - {fileID: 6805625198099828860, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -4970697563511096618, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 5939327890850462697, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 5858094125622533880, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -4269888965115197881, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 393823982811191414, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 1089572912664832112, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -7740289661607713734, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 3022016571612792209, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -8762892528747486155, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -4490900855553689085, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 8995441062527218672, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 6237689766955921978, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 1271333155694222504, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -1851341877245677645, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 2496219462800335440, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 1522400132352055622, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -7507481999987751864, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -8748868691518822036, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 3528487458364534776, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 4091690472757816599, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -5454297722283505106, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 7680274952162822568, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -1124648011922722527, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -4266848574497325893, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 2514536287103409087, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 8709652788521717238, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -3498176329677942063, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: -1788993617494000148, guid: 5fe4c949fb7d5ba4c853fe50ae99e39b, type: 3}
   - {fileID: -2674576112510800545, guid: 5fe4c949fb7d5ba4c853fe50ae99e39b, type: 3}
   - {fileID: -8268554799088957844, guid: 5fe4c949fb7d5ba4c853fe50ae99e39b, type: 3}
@@ -247,13 +279,11 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 7d848f0a7b3d2a347a11c6f54f001302, type: 3}
   - {fileID: 21300000, guid: ea8ded5a51206ac4ca7f3f58a4581470, type: 3}
   - {fileID: 21300000, guid: ddeb8a6a86fde974c83e4472f06b8ed7, type: 3}
-  - {fileID: 5813271414626854330, guid: 7b1171da432fd154c911865c3c036125, type: 3}
   - {fileID: -4048028670941725383, guid: 7b1171da432fd154c911865c3c036125, type: 3}
   - {fileID: -3522093265501685102, guid: 7b1171da432fd154c911865c3c036125, type: 3}
   - {fileID: 5985956242139829448, guid: 7b1171da432fd154c911865c3c036125, type: 3}
   - {fileID: -7618121031060936969, guid: 7b1171da432fd154c911865c3c036125, type: 3}
   - {fileID: 21300000, guid: d26ea8dadab609946a7c14d388f76a51, type: 3}
-  - {fileID: -3442797938224190156, guid: 779aa50bcfa1642409c56dd2a647046f, type: 3}
   - {fileID: -2607375368422798938, guid: 779aa50bcfa1642409c56dd2a647046f, type: 3}
   - {fileID: -5293965045080597884, guid: 779aa50bcfa1642409c56dd2a647046f, type: 3}
   - {fileID: 3498592085198263503, guid: 779aa50bcfa1642409c56dd2a647046f, type: 3}
@@ -281,6 +311,7 @@ SpriteAtlas:
   - {fileID: -7091710371065449763, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
   - {fileID: -4914975280773618118, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
   - {fileID: 3110829806665180078, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
+  - {fileID: 21300000, guid: 5a8e8d4eab4eb224daf8b183477ff1c4, type: 3}
   - {fileID: 21300000, guid: 54897e4e20210dc4fa43d6ca3acf93b3, type: 3}
   - {fileID: 21300000, guid: 81e4cd7e458562d48bc84644a17d8866, type: 3}
   m_PackedSpriteNamesToIndex:
@@ -410,7 +441,39 @@ SpriteAtlas:
   - UI_19
   - UI_21
   - UI_18
+  - orc_banner_1
+  - orc_banner_0
+  - orc_banner_3
+  - orc_banner_2
   - EnergySymbol
+  - orc_clothes_23
+  - orc_clothes_22
+  - orc_clothes_21
+  - orc_clothes_20
+  - orc_clothes_16
+  - orc_clothes_27
+  - orc_clothes_17
+  - orc_clothes_26
+  - orc_clothes_14
+  - orc_clothes_25
+  - orc_clothes_15
+  - orc_clothes_24
+  - orc_clothes_12
+  - orc_clothes_13
+  - orc_clothes_10
+  - orc_clothes_11
+  - orc_clothes_18
+  - orc_clothes_19
+  - orc_clothes_3
+  - orc_clothes_2
+  - orc_clothes_1
+  - orc_clothes_0
+  - orc_clothes_7
+  - orc_clothes_6
+  - orc_clothes_5
+  - orc_clothes_4
+  - orc_clothes_9
+  - orc_clothes_8
   - MountainTiles_26
   - MountainTiles_27
   - MountainTiles_24
@@ -483,13 +546,11 @@ SpriteAtlas:
   - CardDetails
   - Button
   - CardBack
-  - naked_orc_4
   - naked_orc_2
   - naked_orc_3
   - naked_orc_0
   - naked_orc_1
   - Panel
-  - naked_orc_hurt_4
   - naked_orc_hurt_0
   - naked_orc_hurt_1
   - naked_orc_hurt_2
@@ -517,6 +578,7 @@ SpriteAtlas:
   - khelz_enemies_0
   - khelz_enemies_3
   - Enemy Shadow
+  - CardGem
   - BGArtwork
   - UI-Resources
   m_Tag: Debug Spritesheet

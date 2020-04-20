@@ -17,8 +17,9 @@ public class WaveController : MonoBehaviour
     public AnimationCurve DifficultyCurve;
      
     [Header("Enemy Info")]
-    public Enemy EnemyToSpawn;
-   // [ReadOnly] public List<Enemy> EnemiesInCurrentWave;
+    //public Enemy EnemyToSpawn;
+    public List<Wave> WavesToSpawn;
+    [ReadOnly] public List<Enemy> EnemiesInCurrentWave;
     
     [Header("Wave Info")]
     public int CurrentWaveNumber = 1;
@@ -71,24 +72,23 @@ public class WaveController : MonoBehaviour
         //RewardsManager.OpenRewardsPanel();
     }
 
-    public void StartNextWave()
+    private void StartNextWave()
     {
         TimeBetweenWavesTracker = TimeBetweenWavesInSeconds;
         WaveActive              = true;
-        if (CurrentWaveNumber > 50)
+        if (CurrentWaveNumber > WavesToSpawn.Count)
         {
             SceneManager.LoadScene("Winner");
             return;
         }
 
-        int toSpawn = CurrentWaveNumber;
-
-        for (int i = 0; i < toSpawn; i++)
+        Wave toSpawn = WavesToSpawn[CurrentWaveNumber];
+        for (int i = 0; i < toSpawn.EnemiesInWave.Count; i++)
         {
-            StartCoroutine(SpawnEnemy(EnemyToSpawn, TimeBetweenSpawns * i));
+            StartCoroutine(SpawnEnemy(toSpawn.EnemiesInWave[i], TimeBetweenSpawns * i));
         }
 
-        EnemiesRemainingInWave = toSpawn;
+        EnemiesRemainingInWave = toSpawn.EnemiesInWave.Count;
     }
 
     private IEnumerator SpawnEnemy(Enemy toSpawn, float delay)

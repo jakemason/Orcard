@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 089e420f753f5164fad2d8fd405664a5, type: 3}
+  m_Name: OneOfEach
+  m_EditorClassIdentifier: 
+  EnemiesInWave:
+  - {fileID: 11400000, guid: f9f00ea5a9bdf7143a165849c652eeed, type: 2}
+  - {fileID: 11400000, guid: bcf9bd2cdcc9f0e4fa6dfe00779d643f, type: 2}
+  - {fileID: 11400000, guid: bdee5b9195d2c814b995c279e10e46ae, type: 2}
+  - {fileID: 11400000, guid: 25b5223366b9fda40bf2e55abe1fd0f5, type: 2}
+  - {fileID: 11400000, guid: bced5754ff8d2394f9a9e93e856a0400, type: 2}
+  - {fileID: 11400000, guid: 9527d803d5c901841aed3b40dea0d9ea, type: 2}
+  - {fileID: 11400000, guid: 7282b02008a23c747ba5ddb1bae4d0ee, type: 2}
+  TimeBetweenSpawns: 0.5
+  RewardsSpecificRarity: 0
+  WaveDifficulty: 0
+  ToReward: 0
