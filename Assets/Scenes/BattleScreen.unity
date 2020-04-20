@@ -3321,8 +3321,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015497, y: -0.00000071526}
-  m_SizeDelta: {x: 20, y: 20}
+  m_AnchoredPosition: {x: 9.67, y: -0.485}
+  m_SizeDelta: {x: 13.79, y: 9.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &273207806
 MonoBehaviour:
@@ -3370,8 +3370,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 9
+  m_fontSizeBase: 9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -3387,7 +3387,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -3647,8 +3647,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -778.3, y: -397.3}
-  m_SizeDelta: {x: 20, y: 20}
+  m_AnchoredPosition: {x: -738.6, y: -397.3}
+  m_SizeDelta: {x: 40, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &299553215
 MonoBehaviour:
@@ -3722,7 +3722,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6620621745411573659, guid: ae592ec5f61781740acd775ec720a49c,
+  m_Sprite: {fileID: -4464969597253999955, guid: ae592ec5f61781740acd775ec720a49c,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -3873,7 +3873,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -223.75, y: 37.9}
+  m_AnchoredPosition: {x: -223.75, y: 35.4}
   m_SizeDelta: {x: 449.11, y: 76.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &333788988
@@ -28414,7 +28414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29.2, y: -0.485}
+  m_AnchoredPosition: {x: 38.96, y: -0.485}
   m_SizeDelta: {x: 38.456, y: 19.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1730978795
@@ -30639,7 +30639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 691.2, y: -370.9}
+  m_AnchoredPosition: {x: 692.3, y: -376.4}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2131244669
@@ -31071,22 +31071,22 @@ PrefabInstance:
     - target: {fileID: 5067815770156977305, guid: 8624e8c491a372a4ebeb0078777b0d30,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -566.4125
+      value: 234.5
       objectReference: {fileID: 0}
     - target: {fileID: 5067815770156977305, guid: 8624e8c491a372a4ebeb0078777b0d30,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -312.48996
+      value: -137.5
       objectReference: {fileID: 0}
     - target: {fileID: 5067815770156977305, guid: 8624e8c491a372a4ebeb0078777b0d30,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -1132.825
+      value: 467.17505
       objectReference: {fileID: 0}
     - target: {fileID: 5067815770156977305, guid: 8624e8c491a372a4ebeb0078777b0d30,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: -625
+      value: 275
       objectReference: {fileID: 0}
     - target: {fileID: 5067815770156977305, guid: 8624e8c491a372a4ebeb0078777b0d30,
         type: 3}
@@ -31096,12 +31096,12 @@ PrefabInstance:
     - target: {fileID: 5067815770156977305, guid: 8624e8c491a372a4ebeb0078777b0d30,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5067815770156977305, guid: 8624e8c491a372a4ebeb0078777b0d30,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5067815770156977305, guid: 8624e8c491a372a4ebeb0078777b0d30,
         type: 3}
