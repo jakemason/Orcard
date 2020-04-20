@@ -100,7 +100,7 @@ namespace Players
         private void UpdateDrawTimer()
         {
             _freeDrawCooldown       -= Time.deltaTime;
-            DrawCooldownText.text   =  _freeDrawCooldown <= 0f ? "--" : _freeDrawCooldown.ToString("00");
+            DrawCooldownText.text   =  _freeDrawCooldown <= 0f ? "!" : _freeDrawCooldown.ToString("00");
             DrawButton.interactable =  _freeDrawCooldown <= 0f || IncomeController.GetCurrentGold() >= RedrawGoldCost;
             RedrawCostText.text     =  RedrawGoldCost.ToString();
             RedrawCostIndicator.SetActive(_freeDrawCooldown >= 0.0f);
