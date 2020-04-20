@@ -1121,13 +1121,13 @@ MonoBehaviour:
     rgba: 4294967295
   RareColor:
     serializedVersion: 2
-    rgba: 4278255537
+    rgba: 4278255563
   EpicColor:
     serializedVersion: 2
-    rgba: 4294906112
+    rgba: 4294943232
   LegendaryColor:
     serializedVersion: 2
-    rgba: 4278218239
+    rgba: 4278239487
 --- !u!114 &3211725596952985577
 MonoBehaviour:
   m_ObjectHideFlags: 0

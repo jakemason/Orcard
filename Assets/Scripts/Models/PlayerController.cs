@@ -23,6 +23,9 @@ namespace Players
         public int RedrawGoldIncrease = 5;
         public int FreeDrawCooldownInSeconds = 15;
         public Button DrawButton;
+        public TextMeshProUGUI DrawCooldownText;
+        public GameObject RedrawCostIndicator;
+        public TextMeshProUGUI RedrawCostText;
         private float _freeDrawCooldown;
 
         [Header("Player Energy")]
@@ -82,18 +85,25 @@ namespace Players
         {
             StartTurn();
             DrawNewHand();
-            _freeDrawCooldown = FreeDrawCooldownInSeconds;
+            _freeDrawCooldown = 0f;
         }
 
         public void Update()
         {
-            _freeDrawCooldown       -= Time.deltaTime;
-            DrawButton.interactable =  _freeDrawCooldown <= 0f || IncomeController.GetCurrentGold() >= RedrawGoldCost;
-
+            UpdateDrawTimer();
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 Application.Quit();
             }
+        }
+
+        private void UpdateDrawTimer()
+        {
+            _freeDrawCooldown       -= Time.deltaTime;
+            DrawCooldownText.text   =  _freeDrawCooldown <= 0f ? "" : _freeDrawCooldown.ToString("00");
+            DrawButton.interactable =  _freeDrawCooldown <= 0f || IncomeController.GetCurrentGold() >= RedrawGoldCost;
+            RedrawCostText.text     =  RedrawGoldCost.ToString();
+            RedrawCostIndicator.SetActive(_freeDrawCooldown >= 0.0f);
         }
 
         public void DrawNewHand()

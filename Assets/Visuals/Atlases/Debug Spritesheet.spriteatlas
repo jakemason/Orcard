@@ -44,12 +44,13 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 145564
+    totalSpriteSurfaceArea: 147524
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 93deb840df6e37f44a581c1a39d38404, type: 3}
   - {fileID: 21300000, guid: 2cb0c050e44492d4abc29b7b1d9eec8e, type: 3}
+  - {fileID: 21300000, guid: cb777fe0a3735e840a30a193a34688e4, type: 3}
   - {fileID: 3885896879181721225, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: -8592775388920689549, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: -7066069701566576912, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
@@ -100,6 +101,9 @@ SpriteAtlas:
   - {fileID: -1564217899101464215, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: -400233916177022325, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: 6720702610520212751, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
+  - {fileID: 9113970646532192624, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
+  - {fileID: -6645244175507468903, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
+  - {fileID: 8880519671546532986, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: 7141905177006421401, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: 2094057332260001344, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: 4671360815984533264, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
@@ -317,6 +321,7 @@ SpriteAtlas:
   m_PackedSpriteNamesToIndex:
   - ButtonDark
   - CardTitle
+  - GoldIndicator
   - ForestTiles_68
   - ForestTiles_69
   - ForestTiles_79
@@ -367,6 +372,9 @@ SpriteAtlas:
   - ForestTiles_0
   - ForestTiles_41
   - ForestTiles_1
+  - ForestTiles_102
+  - ForestTiles_101
+  - ForestTiles_100
   - ForestTiles_51
   - ForestTiles_82
   - ForestTiles_50
