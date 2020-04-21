@@ -44,7 +44,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 154324
+    totalSpriteSurfaceArea: 154919
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -154,6 +154,8 @@ SpriteAtlas:
   - {fileID: -1583952302052483730, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: 48797513864888106, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: -8516813793510556873, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
+  - {fileID: -5939463070795172742, guid: 945fd5e45be73bd46abee3c3ebe57aa8, type: 3}
+  - {fileID: 6725019411808010661, guid: 945fd5e45be73bd46abee3c3ebe57aa8, type: 3}
   - {fileID: 388057999756033245, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: 1652299931923453484, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: 7301787903208175943, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
@@ -441,6 +443,8 @@ SpriteAtlas:
   - ForestTiles_98
   - ForestTiles_39
   - ForestTiles_38
+  - Icons_0
+  - Icons_1
   - UI_17
   - UI_16
   - UI_15
