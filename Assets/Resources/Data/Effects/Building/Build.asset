@@ -15,4 +15,5 @@ MonoBehaviour:
   InstructionText: 
   ConstructionPrefab: {fileID: 988547076366149480, guid: 431a6127b97b7884fb15b8757b21a294,
     type: 3}
-  IsIndestructable: 0
+  ToolsPrefab: {fileID: 4159188327121383698, guid: 65a152d82c2312442a3d61f67d48f976,
+    type: 3}

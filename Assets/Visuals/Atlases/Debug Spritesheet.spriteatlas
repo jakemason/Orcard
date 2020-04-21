@@ -44,7 +44,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 148324
+    totalSpriteSurfaceArea: 154324
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -184,6 +184,7 @@ SpriteAtlas:
   - {fileID: 1631041585622142961, guid: 8b1ab806887713e489696181a034e5e3, type: 3}
   - {fileID: -4795465833082762128, guid: 8b1ab806887713e489696181a034e5e3, type: 3}
   - {fileID: 21300000, guid: 19e279164cfcbc542b5f60d9f2ba5415, type: 3}
+  - {fileID: 21300000, guid: 862c08476cbc56d47a4f1671544be528, type: 3}
   - {fileID: 6805625198099828860, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: -4970697563511096618, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: 5939327890850462697, guid: 0686ab485e303574db557c66024938ff, type: 3}
@@ -280,6 +281,20 @@ SpriteAtlas:
   - {fileID: -7826115416661802344, guid: 5fe4c949fb7d5ba4c853fe50ae99e39b, type: 3}
   - {fileID: 8456664329165043323, guid: 5fe4c949fb7d5ba4c853fe50ae99e39b, type: 3}
   - {fileID: 1864959253946797033, guid: 5fe4c949fb7d5ba4c853fe50ae99e39b, type: 3}
+  - {fileID: -3543540175793387968, guid: a4a3d46916a806e41b12620238985e0a, type: 3}
+  - {fileID: 7413330658570089919, guid: a4a3d46916a806e41b12620238985e0a, type: 3}
+  - {fileID: 8285091835809268112, guid: a4a3d46916a806e41b12620238985e0a, type: 3}
+  - {fileID: 7811721685257397968, guid: a4a3d46916a806e41b12620238985e0a, type: 3}
+  - {fileID: 7287276296837648497, guid: a4a3d46916a806e41b12620238985e0a, type: 3}
+  - {fileID: -8309643413193770608, guid: a4a3d46916a806e41b12620238985e0a, type: 3}
+  - {fileID: 8699069900992395679, guid: a4a3d46916a806e41b12620238985e0a, type: 3}
+  - {fileID: 1559704157218881296, guid: a4a3d46916a806e41b12620238985e0a, type: 3}
+  - {fileID: 5292716684467120071, guid: a4a3d46916a806e41b12620238985e0a, type: 3}
+  - {fileID: 7155652846937496742, guid: a4a3d46916a806e41b12620238985e0a, type: 3}
+  - {fileID: 3424674198401663528, guid: a4a3d46916a806e41b12620238985e0a, type: 3}
+  - {fileID: -5651667117540000442, guid: a4a3d46916a806e41b12620238985e0a, type: 3}
+  - {fileID: -815456381808828490, guid: a4a3d46916a806e41b12620238985e0a, type: 3}
+  - {fileID: -9166200356469041071, guid: a4a3d46916a806e41b12620238985e0a, type: 3}
   - {fileID: 21300000, guid: 8a2ed769065b483468ebcf80773727c8, type: 3}
   - {fileID: 21300000, guid: 7d848f0a7b3d2a347a11c6f54f001302, type: 3}
   - {fileID: 21300000, guid: ea8ded5a51206ac4ca7f3f58a4581470, type: 3}
@@ -456,6 +471,7 @@ SpriteAtlas:
   - orc_banner_3
   - orc_banner_2
   - EnergySymbol
+  - CircleParticle
   - orc_clothes_23
   - orc_clothes_22
   - orc_clothes_21
@@ -552,6 +568,20 @@ SpriteAtlas:
   - MountainTiles_7
   - MountainTiles_8
   - MountainTiles_9
+  - tools_10
+  - tools_11
+  - tools_12
+  - tools_13
+  - tools_9
+  - tools_8
+  - tools_1
+  - tools_0
+  - tools_3
+  - tools_2
+  - tools_5
+  - tools_4
+  - tools_7
+  - tools_6
   - StoneTower
   - CardDetails
   - Button

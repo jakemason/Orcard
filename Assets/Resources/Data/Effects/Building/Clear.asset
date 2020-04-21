@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Clear
   m_EditorClassIdentifier: 
   InstructionText: Destroy target building.
+  ToolsPrefab: {fileID: 4159188327121383698, guid: 65a152d82c2312442a3d61f67d48f976,
+    type: 3}

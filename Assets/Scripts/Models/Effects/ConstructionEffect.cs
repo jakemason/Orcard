@@ -5,11 +5,13 @@ using UnityEngine;
 public class ConstructionEffect : Effect
 {
     public GameObject ConstructionPrefab;
+    public GameObject ToolsPrefab;
 
     public override void Activate()
     {
         //TODO: Maybe just two different Construction Effects with separate Prefabs would be easiest?
         GameObject     go        = Instantiate(ConstructionPrefab, SpellCast.CastPosition, Quaternion.identity);
+        GameObject     tools     = Instantiate(ToolsPrefab,        SpellCast.CastPosition, Quaternion.identity);
         SpriteRenderer rend      = go.GetComponent<SpriteRenderer>();
         TowerCard      towerCard = SpellCast.AttemptingToCast as TowerCard;
         if (towerCard != null)
