@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4159188327121383699}
   - component: {fileID: 139820331}
   - component: {fileID: 2542487544319130262}
+  - component: {fileID: 1606808075}
   m_Layer: 0
   m_Name: ToolsPrefab
   m_TagString: Untagged
@@ -131,6 +132,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FadeSpeed: 0.5
+--- !u!114 &1606808075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4159188327121383698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6928a8fbd26ed3e41ae116c68d20d5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ToPlay: {fileID: 8300000, guid: 0e37f66be91e16b408e9c564afa53a12, type: 3}
+  PitchMin: 0.7
+  PitchMax: 1.2
+  Source: {fileID: 3912485818605252825, guid: dac32aeae2b80444d98675000eff054a, type: 3}
 --- !u!1 &4159188327658929945
 GameObject:
   m_ObjectHideFlags: 0
