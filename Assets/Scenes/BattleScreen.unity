@@ -21510,7 +21510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeBetweenWavesInSeconds: 5
   TimeBetweenWavesTracker: 0
-  TimeBetweenSpawns: 1
+  TimeBetweenSpawns: 3
   DifficultyCurve:
     serializedVersion: 2
     m_Curve:
@@ -21536,7 +21536,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   WavesToSpawn:
-  - {fileID: 11400000, guid: d616011a342e4974fa18f22d10acfcc3, type: 2}
+  - {fileID: 11400000, guid: 00cbb83a0e4f69d43a012273f0f04fd8, type: 2}
   - {fileID: 11400000, guid: 42d2a7fca14c4564281596d7001d26fc, type: 2}
   - {fileID: 11400000, guid: c7ed5f1bd7379614d8bc83da69db7c80, type: 2}
   - {fileID: 11400000, guid: 00cbb83a0e4f69d43a012273f0f04fd8, type: 2}
@@ -21643,6 +21643,7 @@ MonoBehaviour:
   MaxHealth: 5
   CurrentHealth: 5
   MarkedForDeath: 0
+  DeathPrefab: {fileID: 0}
 --- !u!114 &1511839242
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@
 public class SpriteFade : MonoBehaviour
 {
     public float FadeSpeed = 1.0f;
+    public float Delay = 0.0f;
     private SpriteRenderer _renderer;
 
     private void Start()
@@ -13,9 +14,13 @@ public class SpriteFade : MonoBehaviour
 
     private void Update()
     {
-        Color color = _renderer.color;
-        color = new Color(color.r, color.g, color.b,
-            color.a - FadeSpeed * Time.deltaTime);
-        _renderer.color = color;
+        Delay -= Time.deltaTime;
+        if (Delay <= 0.0f)
+        {
+            Color color = _renderer.color;
+            color = new Color(color.r, color.g, color.b,
+                color.a - FadeSpeed * Time.deltaTime);
+            _renderer.color = color;
+        }
     }
 }
