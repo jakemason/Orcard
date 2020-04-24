@@ -18,12 +18,12 @@ MonoBehaviour:
   Rarity: 2
   Set: 0
   CastingCost: 3
-  GoldCost: 250
+  GoldCost: 150
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
-  DestroyOnCast: 0
+  DestroyOnCast: 1
   IsTargeted: 1
-  InstructionText: '+1 Card Per Draw.  '
+  InstructionText: '+1 Card Per Draw. Destroy this card.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: The merchants of Elandia are known for their exotic goods and tireless

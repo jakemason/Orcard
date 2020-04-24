@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -67,6 +68,27 @@ public abstract class Card : ScriptableObject
                 if (effect == null || effect.InstructionText == "") continue;
                 playEffects += effect.InstructionText + " ";
             }
+        }
+
+        switch (Rarity)
+        {
+            case CardRarity.Common:
+                GoldCost = 50;
+                break;
+            case CardRarity.Uncommon:
+                GoldCost = 100;
+                break;
+            case CardRarity.Rare:
+                GoldCost = 150;
+                break;
+            case CardRarity.Epic:
+                GoldCost = 250;
+                break;
+            case CardRarity.Legendary:
+                GoldCost = 500;
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
         }
 
         string startEffects = "";

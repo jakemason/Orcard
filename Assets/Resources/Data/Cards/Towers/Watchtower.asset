@@ -15,10 +15,10 @@ MonoBehaviour:
   Name: Watchtower
   Artwork: {fileID: 21300000, guid: 8a2ed769065b483468ebcf80773727c8, type: 3}
   ArtworkBackground: {fileID: 21300000, guid: 54897e4e20210dc4fa43d6ca3acf93b3, type: 3}
-  Rarity: 0
+  Rarity: 1
   Set: 0
   CastingCost: 3
-  GoldCost: 150
+  GoldCost: 100
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 1
