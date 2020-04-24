@@ -10,14 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37409aeed135ebc478a0d1700ccb93c9, type: 3}
-  m_Name: Orc
+  m_Name: Orc 7
   m_EditorClassIdentifier: 
-  Name: Orc
+  Name: Orc 7
   Speed: 2
-  HP: 5
+  HP: 50
   MinSize: 1
   MaxSize: 1
-  AnimatorController: {fileID: 9100000, guid: 74ee740c764402c4e94e3f4616a52632, type: 2}
   Damage: 3
   FlavorText: 
-  OverallStrength: 10
+  HasSword: 1
+  HasSmallHelm: 0
+  HasLargeHelm: 1
+  HasShield: 1
+  HasBoots: 1
+  HasSmallShoulders: 0
+  HasLargeShoulders: 1
+  HasWarBanner: 1
+  OverallStrength: 55

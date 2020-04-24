@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 089e420f753f5164fad2d8fd405664a5, type: 3}
-  m_Name: ArmoredOrcs
+  m_Name: Wave 1
   m_EditorClassIdentifier: 
   EnemiesInWave:
   - {fileID: 11400000, guid: f9f00ea5a9bdf7143a165849c652eeed, type: 2}
-  - {fileID: 11400000, guid: bcf9bd2cdcc9f0e4fa6dfe00779d643f, type: 2}
-  - {fileID: 11400000, guid: bcf9bd2cdcc9f0e4fa6dfe00779d643f, type: 2}
+  - {fileID: 11400000, guid: f9f00ea5a9bdf7143a165849c652eeed, type: 2}
   TimeBetweenSpawns: 0.5
   RewardsSpecificRarity: 0
   WaveDifficulty: 0

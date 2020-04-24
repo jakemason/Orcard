@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4731244ff9c864e43b691fbdfab4d381, type: 3}
-  m_Name: God Tower
+  m_Name: Lightning Tower
   m_EditorClassIdentifier: 
-  Name: God Tower
-  Artwork: {fileID: 21300000, guid: 21e0f2bffbc084e4d8e70e7340f279ab, type: 3}
-  ArtworkBackground: {fileID: 0}
+  Name: Lightning Tower
+  Artwork: {fileID: 21300000, guid: 8a2ed769065b483468ebcf80773727c8, type: 3}
+  ArtworkBackground: {fileID: 21300000, guid: 54897e4e20210dc4fa43d6ca3acf93b3, type: 3}
   Rarity: 0
   Set: 0
-  CastingCost: 2
-  GoldCost: 0
+  CastingCost: 3
+  GoldCost: 150
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 1
   IsTargeted: 1
-  InstructionText: 'Developer Chearty Face '
+  InstructionText: 'Terrifyingly bright. '
   AdditionalInstructionText: 
-  OverrideDefaultInstructionText: Developer Chearty Face
-  FlavorText: Useful for debugging.
+  OverrideDefaultInstructionText: Terrifyingly bright.
+  FlavorText: Useful for spotting bandits and the occasional rolling storm.
   OnDrawEffects: []
   ImmediateEffects:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
@@ -36,10 +36,10 @@ MonoBehaviour:
   BoltPrefab: {fileID: 4748081343559320588, guid: be2befc9997d8c749997b5c06b973628,
     type: 3}
   ConstructionEffect: {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
-  Damage: 55
-  AttacksPerSecond: 55
+  Damage: 1
+  AttacksPerSecond: 10
   AttackMovementSpeed: 55
-  Range: 55
-  MaxAmmo: 55
-  DamagePerSecond: 3025
-  AttackRate: 0.018181818
+  Range: 3
+  MaxAmmo: 15
+  DamagePerSecond: 10
+  AttackRate: 0.1

@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Surge
   Artwork: {fileID: 8768893368382487233, guid: 5f0019badba37db42a20b696a8868333, type: 3}
-  Rarity: 0
+  ArtworkBackground: {fileID: 0}
+  Rarity: 1
   Set: 0
   CastingCost: 0
-  GoldCost: 0
+  GoldCost: 100
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0
@@ -30,3 +31,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9990a7dfeb23e9a4184cf41d74d7d0db, type: 2}
   PermanentStartOfTurnEffects: []
   StartOfNextTurnEffects: []
+  DiscardEffects: []

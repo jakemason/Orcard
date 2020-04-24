@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4731244ff9c864e43b691fbdfab4d381, type: 3}
-  m_Name: Watchtower
+  m_Name: Fire Tower
   m_EditorClassIdentifier: 
-  Name: Watchtower
+  Name: Fire Tower
   Artwork: {fileID: 21300000, guid: 8a2ed769065b483468ebcf80773727c8, type: 3}
   ArtworkBackground: {fileID: 21300000, guid: 54897e4e20210dc4fa43d6ca3acf93b3, type: 3}
   Rarity: 0
@@ -23,9 +23,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 1
   IsTargeted: 1
-  InstructionText: 'Simple, effective. '
+  InstructionText: 'Terrifyingly bright. '
   AdditionalInstructionText: 
-  OverrideDefaultInstructionText: Simple, effective.
+  OverrideDefaultInstructionText: Terrifyingly bright.
   FlavorText: Useful for spotting bandits and the occasional rolling storm.
   OnDrawEffects: []
   ImmediateEffects:
@@ -36,10 +36,10 @@ MonoBehaviour:
   BoltPrefab: {fileID: 4748081343559320588, guid: be2befc9997d8c749997b5c06b973628,
     type: 3}
   ConstructionEffect: {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
-  Damage: 2
+  Damage: 10
   AttacksPerSecond: 3
-  AttackMovementSpeed: 14
+  AttackMovementSpeed: 15
   Range: 3
-  MaxAmmo: 55
-  DamagePerSecond: 6
+  MaxAmmo: 10
+  DamagePerSecond: 30
   AttackRate: 0.33333334

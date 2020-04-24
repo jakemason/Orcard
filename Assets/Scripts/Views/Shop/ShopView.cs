@@ -38,6 +38,13 @@ public class ShopView : MonoBehaviour
         Instance._layoutGroup.enabled = true;
     }
 
+    public static void RefreshView()
+    {
+        Instance._layoutGroup.enabled = false;
+        Canvas.ForceUpdateCanvases();
+        Instance._layoutGroup.enabled = true;
+    }
+
     public static bool IsEnabled()
     {
         return Instance.ShopRoot.activeSelf;

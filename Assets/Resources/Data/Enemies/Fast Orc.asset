@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37409aeed135ebc478a0d1700ccb93c9, type: 3}
-  m_Name: HeavilyArmoredOrc
+  m_Name: Fast Orc
   m_EditorClassIdentifier: 
-  Name: Orc
-  Speed: 2
-  HP: 5
+  Name: Fast Orc
+  Speed: 6
+  HP: 10
   MinSize: 1
   MaxSize: 1
   Damage: 3
   FlavorText: 
   HasSword: 0
   HasSmallHelm: 0
-  HasLargeHelm: 1
-  HasShield: 1
-  HasBoots: 1
+  HasLargeHelm: 0
+  HasShield: 0
+  HasBoots: 0
   HasSmallShoulders: 0
-  HasLargeShoulders: 1
+  HasLargeShoulders: 0
   HasWarBanner: 0
-  OverallStrength: 10
+  OverallStrength: 19

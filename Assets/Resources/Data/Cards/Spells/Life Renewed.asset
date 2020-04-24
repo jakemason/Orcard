@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Life Renewed
   Artwork: {fileID: -454495444122317822, guid: 075bfcb955b583e458d656add7718275, type: 3}
+  ArtworkBackground: {fileID: 0}
   Rarity: 4
   Set: 0
   CastingCost: 2
-  GoldCost: 0
+  GoldCost: 500
   CastingRequirements: []
   DestroyOnCast: 1
   IsTargeted: 0
-  InstructionText: '+50 HP. Destroy this card. '
+  InstructionText: '+50 HP. Destroy this card.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
@@ -30,3 +31,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 54f71eb1544417e42a494d4da768e741, type: 2}
   PermanentStartOfTurnEffects: []
   StartOfNextTurnEffects: []
+  DiscardEffects: []

@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Divine Gift
   Artwork: {fileID: -454495444122317822, guid: 075bfcb955b583e458d656add7718275, type: 3}
+  ArtworkBackground: {fileID: 0}
   Rarity: 4
   Set: 0
   CastingCost: 1
-  GoldCost: 0
+  GoldCost: 500
   CastingRequirements: []
   DestroyOnCast: 1
   IsTargeted: 0
-  InstructionText: 'Draw 3 Cards. Destroy this card. '
+  InstructionText: '+3 Card Per Draws. Destroy this card.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
@@ -30,3 +31,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1e6fb30a0d9298b489562966ba0d2f5d, type: 2}
   PermanentStartOfTurnEffects: []
   StartOfNextTurnEffects: []
+  DiscardEffects: []

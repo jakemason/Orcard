@@ -18,7 +18,7 @@ MonoBehaviour:
   Rarity: 4
   Set: 0
   CastingCost: 1
-  GoldCost: 0
+  GoldCost: 500
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0

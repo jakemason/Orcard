@@ -75,7 +75,7 @@ public class EnemyController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Core"))
         {
-            Core.TakeDamage(Model.Damage);
+            Core.TakeDamage(1);
             WaveController.Instance.EnemiesRemainingInWave -= 1;
             WaveController.Instance.EnemiesSpawned.Remove(gameObject);
             Destroy(gameObject);

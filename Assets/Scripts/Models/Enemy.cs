@@ -10,7 +10,6 @@ public class Enemy : ScriptableObject
     public int HP;
     [Range(0.5f, 1.5f)] public float MinSize = 1.0f;
     [Range(0.5f, 1.5f)] public float MaxSize = 1.0f;
-    public int Damage;
     [TextArea] public string FlavorText;
     
     [Header("Computed Values")]
@@ -36,7 +35,7 @@ public class Enemy : ScriptableObject
 #if UNITY_EDITOR
     private void OnValidate()
     {
-        OverallStrength = (Speed * _speedValueWeight) + (Damage * _damageValueWeight) + (HP * _hpValueWeight);
+        OverallStrength = (Speed * _speedValueWeight) + (HP * _hpValueWeight);
         // this makes the editor typing experience feel a little weird, but saves us from having to manually
         // rename the file to match the name of the card. I feel this is useful enough to keep for now.
         if (Name != "")

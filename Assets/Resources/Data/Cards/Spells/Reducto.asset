@@ -15,10 +15,10 @@ MonoBehaviour:
   Name: Reducto
   Artwork: {fileID: 1738079625534024081, guid: e7258ff8e7f52a546ae0c3c579adafd1, type: 3}
   ArtworkBackground: {fileID: 0}
-  Rarity: 1
+  Rarity: 3
   Set: 0
   CastingCost: 0
-  GoldCost: 0
+  GoldCost: 250
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0

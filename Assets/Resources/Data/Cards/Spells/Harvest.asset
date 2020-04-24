@@ -18,11 +18,11 @@ MonoBehaviour:
   Rarity: 0
   Set: 0
   CastingCost: 0
-  GoldCost: 0
+  GoldCost: 150
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0
-  InstructionText: 'For each Wheat Field currently built, +25 Gold.  '
+  InstructionText: 'For each Wheat Field, +25 Gold.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
