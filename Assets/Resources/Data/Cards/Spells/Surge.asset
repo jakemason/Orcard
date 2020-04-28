@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Surge
   Artwork: {fileID: 8768893368382487233, guid: 5f0019badba37db42a20b696a8868333, type: 3}
+  ArtworkOffset: {x: 0, y: 0}
+  ArtworkScale: {x: 1, y: 1}
   ArtworkBackground: {fileID: 0}
   Rarity: 1
   Set: 0

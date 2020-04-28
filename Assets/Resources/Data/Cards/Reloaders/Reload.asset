@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Reload
   Artwork: {fileID: 5561347366544571939, guid: fae3beae0334790438393168d3410343, type: 3}
+  ArtworkOffset: {x: 0, y: 0}
+  ArtworkScale: {x: 1, y: 1}
   ArtworkBackground: {fileID: 0}
   Rarity: 0
   Set: 0

@@ -15,15 +15,17 @@ MonoBehaviour:
   Name: Invest
   Artwork: {fileID: -8663575413618177380, guid: fae3beae0334790438393168d3410343,
     type: 3}
+  ArtworkOffset: {x: 0, y: 0}
+  ArtworkScale: {x: 1, y: 1}
   ArtworkBackground: {fileID: 0}
   Rarity: 0
   Set: 0
   CastingCost: 1
-  GoldCost: 75
+  GoldCost: 50
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0
-  InstructionText: 'After 45 seconds, +1 Energy..  '
+  InstructionText: 'After 45 seconds, +2 Energy.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 

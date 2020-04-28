@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Arm The Towers
   Artwork: {fileID: 5664825439308274393, guid: e7258ff8e7f52a546ae0c3c579adafd1, type: 3}
+  ArtworkOffset: {x: 0, y: 0}
+  ArtworkScale: {x: 1, y: 1}
   ArtworkBackground: {fileID: 0}
   Rarity: 4
   Set: 0

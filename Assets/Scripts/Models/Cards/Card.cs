@@ -29,6 +29,8 @@ public abstract class Card : ScriptableObject
     [Header("Card Info")] 
     public string Name;
     public Sprite Artwork;
+    public Vector2 ArtworkOffset;
+    public Vector2 ArtworkScale = Vector2.one;
     public Sprite ArtworkBackground;
     public CardRarity Rarity = CardRarity.Common;
     public CardSet Set = CardSet.Basic;

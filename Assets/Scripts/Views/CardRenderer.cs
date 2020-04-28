@@ -44,6 +44,15 @@ public class CardRenderer : MonoBehaviour, ITargetable
         Cost.text            = CardObject.CastingCost.ToString();
         InstructionText.text = CardObject.InstructionText;
         Artwork.sprite       = CardObject.Artwork;
+        Transform artworkTransform = Artwork.transform;
+        artworkTransform.position = new Vector3(
+            artworkTransform.position.x + CardObject.ArtworkOffset.x,
+            artworkTransform.position.y + CardObject.ArtworkOffset.y,
+            0
+        );
+        artworkTransform.localScale  = new Vector3(CardObject.ArtworkScale.x, CardObject.ArtworkScale.y, 1);
+        Artwork.transform.position   = artworkTransform.position;
+        Artwork.transform.localScale = artworkTransform.localScale;
         if (CardObject.ArtworkBackground != null)
         {
             ArtworkBackground.sprite = CardObject.ArtworkBackground;

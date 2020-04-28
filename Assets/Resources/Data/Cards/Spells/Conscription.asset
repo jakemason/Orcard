@@ -15,11 +15,13 @@ MonoBehaviour:
   Name: Conscription
   Artwork: {fileID: -9212518133173021794, guid: 075bfcb955b583e458d656add7718275,
     type: 3}
+  ArtworkOffset: {x: 0, y: 0}
+  ArtworkScale: {x: 1, y: 1}
   ArtworkBackground: {fileID: 0}
   Rarity: 3
   Set: 0
   CastingCost: 0
-  GoldCost: 100
+  GoldCost: 250
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0

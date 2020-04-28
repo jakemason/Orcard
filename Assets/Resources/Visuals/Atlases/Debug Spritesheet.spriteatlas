@@ -44,13 +44,38 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 174324
+    totalSpriteSurfaceArea: 194324
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 93deb840df6e37f44a581c1a39d38404, type: 3}
   - {fileID: 21300000, guid: 2cb0c050e44492d4abc29b7b1d9eec8e, type: 3}
   - {fileID: 21300000, guid: cb777fe0a3735e840a30a193a34688e4, type: 3}
+  - {fileID: -7657187661756687099, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: 8255314341044953143, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: 6625692385018236696, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: -7916908332688520428, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: -8922806545422484088, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: -5308527982003062785, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: 7643761922474946111, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: 1168926902407322946, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: -250298321781293072, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: 961677336216162819, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: -2372858853108239839, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: -1982699832059996296, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: 3116890992287099372, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: -8408605906689737264, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: 7853409770426767552, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: -2434219546015377611, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: -4401666002738899813, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: 3247767813255465682, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: 1775660474302345089, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: 5231429416509325250, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: 2704936167174187159, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: -7025564087743128460, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: -3636880086547968531, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: 2982747736380097290, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
+  - {fileID: 7728155859371869844, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
   - {fileID: 3885896879181721225, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: -8592775388920689549, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: -7066069701566576912, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
@@ -377,6 +402,31 @@ SpriteAtlas:
   - ButtonDark
   - CardTitle
   - GoldIndicator
+  - buildings_7
+  - buildings_6
+  - buildings_5
+  - buildings_4
+  - buildings_3
+  - buildings_2
+  - buildings_1
+  - buildings_0
+  - buildings_9
+  - buildings_8
+  - buildings_24
+  - buildings_23
+  - buildings_22
+  - buildings_21
+  - buildings_20
+  - buildings_12
+  - buildings_13
+  - buildings_10
+  - buildings_11
+  - buildings_16
+  - buildings_17
+  - buildings_14
+  - buildings_15
+  - buildings_18
+  - buildings_19
   - ForestTiles_68
   - ForestTiles_69
   - ForestTiles_79

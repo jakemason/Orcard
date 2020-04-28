@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Divine Gift
   Artwork: {fileID: -454495444122317822, guid: 075bfcb955b583e458d656add7718275, type: 3}
+  ArtworkOffset: {x: 0, y: 0}
+  ArtworkScale: {x: 1, y: 1}
   ArtworkBackground: {fileID: 0}
   Rarity: 4
   Set: 0
