@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class Tower : Building, ITargetable
@@ -12,15 +13,18 @@ public class Tower : Building, ITargetable
     public DrawCircle RangeIndicator;
     public int MaxAmmo;
     private GameObject _reloadAnimation;
+    private Animator _animationController;
     public int RemainingAmmo;
-    
+    private static readonly int IsFiring = Animator.StringToHash("isFiring");
+
     // @formatter:on 
     private void Start()
     {
-        EnemiesInRange = new List<GameObject>();
-        RangeIndicator = GetComponentInChildren<DrawCircle>();
-        MaxAmmo        = Model.MaxAmmo;
-        RemainingAmmo  = MaxAmmo;
+        EnemiesInRange       = new List<GameObject>();
+        RangeIndicator       = GetComponentInChildren<DrawCircle>();
+        _animationController = GetComponent<Animator>();
+        MaxAmmo              = Model.MaxAmmo;
+        RemainingAmmo        = MaxAmmo;
         SetRange();
     }
 
@@ -37,8 +41,13 @@ public class Tower : Building, ITargetable
 
     private void Fire()
     {
-        if (RemainingAmmo <= 0) return;
-        if (Model.Damage == 0 || !_currentTarget || !(_attackCooldown <= 0)) return;
+        if ((RemainingAmmo <= 0 || Model.Damage == 0 || !_currentTarget || !(_attackCooldown <= 0)))
+        {
+            _animationController.SetBool(IsFiring, false);
+            return;
+        }
+
+        _animationController.SetBool(IsFiring, true);
 
         Vector3 boltOffset     = new Vector3(0.0f, 0.5f, 0.0f);
         Vector3 targetPosition = _currentTarget.transform.position;
