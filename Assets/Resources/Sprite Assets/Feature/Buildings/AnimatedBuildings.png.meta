@@ -1,0 +1,1078 @@
+fileFormatVersion: 2
+guid: ef5256474c2daec409239ef33cb92c78
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7638434617008382384
+    second: AnimatedBuildings_0
+  - first:
+      213: -3875173988802375285
+    second: AnimatedBuildings_1
+  - first:
+      213: -4801025422178743943
+    second: AnimatedBuildings_2
+  - first:
+      213: 6779511598000781648
+    second: AnimatedBuildings_3
+  - first:
+      213: -5457270451968859589
+    second: AnimatedBuildings_4
+  - first:
+      213: -7345956832415165933
+    second: AnimatedBuildings_5
+  - first:
+      213: -6790550117915419914
+    second: AnimatedBuildings_6
+  - first:
+      213: -6209369373601187846
+    second: AnimatedBuildings_7
+  - first:
+      213: 3026481129129124308
+    second: AnimatedBuildings_8
+  - first:
+      213: 425316010301647601
+    second: AnimatedBuildings_9
+  - first:
+      213: 7146940233374512622
+    second: AnimatedBuildings_10
+  - first:
+      213: -1640656540164071689
+    second: AnimatedBuildings_11
+  - first:
+      213: 4468312891155282882
+    second: AnimatedBuildings_12
+  - first:
+      213: -2569749028237731304
+    second: AnimatedBuildings_13
+  - first:
+      213: 8174421702606744564
+    second: AnimatedBuildings_14
+  - first:
+      213: 3583128459609394361
+    second: AnimatedBuildings_15
+  - first:
+      213: 228754617555094415
+    second: AnimatedBuildings_16
+  - first:
+      213: -8953387774720308208
+    second: AnimatedBuildings_17
+  - first:
+      213: 1722619389667782342
+    second: AnimatedBuildings_18
+  - first:
+      213: 407633006859742619
+    second: AnimatedBuildings_19
+  - first:
+      213: -7715448701393708658
+    second: AnimatedBuildings_20
+  - first:
+      213: -2481386672136807193
+    second: AnimatedBuildings_21
+  - first:
+      213: 8201817611042604179
+    second: AnimatedBuildings_22
+  - first:
+      213: -5657186603928550077
+    second: AnimatedBuildings_23
+  - first:
+      213: -8493469086321888815
+    second: AnimatedBuildings_24
+  - first:
+      213: 3812073001470537075
+    second: AnimatedBuildings_25
+  - first:
+      213: -7484474194366351746
+    second: AnimatedBuildings_26
+  - first:
+      213: -1504221622153480876
+    second: AnimatedBuildings_27
+  - first:
+      213: 5521811750573606007
+    second: AnimatedBuildings_28
+  - first:
+      213: -634764839911917006
+    second: AnimatedBuildings_29
+  - first:
+      213: 1065980829463254006
+    second: AnimatedBuildings_30
+  - first:
+      213: -3177915340629348185
+    second: AnimatedBuildings_31
+  - first:
+      213: -2856808377144301672
+    second: AnimatedBuildings_32
+  - first:
+      213: 7543090301727260085
+    second: AnimatedBuildings_0
+  - first:
+      213: -4762565271992833736
+    second: AnimatedBuildings_1
+  - first:
+      213: 937812478184426770
+    second: AnimatedBuildings_2
+  - first:
+      213: 3014559556421303467
+    second: AnimatedBuildings_3
+  - first:
+      213: 6293337181465165414
+    second: AnimatedBuildings_4
+  - first:
+      213: -8571537413505721085
+    second: AnimatedBuildings_5
+  - first:
+      213: -6360503769856589250
+    second: AnimatedBuildings_6
+  - first:
+      213: 8397435179964967645
+    second: AnimatedBuildings_7
+  - first:
+      213: 2839537568604466238
+    second: AnimatedBuildings_8
+  - first:
+      213: -3955690430911018517
+    second: AnimatedBuildings_9
+  - first:
+      213: 3295115071759494487
+    second: AnimatedBuildings_10
+  - first:
+      213: 5467322736245098546
+    second: AnimatedBuildings_11
+  - first:
+      213: -1041540198555707078
+    second: AnimatedBuildings_12
+  - first:
+      213: -2007163965953679760
+    second: AnimatedBuildings_13
+  - first:
+      213: -2531711242137146786
+    second: AnimatedBuildings_14
+  - first:
+      213: -4011757042047934660
+    second: AnimatedBuildings_15
+  - first:
+      213: -1210762797066859758
+    second: AnimatedBuildings_16
+  - first:
+      213: 6882347312338299377
+    second: AnimatedBuildings_17
+  - first:
+      213: 9099178515406055783
+    second: AnimatedBuildings_18
+  - first:
+      213: 4767685711789849582
+    second: AnimatedBuildings_19
+  - first:
+      213: -5949464173472391053
+    second: AnimatedBuildings_20
+  - first:
+      213: 1196419657923740847
+    second: AnimatedBuildings_21
+  - first:
+      213: 7330208176180535839
+    second: AnimatedBuildings_22
+  - first:
+      213: -1262300906244174854
+    second: AnimatedBuildings_23
+  - first:
+      213: -2696240448122799624
+    second: AnimatedBuildings_24
+  - first:
+      213: 5428556170271804331
+    second: AnimatedBuildings_25
+  - first:
+      213: 5526197303938448884
+    second: AnimatedBuildings_26
+  - first:
+      213: -4855726684523315580
+    second: AnimatedBuildings_27
+  - first:
+      213: 6080702566741728922
+    second: AnimatedBuildings_28
+  - first:
+      213: -5582407839420013795
+    second: AnimatedBuildings_29
+  - first:
+      213: -1223170275852377862
+    second: AnimatedBuildings_30
+  - first:
+      213: 373091250454050159
+    second: AnimatedBuildings_31
+  - first:
+      213: 2902882735015041066
+    second: AnimatedBuildings_32
+  - first:
+      213: -6043070311321107780
+    second: AnimatedBuildings_33
+  - first:
+      213: -4569703842883759229
+    second: AnimatedBuildings_34
+  - first:
+      213: -8177597493190524916
+    second: AnimatedBuildings_35
+  - first:
+      213: 6846609470345615938
+    second: AnimatedBuildings_36
+  - first:
+      213: 8548782945445743664
+    second: AnimatedBuildings_33
+  - first:
+      213: -6466066895751754596
+    second: AnimatedBuildings_34
+  - first:
+      213: -8897564283119895640
+    second: AnimatedBuildings_35
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AnimatedBuildings_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bdb5271aa07ea860800000000000000
+      internalID: 7543090301727260085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 320
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83961474e18f7edb0800000000000000
+      internalID: -4762565271992833736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 320
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d8c1cea77c30d00800000000000000
+      internalID: 937812478184426770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 320
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac30cad1fdd5d920800000000000000
+      internalID: 3014559556421303467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e3df0b2dc665750800000000000000
+      internalID: 6293337181465165414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 280
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d5509e228cb0980800000000000000
+      internalID: -8571537413505721085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_6
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 280
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e324a2d4583fab7a0800000000000000
+      internalID: -6360503769856589250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_7
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 280
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda2e2efdcea98470800000000000000
+      internalID: 8397435179964967645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3cab07cf50186720800000000000000
+      internalID: 2839537568604466238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_9
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 240
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be90320e2809a19c0800000000000000
+      internalID: -3955690430911018517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 240
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75da24213b99abd20800000000000000
+      internalID: 3295115071759494487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_11
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 240
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2384e4ebf05dfdb40800000000000000
+      internalID: 5467322736245098546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a391ccd25b4bb81f0800000000000000
+      internalID: -1041540198555707078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_13
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 200
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07edd53e10f1524e0800000000000000
+      internalID: -2007163965953679760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_14
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 200
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a6d82f90e8ddcd0800000000000000
+      internalID: -2531711242137146786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_15
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 200
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f9f87b9306358c0800000000000000
+      internalID: -4011757042047934660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b4295a6a1823fe0800000000000000
+      internalID: -1210762797066859758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_17
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 160
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9e9c49a62038f50800000000000000
+      internalID: 6882347312338299377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_18
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 160
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769e4a676a6c64e70800000000000000
+      internalID: 9099178515406055783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_19
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 160
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb70f305e83a2240800000000000000
+      internalID: 4767685711789849582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370e3481bd14f6da0800000000000000
+      internalID: -5949464173472391053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_21
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 120
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4c6d807598a9010800000000000000
+      internalID: 1196419657923740847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_22
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 120
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12a7e6cf712ab560800000000000000
+      internalID: 7330208176180535839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_23
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 120
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb89a383086b7ee0800000000000000
+      internalID: -1262300906244174854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9b9940997059ad0800000000000000
+      internalID: -2696240448122799624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_25
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 80
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab4e4c331b165b40800000000000000
+      internalID: 5428556170271804331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_26
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 80
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdf8fb3b2ff0bc40800000000000000
+      internalID: 5526197303938448884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_27
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 80
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e3a92ae4efc9cb0800000000000000
+      internalID: -4855726684523315580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e527b74cef26450800000000000000
+      internalID: 6080702566741728922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_29
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 40
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13a30c95ad4782b0800000000000000
+      internalID: -5582407839420013795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_30
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0a0006d1d660fe0800000000000000
+      internalID: -1223170275852377862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_31
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 40
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65be1cf38c7d2500800000000000000
+      internalID: 373091250454050159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a289f25a77c194820800000000000000
+      internalID: 2902882735015041066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_33
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c0635abc063a670800000000000000
+      internalID: 8548782945445743664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_34
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ccdc0ca6ae346a0800000000000000
+      internalID: -6466066895751754596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedBuildings_35
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 20
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab7f620d60858480800000000000000
+      internalID: -8897564283119895640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

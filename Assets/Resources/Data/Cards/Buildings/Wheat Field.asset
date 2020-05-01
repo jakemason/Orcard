@@ -34,4 +34,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
   EachTurnEffects: []
   IsIndestructible: 0
+  AnimatorController: {fileID: 9100000, guid: a29e8a13ecbcf03479740034c55b68cf, type: 2}
   Tint: {r: 1, g: 1, b: 1, a: 1}

@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Construction Effect", menuName = "Effects/Construction Effect")]
 public class ConstructionEffect : Effect
@@ -11,13 +10,19 @@ public class ConstructionEffect : Effect
     {
         //TODO: Maybe just two different Construction Effects with separate Prefabs would be easiest?
         GameObject     go        = Instantiate(ConstructionPrefab, SpellCast.CastPosition, Quaternion.identity);
-        GameObject     tools     = Instantiate(ToolsPrefab,        SpellCast.CastPosition, Quaternion.identity);
+        Animator       animator  = go.GetComponent<Animator>();
+        GameObject     tools     = Instantiate(ToolsPrefab, SpellCast.CastPosition, Quaternion.identity);
         SpriteRenderer rend      = go.GetComponent<SpriteRenderer>();
         TowerCard      towerCard = SpellCast.AttemptingToCast as TowerCard;
         if (towerCard != null)
         {
             Tower     tower = go.AddComponent<Tower>();
             TowerCard card  = (TowerCard) SpellCast.AttemptingToCast;
+            if (towerCard.AnimatorController != null)
+            {
+                animator.runtimeAnimatorController = towerCard.AnimatorController;
+            }
+
             tower.IsIndestructable = card.IsIndestructible;
             rend.sprite            = card.Artwork;
             rend.sortingOrder      = (int) -go.transform.position.y;
@@ -32,6 +37,11 @@ public class ConstructionEffect : Effect
         {
             Building     building = go.AddComponent<Building>();
             BuildingCard card     = (BuildingCard) SpellCast.AttemptingToCast;
+            if (card.AnimatorController != null)
+            {
+                animator.runtimeAnimatorController = card.AnimatorController;
+            }
+
             building.IsIndestructable = card.IsIndestructible;
             rend.sprite               = card.Artwork;
             rend.sortingOrder         = (int) -go.transform.position.y;

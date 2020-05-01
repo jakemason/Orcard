@@ -34,6 +34,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
   EachTurnEffects: []
   IsIndestructible: 0
+  AnimatorController: {fileID: 0}
   Tint: {r: 1, g: 1, b: 1, a: 1}
   BoltPrefab: {fileID: 4748081343559320588, guid: be2befc9997d8c749997b5c06b973628,
     type: 3}

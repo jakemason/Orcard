@@ -44,7 +44,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 194324
+    totalSpriteSurfaceArea: 223124
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -244,6 +244,42 @@ SpriteAtlas:
   - {fileID: -4795465833082762128, guid: 8b1ab806887713e489696181a034e5e3, type: 3}
   - {fileID: 21300000, guid: 19e279164cfcbc542b5f60d9f2ba5415, type: 3}
   - {fileID: 21300000, guid: e8c1104704036904fa335bd27bf7d32e, type: 3}
+  - {fileID: 5521811750573606007, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -634764839911917006, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -8493469086321888815, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: 3812073001470537075, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -7484474194366351746, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -1504221622153480876, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -7715448701393708658, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -2481386672136807193, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -8177597493190524916, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: 8201817611042604179, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -4569703842883759229, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -5657186603928550077, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -6043070311321107780, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -2856808377144301672, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -3177915340629348185, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: 1065980829463254006, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -6790550117915419914, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -6209369373601187846, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -5457270451968859589, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -7345956832415165933, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -4801025422178743943, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: 6779511598000781648, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: 7638434617008382384, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -3875173988802375285, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: 3583128459609394361, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: 8174421702606744564, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -8953387774720308208, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: 228754617555094415, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -1640656540164071689, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: 7146940233374512622, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: 3026481129129124308, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: -2569749028237731304, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: 425316010301647601, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: 4468312891155282882, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: 407633006859742619, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  - {fileID: 1722619389667782342, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
   - {fileID: 21300000, guid: 862c08476cbc56d47a4f1671544be528, type: 3}
   - {fileID: 6805625198099828860, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: -4970697563511096618, guid: 0686ab485e303574db557c66024938ff, type: 3}
@@ -595,6 +631,42 @@ SpriteAtlas:
   - orc_banner_2
   - EnergySymbol
   - BuildMask
+  - AnimatedBuildings_28
+  - AnimatedBuildings_29
+  - AnimatedBuildings_24
+  - AnimatedBuildings_25
+  - AnimatedBuildings_26
+  - AnimatedBuildings_27
+  - AnimatedBuildings_20
+  - AnimatedBuildings_21
+  - AnimatedBuildings_35
+  - AnimatedBuildings_22
+  - AnimatedBuildings_34
+  - AnimatedBuildings_23
+  - AnimatedBuildings_33
+  - AnimatedBuildings_32
+  - AnimatedBuildings_31
+  - AnimatedBuildings_30
+  - AnimatedBuildings_6
+  - AnimatedBuildings_7
+  - AnimatedBuildings_4
+  - AnimatedBuildings_5
+  - AnimatedBuildings_2
+  - AnimatedBuildings_3
+  - AnimatedBuildings_0
+  - AnimatedBuildings_1
+  - AnimatedBuildings_15
+  - AnimatedBuildings_14
+  - AnimatedBuildings_17
+  - AnimatedBuildings_16
+  - AnimatedBuildings_11
+  - AnimatedBuildings_10
+  - AnimatedBuildings_8
+  - AnimatedBuildings_13
+  - AnimatedBuildings_9
+  - AnimatedBuildings_12
+  - AnimatedBuildings_19
+  - AnimatedBuildings_18
   - CircleParticle
   - orc_clothes_23
   - orc_clothes_22

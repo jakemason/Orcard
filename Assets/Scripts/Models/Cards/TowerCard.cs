@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor.Animations;
+using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Tower Card", menuName = "Cards/Tower Card")]
 public class TowerCard : BuildingCard
