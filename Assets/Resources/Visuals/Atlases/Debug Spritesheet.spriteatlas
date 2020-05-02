@@ -44,7 +44,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 223124
+    totalSpriteSurfaceArea: 225524
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -281,6 +281,7 @@ SpriteAtlas:
   - {fileID: 407633006859742619, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
   - {fileID: 1722619389667782342, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
   - {fileID: 21300000, guid: 862c08476cbc56d47a4f1671544be528, type: 3}
+  - {fileID: 21300000, guid: 3ce3be476999205488259c73decaaac4, type: 3}
   - {fileID: 6805625198099828860, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: -4970697563511096618, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: 5939327890850462697, guid: 0686ab485e303574db557c66024938ff, type: 3}
@@ -668,6 +669,7 @@ SpriteAtlas:
   - AnimatedBuildings_19
   - AnimatedBuildings_18
   - CircleParticle
+  - TopUI
   - orc_clothes_23
   - orc_clothes_22
   - orc_clothes_21
