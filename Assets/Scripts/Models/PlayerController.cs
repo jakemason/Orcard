@@ -31,7 +31,7 @@ namespace Players
         [Header("Player Energy")]
         [Space(20)]
         private int _remainingEnergy;
-        private int _startingEnergy = 2;
+        private int _startingEnergy = 9; //ends up as _startingEnergy + 1 because we get one "tick" of income at the start
         public int EnergyGainedPerTurn = 1;
         public int MaxEnergy = 10;
         

@@ -44,7 +44,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 225524
+    totalSpriteSurfaceArea: 230324
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -297,7 +297,9 @@ SpriteAtlas:
   - {fileID: 6237689766955921978, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: 1271333155694222504, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: -1851341877245677645, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 3345127778925433096, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: 2496219462800335440, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -4994732360351831471, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: 1522400132352055622, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: -7507481999987751864, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: -8748868691518822036, guid: 0686ab485e303574db557c66024938ff, type: 3}
@@ -305,11 +307,21 @@ SpriteAtlas:
   - {fileID: 4091690472757816599, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: -5454297722283505106, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: 7680274952162822568, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -6908543118143250783, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: -1124648011922722527, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 344231408169876305, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: -4266848574497325893, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 650885269946240151, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: 2514536287103409087, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -2546136851633427941, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 177398944869348833, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 2644196172650918707, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: 8709652788521717238, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 2163127924775839077, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: -3498176329677942063, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -152163474967597108, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: 774101890484369759, guid: 0686ab485e303574db557c66024938ff, type: 3}
+  - {fileID: -7506796711331000044, guid: 0686ab485e303574db557c66024938ff, type: 3}
   - {fileID: -1788993617494000148, guid: 5fe4c949fb7d5ba4c853fe50ae99e39b, type: 3}
   - {fileID: -2674576112510800545, guid: 5fe4c949fb7d5ba4c853fe50ae99e39b, type: 3}
   - {fileID: -8268554799088957844, guid: 5fe4c949fb7d5ba4c853fe50ae99e39b, type: 3}
@@ -685,7 +697,9 @@ SpriteAtlas:
   - orc_clothes_12
   - orc_clothes_13
   - orc_clothes_10
+  - orc_clothes_29
   - orc_clothes_11
+  - orc_clothes_28
   - orc_clothes_18
   - orc_clothes_19
   - orc_clothes_3
@@ -693,11 +707,21 @@ SpriteAtlas:
   - orc_clothes_1
   - orc_clothes_0
   - orc_clothes_7
+  - orc_clothes_30
   - orc_clothes_6
+  - orc_clothes_31
   - orc_clothes_5
+  - orc_clothes_32
   - orc_clothes_4
+  - orc_clothes_33
+  - orc_clothes_34
+  - orc_clothes_35
   - orc_clothes_9
+  - orc_clothes_36
   - orc_clothes_8
+  - orc_clothes_37
+  - orc_clothes_38
+  - orc_clothes_39
   - MountainTiles_26
   - MountainTiles_27
   - MountainTiles_24

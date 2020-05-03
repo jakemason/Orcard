@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e97bbb781925a1b47a86975565a1ea03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 50
+  MaxHealth: 500
   HealthText: {fileID: 16113718}
 --- !u!1 &16113716
 GameObject:
@@ -22446,7 +22446,6 @@ GameObject:
   - component: {fileID: 1511839237}
   - component: {fileID: 1511839236}
   - component: {fileID: 1511839240}
-  - component: {fileID: 1511839241}
   - component: {fileID: 1511839238}
   - component: {fileID: 1511839239}
   - component: {fileID: 1511839242}
@@ -22504,13 +22503,14 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   WavesToSpawn:
-  - {fileID: 11400000, guid: 18884db705409e74b8836ff896f536db, type: 2}
+  - {fileID: 11400000, guid: db26d10cfc0df6548839f68fd2d2bb73, type: 2}
   - {fileID: 11400000, guid: 21c397702133f744ea117181029357ae, type: 2}
   - {fileID: 11400000, guid: 2a090fd2155fb3348b622dfe4edadd52, type: 2}
   - {fileID: 11400000, guid: d298e6ab9f9e7fc4b8765069ffa9cb50, type: 2}
   - {fileID: 11400000, guid: c9dcdf73874b5304fad9e3df6df5632f, type: 2}
   - {fileID: 11400000, guid: 46556ff983451b7489529c4aad984460, type: 2}
   - {fileID: 11400000, guid: eea2525541d55d44daffd10c83fabaa6, type: 2}
+  - {fileID: 11400000, guid: 18884db705409e74b8836ff896f536db, type: 2}
   EnemiesInCurrentWave: []
   CurrentWaveNumber: 0
   WaveActive: 0
@@ -22598,22 +22598,6 @@ MonoBehaviour:
   CardRendererTemplate: {fileID: 9162847070692476976, guid: 2ad7840c37d5abd4b8a2b0d849cd6dc8,
     type: 3}
   EnergyCounter: {fileID: 334409573}
---- !u!114 &1511839241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1511839235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e73a80c86d682e14083acbaa75f075bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxHealth: 5
-  CurrentHealth: 5
-  MarkedForDeath: 0
-  DeathPrefab: {fileID: 0}
 --- !u!114 &1511839242
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -170,6 +170,78 @@ TextureImporter:
   - first:
       213: 2834666605607918784
     second: orc_clothes_27
+  - first:
+      213: -4994732360351831471
+    second: orc_clothes_28
+  - first:
+      213: 3345127778925433096
+    second: orc_clothes_29
+  - first:
+      213: -6908543118143250783
+    second: orc_clothes_30
+  - first:
+      213: 344231408169876305
+    second: orc_clothes_31
+  - first:
+      213: 650885269946240151
+    second: orc_clothes_32
+  - first:
+      213: -2546136851633427941
+    second: orc_clothes_33
+  - first:
+      213: 177398944869348833
+    second: orc_clothes_34
+  - first:
+      213: 2644196172650918707
+    second: orc_clothes_35
+  - first:
+      213: 2163127924775839077
+    second: orc_clothes_36
+  - first:
+      213: -152163474967597108
+    second: orc_clothes_37
+  - first:
+      213: 774101890484369759
+    second: orc_clothes_38
+  - first:
+      213: -7506796711331000044
+    second: orc_clothes_39
+  - first:
+      213: -3283685554833481464
+    second: orc_clothes_28
+  - first:
+      213: 5783406940525142600
+    second: orc_clothes_29
+  - first:
+      213: 5245284025246285593
+    second: orc_clothes_30
+  - first:
+      213: 9071528403737321205
+    second: orc_clothes_31
+  - first:
+      213: -3937091271108932719
+    second: orc_clothes_32
+  - first:
+      213: 8207862092116562095
+    second: orc_clothes_33
+  - first:
+      213: -7059899312911459326
+    second: orc_clothes_34
+  - first:
+      213: 6128029881615978685
+    second: orc_clothes_35
+  - first:
+      213: 4646424474609095702
+    second: orc_clothes_36
+  - first:
+      213: -6810242118272260101
+    second: orc_clothes_37
+  - first:
+      213: 7658076015474070603
+    second: orc_clothes_38
+  - first:
+      213: -9021661701665905259
+    second: orc_clothes_39
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -258,7 +330,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 140
+        y: 180
         width: 20
         height: 20
       alignment: 7
@@ -279,7 +351,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 140
+        y: 180
         width: 20
         height: 20
       alignment: 7
@@ -300,7 +372,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 40
-        y: 140
+        y: 180
         width: 20
         height: 20
       alignment: 7
@@ -321,7 +393,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 140
+        y: 180
         width: 20
         height: 20
       alignment: 7
@@ -342,7 +414,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 120
+        y: 160
         width: 20
         height: 20
       alignment: 7
@@ -363,7 +435,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 120
+        y: 160
         width: 20
         height: 20
       alignment: 7
@@ -384,7 +456,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 40
-        y: 120
+        y: 160
         width: 20
         height: 20
       alignment: 7
@@ -405,7 +477,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 120
+        y: 160
         width: 20
         height: 20
       alignment: 7
@@ -426,7 +498,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 100
+        y: 140
         width: 20
         height: 20
       alignment: 7
@@ -447,7 +519,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 100
+        y: 140
         width: 20
         height: 20
       alignment: 7
@@ -468,7 +540,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 40
-        y: 100
+        y: 140
         width: 20
         height: 20
       alignment: 7
@@ -489,7 +561,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 100
+        y: 140
         width: 20
         height: 20
       alignment: 7
@@ -510,7 +582,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 80
+        y: 120
         width: 20
         height: 20
       alignment: 7
@@ -531,7 +603,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 80
+        y: 120
         width: 20
         height: 20
       alignment: 7
@@ -552,7 +624,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 40
-        y: 80
+        y: 120
         width: 20
         height: 20
       alignment: 7
@@ -573,7 +645,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 80
+        y: 120
         width: 20
         height: 20
       alignment: 7
@@ -594,7 +666,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 60
+        y: 100
         width: 20
         height: 20
       alignment: 7
@@ -615,7 +687,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 60
+        y: 100
         width: 20
         height: 20
       alignment: 7
@@ -636,7 +708,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 40
-        y: 60
+        y: 100
         width: 20
         height: 20
       alignment: 7
@@ -657,7 +729,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 60
+        y: 100
         width: 20
         height: 20
       alignment: 7
@@ -678,7 +750,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 40
+        y: 80
         width: 20
         height: 20
       alignment: 7
@@ -699,7 +771,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 40
+        y: 80
         width: 20
         height: 20
       alignment: 7
@@ -720,7 +792,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 40
-        y: 40
+        y: 80
         width: 20
         height: 20
       alignment: 7
@@ -741,7 +813,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 40
+        y: 80
         width: 20
         height: 20
       alignment: 7
@@ -762,7 +834,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 20
+        y: 60
         width: 20
         height: 20
       alignment: 7
@@ -783,7 +855,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 20
+        y: 60
         width: 20
         height: 20
       alignment: 7
@@ -804,7 +876,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 40
-        y: 20
+        y: 60
         width: 20
         height: 20
       alignment: 7
@@ -825,7 +897,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 20
+        y: 60
         width: 20
         height: 20
       alignment: 7
@@ -837,6 +909,258 @@ TextureImporter:
       bones: []
       spriteID: 0cc1ce35242c65720800000000000000
       internalID: 2834666605607918784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_clothes_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801a116b2610e62d0800000000000000
+      internalID: -3283685554833481464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_clothes_29
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 40
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842a78978f9c24050800000000000000
+      internalID: 5783406940525142600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_clothes_30
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ff5deb70efac840800000000000000
+      internalID: 5245284025246285593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_clothes_31
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 40
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe11aa250b84ed70800000000000000
+      internalID: 9071528403737321205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_clothes_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19bc2493954ac59c0800000000000000
+      internalID: -3937091271108932719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_clothes_33
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 20
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0900ee51f28e170800000000000000
+      internalID: 8207862092116562095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_clothes_34
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 20
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c53e7daf2360e90800000000000000
+      internalID: -7059899312911459326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_clothes_35
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 20
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db013baa5b22b0550800000000000000
+      internalID: 6128029881615978685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_clothes_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61491cc117a6b7040800000000000000
+      internalID: 4646424474609095702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_clothes_37
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf76af920e82d71a0800000000000000
+      internalID: -6810242118272260101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_clothes_38
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b445545df83f64a60800000000000000
+      internalID: 7658076015474070603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_clothes_39
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595257c2b7e9cc280800000000000000
+      internalID: -9021661701665905259
       vertices: []
       indices: 
       edges: []
