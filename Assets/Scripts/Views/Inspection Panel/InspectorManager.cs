@@ -13,6 +13,12 @@ public class InspectorManager : MonoBehaviour
     public GameObject InspectionPanel;
     public TextMeshProUGUI Name;
     public TextMeshProUGUI Details;
+    
+    [Header("Tower Inspection")]
+    public GameObject TopPanel;
+    public TextMeshProUGUI Ammo;
+    public TextMeshProUGUI Damage;
+    public TextMeshProUGUI AttackRate;
     // @formatter:on 
 
     private void Start()

@@ -51,14 +51,14 @@ TagManager:
   - name: Bolts
     uniqueID: 3578496191
     locked: 0
-  - name: Towers
-    uniqueID: 3820543149
-    locked: 0
   - name: Corpses
     uniqueID: 141935939
     locked: 0
   - name: Enemies
     uniqueID: 1370460231
+    locked: 0
+  - name: Towers
+    uniqueID: 3820543149
     locked: 0
   - name: Targetting
     uniqueID: 276914335

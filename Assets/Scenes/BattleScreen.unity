@@ -602,7 +602,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &38200349
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22613,6 +22613,10 @@ MonoBehaviour:
   InspectionPanel: {fileID: 1469195532}
   Name: {fileID: 389088248}
   Details: {fileID: 2024328744}
+  TopPanel: {fileID: 38200348}
+  Ammo: {fileID: 673127764}
+  Damage: {fileID: 1568129217}
+  AttackRate: {fileID: 259079145}
 --- !u!114 &1511839243
 MonoBehaviour:
   m_ObjectHideFlags: 0
