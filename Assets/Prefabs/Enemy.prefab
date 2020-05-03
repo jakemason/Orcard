@@ -89,7 +89,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1370460231
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -183,7 +183,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1370460231
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 3110829806665180078, guid: d2787fbd0650a8d4bae38aca2e9dc346,
     type: 3}
@@ -208,7 +208,6 @@ GameObject:
   - component: {fileID: 3394030254196422469}
   - component: {fileID: 7446433231362154750}
   - component: {fileID: 5782656910652980928}
-  - component: {fileID: 6213067413481304909}
   m_Layer: 8
   m_Name: SmallHelm
   m_TagString: Untagged
@@ -286,7 +285,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1370460231
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 5
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -299,19 +298,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6213067413481304909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322330232022733167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6784a595d97f3994da79feee8913346a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HurtDuration: 0.5
 --- !u!1 &4227343764298590381
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,7 +309,6 @@ GameObject:
   - component: {fileID: 7875313166038174585}
   - component: {fileID: 197024442508203989}
   - component: {fileID: 8893389114778911760}
-  - component: {fileID: 475940411857728945}
   m_Layer: 8
   m_Name: Shield
   m_TagString: Untagged
@@ -401,7 +386,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1370460231
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 5
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -414,19 +399,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &475940411857728945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4227343764298590381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6784a595d97f3994da79feee8913346a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HurtDuration: 0.5
 --- !u!1 &5431158366883276734
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +410,6 @@ GameObject:
   - component: {fileID: 6202631332956720136}
   - component: {fileID: 2897793343353966366}
   - component: {fileID: 4078911253769836731}
-  - component: {fileID: 1103890347314545319}
   m_Layer: 8
   m_Name: LargeShoulders
   m_TagString: Untagged
@@ -516,7 +487,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1370460231
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -529,19 +500,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1103890347314545319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5431158366883276734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6784a595d97f3994da79feee8913346a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HurtDuration: 0.5
 --- !u!1 &5874319247101830934
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +511,6 @@ GameObject:
   - component: {fileID: 7830251556304979229}
   - component: {fileID: 3191281132036305344}
   - component: {fileID: 3773863571720906135}
-  - component: {fileID: 1599971717942935291}
   m_Layer: 8
   m_Name: SmallShoulders
   m_TagString: Untagged
@@ -631,7 +588,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1370460231
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -644,19 +601,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1599971717942935291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5874319247101830934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6784a595d97f3994da79feee8913346a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HurtDuration: 0.5
 --- !u!1 &6462382415149125222
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,7 +612,6 @@ GameObject:
   - component: {fileID: 8875494331606154410}
   - component: {fileID: 6274797828012878107}
   - component: {fileID: 258571698531453090}
-  - component: {fileID: 933159613098298957}
   m_Layer: 8
   m_Name: Boots
   m_TagString: Untagged
@@ -746,7 +689,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1370460231
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -759,19 +702,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &933159613098298957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6462382415149125222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6784a595d97f3994da79feee8913346a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HurtDuration: 0.5
 --- !u!1 &7389174067739393365
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,7 +713,6 @@ GameObject:
   - component: {fileID: 2486944464807383207}
   - component: {fileID: 4770279427754650139}
   - component: {fileID: 3109501863957079123}
-  - component: {fileID: 3785103670894734466}
   m_Layer: 8
   m_Name: LargeHelm
   m_TagString: Untagged
@@ -861,7 +790,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1370460231
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 5
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -874,19 +803,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3785103670894734466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7389174067739393365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6784a595d97f3994da79feee8913346a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HurtDuration: 0.5
 --- !u!1 &7687452411537442188
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,7 +813,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7687452411537442190}
   - component: {fileID: 7687452411537442189}
-  - component: {fileID: -5552776774563071919}
   - component: {fileID: 7687452411537442177}
   - component: {fileID: 7687452411537442191}
   - component: {fileID: 7687452411537442176}
@@ -956,19 +871,6 @@ MonoBehaviour:
   SmallShoulders: {fileID: 3773863571720906135}
   LargeShoulders: {fileID: 4078911253769836731}
   WarBanner: {fileID: 5462095283485492855}
---- !u!114 &-5552776774563071919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7687452411537442188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c10712f11e272724ea380b4381fd4c14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyReference: {fileID: 7687452411537442189}
 --- !u!114 &7687452411537442177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1070,7 +972,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1370460231
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: 5985956242139829448, guid: 7b1171da432fd154c911865c3c036125,
     type: 3}
@@ -1114,7 +1016,6 @@ GameObject:
   - component: {fileID: 4836413113327420253}
   - component: {fileID: 2031310421864208238}
   - component: {fileID: 5462095283485492855}
-  - component: {fileID: 1478339438229176507}
   m_Layer: 8
   m_Name: WarBanner
   m_TagString: Untagged
@@ -1192,7 +1093,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1370460231
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1205,19 +1106,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1478339438229176507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9113196418562062994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6784a595d97f3994da79feee8913346a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HurtDuration: 0.5
 --- !u!1 &9206356799276377906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,7 +1117,6 @@ GameObject:
   - component: {fileID: 7938275912394731556}
   - component: {fileID: 5482577436628356838}
   - component: {fileID: 5622196605871723826}
-  - component: {fileID: 159660976848616782}
   m_Layer: 8
   m_Name: Sword
   m_TagString: Untagged
@@ -1307,7 +1194,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1370460231
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1320,16 +1207,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &159660976848616782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9206356799276377906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6784a595d97f3994da79feee8913346a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HurtDuration: 0.5
