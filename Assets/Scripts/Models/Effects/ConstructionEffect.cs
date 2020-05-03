@@ -18,9 +18,10 @@ public class ConstructionEffect : Effect
         {
             Tower     tower = go.AddComponent<Tower>();
             TowerCard card  = (TowerCard) SpellCast.AttemptingToCast;
-            if (towerCard.AnimatorController != null)
+            if (towerCard.Name != null)
             {
-                animator.runtimeAnimatorController = towerCard.AnimatorController;
+                animator.runtimeAnimatorController =
+                    Resources.Load("Visuals/Animations/Buildings/" + towerCard.Name) as RuntimeAnimatorController;
             }
 
             tower.IsIndestructable = card.IsIndestructible;
@@ -37,9 +38,10 @@ public class ConstructionEffect : Effect
         {
             Building     building = go.AddComponent<Building>();
             BuildingCard card     = (BuildingCard) SpellCast.AttemptingToCast;
-            if (card.AnimatorController != null)
+            if (card.Name != null)
             {
-                animator.runtimeAnimatorController = card.AnimatorController;
+                animator.runtimeAnimatorController =
+                    Resources.Load("Visuals/Animations/Buildings/" + card.Name) as RuntimeAnimatorController;
             }
 
             building.IsIndestructable = card.IsIndestructible;
