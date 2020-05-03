@@ -206,7 +206,7 @@ LineRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1352014137
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: -1}
@@ -328,6 +328,7 @@ GameObject:
   - component: {fileID: 988547076366149459}
   - component: {fileID: 988547076366149463}
   - component: {fileID: 3478774504965540517}
+  - component: {fileID: 6634406120593624772}
   m_Layer: 2
   m_Name: BuildingPrefab
   m_TagString: Untagged
@@ -415,8 +416,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -474424147
-  m_SortingLayer: 6
+  m_SortingLayerID: 1854515849
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -4108474652813135402, guid: 3570e2dc4f548ff4194f59df297187e2,
     type: 3}
@@ -449,3 +450,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6634406120593624772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988547076366149480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196ed58f75aa3b84d80541c96d277c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

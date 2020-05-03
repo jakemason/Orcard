@@ -53,27 +53,32 @@ public class CardRenderer : MonoBehaviour, ITargetable
         artworkTransform.localScale  = new Vector3(CardObject.ArtworkScale.x, CardObject.ArtworkScale.y, 1);
         Artwork.transform.position   = artworkTransform.position;
         Artwork.transform.localScale = artworkTransform.localScale;
-        if (CardObject.ArtworkBackground != null)
+        /*if (CardObject.ArtworkBackground != null)
         {
             ArtworkBackground.sprite = CardObject.ArtworkBackground;
-        }
+        }*/
 
         switch (CardObject.Rarity)
         {
             case Card.CardRarity.Common:
-                CardBorder.color = CommonColor;
+                CardBorder.color        = CommonColor;
+                ArtworkBackground.color = CommonColor;
                 break;
             case Card.CardRarity.Uncommon:
-                CardBorder.color = CommonColor;
+                CardBorder.color        = CommonColor;
+                ArtworkBackground.color = CommonColor;
                 break;
             case Card.CardRarity.Rare:
-                CardBorder.color = RareColor;
+                CardBorder.color        = RareColor;
+                ArtworkBackground.color = RareColor;
                 break;
             case Card.CardRarity.Epic:
-                CardBorder.color = EpicColor;
+                CardBorder.color        = EpicColor;
+                ArtworkBackground.color = EpicColor;
                 break;
             case Card.CardRarity.Legendary:
-                CardBorder.color = LegendaryColor;
+                CardBorder.color        = LegendaryColor;
+                ArtworkBackground.color = LegendaryColor;
                 break;
             default:
                 throw new ArgumentOutOfRangeException();

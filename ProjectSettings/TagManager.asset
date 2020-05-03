@@ -54,6 +54,9 @@ TagManager:
   - name: Corpses
     uniqueID: 141935939
     locked: 0
+  - name: Game Pieces
+    uniqueID: 1854515849
+    locked: 0
   - name: Enemies
     uniqueID: 1370460231
     locked: 0

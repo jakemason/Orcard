@@ -44,7 +44,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 230324
+    totalSpriteSurfaceArea: 245924
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -423,6 +423,7 @@ SpriteAtlas:
   - {fileID: -8550887055041287063, guid: 779aa50bcfa1642409c56dd2a647046f, type: 3}
   - {fileID: 2987352775084636910, guid: 40937b0b4e61f6c44818a2c363c6ecff, type: 3}
   - {fileID: -865734954506293563, guid: 40937b0b4e61f6c44818a2c363c6ecff, type: 3}
+  - {fileID: 21300000, guid: eb1cf79b545cee247a35d98515a497ad, type: 3}
   - {fileID: 2871718704768647191, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
   - {fileID: -4699502004161714771, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
   - {fileID: 4114526319173848927, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
@@ -444,6 +445,7 @@ SpriteAtlas:
   - {fileID: -7091710371065449763, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
   - {fileID: -4914975280773618118, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
   - {fileID: 3110829806665180078, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
+  - {fileID: 21300000, guid: e3488d1e8ce377448a3c5c7910fce99f, type: 3}
   - {fileID: 21300000, guid: 5a8e8d4eab4eb224daf8b183477ff1c4, type: 3}
   - {fileID: 21300000, guid: 54897e4e20210dc4fa43d6ca3acf93b3, type: 3}
   - {fileID: 21300000, guid: 81e4cd7e458562d48bc84644a17d8866, type: 3}
@@ -823,6 +825,7 @@ SpriteAtlas:
   - naked_orc_hurt_3
   - CameraMovementUI_0
   - CameraMovementUI_1
+  - BGArtwork - Copy
   - DebugTiles_6
   - DebugTiles_7
   - DebugTiles_4
@@ -844,6 +847,7 @@ SpriteAtlas:
   - khelz_enemies_0
   - khelz_enemies_3
   - Enemy Shadow
+  - BGAlternate
   - CardGem
   - BGArtwork
   - UI-Resources

@@ -31,7 +31,7 @@ public abstract class Card : ScriptableObject
     public Sprite Artwork;
     public Vector2 ArtworkOffset;
     public Vector2 ArtworkScale = Vector2.one;
-    public Sprite ArtworkBackground;
+    //public Sprite ArtworkBackground;
     public CardRarity Rarity = CardRarity.Common;
     public CardSet Set = CardSet.Basic;
     public int CastingCost;
