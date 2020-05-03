@@ -13,7 +13,7 @@ public class SortSpriteByY : MonoBehaviour
      * Y values. The Y value will _always_ dominate, but now we can use  _initialOffset to tweak values along the same
      * Y where we previously had conflicts such as the Orc Warrior accessories.
      */
-    private int _offsetTweakArea = 100;
+    private int _yValueWeight = 100;
 
     private void Start()
     {
@@ -24,6 +24,6 @@ public class SortSpriteByY : MonoBehaviour
 
     private void Update()
     {
-        _renderer.sortingOrder = (-Mathf.RoundToInt(_root.position.y) * _offsetTweakArea) + _initialOffset;
+        _renderer.sortingOrder = (-Mathf.RoundToInt(_root.position.y) * _yValueWeight) + _initialOffset;
     }
 }
