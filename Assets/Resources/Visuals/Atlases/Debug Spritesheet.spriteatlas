@@ -44,7 +44,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 321924
+    totalSpriteSurfaceArea: 323180
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -427,7 +427,10 @@ SpriteAtlas:
   - {fileID: 228940821244427079, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: -256003546741158619, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: -5481780447360278658, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: -3947773304791079134, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: -7867266084347359734, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: -4464969597253999955, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
+  - {fileID: -7543061489181569089, guid: ae592ec5f61781740acd775ec720a49c, type: 3}
   - {fileID: 1650081454704481361, guid: 8b1ab806887713e489696181a034e5e3, type: 3}
   - {fileID: -8352166673674622796, guid: 8b1ab806887713e489696181a034e5e3, type: 3}
   - {fileID: 1631041585622142961, guid: 8b1ab806887713e489696181a034e5e3, type: 3}
@@ -1019,7 +1022,10 @@ SpriteAtlas:
   - UI_19
   - UI_21
   - UI_18
+  - UI_26
+  - UI_27
   - UI_24
+  - UI_25
   - orc_banner_1
   - orc_banner_0
   - orc_banner_3

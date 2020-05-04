@@ -26,6 +26,7 @@ namespace Players
         public TextMeshProUGUI DrawCooldownText;
         public GameObject RedrawCostIndicator;
         public TextMeshProUGUI RedrawCostText;
+        public Image DrawCooldownIcon;
         private float _freeDrawCooldown;
 
         [Header("Player Energy")]
@@ -105,6 +106,7 @@ namespace Players
             DrawButton.interactable = _freeDrawCooldown <= 0f || IncomeController.GetCurrentGold() >= RedrawGoldCost;
             RedrawCostText.text     = RedrawGoldCost.ToString();
             RedrawCostIndicator.SetActive(_freeDrawCooldown >= 0.0f);
+            DrawCooldownIcon.fillAmount = _freeDrawCooldown / FreeDrawCooldownInSeconds;
         }
 
         public void DrawNewHand()
