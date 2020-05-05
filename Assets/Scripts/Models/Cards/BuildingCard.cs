@@ -13,6 +13,7 @@ public class BuildingCard : Card
     
     [Tooltip("This is just a temporary way to quickly differentiate different towers while we don't have art assets.")]
     public Color Tint = Color.white;
+    public Sprite Shadow;
     // @formatter:on 
 
 #if UNITY_EDITOR

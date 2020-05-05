@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4731244ff9c864e43b691fbdfab4d381, type: 3}
-  m_Name: Catapult Tower
+  m_Name: Guard Tower
   m_EditorClassIdentifier: 
-  Name: Catapult Tower
-  Artwork: {fileID: 1065980829463254006, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  Name: Guard Tower
+  Artwork: {fileID: -7548337415098396207, guid: e0aa16865010f6742be952c50a963853,
+    type: 3}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
   Rarity: 2
@@ -34,14 +35,14 @@ MonoBehaviour:
   EachTurnEffects: []
   IsIndestructible: 0
   Tint: {r: 1, g: 1, b: 1, a: 1}
-  Shadow: {fileID: -8879989197353062235, guid: 00fb8ee11c7b54a46ba7377f52ef469c, type: 3}
+  Shadow: {fileID: 5721250842784195442, guid: 00fb8ee11c7b54a46ba7377f52ef469c, type: 3}
   BoltPrefab: {fileID: 4748081343559320588, guid: be2befc9997d8c749997b5c06b973628,
     type: 3}
   ConstructionEffect: {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
-  Damage: 5
-  AttacksPerSecond: 0.5
-  AttackMovementSpeed: 5
-  Range: 3
-  MaxAmmo: 55
-  DamagePerSecond: 2.5
-  AttackRate: 2
+  Damage: 1
+  AttacksPerSecond: 2
+  AttackMovementSpeed: 15
+  Range: 5
+  MaxAmmo: 15
+  DamagePerSecond: 2
+  AttackRate: 0.5

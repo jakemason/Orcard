@@ -14,10 +14,16 @@ public class ConstructionEffect : Effect
         GameObject     tools     = Instantiate(ToolsPrefab, SpellCast.CastPosition, Quaternion.identity);
         SpriteRenderer rend      = go.GetComponent<SpriteRenderer>();
         TowerCard      towerCard = SpellCast.AttemptingToCast as TowerCard;
+
+        SpriteRenderer shadowRend = go.GetComponentsInChildren<SpriteRenderer>()[1]; //jump the parent
+
         if (towerCard != null)
         {
             Tower     tower = go.AddComponent<Tower>();
             TowerCard card  = (TowerCard) SpellCast.AttemptingToCast;
+            go.name           = card.name;
+            shadowRend.sprite = towerCard.Shadow;
+            Debug.Log(towerCard.Shadow);
             if (towerCard.Name != null)
             {
                 animator.runtimeAnimatorController =
@@ -38,6 +44,8 @@ public class ConstructionEffect : Effect
         {
             Building     building = go.AddComponent<Building>();
             BuildingCard card     = (BuildingCard) SpellCast.AttemptingToCast;
+            go.name           = card.name;
+            shadowRend.sprite = card.Shadow;
             if (card.Name != null)
             {
                 animator.runtimeAnimatorController =
