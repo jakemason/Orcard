@@ -44,7 +44,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 326380
+    totalSpriteSurfaceArea: 327180
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -623,6 +623,8 @@ SpriteAtlas:
   - {fileID: 2987352775084636910, guid: 40937b0b4e61f6c44818a2c363c6ecff, type: 3}
   - {fileID: -865734954506293563, guid: 40937b0b4e61f6c44818a2c363c6ecff, type: 3}
   - {fileID: 21300000, guid: eb1cf79b545cee247a35d98515a497ad, type: 3}
+  - {fileID: -7691051832567326688, guid: 5f4a852cb2d7e1846b239936c9f5d8fb, type: 3}
+  - {fileID: 801757393060028694, guid: 5f4a852cb2d7e1846b239936c9f5d8fb, type: 3}
   - {fileID: 2871718704768647191, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
   - {fileID: -4699502004161714771, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
   - {fileID: 4114526319173848927, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
@@ -1224,6 +1226,8 @@ SpriteAtlas:
   - CameraMovementUI_0
   - CameraMovementUI_1
   - BGArtwork - Copy
+  - EnemyHealthBars_0
+  - EnemyHealthBars_1
   - DebugTiles_6
   - DebugTiles_7
   - DebugTiles_4

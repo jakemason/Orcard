@@ -23,7 +23,6 @@ public class ConstructionEffect : Effect
             TowerCard card  = (TowerCard) SpellCast.AttemptingToCast;
             go.name           = card.name;
             shadowRend.sprite = towerCard.Shadow;
-            Debug.Log(towerCard.Shadow);
             if (towerCard.Name != null)
             {
                 animator.runtimeAnimatorController =

@@ -8,6 +8,8 @@ public class Health : MonoBehaviour
     public int CurrentHealth;
     public bool MarkedForDeath;
     public GameObject DeathPrefab;
+    public GameObject HealthBar;
+    public GameObject RemainingHealth;
 
     private void Start()
     {
@@ -32,6 +34,14 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damageToTake)
     {
         CurrentHealth -= damageToTake;
+        HealthBar.SetActive(true);
+        Vector3 remainingHealthLength = Vector3.one;
+        remainingHealthLength.x              = (float) CurrentHealth / (float) MaxHealth;
+        RemainingHealth.transform.localScale = remainingHealthLength;
+        if (CurrentHealth <= 0)
+        {
+            RemainingHealth.transform.localScale = Vector3.zero;
+        }
 
         if (CurrentHealth <= 0 && !MarkedForDeath)
         {

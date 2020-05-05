@@ -101,7 +101,7 @@ public class Tower : Building, ITargetable
         }
     }
 
-    //TODO: DO a layer check and setup the layer matrix appropriately
+    //TODO: DO a layer check and setup the layer matrix appropriately, probably needed for mobile perf
     public void OnTriggerEnter2D(Collider2D col)
     {
         EnemiesInRange.Add(col.gameObject);
