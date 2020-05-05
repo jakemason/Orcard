@@ -32,8 +32,6 @@ public class ConstructionEffect : Effect
 
             tower.IsIndestructable = card.IsIndestructible;
             rend.sprite            = card.Artwork;
-            //rend.sortingOrder      = (int) -go.transform.position.y;
-            rend.color = card.Tint;
             //We need to use a copy here because Upgrade cards alter the stats of the model throughout gameplay
             tower.Model = Instantiate(card);
             BuildingManager.Instance.ConstructedBuildings.Add(SpellCast.CastPosition, tower);
@@ -54,8 +52,6 @@ public class ConstructionEffect : Effect
 
             building.IsIndestructable = card.IsIndestructible;
             rend.sprite               = card.Artwork;
-            //rend.sortingOrder         = (int) -go.transform.position.y;
-            rend.color = card.Tint;
             //We need to use a copy here because Upgrade cards alter the stats of the model throughout gameplay
             building.Model = Instantiate(card);
             BuildingManager.Instance.ConstructedBuildings.Add(SpellCast.CastPosition, building);

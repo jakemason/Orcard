@@ -10,9 +10,7 @@ public class BuildingCard : Card
     [Tooltip("These effects apply at the start of the each turn while the building is alive.")]
     public List<Effect> EachTurnEffects;
     public bool IsIndestructible; //Indestructible buildings cannot be removed by other cards.
-    
-    [Tooltip("This is just a temporary way to quickly differentiate different towers while we don't have art assets.")]
-    public Color Tint = Color.white;
+    [Tooltip("This is the shadow sprite that will be cast beneath the building.")]
     public Sprite Shadow;
     // @formatter:on 
 
