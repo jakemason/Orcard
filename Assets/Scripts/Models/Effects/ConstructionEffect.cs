@@ -34,7 +34,7 @@ public class ConstructionEffect : Effect
             //We need to use a copy here because Upgrade cards alter the stats of the model throughout gameplay
             tower.Model = Instantiate(card);
             BuildingManager.Instance.ConstructedBuildings.Add(SpellCast.CastPosition, tower);
-            TowerInspector inspector = go.transform.GetChild(0).gameObject.AddComponent<TowerInspector>();
+            TowerInspector inspector = go.transform.GetChild(1).gameObject.AddComponent<TowerInspector>();
             inspector.TowerReference = tower;
         }
         else
