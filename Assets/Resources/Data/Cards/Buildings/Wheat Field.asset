@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Wheat Field
   Artwork: {fileID: 6625692385018236696, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
-  ArtworkOffset: {x: 0, y: 20}
+  ArtworkOffset: {x: 0, y: 30}
   ArtworkScale: {x: 1.5, y: 1.5}
   Rarity: 0
   Set: 0
@@ -24,13 +24,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 1
   IsTargeted: 1
-  InstructionText: "A staple in all bakeries.\t "
+  InstructionText: 'Can be Harvested. '
   AdditionalInstructionText: 
-  OverrideDefaultInstructionText: "A staple in all bakeries.\t"
+  OverrideDefaultInstructionText: Can be Harvested.
   FlavorText: A staple of all war efforts is food to feed the soldiers.
   OnDrawEffects: []
   ImmediateEffects:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
   EachTurnEffects: []
   IsIndestructible: 0
-  Tint: {r: 1, g: 1, b: 1, a: 1}
+  Shadow: {fileID: 0}
