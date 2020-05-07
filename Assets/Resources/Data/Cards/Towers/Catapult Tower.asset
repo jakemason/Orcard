@@ -18,7 +18,7 @@ MonoBehaviour:
   ArtworkScale: {x: 1, y: 1}
   Rarity: 2
   Set: 0
-  CastingCost: 3
+  CastingCost: 100
   GoldCost: 150
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
@@ -33,7 +33,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
   EachTurnEffects: []
   IsIndestructible: 0
-  Tint: {r: 1, g: 1, b: 1, a: 1}
   Shadow: {fileID: -8879989197353062235, guid: 00fb8ee11c7b54a46ba7377f52ef469c, type: 3}
   BoltPrefab: {fileID: 4748081343559320588, guid: be2befc9997d8c749997b5c06b973628,
     type: 3}

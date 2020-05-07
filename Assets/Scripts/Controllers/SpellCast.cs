@@ -50,14 +50,15 @@ public static class SpellCast
             }
         }
 
-        PlayerController.Instance.RemainingEnergy -= AttemptingToCast.CastingCost;
+        IncomeController.ModifyGold(-AttemptingToCast.CastingCost);
+        //PlayerController.Instance.RemainingEnergy -= AttemptingToCast.CastingCost;
         TargetIndicator.Disable();
         Clear();
     }
 
     public static bool CastingRequirementsMet()
     {
-        if (PlayerController.Instance.RemainingEnergy < AttemptingToCast.CastingCost)
+        if (IncomeController.GetCurrentGold() < AttemptingToCast.CastingCost)
         {
             return false;
         }

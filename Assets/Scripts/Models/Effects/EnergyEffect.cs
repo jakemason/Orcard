@@ -9,7 +9,7 @@ public class EnergyEffect : Effect
 
     public override void Activate()
     {
-        PlayerController.Instance.RemainingEnergy += EnergyModifier;
+        //PlayerController.Instance.RemainingEnergy += EnergyModifier;
     }
 #if UNITY_EDITOR
     public void OnValidate()

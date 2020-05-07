@@ -31,17 +31,17 @@ namespace Players
 
         [Header("Player Energy")]
         [Space(20)]
-        private int _remainingEnergy;
-        private int _startingEnergy = 9; //ends up as _startingEnergy + 1 because we get one "tick" of income at the start
-        public int EnergyGainedPerTurn = 1;
-        public int MaxEnergy = 10;
+        //private int _remainingEnergy;
+        //private int _startingEnergy = 9; //ends up as _startingEnergy + 1 because we get one "tick" of income at the start
+        //public int EnergyGainedPerTurn = 1;
+        //public int MaxEnergy = 10;
         
         [Header("Delayed Effects")]
         [Space(20)]
         public List<Effect> TemporaryOnTurnStartEffects = new List<Effect>();
         public List<Effect> PermanentOnTurnStartEffects = new List<Effect>();
         // @formatter:on 
-        public int RemainingEnergy
+        /*public int RemainingEnergy
         {
             get => _remainingEnergy;
             set
@@ -54,7 +54,7 @@ namespace Players
 
                 UpdateEnergyCounter();
             }
-        }
+        }*/
 
         // @formatter:off
         [Header("Visuals")]
@@ -79,7 +79,7 @@ namespace Players
 
             DeckForCurrentRun = Instantiate(DeckTemplate);
             DeckForCurrentRun.Cards.Shuffle();
-            ModifyEnergy(_startingEnergy);
+            // ModifyEnergy(_startingEnergy);
         }
 
         private void Start()
@@ -129,8 +129,6 @@ namespace Players
 
         public static void StartTurn()
         {
-            Instance.RefillEnergy();
-
             foreach (Effect effect in Instance.PermanentOnTurnStartEffects)
             {
                 effect.Activate();
@@ -152,31 +150,6 @@ namespace Players
         public static void RegisterPermanentOnTurnEffect(Effect toRegister)
         {
             Instance.PermanentOnTurnStartEffects.Add(toRegister);
-        }
-
-        public void RefillEnergy()
-        {
-            RemainingEnergy += EnergyGainedPerTurn;
-        }
-
-        public static void ModifyEnergy(int modifier)
-        {
-            Instance.RemainingEnergy += modifier;
-        }
-
-        public static bool HasEnergy()
-        {
-            return Instance.RemainingEnergy > 0;
-        }
-
-        public static int GetEnergy()
-        {
-            return Instance._remainingEnergy;
-        }
-
-        public static void UpdateEnergyCounter()
-        {
-            Instance.EnergyCounter.text = Instance._remainingEnergy.ToString();
         }
 
         /// <summary>

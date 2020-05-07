@@ -16,10 +16,9 @@ MonoBehaviour:
   Artwork: {fileID: 6046889547396123030, guid: e7258ff8e7f52a546ae0c3c579adafd1, type: 3}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
-  ArtworkBackground: {fileID: 0}
   Rarity: 0
   Set: 0
-  CastingCost: 0
+  CastingCost: 25
   GoldCost: 50
   CastingRequirements: []
   DestroyOnCast: 0

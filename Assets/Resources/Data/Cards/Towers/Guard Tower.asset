@@ -19,7 +19,7 @@ MonoBehaviour:
   ArtworkScale: {x: 1, y: 1}
   Rarity: 2
   Set: 0
-  CastingCost: 3
+  CastingCost: 100
   GoldCost: 150
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}

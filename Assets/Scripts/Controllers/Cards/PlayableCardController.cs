@@ -122,7 +122,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (PlayerController.GetEnergy() < CardObject.CastingCost)
+        if (IncomeController.GetCurrentGold() < CardObject.CastingCost)
         {
             return;
         }
@@ -159,7 +159,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (PlayerController.GetEnergy() < CardObject.CastingCost)
+        if (IncomeController.GetCurrentGold() < CardObject.CastingCost)
         {
             return;
         }
