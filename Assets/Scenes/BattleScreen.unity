@@ -22357,6 +22357,7 @@ GameObject:
   - component: {fileID: 1511839247}
   - component: {fileID: 1511839246}
   - component: {fileID: 1511839248}
+  - component: {fileID: 1511839241}
   m_Layer: 0
   m_Name: Controllers
   m_TagString: Untagged
@@ -22491,8 +22492,6 @@ MonoBehaviour:
   RedrawCostIndicator: {fileID: 1730978793}
   RedrawCostText: {fileID: 70993400}
   DrawCooldownIcon: {fileID: 603814070}
-  EnergyGainedPerTurn: 1
-  MaxEnergy: 10
   TemporaryOnTurnStartEffects: []
   PermanentOnTurnStartEffects: []
   DeckPosition: {fileID: 626625766}
@@ -22500,6 +22499,49 @@ MonoBehaviour:
   CardRendererTemplate: {fileID: 9162847070692476976, guid: 2ad7840c37d5abd4b8a2b0d849cd6dc8,
     type: 3}
   EnergyCounter: {fileID: 0}
+--- !u!114 &1511839241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511839235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291af0f29b40b414ebfab74095720e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Alphabet:
+  - {fileID: 8300000, guid: 6c6dab5dc8cb7344781bd62af8946977, type: 3}
+  - {fileID: 8300000, guid: a6befcc5e098e67458c88b15b576b90f, type: 3}
+  - {fileID: 8300000, guid: 43fe030ee54fa8f4c82cfe33e5932345, type: 3}
+  - {fileID: 8300000, guid: 5c0652dbbc59bd14abaa266cdc311357, type: 3}
+  - {fileID: 8300000, guid: 8e814860eefe15c499b5a33a5614cd23, type: 3}
+  - {fileID: 8300000, guid: c3824670a746ad542afdbca4ee3ef64a, type: 3}
+  - {fileID: 8300000, guid: 95497fc06f3d1b3408d0176e33bb9ea5, type: 3}
+  - {fileID: 8300000, guid: 4aa6dad0194ec6949953673e7bec28b3, type: 3}
+  - {fileID: 8300000, guid: 63220745852e73943897519ebc8281c0, type: 3}
+  - {fileID: 8300000, guid: f3e3c58a679dd9342a56f4f391576a20, type: 3}
+  - {fileID: 8300000, guid: 4ba3c6145731d8e418539822b6452c7e, type: 3}
+  - {fileID: 8300000, guid: 94f205e93d5caef418e7e25d489bff29, type: 3}
+  - {fileID: 8300000, guid: f9b7605631d963c41bdc28afad4b945e, type: 3}
+  - {fileID: 8300000, guid: 294ee38b34b50764c9663a74b8a4d700, type: 3}
+  - {fileID: 8300000, guid: ca576ba6fda46fd4396f1621d56121cc, type: 3}
+  - {fileID: 8300000, guid: 1a4e088d4664d1e4ab0a02d790998cdb, type: 3}
+  - {fileID: 8300000, guid: 4a3b64a8b315395418d28485c670ec1e, type: 3}
+  - {fileID: 8300000, guid: cb84d03702cea4e4794129ef461b36bf, type: 3}
+  - {fileID: 8300000, guid: 2da1c217845f52a449162f4b2c50c7b4, type: 3}
+  - {fileID: 8300000, guid: 8439b85e69e81c546b7901757408b6c0, type: 3}
+  - {fileID: 8300000, guid: 83b96c331d2aa8f41b6527081b3711fc, type: 3}
+  - {fileID: 8300000, guid: fa062101605a3a34fabeba6da7610700, type: 3}
+  - {fileID: 8300000, guid: 046be7d778d33cc44ac0c1b26bae5d2d, type: 3}
+  - {fileID: 8300000, guid: d9f570ff091bb3f42a91ea1fb55e6c45, type: 3}
+  - {fileID: 8300000, guid: ba94742e2f2cbce4e85ba51dc3d19405, type: 3}
+  - {fileID: 8300000, guid: 4b74ff1476e1ca1458410e831fefb9a6, type: 3}
+  - {fileID: 8300000, guid: fd21434e033eba8408edb4a78cab91f2, type: 3}
+  Pitch: 2.2
+  PitchVariance: 0
+  SecondsBetweenLetters: 0.07
 --- !u!114 &1511839242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22611,7 +22653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcbc8ba26a195a34a810332323fc7471, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SecondsBetweenIncomeTicks: 15
+  SecondsBetweenIncomeTicks: 5
   CurrentGold: 225
   Income: 25
   GoldText: {fileID: 202445682}
