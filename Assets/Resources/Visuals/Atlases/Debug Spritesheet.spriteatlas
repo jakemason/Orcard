@@ -44,7 +44,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 576922
+    totalSpriteSurfaceArea: 580522
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -652,6 +652,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 5a8e8d4eab4eb224daf8b183477ff1c4, type: 3}
   - {fileID: 21300000, guid: 54897e4e20210dc4fa43d6ca3acf93b3, type: 3}
   - {fileID: 21300000, guid: 81e4cd7e458562d48bc84644a17d8866, type: 3}
+  - {fileID: 21300000, guid: a3ffa7fe88297454093d4891ea701d6e, type: 3}
   m_PackedSpriteNamesToIndex:
   - ButtonDark
   - CardTitle
@@ -1257,5 +1258,6 @@ SpriteAtlas:
   - CardGem
   - BGArtwork
   - UI-Resources
+  - SpeechBubble
   m_Tag: Debug Spritesheet
   m_IsVariant: 0
