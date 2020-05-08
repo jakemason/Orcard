@@ -16,6 +16,8 @@ public class Narrator : MonoBehaviour
      */
     public float Pitch;
 
+    public int ReadEveryNthLetter = 1;
+
     public float PitchVariance = 0.2f;
     public float SecondsBetweenLetters = 0.2f;
     private static Narrator _instance;
@@ -38,18 +40,22 @@ public class Narrator : MonoBehaviour
         }
 
         _source = gameObject.AddComponent<AudioSource>();
-        Say("Oh boy, I sure hope you like my game....can I create pauses with punctuation? ....... oh yeah!");
+        string test = "Oh boy, I sure hope you like my game....can I create pauses with punctuation? ....... oh yeah!";
+        Say(test);
+        TextBuilder.WriteText(test);
     }
 
     public void Say(string text)
     {
         _source.pitch = Pitch + Random.Range(-PitchVariance, PitchVariance);
         text          = text.ToLower();
-        for (int i = 0; i < text.Length; i += 2)
+        for (int i = 0; i < text.Length; i += ReadEveryNthLetter)
         {
             int val = text[i] - 97;
 
             if (val > 27 || val < 0) continue;
+            //TODO: Can I just play these back-to-back rather than this weird delay? It would sound better if so...
+            //TODO: Sometimes we get audio overlap if ReadEveryNthLetter == 1 with this current system
             StartCoroutine(Speak(val, SecondsBetweenLetters * (i + 1)));
         }
     }
