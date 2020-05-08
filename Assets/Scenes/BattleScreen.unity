@@ -22512,36 +22512,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Alphabet:
-  - {fileID: 8300000, guid: 6c6dab5dc8cb7344781bd62af8946977, type: 3}
-  - {fileID: 8300000, guid: a6befcc5e098e67458c88b15b576b90f, type: 3}
-  - {fileID: 8300000, guid: 43fe030ee54fa8f4c82cfe33e5932345, type: 3}
-  - {fileID: 8300000, guid: 5c0652dbbc59bd14abaa266cdc311357, type: 3}
-  - {fileID: 8300000, guid: 8e814860eefe15c499b5a33a5614cd23, type: 3}
-  - {fileID: 8300000, guid: c3824670a746ad542afdbca4ee3ef64a, type: 3}
-  - {fileID: 8300000, guid: 95497fc06f3d1b3408d0176e33bb9ea5, type: 3}
-  - {fileID: 8300000, guid: 4aa6dad0194ec6949953673e7bec28b3, type: 3}
-  - {fileID: 8300000, guid: 63220745852e73943897519ebc8281c0, type: 3}
-  - {fileID: 8300000, guid: f3e3c58a679dd9342a56f4f391576a20, type: 3}
-  - {fileID: 8300000, guid: 4ba3c6145731d8e418539822b6452c7e, type: 3}
-  - {fileID: 8300000, guid: 94f205e93d5caef418e7e25d489bff29, type: 3}
-  - {fileID: 8300000, guid: f9b7605631d963c41bdc28afad4b945e, type: 3}
-  - {fileID: 8300000, guid: 294ee38b34b50764c9663a74b8a4d700, type: 3}
-  - {fileID: 8300000, guid: ca576ba6fda46fd4396f1621d56121cc, type: 3}
-  - {fileID: 8300000, guid: 1a4e088d4664d1e4ab0a02d790998cdb, type: 3}
-  - {fileID: 8300000, guid: 4a3b64a8b315395418d28485c670ec1e, type: 3}
-  - {fileID: 8300000, guid: cb84d03702cea4e4794129ef461b36bf, type: 3}
-  - {fileID: 8300000, guid: 2da1c217845f52a449162f4b2c50c7b4, type: 3}
-  - {fileID: 8300000, guid: 8439b85e69e81c546b7901757408b6c0, type: 3}
-  - {fileID: 8300000, guid: 83b96c331d2aa8f41b6527081b3711fc, type: 3}
-  - {fileID: 8300000, guid: fa062101605a3a34fabeba6da7610700, type: 3}
-  - {fileID: 8300000, guid: 046be7d778d33cc44ac0c1b26bae5d2d, type: 3}
-  - {fileID: 8300000, guid: d9f570ff091bb3f42a91ea1fb55e6c45, type: 3}
-  - {fileID: 8300000, guid: ba94742e2f2cbce4e85ba51dc3d19405, type: 3}
-  - {fileID: 8300000, guid: 4b74ff1476e1ca1458410e831fefb9a6, type: 3}
-  - {fileID: 8300000, guid: fd21434e033eba8408edb4a78cab91f2, type: 3}
-  Pitch: 2.2
-  PitchVariance: 0
-  SecondsBetweenLetters: 0.07
+  - {fileID: 8300000, guid: 5c38c023163c6d946a3aa982fb3863d5, type: 3}
+  - {fileID: 8300000, guid: 995bdb99f34881140b24e09d20cca958, type: 3}
+  - {fileID: 8300000, guid: f48af67d580720a4ba7547a409a12e7d, type: 3}
+  - {fileID: 8300000, guid: d281155efab3e1243b12bd524c617615, type: 3}
+  - {fileID: 8300000, guid: 56a8618af2c7fb349b73f017d1b8945f, type: 3}
+  - {fileID: 8300000, guid: 328ca8dc7cd67a346ac1623b64598c6a, type: 3}
+  - {fileID: 8300000, guid: 5937cb6d2e49ba84e8d5f1d7b352b57c, type: 3}
+  - {fileID: 8300000, guid: 46f655ac1aba51f4992398101f8cdec9, type: 3}
+  - {fileID: 8300000, guid: 081fd47eb8fa82d4985fe97f69153d7d, type: 3}
+  - {fileID: 8300000, guid: 4c7f4dc1d2b778249bea9bab23c651a6, type: 3}
+  - {fileID: 8300000, guid: 6f417fea57fa390478c4de3ff05e1a92, type: 3}
+  - {fileID: 8300000, guid: 753225cd656dd2449b332f7cf7e123a5, type: 3}
+  - {fileID: 8300000, guid: 5ca4f23d109834640b1a4d1f81a86a16, type: 3}
+  - {fileID: 8300000, guid: fdc2d1f2891c4824e9e15752cdfec6f8, type: 3}
+  - {fileID: 8300000, guid: 6ee6ecaee87102b44a4b8aa8016ce61e, type: 3}
+  - {fileID: 8300000, guid: d5c1987406bb5174c9a8730767a10f44, type: 3}
+  - {fileID: 8300000, guid: 8b20f2357e9c8374f8a6873aa694e968, type: 3}
+  - {fileID: 8300000, guid: f2d69a46b4a63664b91831888a202cac, type: 3}
+  - {fileID: 8300000, guid: 6b6c44dc47d28184c923dce0deafd781, type: 3}
+  - {fileID: 8300000, guid: 2b5b1c35c0a8a9948ac0717cf6e60457, type: 3}
+  - {fileID: 8300000, guid: ab8ccf5ab3b36144e8e3aefdf0733a02, type: 3}
+  - {fileID: 8300000, guid: 2528217b4e66c914baf7606501e2b8af, type: 3}
+  - {fileID: 8300000, guid: 21e66d7f411e3284b81a9931b2127f70, type: 3}
+  - {fileID: 8300000, guid: 7ab606d5b8475194f820119aa3c2d58e, type: 3}
+  - {fileID: 8300000, guid: 7c772a46bf039ae44a5311371414632c, type: 3}
+  - {fileID: 8300000, guid: de141c287e1dd194288708549ba43299, type: 3}
+  - {fileID: 8300000, guid: 8ee4d6fb41c84e948820683e06530f98, type: 3}
+  Pitch: 1.3
+  PitchVariance: 0.1
+  SecondsBetweenLetters: 0.1
 --- !u!114 &1511839242
 MonoBehaviour:
   m_ObjectHideFlags: 0

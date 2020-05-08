@@ -6,7 +6,16 @@ public class Narrator : MonoBehaviour
 {
     public List<AudioClip> Alphabet;
 
+    /**
+     * Just minor variations on this pitch is pretty sweet.
+     *
+     * 0.4 sounds like some sort of shadow demon-y thing
+     * 0.9 sounds like an orc or old guy
+     * 1.2 sounds about normal
+     * 1.4+ sounds like a cartoon-y, friendly sort of thing
+     */
     public float Pitch;
+
     public float PitchVariance = 0.2f;
     public float SecondsBetweenLetters = 0.2f;
     private static Narrator _instance;
@@ -29,10 +38,10 @@ public class Narrator : MonoBehaviour
         }
 
         _source = gameObject.AddComponent<AudioSource>();
-        ReadText("Hello friend, welcome to my gambit. Please wait a while to be seated.");
+        Say("Oh boy, I sure hope you like my game....can I create pauses with punctuation? ....... oh yeah!");
     }
 
-    public void ReadText(string text)
+    public void Say(string text)
     {
         _source.pitch = Pitch + Random.Range(-PitchVariance, PitchVariance);
         text          = text.ToLower();
@@ -45,10 +54,9 @@ public class Narrator : MonoBehaviour
         }
     }
 
-    IEnumerator Speak(int toSpeak, float delay)
+    private IEnumerator Speak(int toSpeak, float delay)
     {
         yield return new WaitForSeconds(delay);
-        Debug.Log("Speaking");
         _source.PlayOneShot(Alphabet[toSpeak]);
     }
 }
