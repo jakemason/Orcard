@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Narrator : MonoBehaviour
 {
     public List<AudioClip> Alphabet;
@@ -39,8 +40,9 @@ public class Narrator : MonoBehaviour
             Debug.LogWarning("Narrator does not have 27 letters to pronounce!");
         }
 
-        _source = gameObject.AddComponent<AudioSource>();
-        string test = "Oh boy, I sure hope you like my game....can I create pauses with punctuation? ....... oh yeah!";
+        _source = gameObject.GetComponent<AudioSource>();
+        string test =
+            "Sire, the orcish army is almost here and there's an entire horde of them! We must hold them back or the kingdom is doomed!";
         Say(test);
         TextBuilder.WriteText(test);
     }

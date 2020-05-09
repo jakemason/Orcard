@@ -8,7 +8,7 @@ public class TextBuilder : MonoBehaviour
     public TextMeshProUGUI TextBox;
     private static TextBuilder _instance;
 
-    private void Start()
+    private void Awake()
     {
         if (_instance == null)
         {
