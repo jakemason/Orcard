@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7cad3834d30c7848934833db707c67e, type: 3}
-  m_Name: Gain 3 Energy.
+  m_Script: {fileID: 11500000, guid: 90e25a2f83d4c424982e9fcfa6f82a2b, type: 3}
+  m_Name: +150 Gold.
   m_EditorClassIdentifier: 
-  InstructionText: Gain 3 Energy.
-  EnergyModifier: 3
+  InstructionText: +150 Gold.
+  GoldModifier: 150

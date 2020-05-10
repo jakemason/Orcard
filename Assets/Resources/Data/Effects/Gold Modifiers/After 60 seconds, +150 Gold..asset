@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc755c544c4bb5b42a985de3d2eac56a, type: 3}
-  m_Name: After 45 seconds, +2 Energy.
+  m_Name: After 60 seconds, +150 Gold.
   m_EditorClassIdentifier: 
-  InstructionText: After 45 seconds, +2 Energy.
-  Delay: 45
-  DelayCoolddown: 45
+  InstructionText: After 60 seconds, +150 Gold.
+  Delay: 60
+  DelayCoolddown: 60
   IsPermanent: 0
   Effects:
-  - {fileID: 11400000, guid: 248404457d20cca4787dd61fe3a92e97, type: 2}
+  - {fileID: 11400000, guid: ba061753bb4013b4fa36bda3de644a80, type: 2}

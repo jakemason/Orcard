@@ -327,6 +327,7 @@ MonoBehaviour:
   Indicator: {fileID: 8450921176656873}
   RangeDrawer: {fileID: 4163294492594788352}
   Line: {fileID: 8918614055007497320}
+  Renderer: {fileID: 0}
 --- !u!114 &2140906966
 MonoBehaviour:
   m_ObjectHideFlags: 0

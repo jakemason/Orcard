@@ -822,6 +822,9 @@ MonoBehaviour:
   LegendaryColor:
     serializedVersion: 2
     rgba: 4278218239
+  BackgroundTint:
+    serializedVersion: 2
+    rgba: 4293703631
 --- !u!114 &3211725596952985577
 MonoBehaviour:
   m_ObjectHideFlags: 0

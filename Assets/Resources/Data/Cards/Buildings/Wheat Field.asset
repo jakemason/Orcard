@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Wheat Field
   Artwork: {fileID: 6625692385018236696, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
-  ArtworkOffset: {x: 0, y: 30}
+  ArtworkOffset: {x: 0, y: 25}
   ArtworkScale: {x: 1.5, y: 1.5}
   Rarity: 0
   Set: 0

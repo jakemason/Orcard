@@ -17,21 +17,20 @@ MonoBehaviour:
     type: 3}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
-  ArtworkBackground: {fileID: 0}
   Rarity: 0
   Set: 0
-  CastingCost: 1
+  CastingCost: 50
   GoldCost: 50
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0
-  InstructionText: 'After 45 seconds, +2 Energy.  '
+  InstructionText: 'After 60 seconds, +150 Gold.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
   OnDrawEffects: []
   ImmediateEffects:
-  - {fileID: 11400000, guid: 910afb82349e83449b7fbf0b3cbec741, type: 2}
+  - {fileID: 11400000, guid: 6f8354b5a0cd0d54e8a4ebd672bd5432, type: 2}
   PermanentStartOfTurnEffects: []
   StartOfNextTurnEffects: []
   DiscardEffects: []

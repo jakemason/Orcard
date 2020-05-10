@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
-  m_Name: Arm The Towers
+  m_Name: Armaments
   m_EditorClassIdentifier: 
-  Name: Arm The Towers
+  Name: Armaments
   Artwork: {fileID: 5664825439308274393, guid: e7258ff8e7f52a546ae0c3c579adafd1, type: 3}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}

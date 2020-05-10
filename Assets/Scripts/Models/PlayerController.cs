@@ -92,10 +92,6 @@ namespace Players
         public void Update()
         {
             UpdateDrawTimer();
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                Application.Quit();
-            }
         }
 
         private void UpdateDrawTimer()

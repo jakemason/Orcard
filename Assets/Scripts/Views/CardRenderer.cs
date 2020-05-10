@@ -22,6 +22,7 @@ public class CardRenderer : MonoBehaviour, ITargetable
     public Color32 RareColor;
     public Color32 EpicColor;
     public Color32 LegendaryColor;
+    public Color32 BackgroundTint;
     
     private PlayableCardController _playable;
     // @formatter:on
@@ -61,30 +62,26 @@ public class CardRenderer : MonoBehaviour, ITargetable
         switch (CardObject.Rarity)
         {
             case Card.CardRarity.Common:
-                CardBorder.color        = CommonColor;
-                ArtworkBackground.color = CommonColor;
+                CardBorder.color = CommonColor;
                 break;
             case Card.CardRarity.Uncommon:
-                CardBorder.color        = CommonColor;
-                ArtworkBackground.color = CommonColor;
+                CardBorder.color = CommonColor;
                 break;
             case Card.CardRarity.Rare:
-                CardBorder.color        = RareColor;
-                ArtworkBackground.color = RareColor;
+                CardBorder.color = RareColor;
                 break;
             case Card.CardRarity.Epic:
-                CardBorder.color        = EpicColor;
-                ArtworkBackground.color = EpicColor;
+                CardBorder.color = EpicColor;
                 break;
             case Card.CardRarity.Legendary:
-                CardBorder.color        = LegendaryColor;
-                ArtworkBackground.color = LegendaryColor;
+                CardBorder.color = LegendaryColor;
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
         }
 
-        gameObject.name = Name.text;
+        ArtworkBackground.color = BackgroundTint;
+        gameObject.name         = Name.text;
     }
 
 #if UNITY_EDITOR

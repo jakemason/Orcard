@@ -73,10 +73,10 @@ public class TowerUpgradeEffect : Effect
         switch (AttributeToAlter)
         {
             case TowerAttribute.Attack:
-                InstructionText += Modifier > 0 ? $"+{Modifier} Tower Attack." : $"{Modifier} Tower Attack.";
+                InstructionText += Modifier > 0 ? $"+{Modifier} Damage." : $"{Modifier} Damage.";
                 break;
             case TowerAttribute.AttackRate:
-                InstructionText += Modifier > 0 ? $"+{Modifier} Tower Attack Rate." : $"{Modifier}  Tower Attack Rate.";
+                InstructionText += Modifier > 0 ? $"+{Modifier} Attack Rate." : $"{Modifier}  Attack Rate.";
                 break;
             default:
                 throw new ArgumentOutOfRangeException();

@@ -6,6 +6,7 @@ public class TargetIndicator : MonoBehaviour
     public GameObject Indicator;
     public DrawCircle RangeDrawer;
     public LineRenderer Line;
+    public SpriteRenderer Renderer;
 
     private void Start()
     {
@@ -17,6 +18,14 @@ public class TargetIndicator : MonoBehaviour
         {
             Destroy(this);
         }
+    }
+
+    public void Update()
+    {
+        //TODO: This isn't really effective...we could maybe do something with CastingRequirements checks here instead?
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos       = new Vector3(Mathf.RoundToInt(mousePos.x), Mathf.RoundToInt(mousePos.y), 1f);
+        Renderer.color = BuildingManager.GetBuildingAt(mousePos) ? Color.red : Color.white;
     }
 
     public static void Enable(BuildingCard model)
