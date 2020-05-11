@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Players;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class PlayerHand : MonoBehaviour
 {
@@ -61,6 +62,22 @@ public class PlayerHand : MonoBehaviour
     public int CardsInHand()
     {
         return HeldCards.Count;
+    }
+
+    /// <summary>
+    /// Get the Data of all Cards in the Player's hand
+    /// TODO: Super inefficient, but not worth fixing until we're sure it's needed
+    /// </summary>
+    /// <returns>A List of Card objects</returns>
+    public List<Card> GetHeldCardsData()
+    {
+        List<Card> cardsToReturn = new List<Card>();
+        foreach (GameObject heldCard in HeldCards)
+        {
+            cardsToReturn.Add(heldCard.GetComponent<PlayableCardController>().CardObject);
+        }
+
+        return cardsToReturn;
     }
 
     /// <summary>

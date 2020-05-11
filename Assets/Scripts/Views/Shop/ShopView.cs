@@ -24,6 +24,21 @@ public class ShopView : MonoBehaviour
         _layoutGroup = ShopRoot.GetComponentInChildren<GridLayoutGroup>();
     }
 
+    public static void Toggle()
+    {
+        if (Instance.ShopRoot.activeSelf)
+        {
+            Instance.ShopRoot.SetActive(false);
+            Instance._layoutGroup.enabled = true;
+        }
+        else
+        {
+            Instance.ShopRoot.SetActive(true);
+            Canvas.ForceUpdateCanvases();
+            Instance._layoutGroup.enabled = false;
+        }
+    }
+
 
     public static void Enable()
     {

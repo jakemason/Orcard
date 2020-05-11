@@ -1,5 +1,4 @@
-﻿using Players;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Gold Modifier Effect", menuName = "Effects/Gold Modifier Effect")]

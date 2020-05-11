@@ -60,6 +60,17 @@ public class ShopController : MonoBehaviour
         ShopView.Disable();
     }
 
+    public void Toggle()
+    {
+        if (OnSale.Count == 0)
+        {
+            GenerateNewCardsForSale();
+            ShopView.CreateCards(OnSale);
+        }
+
+        ShopView.Toggle();
+    }
+
     public static void OpenShop()
     {
         ShopView.Enable();
