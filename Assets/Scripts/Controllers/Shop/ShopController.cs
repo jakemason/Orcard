@@ -25,7 +25,6 @@ public class ShopController : MonoBehaviour
         if (IncomeController.GetCurrentGold() < RerollCost) return;
         GenerateNewCardsForSale();
         ShopView.CreateCards(OnSale);
-        ShopView.RefreshView();
         IncomeController.ModifyGold(-RerollCost);
     }
 

@@ -28,14 +28,11 @@ public class ShopView : MonoBehaviour
     {
         if (Instance.ShopRoot.activeSelf)
         {
-            Instance.ShopRoot.SetActive(false);
-            Instance._layoutGroup.enabled = true;
+            Disable();
         }
         else
         {
-            Instance.ShopRoot.SetActive(true);
-            Canvas.ForceUpdateCanvases();
-            Instance._layoutGroup.enabled = false;
+            Enable();
         }
     }
 
@@ -65,6 +62,7 @@ public class ShopView : MonoBehaviour
         return Instance.ShopRoot.activeSelf;
     }
 
+    //TODO: Investigate why the hell sometimes the artwork is offset on the first page load of the Shop, rerolls are fine...
     public static void CreateCards(List<Card> toCreate)
     {
         foreach (Transform child in Instance.CardGridRoot.transform)
@@ -79,5 +77,7 @@ public class ShopView : MonoBehaviour
             rend.CardObject = card;
             rend.UpdateCardDetails();
         }
+
+        RefreshView();
     }
 }

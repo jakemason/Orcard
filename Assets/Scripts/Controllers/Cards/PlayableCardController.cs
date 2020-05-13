@@ -15,7 +15,10 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     public Vector3 TargetPosition = Vector3.negativeInfinity;
     public Vector3 TargetRotation = Vector3.negativeInfinity;
     public Vector3 TargetScale = new Vector3(1, 1, 1);
-    private bool _isDragging;
+    
+    //this needs to be static because we don't want to ever drag more than one card at a time.
+    //if this _isn't_ static we get weird SiblingIndex issues when we don't actually finish a cast.
+    private static bool _isDragging;
 
     [Tooltip("How quickly cards change their position, rotation, and scale.")]
     public float MovementSpeed = 5.0f;
