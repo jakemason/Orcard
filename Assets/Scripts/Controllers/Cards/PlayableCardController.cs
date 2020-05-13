@@ -15,6 +15,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     public Vector3 TargetPosition = Vector3.negativeInfinity;
     public Vector3 TargetRotation = Vector3.negativeInfinity;
     public Vector3 TargetScale = new Vector3(1, 1, 1);
+    public ParticleSystem ParticleSystem;
     
     //this needs to be static because we don't want to ever drag more than one card at a time.
     //if this _isn't_ static we get weird SiblingIndex issues when we don't actually finish a cast.
@@ -107,6 +108,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (MarkedForDestruction || _isDragging) return;
+        ParticleSystem.Play();
         TargetPosition      = RestingPosition + HoverOffset;
         TargetRotation      = Vector3.zero;
         RestingSiblingIndex = transform.GetSiblingIndex();
@@ -117,6 +119,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     public void OnPointerExit(PointerEventData eventData)
     {
         if (MarkedForDestruction || _isDragging) return;
+        ParticleSystem.Stop();
         TargetPosition = RestingPosition;
         TargetRotation = RestingRotation;
         TargetScale    = Vector3.one;
@@ -125,6 +128,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
     public void OnDrag(PointerEventData eventData)
     {
+        ParticleSystem.Play();
         if (IncomeController.GetCurrentGold() < CardObject.CastingCost)
         {
             return;
@@ -149,6 +153,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     {
         _isDragging      = false;
         MovementDisabled = false;
+        ParticleSystem.Stop();
 
 
         if (MarkedForDestruction) return;
