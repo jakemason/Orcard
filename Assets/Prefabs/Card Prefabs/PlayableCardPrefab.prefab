@@ -486,7 +486,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8977035556605069795}
   serializedVersion: 6
-  lengthInSec: 10
+  lengthInSec: 5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -494,7 +494,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -561,7 +561,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -614,7 +614,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 15
+      scalar: 5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -730,7 +730,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 15
+      scalar: 25
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1046,7 +1046,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 4000
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -1105,7 +1105,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 16
+    type: 15
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -1311,7 +1311,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 400
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1437,7 +1437,7 @@ ParticleSystem:
           outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
-          value: 0
+          value: 0.33802795
           inSlope: -2
           outSlope: -2
           tangentMode: 0
@@ -1749,15 +1749,15 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.5372549, g: 0.5372549, b: 0.5372549, a: 1}
-        key1: {r: 0, g: 0, b: 0, a: 0}
+        key0: {r: 0.33628434, g: 0.2683339, b: 0.8490566, a: 0.7921569}
+        key1: {r: 0, g: 0, b: 0, a: 0.77813935}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
+        ctime0: 578
         ctime1: 65535
         ctime2: 0
         ctime3: 0
@@ -1766,8 +1766,8 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 193
-        atime1: 65535
-        atime2: 0
+        atime1: 25636
+        atime2: 65535
         atime3: 0
         atime4: 0
         atime5: 0
@@ -1775,7 +1775,7 @@ ParticleSystem:
         atime7: 0
         m_Mode: 0
         m_NumColorKeys: 2
-        m_NumAlphaKeys: 2
+        m_NumAlphaKeys: 3
       minGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5155,7 +5155,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2ba15fc665caf2c4f82c8e25f0069cbf, type: 2}
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -5192,7 +5192,7 @@ ParticleSystemRenderer:
   m_Flip: {x: 0, y: 0, z: 0}
   m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 1
-  m_ApplyActiveColorSpace: 1
+  m_ApplyActiveColorSpace: 0
   m_AllowRoll: 1
   m_VertexStreams: 00010304
   m_Mesh: {fileID: 0}
@@ -5220,14 +5220,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c867baa39248aab41b87fa44e7b6fc3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 2ba15fc665caf2c4f82c8e25f0069cbf, type: 2}
+  m_Material: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  particleTexture: {fileID: 0}
-  particleSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  particleTexture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+  particleSprite: {fileID: 0}
 --- !u!1 &9162847070532323464
 GameObject:
   m_ObjectHideFlags: 0

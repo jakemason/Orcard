@@ -46,6 +46,7 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         _trans = GetComponent<RectTransform>();
         CardRenderer cardRenderer = GetComponent<CardRenderer>();
         CardObject = cardRenderer.CardObject;
+        ParticleSystem.Stop();
 
         //NOTE: 
         //Here we keep an original copy of the card so that we can create effects that modify the card,
@@ -108,7 +109,11 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (MarkedForDestruction || _isDragging) return;
-        ParticleSystem.Play();
+        if (IncomeController.GetCurrentGold() >= CardObject.CastingCost)
+        {
+            ParticleSystem.Play();
+        }
+
         TargetPosition      = RestingPosition + HoverOffset;
         TargetRotation      = Vector3.zero;
         RestingSiblingIndex = transform.GetSiblingIndex();
@@ -128,12 +133,12 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
     public void OnDrag(PointerEventData eventData)
     {
-        ParticleSystem.Play();
         if (IncomeController.GetCurrentGold() < CardObject.CastingCost)
         {
             return;
         }
 
+        ParticleSystem.Play();
         MovementDisabled   = true;
         transform.position = Input.mousePosition;
 
