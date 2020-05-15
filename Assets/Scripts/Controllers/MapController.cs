@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 
 public class MapController : MonoBehaviour
@@ -9,7 +8,13 @@ public class MapController : MonoBehaviour
     public GameObject Road;
     public Dictionary<Vector2, bool> IsSpaceOccupied;
 
-    public Sprite PathSprite;
+    public Sprite Horizontal;
+    public Sprite Vertical;
+    public Sprite TopLeft;
+    public Sprite BottomLeft;
+    public Sprite TopRight;
+    public Sprite BottomRight;
+
     public int PathDeviations = 2;
     public int XBound = 6;
     public int YBound = 3;
@@ -18,6 +23,7 @@ public class MapController : MonoBehaviour
     private readonly Vector2 _endPos = new Vector2(-23,  PATH_DEFAULT_Y_POS);
 
 
+    //these are the anchors the orcs will move along asa they go from Transform to Transform
     public List<Vector2> PathingAnchors;
     public GameObject PathingAnchorPrefab;
 
@@ -58,25 +64,25 @@ public class MapController : MonoBehaviour
 
     private void GenerateRoads()
     {
-        List<int> branchPoints = new List<int>();
-        //we use the minimum gap list to be sure we can't have an X distance of less than 2 between points
+        const int branchPointsToCreate = 4;
+        List<int> branchPoints         = new List<int>();
+        //we use the minimum gap list to be sure we can't have an X distance of less than 3 between points
         List<int> minimumGapPoints = new List<int>();
-        while (branchPoints.Count < 4)
+        while (branchPoints.Count < branchPointsToCreate)
         {
             int rand = Random.Range(-XBound, XBound + 1);
-            if (!minimumGapPoints.Contains(rand))
-            {
-                minimumGapPoints.Add(rand - 1); //prevent width of 1
-                minimumGapPoints.Add(rand + 1); //prevent width of 1
-                minimumGapPoints.Add(rand);
-                branchPoints.Add(rand);
-            }
+            if (minimumGapPoints.Contains(rand)) continue;
+
+            minimumGapPoints.Add(rand - 1); //make sure the minimum "width" of any path is at least 3
+            minimumGapPoints.Add(rand + 1); //make sure the minimum "width" of any path is at least 3
+            minimumGapPoints.Add(rand);
+            branchPoints.Add(rand);
         }
 
         branchPoints.Sort(); // sort our selected points to make sure we build between adjacent points
 
         //we need to do this loop twice, once for each "pair of points"
-        for (int i = 0; i <= 2; i += 2)
+        for (int i = 0; i <= branchPointsToCreate / 2; i += 2)
         {
             int yDistance = Random.Range(-YBound, YBound + 1); //determine how "deep" the path offshoot will go
             while (yDistance == PATH_DEFAULT_Y_POS)            //make sure we deviate from the natural path at 0
@@ -89,32 +95,78 @@ public class MapController : MonoBehaviour
             for (int x = branchPoints[i]; x != branchPoints[i + 1]; x += dx)
             {
                 Vector2 position = new Vector2(x, yDistance);
-                Instantiate(Road, position, Quaternion.identity);
+                GameObject go =
+                    Instantiate(Road, position, Quaternion.identity);
+                SpriteRenderer rend = go.GetComponent<SpriteRenderer>();
+                rend.sprite = Horizontal;
             }
 
             //for the vertical change between Y values
             int dy = PATH_DEFAULT_Y_POS < yDistance ? 1 : -1;
             for (int y = PATH_DEFAULT_Y_POS; y != yDistance + dy; y += dy)
             {
-                Vector2 position = new Vector2(branchPoints[i], y);
-                Instantiate(Road, position, Quaternion.identity);
+                Vector2        position = new Vector2(branchPoints[i], y);
+                GameObject     go       = Instantiate(Road, position, Quaternion.identity);
+                SpriteRenderer rend     = go.GetComponent<SpriteRenderer>();
+                //determine sprite type, either it turns or it's a vertical
+                if (y == PATH_DEFAULT_Y_POS)
+                {
+                    rend.sprite = dy == 1 ? BottomRight : TopRight;
+                }
+                else if (y == yDistance)
+                {
+                    rend.sprite = dy == 1 ? TopLeft : BottomLeft;
+                }
+                else
+                {
+                    rend.sprite = Vertical;
+                }
 
                 position = new Vector2(branchPoints[i + 1], y);
-                Instantiate(Road, position, Quaternion.identity);
+                go       = Instantiate(Road, position, Quaternion.identity);
+                rend     = go.GetComponent<SpriteRenderer>();
+                //determine sprite type, either it turns or it's a vertical
+                if (y == PATH_DEFAULT_Y_POS)
+                {
+                    rend.sprite = dy == 1 ? BottomLeft : TopLeft;
+                }
+                else if (y == yDistance)
+                {
+                    rend.sprite = dy == 1 ? TopRight : BottomRight;
+                }
+                else
+                {
+                    rend.sprite = Vertical;
+                }
             }
 
             PathingAnchors.Add(new Vector2(branchPoints[i],     yDistance));
             PathingAnchors.Add(new Vector2(branchPoints[i + 1], yDistance));
 
-            Instantiate(PathingAnchorPrefab, new Vector2(branchPoints[i], PATH_DEFAULT_Y_POS), Quaternion.identity,
-                gameObject.transform);
-            Instantiate(PathingAnchorPrefab, new Vector2(branchPoints[i], yDistance), Quaternion.identity,
+            /*
+             * Create the rest of the PathingAnchor transforms
+             */
+            Instantiate(PathingAnchorPrefab,
+                new Vector2(branchPoints[i], PATH_DEFAULT_Y_POS),
+                Quaternion.identity,
                 gameObject.transform);
 
 
-            Instantiate(PathingAnchorPrefab, new Vector2(branchPoints[i + 1], yDistance), Quaternion.identity,
+            Instantiate(PathingAnchorPrefab,
+                new Vector2(branchPoints[i], yDistance),
+                Quaternion.identity,
                 gameObject.transform);
-            Instantiate(PathingAnchorPrefab, new Vector2(branchPoints[i + 1], PATH_DEFAULT_Y_POS), Quaternion.identity,
+
+
+            Instantiate(PathingAnchorPrefab,
+                new Vector2(branchPoints[i + 1], yDistance),
+                Quaternion.identity,
+                gameObject.transform);
+
+
+            Instantiate(PathingAnchorPrefab,
+                new Vector2(branchPoints[i + 1], PATH_DEFAULT_Y_POS),
+                Quaternion.identity,
                 gameObject.transform);
         }
 
@@ -123,12 +175,18 @@ public class MapController : MonoBehaviour
         {
             if (x < branchPoints[0] || x > branchPoints[3])
             {
-                Instantiate(Road, new Vector2(x, PATH_DEFAULT_Y_POS), Quaternion.identity);
+                GameObject go =
+                    Instantiate(Road, new Vector2(x, PATH_DEFAULT_Y_POS), Quaternion.identity);
+                SpriteRenderer rend = go.GetComponent<SpriteRenderer>();
+                rend.sprite = Horizontal;
             }
 
             if (x > branchPoints[1] && x < branchPoints[2])
             {
-                Instantiate(Road, new Vector2(x, PATH_DEFAULT_Y_POS), Quaternion.identity);
+                GameObject go =
+                    Instantiate(Road, new Vector2(x, PATH_DEFAULT_Y_POS), Quaternion.identity);
+                SpriteRenderer rend = go.GetComponent<SpriteRenderer>();
+                rend.sprite = Horizontal;
             }
         }
     }
