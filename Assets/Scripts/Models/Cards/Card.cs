@@ -75,19 +75,19 @@ public abstract class Card : ScriptableObject
         switch (Rarity)
         {
             case CardRarity.Common:
-                GoldCost = 50;
+                GoldCost = 1;
                 break;
             case CardRarity.Uncommon:
-                GoldCost = 100;
+                GoldCost = 2;
                 break;
             case CardRarity.Rare:
-                GoldCost = 150;
+                GoldCost = 4;
                 break;
             case CardRarity.Epic:
-                GoldCost = 250;
+                GoldCost = 6;
                 break;
             case CardRarity.Legendary:
-                GoldCost = 500;
+                GoldCost = 8;
                 break;
             default:
                 throw new ArgumentOutOfRangeException();

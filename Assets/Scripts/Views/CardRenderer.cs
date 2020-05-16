@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,6 +12,7 @@ public class CardRenderer : MonoBehaviour, ITargetable
     public Card CardObject;
     public TextMeshProUGUI Name;
     public TextMeshProUGUI Cost;
+    public GameObject CostContainer;
     public Image Artwork;
     public Image ArtworkBackground;
     public Image CardBorder;
@@ -41,8 +41,13 @@ public class CardRenderer : MonoBehaviour, ITargetable
     public void UpdateCardDetails()
     {
         if (CardObject == null) return;
-        Name.text            = CardObject.Name;
-        Cost.text            = CardObject.CastingCost.ToString();
+        Name.text = CardObject.Name;
+        Cost.text = CardObject.CastingCost.ToString();
+        if (CardObject.CastingCost == 0)
+        {
+            CostContainer.SetActive(false);
+        }
+
         InstructionText.text = CardObject.InstructionText;
         Artwork.sprite       = CardObject.Artwork;
 

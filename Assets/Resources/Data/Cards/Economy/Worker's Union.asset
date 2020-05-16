@@ -18,12 +18,12 @@ MonoBehaviour:
   ArtworkScale: {x: 1, y: 1}
   Rarity: 0
   Set: 0
-  CastingCost: 25
-  GoldCost: 50
+  CastingCost: 1
+  GoldCost: 1
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0
-  InstructionText: 'For each Worker''s Union in hand, +25 Gold.  '
+  InstructionText: 'For each other Worker''s Union in hand, +25 Gold.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 

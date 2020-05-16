@@ -5624,6 +5624,7 @@ MonoBehaviour:
   CardObject: {fileID: 0}
   Name: {fileID: 9162847070876504863}
   Cost: {fileID: 9162847071372392131}
+  CostContainer: {fileID: 9162847070642202216}
   Artwork: {fileID: 9162847070632354178}
   ArtworkBackground: {fileID: 5796997388413725505}
   CardBorder: {fileID: 8661482089506356506}

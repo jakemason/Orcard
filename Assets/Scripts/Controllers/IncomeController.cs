@@ -12,7 +12,7 @@ public class IncomeController : MonoBehaviour
     public AudioClip ToPlay;
     public AudioSource AudioSource;
 
-    private void Start()
+    private void Awake()
     {
         if (_instance == null)
         {
@@ -28,7 +28,7 @@ public class IncomeController : MonoBehaviour
         ModifyGold(Income);
     }
 
-    private void Update()
+    /*private void Update()
     {
         _tickCountdown -= Time.deltaTime;
         if (_tickCountdown <= 0f)
@@ -38,11 +38,17 @@ public class IncomeController : MonoBehaviour
             AudioSource.pitch = Random.Range(0.8f, 1.2f);
             AudioSource.PlayOneShot(ToPlay);
         }
-    }
+    }*/
 
     public static int GetCurrentGold()
     {
         return _instance.CurrentGold;
+    }
+
+    public static void SetGold(int toSet)
+    {
+        _instance.CurrentGold   = toSet;
+        _instance.GoldText.text = _instance.CurrentGold.ToString();
     }
 
     public static void ModifyGold(int modifier)

@@ -3,11 +3,13 @@ using UnityEngine;
 
 public class MapController : MonoBehaviour
 {
+    // @formatter:off
     public static MapController Instance;
     public List<Transform> Waypoints;
     public GameObject Road;
     public Dictionary<Vector2, bool> IsSpaceOccupied;
 
+    [Header("Path Sprites")]
     public Sprite Horizontal;
     public Sprite Vertical;
     public Sprite TopLeft;
@@ -22,10 +24,10 @@ public class MapController : MonoBehaviour
     private readonly Vector2 _startPos = new Vector2(13, PATH_DEFAULT_Y_POS);
     private readonly Vector2 _endPos = new Vector2(-23,  PATH_DEFAULT_Y_POS);
 
-
     //these are the anchors the orcs will move along asa they go from Transform to Transform
     public List<Vector2> PathingAnchors;
     public GameObject PathingAnchorPrefab;
+    // @formatter:on
 
     private void Awake()
     {
@@ -64,7 +66,7 @@ public class MapController : MonoBehaviour
 
     private void GenerateRoads()
     {
-        const int branchPointsToCreate = 4;
+        int       branchPointsToCreate = PathDeviations * 2;
         List<int> branchPoints         = new List<int>();
         //we use the minimum gap list to be sure we can't have an X distance of less than 3 between points
         List<int> minimumGapPoints = new List<int>();
@@ -92,7 +94,7 @@ public class MapController : MonoBehaviour
 
             //get our first set of points and determine how we close the gap between the two
             int dx = branchPoints[i] < branchPoints[i + 1] ? 1 : -1;
-            for (int x = branchPoints[i]; x != branchPoints[i + 1]; x += dx)
+            for (int x = branchPoints[i] + dx; x != branchPoints[i + 1]; x += dx)
             {
                 Vector2 position = new Vector2(x, yDistance);
                 GameObject go =

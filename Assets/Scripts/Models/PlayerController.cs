@@ -86,6 +86,7 @@ namespace Players
         {
             StartTurn();
             DrawNewHand();
+            TurnManager.StartTurn();
             _freeDrawCooldown = 0f;
         }
 
@@ -99,9 +100,9 @@ namespace Players
             _freeDrawCooldown -= Time.deltaTime;
             DrawCooldownText.text =
                 _freeDrawCooldown <= 0f ? "" : _freeDrawCooldown.ToString("00");
-            DrawButton.interactable = _freeDrawCooldown <= 0f || IncomeController.GetCurrentGold() >= RedrawGoldCost;
-            RedrawCostText.text     = RedrawGoldCost.ToString();
-            RedrawCostIndicator.SetActive(_freeDrawCooldown >= 0.0f);
+            DrawButton.interactable = _freeDrawCooldown <= 0f; //|| IncomeController.GetCurrentGold() >= RedrawGoldCost;
+            //RedrawCostText.text     = RedrawGoldCost.ToString();
+            //RedrawCostIndicator.SetActive(_freeDrawCooldown >= 0.0f);
             DrawCooldownIcon.fillAmount = _freeDrawCooldown / FreeDrawCooldownInSeconds;
         }
 
@@ -111,14 +112,16 @@ namespace Players
             {
                 PlayerHand.DiscardHand();
                 Instance.Draw(Instance.CardsToDraw);
+                IncomeController.SetGold(0);
+                TurnManager.StartTurn();
             }
-            else if (IncomeController.GetCurrentGold() >= RedrawGoldCost)
+            /*else if (IncomeController.GetCurrentGold() >= RedrawGoldCost)
             {
                 PlayerHand.DiscardHand();
                 Instance.Draw(Instance.CardsToDraw);
                 IncomeController.ModifyGold(-RedrawGoldCost);
                 RedrawGoldCost += RedrawGoldIncrease;
-            }
+            }*/
 
             _freeDrawCooldown = FreeDrawCooldownInSeconds;
         }
