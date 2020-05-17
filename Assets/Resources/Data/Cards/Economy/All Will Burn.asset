@@ -10,27 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
-  m_Name: Reload
+  m_Name: All Will Burn
   m_EditorClassIdentifier: 
-  Name: Reload
-  Artwork: {fileID: 5561347366544571939, guid: fae3beae0334790438393168d3410343, type: 3}
+  Name: All Will Burn
+  Artwork: {fileID: 0}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
   Rarity: 0
   Set: 0
-  CastingCost: 1
+  CastingCost: 0
   GoldCost: 1
-  CastingRequirements:
-  - {fileID: 11400000, guid: 45b01165b5d0e5542a9273a6622ac5ca, type: 2}
-  DestroyOnCast: 0
-  IsTargeted: 1
-  InstructionText: 'Reload target tower.  '
+  CastingRequirements: []
+  DestroyOnCast: 1
+  IsTargeted: 0
+  InstructionText: 'Destroy the cards in your hand. '
   AdditionalInstructionText: 
-  OverrideDefaultInstructionText: 
+  OverrideDefaultInstructionText: Destroy the cards in your hand.
   FlavorText: 
   OnDrawEffects: []
   ImmediateEffects:
-  - {fileID: 11400000, guid: 6cf64b1b3ccbb184eadc4682822275f9, type: 2}
+  - {fileID: 11400000, guid: ffc11f565f18f394aa69ac1bf23b5aa1, type: 2}
   PermanentStartOfTurnEffects: []
   StartOfNextTurnEffects: []
   DiscardEffects: []

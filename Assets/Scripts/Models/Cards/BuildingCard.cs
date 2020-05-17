@@ -23,7 +23,7 @@ public class BuildingCard : Card
         string startEffects = " ";
         if (EachTurnEffects.Count > 0 && OverrideDefaultInstructionText == "")
         {
-            startEffects = "Generates: ";
+            startEffects = "Each Turn: ";
             foreach (Effect effect in EachTurnEffects)
             {
                 if (effect == null) continue;

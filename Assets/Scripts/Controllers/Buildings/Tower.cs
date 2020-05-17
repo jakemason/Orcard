@@ -62,7 +62,7 @@ public class Tower : Building, ITargetable
         tbolt.Target        = targetPosition;
         tbolt.MovementSpeed = Model.AttackMovementSpeed;
         tbolt.Damage        = Model.Damage;
-        RemainingAmmo--;
+        //RemainingAmmo--; //TODO: !=============== Uncomment to re-enable ammo functionality =====================!
         if (RemainingAmmo <= 0)
         {
             _reloadAnimation = Instantiate(BuildingManager.Instance.ReloadAnimation, transform.position,

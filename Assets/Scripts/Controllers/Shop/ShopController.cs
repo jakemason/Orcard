@@ -1,22 +1,48 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ShopController : MonoBehaviour
 {
+    private static ShopController _instance;
+    public List<Card> AlwaysOnSale;
     public int RerollCost = 25;
     public static List<Card> OnSale = new List<Card>();
     public static float CostMultiplier = 1.0f; //cards can manipulate this to go for a "shop" strat
 
-    public static int CardsToGenerate = 6;
+    public static int CardsToGenerate = 3;
     public static int CardsToDiscount = 2; // this many cards will get a random discount applied to them.
     private static float _discountMultiplier = 0.8f;
+
+    public void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
 
     private static void GenerateNewCardsForSale()
     {
         OnSale = new List<Card>();
+        foreach (Card c in _instance.AlwaysOnSale)
+        {
+            OnSale.Add(c);
+        }
+
         for (int i = 0; i < CardsToGenerate; i++)
         {
-            OnSale.Add(CardList.GetRandomCard());
+            Card toAdd = CardList.GetRandomCard();
+            while (_instance.AlwaysOnSale.Contains(toAdd))
+            {
+                toAdd = CardList.GetRandomCard();
+            }
+
+            OnSale.Add(toAdd);
         }
     }
 

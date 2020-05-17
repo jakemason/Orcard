@@ -72,27 +72,6 @@ public abstract class Card : ScriptableObject
             }
         }
 
-        switch (Rarity)
-        {
-            case CardRarity.Common:
-                GoldCost = 1;
-                break;
-            case CardRarity.Uncommon:
-                GoldCost = 2;
-                break;
-            case CardRarity.Rare:
-                GoldCost = 4;
-                break;
-            case CardRarity.Epic:
-                GoldCost = 6;
-                break;
-            case CardRarity.Legendary:
-                GoldCost = 8;
-                break;
-            default:
-                throw new ArgumentOutOfRangeException();
-        }
-
         string startEffects = "";
         /*if (PermanentStartOfTurnEffects.Count > 0 && OverrideDefaultInstructionText == "")
         {

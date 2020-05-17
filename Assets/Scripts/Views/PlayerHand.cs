@@ -113,6 +113,23 @@ public class PlayerHand : MonoBehaviour
     }
 
     /// <summary>
+    /// Destroys a card in the player's hand, effectively removing it from their deck entirely.
+    /// </summary>
+    /// <param name="cardToDestroy">The card to destroy.</param>
+    public static void DestroyCard(PlayableCardController cardToDestroy)
+    {
+        GameObject go = cardToDestroy.gameObject;
+
+        Instance.HeldCards.Remove(go);
+        cardToDestroy.TargetRotation       = Vector3.zero;
+        cardToDestroy.TargetScale          = Vector3.zero;
+        cardToDestroy.MarkedForDestruction = true;
+        cardToDestroy.TargetPosition       = Instance.DiscardPile.anchoredPosition;
+
+        Instance.AlignCards();
+    }
+
+    /// <summary>
     /// Discards the entire hand of cards.
     /// </summary>
     public static void DiscardHand()

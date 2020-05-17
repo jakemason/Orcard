@@ -18,8 +18,8 @@ MonoBehaviour:
   ArtworkScale: {x: 1, y: 1}
   Rarity: 3
   Set: 0
-  CastingCost: 100
-  GoldCost: 250
+  CastingCost: 2
+  GoldCost: 6
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0

@@ -18,13 +18,13 @@ MonoBehaviour:
   ArtworkScale: {x: 1, y: 1}
   Rarity: 0
   Set: 0
-  CastingCost: 50
-  GoldCost: 50
+  CastingCost: 2
+  GoldCost: 1
   CastingRequirements:
   - {fileID: 11400000, guid: 45b01165b5d0e5542a9273a6622ac5ca, type: 2}
   DestroyOnCast: 0
   IsTargeted: 1
-  InstructionText: '+1 Tower Attack.  '
+  InstructionText: '+1 Damage.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 

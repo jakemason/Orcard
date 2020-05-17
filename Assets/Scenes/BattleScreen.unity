@@ -3041,7 +3041,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reroll (25 Gold)
+  m_text: Reroll (1 Gold)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19061,7 +19061,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56039d1985a5a9949bc635138c153307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RerollCost: 25
+  AlwaysOnSale:
+  - {fileID: 11400000, guid: 56b46f7102638034ab27fefcb75305ba, type: 2}
+  - {fileID: 11400000, guid: 79f45f6f3c1664747a524ccb822271e6, type: 2}
+  - {fileID: 11400000, guid: 41e68a9b095a2a2489cc7aff0f81c13c, type: 2}
+  RerollCost: 1
 --- !u!114 &1511839244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19159,7 +19163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad124c8973131a41814dabb07377b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeBetweenTurnsInSeconds: 5
 --- !u!114 &1511839250
 MonoBehaviour:
   m_ObjectHideFlags: 0

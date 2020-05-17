@@ -18,19 +18,20 @@ MonoBehaviour:
   ArtworkScale: {x: 1.5, y: 1.5}
   Rarity: 0
   Set: 0
-  CastingCost: 50
-  GoldCost: 50
+  CastingCost: 2
+  GoldCost: 3
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 1
   IsTargeted: 1
-  InstructionText: 'Can be Harvested. '
+  InstructionText: 'Destroy this card. Each Turn: +1 Gold. '
   AdditionalInstructionText: 
-  OverrideDefaultInstructionText: Can be Harvested.
+  OverrideDefaultInstructionText: 
   FlavorText: A staple of all war efforts is food to feed the soldiers.
   OnDrawEffects: []
   ImmediateEffects:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
-  EachTurnEffects: []
+  EachTurnEffects:
+  - {fileID: 11400000, guid: 1924f6c32aa842f4fb7d58195c1112af, type: 2}
   IsIndestructible: 0
   Shadow: {fileID: 0}

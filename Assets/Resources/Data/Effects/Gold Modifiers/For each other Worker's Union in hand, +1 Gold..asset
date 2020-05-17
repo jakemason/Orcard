@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d971113b42d5aa441ae7799acc60a293, type: 3}
-  m_Name: For each other Worker's Union in hand, +25 Gold.
+  m_Name: For each other Worker's Union in hand, +1 Gold.
   m_EditorClassIdentifier: 
-  InstructionText: For each other Worker's Union in hand, +25 Gold.
+  InstructionText: For each other Worker's Union in hand, +1 Gold.
   CardToCount: {fileID: 11400000, guid: 901b63f0812b93642aa2607c3c8055c5, type: 2}
   EffectsPerCardInHand:
-  - {fileID: 11400000, guid: b991d97f3e31bb3419e2e894f2b64360, type: 2}
+  - {fileID: 11400000, guid: 1924f6c32aa842f4fb7d58195c1112af, type: 2}
