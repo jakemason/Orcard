@@ -75,7 +75,6 @@ public class ShopView : MonoBehaviour
             GameObject   cardObject = Instantiate(Instance.ShopCardPrefab, Instance.CardGridRoot.transform, false);
             CardRenderer rend       = cardObject.GetComponent<CardRenderer>();
             rend.CardObject = card;
-            rend.UpdateCardDetails();
         }
 
         RefreshView();

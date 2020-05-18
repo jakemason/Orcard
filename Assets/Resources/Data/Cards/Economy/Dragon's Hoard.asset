@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
-  m_Name: Copper
+  m_Name: Dragon's Hoard
   m_EditorClassIdentifier: 
-  Name: Copper
-  Artwork: {fileID: 6625692385018236696, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
-  ArtworkOffset: {x: 0, y: 25}
-  ArtworkScale: {x: 1.5, y: 1.5}
-  Rarity: 0
+  Name: Dragon's Hoard
+  Artwork: {fileID: 0}
+  ArtworkOffset: {x: 0, y: 0}
+  ArtworkScale: {x: 1, y: 1}
+  Rarity: 4
   Set: 0
   CastingCost: 0
-  GoldCost: 1
+  GoldCost: 10
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0
-  InstructionText: '+1 Gold.  '
+  InstructionText: '+25 Gold.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
   OnDrawEffects: []
   ImmediateEffects:
-  - {fileID: 11400000, guid: 1924f6c32aa842f4fb7d58195c1112af, type: 2}
+  - {fileID: 11400000, guid: b991d97f3e31bb3419e2e894f2b64360, type: 2}
   PermanentStartOfTurnEffects: []
   StartOfNextTurnEffects: []
   DiscardEffects: []

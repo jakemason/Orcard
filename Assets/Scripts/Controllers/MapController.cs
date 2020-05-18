@@ -19,7 +19,7 @@ public class MapController : MonoBehaviour
 
     public int PathDeviations = 2;
     public int XBound = 6;
-    public int YBound = 3;
+    public int YBound = 2;
     private const int PATH_DEFAULT_Y_POS = 1;
     private readonly Vector2 _startPos = new Vector2(13, PATH_DEFAULT_Y_POS);
     private readonly Vector2 _endPos = new Vector2(-23,  PATH_DEFAULT_Y_POS);
