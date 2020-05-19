@@ -43,8 +43,8 @@ public class RewardsManager : MonoBehaviour
 
     public static void MakeNewRewardAvailable()
     {
-        Instance.Button.interactable = true;
-        Instance.CreateRewardGameObjects();
+//        Instance.Button.interactable = true;
+        //       Instance.CreateRewardGameObjects();
     }
 
     public void OpenRewardsPanel()

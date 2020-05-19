@@ -19,7 +19,7 @@ MonoBehaviour:
   Rarity: 1
   Set: 0
   CastingCost: 3
-  GoldCost: 100
+  GoldCost: 5
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 1

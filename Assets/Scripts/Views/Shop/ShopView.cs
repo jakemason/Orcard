@@ -10,6 +10,13 @@ public class ShopView : MonoBehaviour
     public GameObject ShopCardPrefab;
     private GridLayoutGroup _layoutGroup;
 
+    /**
+     * Okay so this is an awful kludge because of some weird shit going on with Unity.
+     * If we call rend.UpdateCardDetails(); on the first shop load it offsets the sprites oddly,
+     * subsequent calls are all correct. Fuck if I know why :(  
+     */
+    private static bool _firstCreation = true;
+
     private void Awake()
     {
         if (Instance == null)
@@ -75,7 +82,13 @@ public class ShopView : MonoBehaviour
             GameObject   cardObject = Instantiate(Instance.ShopCardPrefab, Instance.CardGridRoot.transform, false);
             CardRenderer rend       = cardObject.GetComponent<CardRenderer>();
             rend.CardObject = card;
+            if (!_firstCreation)
+            {
+                rend.UpdateCardDetails();
+            }
         }
+
+        _firstCreation = false;
 
         RefreshView();
     }
