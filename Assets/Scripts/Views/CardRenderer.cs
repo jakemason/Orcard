@@ -51,17 +51,17 @@ public class CardRenderer : MonoBehaviour, ITargetable
         InstructionText.text = CardObject.InstructionText;
         Artwork.sprite       = CardObject.Artwork;
 
-        Transform artworkTransform = Artwork.transform;
-        artworkTransform.localScale = new Vector3(CardObject.ArtworkScale.x, CardObject.ArtworkScale.y, 1);
+        RectTransform artworkTransform = Artwork.gameObject.GetComponent<RectTransform>();
+        //TODO: targetting position here is screwy when the game scales in screen size. Maybe _just_ in editor though?
         artworkTransform.position = new Vector3(
             artworkTransform.position.x + CardObject.ArtworkOffset.x,
             artworkTransform.position.y + CardObject.ArtworkOffset.y,
             0
         );
+        artworkTransform.localScale = new Vector3(CardObject.ArtworkScale.x, CardObject.ArtworkScale.y, 1);
 
-        Artwork.transform.localScale = artworkTransform.localScale;
-        Artwork.transform.position   = artworkTransform.position;
-
+        //artworkTransform.localPosition = artworkTransform.localPosition;
+        //artworkTransform.localScale = artworkTransform.localScale;
         /*if (CardObject.ArtworkBackground != null)
         {
             ArtworkBackground.sprite = CardObject.ArtworkBackground;

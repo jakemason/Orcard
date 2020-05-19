@@ -87,11 +87,11 @@ public class MapController : MonoBehaviour
         //we need to do this loop twice, once for each "pair of points"
         for (int i = 0; i <= branchPointsToCreate / 2; i += 2)
         {
-            int yDistance = Random.Range(-YBound, YBound + 3); //determine how "deep" the path offshoot will go
+            int yDistance = Random.Range(-YBound, YBound + 2); //determine how "deep" the path offshoot will go
 
             while (yDistance == PATH_DEFAULT_Y_POS) //make sure we deviate from the natural path at 0
             {
-                yDistance = Random.Range(-YBound, YBound + 3);
+                yDistance = Random.Range(-YBound, YBound + 2);
             }
 
             //get our first set of points and determine how we close the gap between the two

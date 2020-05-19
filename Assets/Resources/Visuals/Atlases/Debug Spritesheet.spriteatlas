@@ -44,7 +44,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 588122
+    totalSpriteSurfaceArea: 588522
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -610,6 +610,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 8a2ed769065b483468ebcf80773727c8, type: 3}
   - {fileID: 21300000, guid: 7d848f0a7b3d2a347a11c6f54f001302, type: 3}
   - {fileID: 21300000, guid: ea8ded5a51206ac4ca7f3f58a4581470, type: 3}
+  - {fileID: 21300000, guid: 6e77e66a861ef54449de2703b98d0610, type: 3}
   - {fileID: 21300000, guid: ddeb8a6a86fde974c83e4472f06b8ed7, type: 3}
   - {fileID: -4048028670941725383, guid: 7b1171da432fd154c911865c3c036125, type: 3}
   - {fileID: -3522093265501685102, guid: 7b1171da432fd154c911865c3c036125, type: 3}
@@ -1234,6 +1235,7 @@ SpriteAtlas:
   - StoneTower
   - CardDetails
   - Button
+  - Dust
   - CardBack
   - naked_orc_2
   - naked_orc_3

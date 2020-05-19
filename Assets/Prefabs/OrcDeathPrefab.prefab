@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 118660022}
   - component: {fileID: 118660021}
   - component: {fileID: 8735370098217963464}
+  - component: {fileID: 4417026154377639795}
   m_Layer: 8
   m_Name: SmallShoulders
   m_TagString: Untagged
@@ -88,8 +89,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 141935939
-  m_SortingLayer: 4
+  m_SortingLayerID: 1854515849
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -116,6 +117,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeSpeed: 1
   Delay: 1
+--- !u!114 &4417026154377639795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118660018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196ed58f75aa3b84d80541c96d277c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &193649255
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,6 +141,7 @@ GameObject:
   - component: {fileID: 193649259}
   - component: {fileID: 193649258}
   - component: {fileID: 7779971758699679264}
+  - component: {fileID: 1844462559183914691}
   m_Layer: 8
   m_Name: WarBanner
   m_TagString: Untagged
@@ -204,8 +218,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 141935939
-  m_SortingLayer: 4
+  m_SortingLayerID: 1854515849
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -232,6 +246,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeSpeed: 1
   Delay: 1
+--- !u!114 &1844462559183914691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193649255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196ed58f75aa3b84d80541c96d277c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &571712151
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +270,7 @@ GameObject:
   - component: {fileID: 571712155}
   - component: {fileID: 571712154}
   - component: {fileID: 7069666778301722155}
+  - component: {fileID: 5815548036260598061}
   m_Layer: 8
   m_Name: Boots
   m_TagString: Untagged
@@ -320,8 +347,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 141935939
-  m_SortingLayer: 4
+  m_SortingLayerID: 1854515849
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -348,6 +375,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeSpeed: 1
   Delay: 1
+--- !u!114 &5815548036260598061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571712151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196ed58f75aa3b84d80541c96d277c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &774250790
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,6 +399,7 @@ GameObject:
   - component: {fileID: 774250794}
   - component: {fileID: 774250793}
   - component: {fileID: 234345892637465260}
+  - component: {fileID: 8708687621442080399}
   m_Layer: 8
   m_Name: LargeShoulders
   m_TagString: Untagged
@@ -436,8 +476,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 141935939
-  m_SortingLayer: 4
+  m_SortingLayerID: 1854515849
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -464,6 +504,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeSpeed: 1
   Delay: 1
+--- !u!114 &8708687621442080399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774250790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196ed58f75aa3b84d80541c96d277c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &835646925
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,6 +528,7 @@ GameObject:
   - component: {fileID: 835646929}
   - component: {fileID: 835646928}
   - component: {fileID: 8962335389112289506}
+  - component: {fileID: 8564575240278982065}
   m_Layer: 8
   m_Name: SmallHelm
   m_TagString: Untagged
@@ -552,8 +605,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 141935939
-  m_SortingLayer: 4
+  m_SortingLayerID: 1854515849
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -580,6 +633,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeSpeed: 1
   Delay: 1
+--- !u!114 &8564575240278982065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835646925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196ed58f75aa3b84d80541c96d277c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1141599285
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +657,7 @@ GameObject:
   - component: {fileID: 1141599289}
   - component: {fileID: 1141599288}
   - component: {fileID: 6993345953979246698}
+  - component: {fileID: 6710439873924570733}
   m_Layer: 8
   m_Name: LargeHelm
   m_TagString: Untagged
@@ -668,8 +734,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 141935939
-  m_SortingLayer: 4
+  m_SortingLayerID: 1854515849
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -696,6 +762,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeSpeed: 1
   Delay: 1
+--- !u!114 &6710439873924570733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141599285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196ed58f75aa3b84d80541c96d277c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1310624888
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,6 +786,7 @@ GameObject:
   - component: {fileID: 1310624892}
   - component: {fileID: 1310624891}
   - component: {fileID: 4658146617746694641}
+  - component: {fileID: 4253325010053272088}
   m_Layer: 8
   m_Name: Sword
   m_TagString: Untagged
@@ -784,8 +863,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 141935939
-  m_SortingLayer: 4
+  m_SortingLayerID: 1854515849
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -812,6 +891,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeSpeed: 1
   Delay: 1
+--- !u!114 &4253325010053272088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310624888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196ed58f75aa3b84d80541c96d277c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1470774309
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,8 +913,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1470774310}
   - component: {fileID: 1470774311}
-  - component: {fileID: 8775891005862204237}
   - component: {fileID: 1162265701391592737}
+  - component: {fileID: 6831208676393820909}
   m_Layer: 8
   m_Name: Shadow
   m_TagString: Untagged
@@ -881,8 +972,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1370460231
-  m_SortingLayer: 6
+  m_SortingLayerID: 1854515849
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 3110829806665180078, guid: d2787fbd0650a8d4bae38aca2e9dc346,
     type: 3}
@@ -896,20 +987,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8775891005862204237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470774309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2eefa0fffe8ff9e4c8b5ac2a317ebc79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeSpeed: 1
-  Delay: 1
 --- !u!114 &1162265701391592737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,6 +1001,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeSpeed: 1
   Delay: 1
+--- !u!114 &6831208676393820909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470774309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196ed58f75aa3b84d80541c96d277c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1516844476
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,6 +1025,7 @@ GameObject:
   - component: {fileID: 1516844480}
   - component: {fileID: 1516844479}
   - component: {fileID: 4189825778952874918}
+  - component: {fileID: 2795620255759055378}
   m_Layer: 8
   m_Name: Shield
   m_TagString: Untagged
@@ -1012,8 +1102,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 141935939
-  m_SortingLayer: 4
+  m_SortingLayerID: 1854515849
+  m_SortingLayer: 5
   m_SortingOrder: 5
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1040,6 +1130,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeSpeed: 1
   Delay: 1
+--- !u!114 &2795620255759055378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516844476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196ed58f75aa3b84d80541c96d277c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8999386825054907695
 GameObject:
   m_ObjectHideFlags: 0
