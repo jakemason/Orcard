@@ -7,6 +7,7 @@ public class MapController : MonoBehaviour
     public static MapController Instance;
     public List<Transform> Waypoints;
     public GameObject Road;
+    public GameObject BuildingBlocker;
     public Dictionary<Vector2, bool> IsSpaceOccupied;
 
     [Header("Path Sprites")]
@@ -86,10 +87,11 @@ public class MapController : MonoBehaviour
         //we need to do this loop twice, once for each "pair of points"
         for (int i = 0; i <= branchPointsToCreate / 2; i += 2)
         {
-            int yDistance = Random.Range(-YBound, YBound + 1); //determine how "deep" the path offshoot will go
-            while (yDistance == PATH_DEFAULT_Y_POS)            //make sure we deviate from the natural path at 0
+            int yDistance = Random.Range(-YBound, YBound + 3); //determine how "deep" the path offshoot will go
+
+            while (yDistance == PATH_DEFAULT_Y_POS) //make sure we deviate from the natural path at 0
             {
-                yDistance = Random.Range(-YBound, YBound + 1);
+                yDistance = Random.Range(-YBound, YBound + 3);
             }
 
             //get our first set of points and determine how we close the gap between the two
@@ -97,6 +99,7 @@ public class MapController : MonoBehaviour
             for (int x = branchPoints[i] + dx; x != branchPoints[i + 1]; x += dx)
             {
                 Vector2 position = new Vector2(x, yDistance);
+                Instantiate(BuildingBlocker, position, Quaternion.identity);
                 GameObject go =
                     Instantiate(Road, position, Quaternion.identity);
                 SpriteRenderer rend = go.GetComponent<SpriteRenderer>();
@@ -107,9 +110,10 @@ public class MapController : MonoBehaviour
             int dy = PATH_DEFAULT_Y_POS < yDistance ? 1 : -1;
             for (int y = PATH_DEFAULT_Y_POS; y != yDistance + dy; y += dy)
             {
-                Vector2        position = new Vector2(branchPoints[i], y);
-                GameObject     go       = Instantiate(Road, position, Quaternion.identity);
-                SpriteRenderer rend     = go.GetComponent<SpriteRenderer>();
+                Vector2 position = new Vector2(branchPoints[i], y);
+                Instantiate(BuildingBlocker, position, Quaternion.identity);
+                GameObject     go   = Instantiate(Road, position, Quaternion.identity);
+                SpriteRenderer rend = go.GetComponent<SpriteRenderer>();
                 //determine sprite type, either it turns or it's a vertical
                 if (y == PATH_DEFAULT_Y_POS)
                 {
@@ -125,8 +129,9 @@ public class MapController : MonoBehaviour
                 }
 
                 position = new Vector2(branchPoints[i + 1], y);
-                go       = Instantiate(Road, position, Quaternion.identity);
-                rend     = go.GetComponent<SpriteRenderer>();
+                Instantiate(BuildingBlocker, position, Quaternion.identity);
+                go   = Instantiate(Road, position, Quaternion.identity);
+                rend = go.GetComponent<SpriteRenderer>();
                 //determine sprite type, either it turns or it's a vertical
                 if (y == PATH_DEFAULT_Y_POS)
                 {
@@ -177,6 +182,7 @@ public class MapController : MonoBehaviour
         {
             if (x < branchPoints[0] || x > branchPoints[3])
             {
+                Instantiate(BuildingBlocker, new Vector2(x, PATH_DEFAULT_Y_POS), Quaternion.identity);
                 GameObject go =
                     Instantiate(Road, new Vector2(x, PATH_DEFAULT_Y_POS), Quaternion.identity);
                 SpriteRenderer rend = go.GetComponent<SpriteRenderer>();
@@ -185,6 +191,7 @@ public class MapController : MonoBehaviour
 
             if (x > branchPoints[1] && x < branchPoints[2])
             {
+                Instantiate(BuildingBlocker, new Vector2(x, PATH_DEFAULT_Y_POS), Quaternion.identity);
                 GameObject go =
                     Instantiate(Road, new Vector2(x, PATH_DEFAULT_Y_POS), Quaternion.identity);
                 SpriteRenderer rend = go.GetComponent<SpriteRenderer>();

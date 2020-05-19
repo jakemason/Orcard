@@ -10,7 +10,7 @@ public class ShopView : MonoBehaviour
     public GameObject ShopCardPrefab;
     private GridLayoutGroup _layoutGroup;
 
-    private void Start()
+    private void Awake()
     {
         if (Instance == null)
         {

@@ -111,6 +111,7 @@ namespace Players
             if (_freeDrawCooldown <= 0f)
             {
                 PlayerHand.DiscardHand();
+                ShopView.Disable();
                 Instance.Draw(Instance.CardsToDraw);
                 IncomeController.SetGold(0);
                 TurnManager.StartTurn();
