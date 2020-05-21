@@ -16,7 +16,7 @@ MonoBehaviour:
   Artwork: {fileID: 3355172955315020000, guid: fae3beae0334790438393168d3410343, type: 3}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
-  Rarity: 0
+  Rarity: 3
   Set: 0
   CastingCost: 2
   GoldCost: 1

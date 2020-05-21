@@ -56,7 +56,7 @@ public class CardList : MonoBehaviour
         {
             case Card.CardRarity.Common:
                 index = Random.Range(0, Instance.Commons.Cards.Count);
-                return Instance.AllCards.Cards[index];
+                return Instance.Commons.Cards[index];
 
             case Card.CardRarity.Uncommon:
                 index = Random.Range(0, Instance.Uncommons.Cards.Count);

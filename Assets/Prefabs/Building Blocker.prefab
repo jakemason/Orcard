@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sprite: {fileID: 0}
-  IsIndestructible: 0
+  IsIndestructible: 1
 --- !u!114 &1555809409726801762
 MonoBehaviour:
   m_ObjectHideFlags: 0

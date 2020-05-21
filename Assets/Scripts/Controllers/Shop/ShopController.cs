@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ShopController : MonoBehaviour
 {
@@ -36,7 +37,33 @@ public class ShopController : MonoBehaviour
 
         for (int i = 0; i < CardsToGenerate; i++)
         {
-            Card toAdd = CardList.GetRandomCard();
+            float roll = Random.Range(0, 1.0f);
+            Debug.Log(roll);
+            Card.CardRarity toPull;
+            if (roll > 0.95f)
+            {
+                Debug.LogFormat("Pulled a legendary with a roll of {0}", roll);
+
+                toPull = Card.CardRarity.Legendary;
+            }
+            else if (roll > 0.85f)
+            {
+                toPull = Card.CardRarity.Epic;
+            }
+            else if (roll > 0.7f)
+            {
+                toPull = Card.CardRarity.Rare;
+            }
+            else if (roll > 0.4f)
+            {
+                toPull = Card.CardRarity.Uncommon;
+            }
+            else
+            {
+                toPull = Card.CardRarity.Common;
+            }
+
+            Card toAdd = CardList.GetRandomCardOfRarity(toPull);
             while (_instance.AlwaysOnSale.Contains(toAdd))
             {
                 toAdd = CardList.GetRandomCard();

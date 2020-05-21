@@ -71,17 +71,21 @@ public class MapController : MonoBehaviour
     private void GenerateObstacles()
     {
         int obstaclesCreated = 0;
-        while (obstaclesCreated < ObstaclesToSpawn)
+        int crashControl     = 0;
+        while (obstaclesCreated < ObstaclesToSpawn && crashControl < 500)
         {
+            crashControl++;
             int     x   = Random.Range(-XBound, XBound + 1);
             int     y   = Random.Range(-YBound, YBound + 2);
             Vector2 pos = new Vector2(x, y);
             if (IsOccupied(pos)) continue;
 
-            int        spriteIndex = Random.Range(0, ObstacleSprites.Count);
-            GameObject obstacle    = Instantiate(BuildingBlocker, pos, Quaternion.identity);
-            obstacle.GetComponent<BuildingBlocker>().Sprite = ObstacleSprites[spriteIndex];
-            IsSpaceOccupied[pos]                            = true;
+            int             spriteIndex = Random.Range(0, ObstacleSprites.Count);
+            GameObject      obstacle    = Instantiate(BuildingBlocker, pos, Quaternion.identity);
+            BuildingBlocker blocker     = obstacle.GetComponent<BuildingBlocker>();
+            blocker.Sprite           = ObstacleSprites[spriteIndex];
+            blocker.IsIndestructible = false;
+            IsSpaceOccupied[pos]     = true;
             obstaclesCreated++;
         }
     }

@@ -8,6 +8,7 @@ public class IncomeController : MonoBehaviour
     private float _tickCountdown;
     public int CurrentGold;
     public int Income = 25;
+    public int GoldMultiplier = 1;
     public TextMeshProUGUI GoldText;
     public AudioClip ToPlay;
     public AudioSource AudioSource;
@@ -53,7 +54,16 @@ public class IncomeController : MonoBehaviour
 
     public static void ModifyGold(int modifier)
     {
-        _instance.CurrentGold += modifier;
+        if (_instance.CurrentGold > 0)
+        {
+            _instance.CurrentGold    += modifier * _instance.GoldMultiplier;
+            _instance.GoldMultiplier =  1;
+        }
+        else
+        {
+            _instance.CurrentGold += modifier;
+        }
+
         if (_instance.CurrentGold < 0)
         {
             _instance.CurrentGold = 0;
