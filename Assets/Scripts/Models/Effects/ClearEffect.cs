@@ -19,6 +19,6 @@ public class ClearEffect : Effect
 
     private void OnValidate()
     {
-        InstructionText = "Destroy target building.";
+        InstructionText = "Remove target boulder.";
     }
 }

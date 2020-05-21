@@ -8,6 +8,7 @@ public class MapController : MonoBehaviour
     public List<Transform> Waypoints;
     public GameObject Road;
     public GameObject BuildingBlocker;
+    public List<Sprite> ObstacleSprites;
     public Dictionary<Vector2, bool> IsSpaceOccupied;
 
     [Header("Path Sprites")]
@@ -18,6 +19,7 @@ public class MapController : MonoBehaviour
     public Sprite TopRight;
     public Sprite BottomRight;
 
+    public int ObstaclesToSpawn;
     public int PathDeviations = 2;
     public int XBound = 6;
     public int YBound = 2;
@@ -63,6 +65,25 @@ public class MapController : MonoBehaviour
         }
 
         SetupOccupiedSpaces();
+        GenerateObstacles();
+    }
+
+    private void GenerateObstacles()
+    {
+        int obstaclesCreated = 0;
+        while (obstaclesCreated < ObstaclesToSpawn)
+        {
+            int     x   = Random.Range(-XBound, XBound + 1);
+            int     y   = Random.Range(-YBound, YBound + 2);
+            Vector2 pos = new Vector2(x, y);
+            if (IsOccupied(pos)) continue;
+
+            int        spriteIndex = Random.Range(0, ObstacleSprites.Count);
+            GameObject obstacle    = Instantiate(BuildingBlocker, pos, Quaternion.identity);
+            obstacle.GetComponent<BuildingBlocker>().Sprite = ObstacleSprites[spriteIndex];
+            IsSpaceOccupied[pos]                            = true;
+            obstaclesCreated++;
+        }
     }
 
     private void GenerateRoads()

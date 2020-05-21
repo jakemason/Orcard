@@ -5868,12 +5868,14 @@ MonoBehaviour:
   - {fileID: 192411493}
   Road: {fileID: 9049447602628266027, guid: 0a316c44fdbe93245842d83e758f21ba, type: 3}
   BuildingBlocker: {fileID: 0}
+  ObstacleSprites: []
   Horizontal: {fileID: 0}
   Vertical: {fileID: 0}
   TopLeft: {fileID: 0}
   BottomLeft: {fileID: 0}
   TopRight: {fileID: 0}
   BottomRight: {fileID: 0}
+  ObstaclesToSpawn: 0
   PathDeviations: 2
   XBound: 6
   YBound: 3
@@ -10227,7 +10229,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 14
-      m_TileSpriteIndex: 13
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10675,15 +10677,15 @@ Tilemap:
   - m_RefCount: 3
     m_Data: {fileID: 4126366148125103089, guid: 0987e1fd67605a7419aec86ddbf65eee,
       type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -4111580768180999492, guid: 19a494217055bdb46ae7fadc6f5c597a,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: -7051401854849198812, guid: 19a494217055bdb46ae7fadc6f5c597a,
       type: 3}
@@ -22771,6 +22773,10 @@ MonoBehaviour:
   Road: {fileID: 9049447602628266027, guid: 0a316c44fdbe93245842d83e758f21ba, type: 3}
   BuildingBlocker: {fileID: 8878789811076951487, guid: 1a3320b6ff0882c4faf778f483f1f93c,
     type: 3}
+  ObstacleSprites:
+  - {fileID: -8263288546965418875, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
+  - {fileID: -263531156282637920, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
+  - {fileID: -5568114836611980537, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   Horizontal: {fileID: -5748478051470455444, guid: d3c6d6f25c1c02140ac02d840f9efc3b,
     type: 3}
   Vertical: {fileID: 2772654317961936060, guid: d3c6d6f25c1c02140ac02d840f9efc3b,
@@ -22782,6 +22788,7 @@ MonoBehaviour:
     type: 3}
   BottomRight: {fileID: -6176885982025608785, guid: d3c6d6f25c1c02140ac02d840f9efc3b,
     type: 3}
+  ObstaclesToSpawn: 12
   PathDeviations: 2
   XBound: 6
   YBound: 2
