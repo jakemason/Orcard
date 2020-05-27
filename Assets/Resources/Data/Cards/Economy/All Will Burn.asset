@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: All Will Burn
   m_EditorClassIdentifier: 
   Name: All Will Burn
-  Artwork: {fileID: 0}
+  Artwork: {fileID: 21300000, guid: 287a8d60bc9dc6142a2b596547240e7d, type: 3}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
   Rarity: 0

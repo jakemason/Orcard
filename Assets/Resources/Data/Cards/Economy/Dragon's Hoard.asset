@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dragon's Hoard
   m_EditorClassIdentifier: 
   Name: Dragon's Hoard
-  Artwork: {fileID: 0}
+  Artwork: {fileID: 21300000, guid: 2bce49a432022044abe48a431c11e248, type: 3}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
   Rarity: 4

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gold
   m_EditorClassIdentifier: 
   Name: Gold
-  Artwork: {fileID: 0}
+  Artwork: {fileID: 21300000, guid: b0cbc0057a93fc1449affd869228f4ed, type: 3}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
   Rarity: 0

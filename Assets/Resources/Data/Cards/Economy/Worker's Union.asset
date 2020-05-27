@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Worker's Union
   m_EditorClassIdentifier: 
   Name: Worker's Union
-  Artwork: {fileID: 6046889547396123030, guid: e7258ff8e7f52a546ae0c3c579adafd1, type: 3}
+  Artwork: {fileID: 21300000, guid: 9c3880e8333bc814d8e794e055a3cacd, type: 3}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
   Rarity: 1

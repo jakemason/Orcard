@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Silver
   m_EditorClassIdentifier: 
   Name: Silver
-  Artwork: {fileID: 0}
+  Artwork: {fileID: 21300000, guid: d4f62ace242a6b74ebbd9d3a33222d11, type: 3}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
   Rarity: 0

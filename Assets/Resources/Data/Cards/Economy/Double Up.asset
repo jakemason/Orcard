@@ -10,27 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
-  m_Name: Clearing Crew
+  m_Name: Double Up
   m_EditorClassIdentifier: 
-  Name: Clearing Crew
-  Artwork: {fileID: 21300000, guid: 4d2537b7d7dced148a8c59b68daeec27, type: 3}
+  Name: Double Up
+  Artwork: {fileID: 21300000, guid: 648342fe50911b64f97da0e5bd48fa63, type: 3}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
-  Rarity: 0
+  Rarity: 2
   Set: 0
-  CastingCost: 1
-  GoldCost: 2
-  CastingRequirements:
-  - {fileID: 11400000, guid: bb8039ff0cebbfa46b9d8f5e541f1bd7, type: 2}
+  CastingCost: 0
+  GoldCost: 0
+  CastingRequirements: []
   DestroyOnCast: 0
-  IsTargeted: 1
-  InstructionText: 'Remove target boulder.  '
+  IsTargeted: 0
+  InstructionText: '2X on your next income card.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
   OnDrawEffects: []
   ImmediateEffects:
-  - {fileID: 11400000, guid: ffbe1539cb060de418d1eb8bbcce680f, type: 2}
+  - {fileID: 11400000, guid: 28ece38547a56234da42158198d25a3c, type: 2}
   PermanentStartOfTurnEffects: []
   StartOfNextTurnEffects: []
   DiscardEffects: []

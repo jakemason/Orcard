@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Calibration
   m_EditorClassIdentifier: 
   Name: Calibration
-  Artwork: {fileID: 3355172955315020000, guid: fae3beae0334790438393168d3410343, type: 3}
+  Artwork: {fileID: 21300000, guid: 41dbb893c1bdf3c4fb1f989724ae7151, type: 3}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
   Rarity: 3

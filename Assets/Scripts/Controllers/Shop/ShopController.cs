@@ -41,8 +41,6 @@ public class ShopController : MonoBehaviour
             Card.CardRarity toPull;
             if (roll > 0.95f)
             {
-                Debug.LogFormat("Pulled a legendary with a roll of {0}", roll);
-
                 toPull = Card.CardRarity.Legendary;
             }
             else if (roll > 0.85f)
@@ -63,8 +61,6 @@ public class ShopController : MonoBehaviour
             }
 
             Card toAdd = CardList.GetRandomCardOfRarity(toPull);
-            Debug.Log(toAdd.Name);
-            Debug.Log(toPull);
             while (_instance.AlwaysOnSale.Contains(toAdd))
             {
                 toAdd = CardList.GetRandomCardOfRarity(toPull);

@@ -29,17 +29,10 @@ public class IncomeController : MonoBehaviour
         ModifyGold(Income);
     }
 
-    /*private void Update()
+    public static void SetMultiplier(int toSet)
     {
-        _tickCountdown -= Time.deltaTime;
-        if (_tickCountdown <= 0f)
-        {
-            ModifyGold(Income);
-            _tickCountdown    = SecondsBetweenIncomeTicks;
-            AudioSource.pitch = Random.Range(0.8f, 1.2f);
-            AudioSource.PlayOneShot(ToPlay);
-        }
-    }*/
+        _instance.GoldMultiplier = toSet;
+    }
 
     public static int GetCurrentGold()
     {
@@ -54,10 +47,12 @@ public class IncomeController : MonoBehaviour
 
     public static void ModifyGold(int modifier)
     {
-        if (_instance.CurrentGold > 0)
+        if (modifier > 0)
         {
-            _instance.CurrentGold    += modifier * _instance.GoldMultiplier;
-            _instance.GoldMultiplier =  1;
+            _instance.CurrentGold       += modifier * _instance.GoldMultiplier;
+            _instance.GoldMultiplier    =  1;
+            _instance.AudioSource.pitch =  Random.Range(0.8f, 1.2f);
+            _instance.AudioSource.PlayOneShot(_instance.ToPlay);
         }
         else
         {
