@@ -17,10 +17,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7eca666d2b0cec94ca9019ceed9cd500, type: 2}
   - {fileID: 11400000, guid: f9f00ea5a9bdf7143a165849c652eeed, type: 2}
   - {fileID: 11400000, guid: 7eca666d2b0cec94ca9019ceed9cd500, type: 2}
-  - {fileID: 11400000, guid: f9f00ea5a9bdf7143a165849c652eeed, type: 2}
-  - {fileID: 11400000, guid: 7eca666d2b0cec94ca9019ceed9cd500, type: 2}
-  - {fileID: 11400000, guid: f9f00ea5a9bdf7143a165849c652eeed, type: 2}
   TimeBetweenSpawns: 0.5
   RewardsSpecificRarity: 0
-  WaveDifficulty: 0
+  EstimatedDifficulty: 28
   ToReward: 0

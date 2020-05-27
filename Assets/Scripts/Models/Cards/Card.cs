@@ -13,6 +13,7 @@ public abstract class Card : ScriptableObject
         Rare,
         Epic,
         Legendary,
+        COUNT
     }
 
     public enum CardSet

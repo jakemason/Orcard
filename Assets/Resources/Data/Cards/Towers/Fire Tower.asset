@@ -37,10 +37,10 @@ MonoBehaviour:
   BoltPrefab: {fileID: 4748081343559320588, guid: be2befc9997d8c749997b5c06b973628,
     type: 3}
   ConstructionEffect: {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
-  Damage: 10
+  Damage: 2
   AttacksPerSecond: 3
   AttackMovementSpeed: 15
   Range: 3
   MaxAmmo: 10
-  DamagePerSecond: 30
+  DamagePerSecond: 6
   AttackRate: 0.33333334

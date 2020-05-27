@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95da488a8cc8ff544be2d43481516674, type: 3}
-  m_Name: Draw 2 Cards.
+  m_Name: +2 Cards Per Draw.
   m_EditorClassIdentifier: 
-  InstructionText: Draw 2 Cards.
+  InstructionText: +2 Cards Per Draw.
   CardsToDraw: 2

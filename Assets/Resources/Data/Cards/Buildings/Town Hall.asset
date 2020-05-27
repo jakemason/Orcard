@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 803c8e835c795ec4fa28bafff19c52af, type: 3}
+  m_Name: Town Hall
+  m_EditorClassIdentifier: 
+  Name: Town Hall
+  Artwork: {fileID: 3026481129129124308, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
+  ArtworkOffset: {x: 0, y: 5}
+  ArtworkScale: {x: 1.1, y: 1.1}
+  Rarity: 3
+  Set: 0
+  CastingCost: 5
+  GoldCost: 7
+  CastingRequirements:
+  - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
+  DestroyOnCast: 1
+  IsTargeted: 1
+  InstructionText: '+2 Card Per Draws. Destroy this card.  '
+  AdditionalInstructionText: 
+  OverrideDefaultInstructionText: 
+  FlavorText: The merchants of Elandia are known for their exotic goods and tireless
+    haggling.
+  OnDrawEffects: []
+  ImmediateEffects:
+  - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
+  - {fileID: 11400000, guid: 0142fd251243dea4cb05a11225a00429, type: 2}
+  EachTurnEffects: []
+  IsIndestructible: 0
+  Shadow: {fileID: -9042556985643711739, guid: 00fb8ee11c7b54a46ba7377f52ef469c, type: 3}

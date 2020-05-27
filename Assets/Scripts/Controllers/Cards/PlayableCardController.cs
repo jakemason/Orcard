@@ -15,7 +15,6 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     public Vector3 TargetPosition = Vector3.negativeInfinity;
     public Vector3 TargetRotation = Vector3.negativeInfinity;
     public Vector3 TargetScale = new Vector3(1, 1, 1);
-    public ParticleSystem ParticleSystem;
     
     //this needs to be static because we don't want to ever drag more than one card at a time.
     //if this _isn't_ static we get weird SiblingIndex issues when we don't actually finish a cast.
@@ -46,7 +45,6 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         _trans = GetComponent<RectTransform>();
         CardRenderer cardRenderer = GetComponent<CardRenderer>();
         CardObject = cardRenderer.CardObject;
-        ParticleSystem.Stop();
 
         //NOTE: 
         //Here we keep an original copy of the card so that we can create effects that modify the card,
@@ -109,10 +107,6 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (MarkedForDestruction || _isDragging) return;
-        if (IncomeController.GetCurrentGold() >= CardObject.CastingCost)
-        {
-            ParticleSystem.Play();
-        }
 
         TargetPosition      = RestingPosition + HoverOffset;
         TargetRotation      = Vector3.zero;
@@ -124,7 +118,6 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     public void OnPointerExit(PointerEventData eventData)
     {
         if (MarkedForDestruction || _isDragging) return;
-        ParticleSystem.Stop();
         TargetPosition = RestingPosition;
         TargetRotation = RestingRotation;
         TargetScale    = Vector3.one;
@@ -138,7 +131,6 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
             return;
         }
 
-        ParticleSystem.Play();
         MovementDisabled   = true;
         transform.position = Input.mousePosition;
 
@@ -158,7 +150,6 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
     {
         _isDragging      = false;
         MovementDisabled = false;
-        ParticleSystem.Stop();
 
 
         if (MarkedForDestruction) return;

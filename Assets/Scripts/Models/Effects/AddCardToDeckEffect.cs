@@ -6,17 +6,19 @@ using UnityEngine;
 public class AddCardToDeckEffect : Effect
 {
     public Card.CardRarity RarityToAdd;
+    public bool RandomRarity;
 
     public override void Activate()
     {
-        Card toAdd = CardList.GetRandomCardOfRarity(RarityToAdd);
+        Card toAdd = RandomRarity ? CardList.GetRandomCard() : CardList.GetRandomCardOfRarity(RarityToAdd);
         PlayerController.Instance.DeckForCurrentRun.Cards.Add(toAdd);
     }
 
 #if UNITY_EDITOR
     public void OnValidate()
     {
-        InstructionText = "Add a " + RarityToAdd + " card to your deck.";
+        InstructionText =
+            RandomRarity ? "Add a random card to your deck." : "Add a " + RarityToAdd + " card to your deck.";
 
         string assetPath = AssetDatabase.GetAssetPath(GetInstanceID());
         AssetDatabase.RenameAsset(assetPath, InstructionText);

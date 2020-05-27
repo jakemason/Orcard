@@ -15,10 +15,7 @@ MonoBehaviour:
   EnemiesInWave:
   - {fileID: 11400000, guid: f9f00ea5a9bdf7143a165849c652eeed, type: 2}
   - {fileID: 11400000, guid: f9f00ea5a9bdf7143a165849c652eeed, type: 2}
-  - {fileID: 11400000, guid: f9f00ea5a9bdf7143a165849c652eeed, type: 2}
-  - {fileID: 11400000, guid: f9f00ea5a9bdf7143a165849c652eeed, type: 2}
-  - {fileID: 11400000, guid: f9f00ea5a9bdf7143a165849c652eeed, type: 2}
   TimeBetweenSpawns: 0.5
   RewardsSpecificRarity: 0
-  WaveDifficulty: 0
+  EstimatedDifficulty: 10
   ToReward: 0

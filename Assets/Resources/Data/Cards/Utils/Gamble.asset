@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
-  m_Name: Worker's Union
+  m_Name: Gamble
   m_EditorClassIdentifier: 
-  Name: Worker's Union
-  Artwork: {fileID: 6046889547396123030, guid: e7258ff8e7f52a546ae0c3c579adafd1, type: 3}
+  Name: Gamble
+  Artwork: {fileID: 0}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
-  Rarity: 1
+  Rarity: 0
   Set: 0
-  CastingCost: 1
-  GoldCost: 1
+  CastingCost: 3
+  GoldCost: 5
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0
-  InstructionText: 'For each other Worker''s Union in hand, +1 Gold.  '
+  InstructionText: 'Add a random card to your deck.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
   OnDrawEffects: []
   ImmediateEffects:
-  - {fileID: 11400000, guid: 92e65ff54be48b741aed135149710bab, type: 2}
+  - {fileID: 11400000, guid: c3d6570c2f2d74f44a9f6d821befb90d, type: 2}
   PermanentStartOfTurnEffects: []
   StartOfNextTurnEffects: []
   DiscardEffects: []

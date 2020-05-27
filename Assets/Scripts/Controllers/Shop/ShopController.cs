@@ -37,8 +37,7 @@ public class ShopController : MonoBehaviour
 
         for (int i = 0; i < CardsToGenerate; i++)
         {
-            float roll = Random.Range(0, 1.0f);
-            Debug.Log(roll);
+            float           roll = Random.Range(0, 1.0f);
             Card.CardRarity toPull;
             if (roll > 0.95f)
             {
@@ -64,9 +63,11 @@ public class ShopController : MonoBehaviour
             }
 
             Card toAdd = CardList.GetRandomCardOfRarity(toPull);
+            Debug.Log(toAdd.Name);
+            Debug.Log(toPull);
             while (_instance.AlwaysOnSale.Contains(toAdd))
             {
-                toAdd = CardList.GetRandomCard();
+                toAdd = CardList.GetRandomCardOfRarity(toPull);
             }
 
             OnSale.Add(toAdd);

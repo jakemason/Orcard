@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: -7548337415098396207
     second: guard_tower
+  - first:
+      213: -1062826434485080637
+    second: tower_medium
+  - first:
+      213: -1279817741673165078
+    second: towers_all_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -95,7 +101,7 @@ TextureImporter:
       name: guard_tower
       rect:
         serializedVersion: 2
-        x: 260
+        x: 340
         y: 0
         width: 20
         height: 40
@@ -116,7 +122,7 @@ TextureImporter:
       name: stone_tower
       rect:
         serializedVersion: 2
-        x: 280
+        x: 360
         y: 0
         width: 20
         height: 40
@@ -129,6 +135,27 @@ TextureImporter:
       bones: []
       spriteID: 2accde3966b433960800000000000000
       internalID: 7580485501735259298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: towers_all_0
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 40
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd2f9a2df41041f0800000000000000
+      internalID: -1062826434485080637
       vertices: []
       indices: 
       edges: []
