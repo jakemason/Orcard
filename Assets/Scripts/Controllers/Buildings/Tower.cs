@@ -65,7 +65,7 @@ public class Tower : Building, ITargetable
         //RemainingAmmo--; //TODO: !=============== Uncomment to re-enable ammo functionality =====================!
         if (RemainingAmmo <= 0)
         {
-            _reloadAnimation = Instantiate(BuildingManager.Instance.ReloadAnimation, transform.position,
+            _reloadAnimation = Instantiate(BuildingManager.GetReloadAnimation(), transform.position,
                 Quaternion.identity);
         }
     }

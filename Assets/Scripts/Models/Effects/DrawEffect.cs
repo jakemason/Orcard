@@ -21,4 +21,8 @@ public class DrawEffect : Effect
     {
         PlayerController.Instance.CardsToDraw += CardsToDraw;
     }
+
+    public override void Deactivate()
+    {
+    }
 }

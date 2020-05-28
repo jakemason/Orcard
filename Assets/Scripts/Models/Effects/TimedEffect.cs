@@ -34,4 +34,8 @@ public class TimedEffect : Effect
     {
         TurnManager.TimedEffects.Add(this);
     }
+
+    public override void Deactivate()
+    {
+    }
 }

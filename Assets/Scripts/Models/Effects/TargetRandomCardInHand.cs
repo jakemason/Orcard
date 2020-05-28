@@ -14,4 +14,8 @@ public class TargetRandomCardInHand : Effect
         int index = Random.Range(0, PlayerHand.Instance.HeldCards.Count);
         SpellCast.Target = PlayerHand.Instance.HeldCards[index].GetComponent<CardRenderer>();
     }
+
+    public override void Deactivate()
+    {
+    }
 }

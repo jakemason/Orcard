@@ -11,6 +11,10 @@ public class GoldEffect : Effect
         IncomeController.ModifyGold(GoldModifier);
     }
 
+    public override void Deactivate()
+    {
+    }
+
 #if UNITY_EDITOR
     public void OnValidate()
     {

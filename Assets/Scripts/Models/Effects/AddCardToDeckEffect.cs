@@ -14,6 +14,10 @@ public class AddCardToDeckEffect : Effect
         PlayerController.Instance.DeckForCurrentRun.Cards.Add(toAdd);
     }
 
+    public override void Deactivate()
+    {
+    }
+
 #if UNITY_EDITOR
     public void OnValidate()
     {

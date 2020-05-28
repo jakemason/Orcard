@@ -31,7 +31,7 @@ public class TowerUpgradeEffect : Effect
                 UpgradeSingleTower(tower);
                 break;
             case TargetType.All:
-                foreach (KeyValuePair<Vector2, Building> valuePair in BuildingManager.Instance.ConstructedBuildings)
+                foreach (KeyValuePair<Vector2, Building> valuePair in BuildingManager.GetBuildings())
                 {
                     Tower towerCast = valuePair.Value as Tower;
                     if (towerCast != null)
@@ -44,6 +44,10 @@ public class TowerUpgradeEffect : Effect
             default:
                 throw new ArgumentOutOfRangeException();
         }
+    }
+
+    public override void Deactivate()
+    {
     }
 
     private void UpgradeSingleTower(Tower tower)

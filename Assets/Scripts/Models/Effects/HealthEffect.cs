@@ -11,6 +11,10 @@ public class HealthEffect : Effect
         Core.Instance.Health += HealthModifier;
     }
 
+    public override void Deactivate()
+    {
+    }
+
 #if UNITY_EDITOR
     public void OnValidate()
     {

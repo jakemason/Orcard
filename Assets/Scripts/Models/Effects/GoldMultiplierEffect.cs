@@ -11,6 +11,10 @@ public class GoldMultiplierEffect : Effect
         IncomeController.SetMultiplier(Multiplier);
     }
 
+    public override void Deactivate()
+    {
+    }
+
 #if UNITY_EDITOR
     public void OnValidate()
     {

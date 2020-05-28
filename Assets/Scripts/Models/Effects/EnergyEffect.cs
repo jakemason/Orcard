@@ -11,6 +11,10 @@ public class EnergyEffect : Effect
     {
         //PlayerController.Instance.RemainingEnergy += EnergyModifier;
     }
+
+    public override void Deactivate()
+    {
+    }
 #if UNITY_EDITOR
     public void OnValidate()
     {

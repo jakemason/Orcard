@@ -7,6 +7,7 @@ public class PerCardInHandEffect : Effect
 {
     public Card CardToCount;
     public List<Effect> EffectsPerCardInHand;
+
     public override void Activate()
     {
         foreach (Card card in PlayerHand.Instance.GetHeldCardsData())
@@ -19,6 +20,10 @@ public class PerCardInHandEffect : Effect
                 effect.Activate();
             }
         }
+    }
+
+    public override void Deactivate()
+    {
     }
 #if UNITY_EDITOR
     public void OnValidate()

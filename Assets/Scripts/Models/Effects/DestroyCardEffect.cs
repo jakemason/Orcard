@@ -31,4 +31,8 @@ public class DestroyCardEffect : Effect
         {
         }
     }
+
+    public override void Deactivate()
+    {
+    }
 }

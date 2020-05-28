@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 //[ExecuteInEditMode]
 public class Building : MonoBehaviour, ITargetable
@@ -6,6 +7,7 @@ public class Building : MonoBehaviour, ITargetable
     // @formatter:off 
     public BuildingCard Model;
     public bool IsIndestructable;
+    public HashSet<Building> AffectedBy = new HashSet<Building>();
     // @formatter:on 
 
     public void DoStartOfTurnEffects()
@@ -17,6 +19,14 @@ public class Building : MonoBehaviour, ITargetable
                 effect.Activate();
             }
         }
+    }
+
+    public void OnConstruction()
+    {
+    }
+
+    public void OnDeconstruction()
+    {
     }
 
     public void DestroyBuilding()

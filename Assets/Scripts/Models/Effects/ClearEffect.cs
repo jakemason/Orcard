@@ -12,9 +12,15 @@ public class ClearEffect : Effect
         Building   target = BuildingManager.GetBuildingAt(pos);
         if (target != null && !target.IsIndestructable)
         {
-            BuildingManager.Instance.ConstructedBuildings.Remove(pos);
+            BuildingManager.RemoveBuilding(pos);
             target.DestroyBuilding();
+            target.OnDeconstruction();
         }
+    }
+
+    public override void Deactivate()
+    {
+        throw new System.NotImplementedException();
     }
 
     private void OnValidate()

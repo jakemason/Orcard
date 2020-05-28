@@ -25,4 +25,8 @@ public class DiscardEffect : Effect
 
         PlayerHand.DiscardCard(playableCard);
     }
+
+    public override void Deactivate()
+    {
+    }
 }

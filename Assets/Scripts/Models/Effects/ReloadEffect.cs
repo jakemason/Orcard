@@ -18,4 +18,8 @@ public class ReloadEffect : Effect
         Tower tower = SpellCast.Target as Tower;
         if (tower != null) tower.Reload();
     }
+
+    public override void Deactivate()
+    {
+    }
 }
