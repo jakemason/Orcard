@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Training Hall
   Artwork: {fileID: -3875173988802375285, guid: ef5256474c2daec409239ef33cb92c78,
     type: 3}
-  ArtworkOffset: {x: 0, y: 35}
+  ArtworkOffset: {x: 0, y: 17}
   ArtworkScale: {x: 1.5, y: 1.5}
   Rarity: 0
   Set: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
   DestroyOnCast: 1
   IsTargeted: 1
-  InstructionText: 'Destroy this card.  '
+  InstructionText: 'Destroy this card.  For adjacent towers, +1 Damage. '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 

@@ -53,15 +53,18 @@ public class BuildingManager : MonoBehaviour
          * its neighbours to see if there's an adjacency effect we need to apply to the newly constructed building.
          * This might just be a performance killer for mobile though -- there's gotta be a better way to do this.
          */
-        List<Vector2> positionsToCheck = new List<Vector2>();
-        positionsToCheck.Add(LastPositionTouched                + Vector2.up);    // N
-        positionsToCheck.Add(LastPositionTouched + Vector2.up   + Vector2.left);  // NW
-        positionsToCheck.Add(LastPositionTouched + Vector2.up   + Vector2.right); // NE
-        positionsToCheck.Add(LastPositionTouched                + Vector2.down);  // S
-        positionsToCheck.Add(LastPositionTouched + Vector2.down + Vector2.left);  // SW
-        positionsToCheck.Add(LastPositionTouched + Vector2.down + Vector2.right); // SE
-        positionsToCheck.Add(LastPositionTouched                + Vector2.right); // E
-        positionsToCheck.Add(LastPositionTouched                + Vector2.left);  // W
+        List<Vector2> positionsToCheck = new List<Vector2>
+        {
+            LastPositionTouched                + Vector2.up,    // N
+            LastPositionTouched + Vector2.up   + Vector2.left,  // NW
+            LastPositionTouched + Vector2.up   + Vector2.right, // NE
+            LastPositionTouched                + Vector2.down,  // S
+            LastPositionTouched + Vector2.down + Vector2.left,  // SW
+            LastPositionTouched + Vector2.down + Vector2.right, // SE
+            LastPositionTouched                + Vector2.right, // E
+            LastPositionTouched                + Vector2.left   // W
+        };
+
 
         foreach (Vector2 position in positionsToCheck)
         {
@@ -94,15 +97,17 @@ public class BuildingManager : MonoBehaviour
          * its neighbours to see if there's an adjacency effect we need to apply to the newly constructed building.
          * This might just be a performance killer for mobile though -- there's gotta be a better way to do this.
          */
-        List<Vector2> positionsToCheck = new List<Vector2>();
-        positionsToCheck.Add(LastPositionTouched                + Vector2.up);    // N
-        positionsToCheck.Add(LastPositionTouched + Vector2.up   + Vector2.left);  // NW
-        positionsToCheck.Add(LastPositionTouched + Vector2.up   + Vector2.right); // NE
-        positionsToCheck.Add(LastPositionTouched                + Vector2.down);  // S
-        positionsToCheck.Add(LastPositionTouched + Vector2.down + Vector2.left);  // SW
-        positionsToCheck.Add(LastPositionTouched + Vector2.down + Vector2.right); // SE
-        positionsToCheck.Add(LastPositionTouched                + Vector2.right); // E
-        positionsToCheck.Add(LastPositionTouched                + Vector2.left);  // W
+        List<Vector2> positionsToCheck = new List<Vector2>
+        {
+            LastPositionTouched                + Vector2.up,    // N
+            LastPositionTouched + Vector2.up   + Vector2.left,  // NW
+            LastPositionTouched + Vector2.up   + Vector2.right, // NE
+            LastPositionTouched                + Vector2.down,  // S
+            LastPositionTouched + Vector2.down + Vector2.left,  // SW
+            LastPositionTouched + Vector2.down + Vector2.right, // SE
+            LastPositionTouched                + Vector2.right, // E
+            LastPositionTouched                + Vector2.left   // W
+        };
 
         foreach (Vector2 position in positionsToCheck)
         {

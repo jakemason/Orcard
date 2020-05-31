@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Wheat Field
   Artwork: {fileID: 6625692385018236696, guid: 6d51eed22b58dd84daae55d43c0498f7, type: 3}
-  ArtworkOffset: {x: 0, y: 35}
+  ArtworkOffset: {x: 0, y: 25}
   ArtworkScale: {x: 1.5, y: 1.5}
   Rarity: 0
   Set: 0
@@ -33,5 +33,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
   EachTurnEffects:
   - {fileID: 11400000, guid: 1924f6c32aa842f4fb7d58195c1112af, type: 2}
+  AdjacencyEffects: []
   IsIndestructible: 0
   Shadow: {fileID: 0}

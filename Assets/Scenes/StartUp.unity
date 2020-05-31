@@ -317,7 +317,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27147ed697d182a4295b9bf080c8d733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DurationInSeconds: 5
+  IsTimedTransition: 1
+  DurationInSeconds: 7
+  SceneToLoad: BattleScreen
+  SkipKey: 27
 --- !u!1 &1622695692
 GameObject:
   m_ObjectHideFlags: 0
