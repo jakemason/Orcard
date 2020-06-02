@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: Orc 4
   m_EditorClassIdentifier: 
   Name: Orc 4
-  Speed: 2
+  Speed: 1
   HP: 20
   MinSize: 1
   MaxSize: 1
-  Damage: 3
   FlavorText: 
   HasSword: 0
   HasSmallHelm: 1
@@ -27,4 +26,4 @@ MonoBehaviour:
   HasSmallShoulders: 1
   HasLargeShoulders: 0
   HasWarBanner: 0
-  OverallStrength: 25
+  OverallStrength: 21

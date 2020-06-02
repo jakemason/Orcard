@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95da488a8cc8ff544be2d43481516674, type: 3}
-  m_Name: +3 Cards Per Draw.
+  m_Script: {fileID: 11500000, guid: 979f65ee6caf40a49b29583b0fe24d7d, type: 3}
+  m_Name: Draw until you have 7 cards in hand.
   m_EditorClassIdentifier: 
-  InstructionText: +3 Cards Per Draw.
-  CardsToDraw: 3
+  InstructionText: Draw until you have 7 cards in hand.
+  CardsToDrawTo: 7
