@@ -44,7 +44,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 589322
+    totalSpriteSurfaceArea: 603322
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -373,6 +373,7 @@ SpriteAtlas:
   - {fileID: -1583952302052483730, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: 48797513864888106, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
   - {fileID: -8516813793510556873, guid: d3c6d6f25c1c02140ac02d840f9efc3b, type: 3}
+  - {fileID: 21300000, guid: 7141da8398dc18c45bdf62ff558c9deb, type: 3}
   - {fileID: 5084277337947421895, guid: 3b144a24cdc6e7744add10605c4529fe, type: 3}
   - {fileID: 3773020957806227119, guid: 3b144a24cdc6e7744add10605c4529fe, type: 3}
   - {fileID: -445130223215902809, guid: 3b144a24cdc6e7744add10605c4529fe, type: 3}
@@ -999,6 +1000,7 @@ SpriteAtlas:
   - ForestTiles_98
   - ForestTiles_39
   - ForestTiles_38
+  - NewBG
   - orc_death_sheet_21
   - orc_death_sheet_20
   - orc_death_sheet_23

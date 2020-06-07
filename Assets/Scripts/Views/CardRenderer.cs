@@ -88,8 +88,8 @@ public class CardRenderer : MonoBehaviour, ITargetable
                 throw new ArgumentOutOfRangeException();
         }
 
-        ArtworkBackground.color = BackgroundTint;
-        gameObject.name         = Name.text;
+        //ArtworkBackground.color = BackgroundTint;
+        gameObject.name = Name.text;
     }
 
 #if UNITY_EDITOR

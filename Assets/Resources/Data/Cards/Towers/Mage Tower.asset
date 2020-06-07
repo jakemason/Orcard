@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4731244ff9c864e43b691fbdfab4d381, type: 3}
-  m_Name: Fire Tower
+  m_Name: Mage Tower
   m_EditorClassIdentifier: 
-  Name: Fire Tower
-  Artwork: {fileID: 21300000, guid: 8a2ed769065b483468ebcf80773727c8, type: 3}
+  Name: Mage Tower
+  Artwork: {fileID: 21300000, guid: cd0aeb1442989a74e973c0fe9dd9c190, type: 3}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
   Rarity: 1
@@ -32,8 +32,9 @@ MonoBehaviour:
   ImmediateEffects:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
   EachTurnEffects: []
+  AdjacencyEffects: []
   IsIndestructible: 0
-  Shadow: {fileID: 0}
+  Shadow: {fileID: 3110829806665180078, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
   BoltPrefab: {fileID: 4748081343559320588, guid: be2befc9997d8c749997b5c06b973628,
     type: 3}
   ConstructionEffect: {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}

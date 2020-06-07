@@ -210,7 +210,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e3488d1e8ce377448a3c5c7910fce99f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7141da8398dc18c45bdf62ff558c9deb, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -809,7 +809,6 @@ MonoBehaviour:
   TargetPosition: {x: -Infinity, y: -Infinity, z: -Infinity}
   TargetRotation: {x: -Infinity, y: -Infinity, z: -Infinity}
   TargetScale: {x: 1, y: 1, z: 1}
-  ParticleSystem: {fileID: 0}
   MovementSpeed: 5
   DestroyMovementSpeed: 12
   MarkedForDestruction: 0

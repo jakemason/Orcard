@@ -32,8 +32,9 @@ MonoBehaviour:
   ImmediateEffects:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
   EachTurnEffects: []
+  AdjacencyEffects: []
   IsIndestructible: 0
-  Shadow: {fileID: 0}
+  Shadow: {fileID: 3110829806665180078, guid: d2787fbd0650a8d4bae38aca2e9dc346, type: 3}
   BoltPrefab: {fileID: 4748081343559320588, guid: be2befc9997d8c749997b5c06b973628,
     type: 3}
   ConstructionEffect: {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
