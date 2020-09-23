@@ -7,4 +7,9 @@ public class DeathScreen : MonoBehaviour
     {
         SceneManager.LoadScene("BattleScreen");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
