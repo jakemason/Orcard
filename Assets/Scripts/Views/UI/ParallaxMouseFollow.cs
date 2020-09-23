@@ -16,7 +16,7 @@ public class ParallaxMouseFollow : MonoBehaviour
         _startPos  = _transform.position;
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         Vector3 mousePos = Input.mousePosition;
         mousePos.x = Mathf.Clamp(mousePos.x, 0, Screen.width);
