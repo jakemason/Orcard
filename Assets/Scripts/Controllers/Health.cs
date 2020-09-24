@@ -8,8 +8,10 @@ public class Health : MonoBehaviour
     public int CurrentHealth;
     public bool MarkedForDeath;
     public GameObject DeathPrefab;
+    public GameObject CombatTextPrefab;
     public GameObject HealthBar;
     public GameObject RemainingHealth;
+
 
     private void Start()
     {
@@ -35,6 +37,8 @@ public class Health : MonoBehaviour
     {
         CurrentHealth -= damageToTake;
         HealthBar.SetActive(true);
+        DamageText.CreateCombatText(CombatTextPrefab, transform.position - Vector3.up,
+            damageToTake);
         Vector3 remainingHealthLength = Vector3.one;
         remainingHealthLength.x              = (float) CurrentHealth / (float) MaxHealth;
         RemainingHealth.transform.localScale = remainingHealthLength;

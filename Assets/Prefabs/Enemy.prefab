@@ -1088,6 +1088,8 @@ MonoBehaviour:
   MarkedForDeath: 0
   DeathPrefab: {fileID: 8999386825054907695, guid: e55a662b52be9f246b7891ffc88803b0,
     type: 3}
+  CombatTextPrefab: {fileID: 1501073423020443548, guid: f7d79b77e050b574ba874f335d863715,
+    type: 3}
   HealthBar: {fileID: 8175161418055103037}
   RemainingHealth: {fileID: 6557270593281312292}
 --- !u!61 &7687452411537442191
