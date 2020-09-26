@@ -22,6 +22,7 @@ MonoBehaviour:
   GoldCost: 4
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
+  - {fileID: 11400000, guid: ff116869c0b2aa243a06b2b0293f2503, type: 2}
   DestroyOnCast: 1
   IsTargeted: 1
   InstructionText: 'Simple, effective. '
@@ -32,6 +33,7 @@ MonoBehaviour:
   ImmediateEffects:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
   EachTurnEffects: []
+  AdjacencyEffects: []
   IsIndestructible: 0
   Shadow: {fileID: -8879989197353062235, guid: 00fb8ee11c7b54a46ba7377f52ef469c, type: 3}
   BoltPrefab: {fileID: 4748081343559320588, guid: be2befc9997d8c749997b5c06b973628,

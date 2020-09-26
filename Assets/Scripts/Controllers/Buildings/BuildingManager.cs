@@ -11,6 +11,8 @@ public class BuildingManager : MonoBehaviour
     private Dictionary<Vector2, Building> ConstructedBuildings;
 
     public static Vector2 LastPositionTouched;
+    public static int BuildingPermitsUsed = 0;
+    public static int BuildingPermitsAvailable = 3;
 
     private void Awake()
     {
@@ -36,9 +38,14 @@ public class BuildingManager : MonoBehaviour
         return _instance.ConstructedBuildings;
     }
 
-    public static void AddBuilding(Vector2 pos, Building building)
+    public static void AddBuilding(Vector2 pos, Building building, bool consumesPermit = true)
     {
         _instance.ConstructedBuildings.Add(pos, building);
+        if (consumesPermit)
+        {
+            BuildingPermitsUsed++;
+        }
+
         LastPositionTouched = pos;
         if (building.Model != null)
         {
@@ -80,9 +87,17 @@ public class BuildingManager : MonoBehaviour
         }
     }
 
-    public static void RemoveBuilding(Vector2 pos)
+    public static void RemoveBuilding(Vector2 pos, bool refundsPermit = true)
     {
         Building building = _instance.ConstructedBuildings[pos];
+        // NOTE: building.Model == null check here is an ugly hack for making sure we don't refund permits when
+        // removing Building Blocker entities. If we moved the Building Blocker system out of "Buildings" entirely we
+        // could sidestep this issue.
+        if (refundsPermit || building.Model == null)
+        {
+            BuildingPermitsUsed--;
+        }
+
         LastPositionTouched = pos;
         if (building.Model != null)
         {

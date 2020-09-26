@@ -22,6 +22,7 @@ MonoBehaviour:
   GoldCost: 6
   CastingRequirements:
   - {fileID: 11400000, guid: d283615051cf1db4b81c11f9306990e2, type: 2}
+  - {fileID: 11400000, guid: ff116869c0b2aa243a06b2b0293f2503, type: 2}
   DestroyOnCast: 1
   IsTargeted: 1
   InstructionText: '+1 Card Per Draw. Destroy this card.  '
@@ -34,5 +35,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
   - {fileID: 11400000, guid: 2142345634738f24db8c8b16370f4c9e, type: 2}
   EachTurnEffects: []
+  AdjacencyEffects: []
   IsIndestructible: 0
   Shadow: {fileID: -9042556985643711739, guid: 00fb8ee11c7b54a46ba7377f52ef469c, type: 3}

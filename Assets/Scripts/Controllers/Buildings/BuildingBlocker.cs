@@ -15,9 +15,9 @@ public class BuildingBlocker : MonoBehaviour
         int      xpos     = (int) position.x;
         Building b        = gameObject.AddComponent<Building>();
         b.IsIndestructable = IsIndestructible;
-        //TODO: Don't love that this clogs up the _actual_ buildings because we do scan that whole list occasionally
 
-        BuildingManager.AddBuilding(new Vector2(xpos, ypos), b);
+        //TODO: Don't love that this clogs up the _actual_ buildings because we do scan that whole list occasionally
+        BuildingManager.AddBuilding(new Vector2(xpos, ypos), b, false);
 
         SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer>();
         renderer.sprite = Sprite;

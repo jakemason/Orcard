@@ -23,6 +23,10 @@ public class DamageText : MonoBehaviour
         Color color = _text.color;
         color.a     = FadeTime / _startFadeTime;
         _text.color = color;
+        if (FadeTime <= 0.0f)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public static void CreateCombatText(GameObject combatTextPrefab, Vector3 pos, int damageDealt,
@@ -32,6 +36,6 @@ public class DamageText : MonoBehaviour
         GameObject combatText  = Instantiate(combatTextPrefab, pos + spawnOffset, Quaternion.identity);
         combatText.name = "Combat Text";
         TextMeshPro text = combatText.GetComponent<TextMeshPro>();
-        text.text = damageDealt.ToString();
+        text.text = "-" + damageDealt;
     }
 }
