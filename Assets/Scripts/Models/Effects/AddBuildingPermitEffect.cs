@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Building Permit Effect", menuName = "Effects/Building Permit Effect")]
-public class BuildingPermitEffect : Effect
+public class AddBuildingPermitEffect : Effect
 {
     public int PermitModifier = 1;
 

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
+  m_Name: Building Permit
+  m_EditorClassIdentifier: 
+  Name: Clearing Crew
+  Artwork: {fileID: 21300000, guid: c3750de744c330f4d927afb3cfffccf3, type: 3}
+  ArtworkOffset: {x: 0, y: 0}
+  ArtworkScale: {x: 1, y: 1}
+  Rarity: 1
+  Set: 0
+  CastingCost: 5
+  GoldCost: 3
+  CastingRequirements: []
+  DestroyOnCast: 0
+  IsTargeted: 0
+  InstructionText: '+1 Building Permit.  '
+  AdditionalInstructionText: 
+  OverrideDefaultInstructionText: 
+  FlavorText: 
+  OnDrawEffects: []
+  ImmediateEffects:
+  - {fileID: 11400000, guid: b74aa4ba3274d7143ac7b68b9bb795ea, type: 2}
+  PermanentStartOfTurnEffects: []
+  StartOfNextTurnEffects: []
+  DiscardEffects: []

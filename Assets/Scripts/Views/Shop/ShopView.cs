@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,6 +30,14 @@ public class ShopView : MonoBehaviour
         }
 
         _layoutGroup = ShopRoot.GetComponentInChildren<GridLayoutGroup>();
+    }
+
+    private void LateUpdate()
+    {
+        if (IsEnabled() && Input.GetKeyDown(KeyCode.Escape))
+        {
+            Disable();
+        }
     }
 
     public static void Toggle()
