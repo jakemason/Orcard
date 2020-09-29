@@ -10,26 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
-  m_Name: Building Permit
+  m_Name: Discard
   m_EditorClassIdentifier: 
-  Name: Clearing Crew
-  Artwork: {fileID: 21300000, guid: c3750de744c330f4d927afb3cfffccf3, type: 3}
+  Name: Discard
+  Artwork: {fileID: 21300000, guid: e3488d1e8ce377448a3c5c7910fce99f, type: 3}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
-  Rarity: 1
+  Rarity: 0
   Set: 0
-  CastingCost: 3
-  GoldCost: 3
-  CastingRequirements: []
+  CastingCost: 0
+  GoldCost: 0
+  CastingRequirements:
+  - {fileID: 11400000, guid: 9e0b292c5442cfb4981340330bd02502, type: 2}
   DestroyOnCast: 0
-  IsTargeted: 0
-  InstructionText: '+1 Building Permit.  '
+  IsTargeted: 1
+  InstructionText: 'Discard 1 Cards.  '
   AdditionalInstructionText: 
   OverrideDefaultInstructionText: 
   FlavorText: 
   OnDrawEffects: []
   ImmediateEffects:
-  - {fileID: 11400000, guid: b74aa4ba3274d7143ac7b68b9bb795ea, type: 2}
+  - {fileID: 11400000, guid: 6c718d18b2b58804f8bab32235e73222, type: 2}
   PermanentStartOfTurnEffects: []
   StartOfNextTurnEffects: []
   DiscardEffects: []

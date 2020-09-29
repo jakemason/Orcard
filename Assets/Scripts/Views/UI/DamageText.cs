@@ -32,8 +32,9 @@ public class DamageText : MonoBehaviour
     public static void CreateCombatText(GameObject combatTextPrefab, Vector3 pos, int damageDealt,
         bool wasCrit = false)
     {
-        Vector3    spawnOffset = new Vector3(0, 2, 0);
-        GameObject combatText  = Instantiate(combatTextPrefab, pos + spawnOffset, Quaternion.identity);
+        float      horizontalOffset = Random.Range(-0.2f, 0.2f);
+        Vector3    spawnOffset      = new Vector3(horizontalOffset, 2, 0);
+        GameObject combatText       = Instantiate(combatTextPrefab, pos + spawnOffset, Quaternion.identity);
         combatText.name = "Combat Text";
         TextMeshPro text = combatText.GetComponent<TextMeshPro>();
         text.text = "-" + damageDealt;

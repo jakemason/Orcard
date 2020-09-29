@@ -17,13 +17,10 @@ public class DiscardEffect : Effect
 
     public override void Activate()
     {
-        CardRenderer card = SpellCast.Target as CardRenderer;
+        PlayableCardController card = SpellCast.CardTarget as PlayableCardController;
         if (card == null) return;
 
-        PlayableCardController playableCard = card.gameObject.GetComponent<PlayableCardController>();
-        if (playableCard == null) return;
-
-        PlayerHand.DiscardCard(playableCard);
+        PlayerHand.DiscardCard(card);
     }
 
     public override void Deactivate()

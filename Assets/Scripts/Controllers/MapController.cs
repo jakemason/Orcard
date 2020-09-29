@@ -25,7 +25,7 @@ public class MapController : MonoBehaviour
     public int YBound = 2;
     private const int PATH_DEFAULT_Y_POS = 1;
     private readonly Vector2 _startPos = new Vector2(13, PATH_DEFAULT_Y_POS);
-    private readonly Vector2 _endPos = new Vector2(-23,  PATH_DEFAULT_Y_POS);
+    private readonly Vector2 _endPos = new Vector2(-10,  PATH_DEFAULT_Y_POS);
 
     //these are the anchors the orcs will move along asa they go from Transform to Transform
     public List<Vector2> PathingAnchors;

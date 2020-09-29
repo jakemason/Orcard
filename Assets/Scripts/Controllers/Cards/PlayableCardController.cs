@@ -1,4 +1,5 @@
-﻿using Players;
+﻿using System;
+using Players;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -106,6 +107,8 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        SpellCast.CardTarget = this;
+        Debug.Log("Card Target is now:" + SpellCast.CardTarget);
         if (MarkedForDestruction || _isDragging) return;
 
         TargetPosition      = RestingPosition + HoverOffset;
@@ -148,9 +151,15 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        // TODO: This is tricky because now we don't have a way to "cancel" a card we want have moved but don't
+        // want to cast. However, if we use the built-in OnDrop through Unity we can't "target" cards because they are
+        // on a layer above the playable card area. Maybe we do a manual raycast here and see if we hit a smaller
+        // "don't cast" area. Refer to Slay the Spire for this so we can do keyboard shortcuts too, the Unity system
+        // isn't good enough for us.
+        CardPlayableArea.PlayCard(eventData);
+
         _isDragging      = false;
         MovementDisabled = false;
-
 
         if (MarkedForDestruction) return;
         TargetPosition = RestingPosition;

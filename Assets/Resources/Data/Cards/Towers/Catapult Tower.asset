@@ -41,7 +41,7 @@ MonoBehaviour:
   ConstructionEffect: {fileID: 11400000, guid: 0d87b4585e54ba844a3cdfde6b1f4e46, type: 2}
   Damage: 5
   AttacksPerSecond: 0.5
-  AttackMovementSpeed: 5
+  AttackMovementSpeed: 10
   Range: 3
   MaxAmmo: 55
   DamagePerSecond: 2.5

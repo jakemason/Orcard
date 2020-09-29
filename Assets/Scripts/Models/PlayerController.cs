@@ -93,6 +93,13 @@ namespace Players
         public void Update()
         {
             UpdateDrawTimer();
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (_freeDrawCooldown <= 0f)
+                {
+                    DrawNewHand();
+                }
+            }
         }
 
         private void UpdateDrawTimer()

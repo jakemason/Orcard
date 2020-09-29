@@ -1,23 +1,33 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CardPlayableArea : MonoBehaviour, IDropHandler
+public class CardPlayableArea : MonoBehaviour
 {
     private Camera _camera;
+    private static CardPlayableArea _instance;
+
 
     private void Start()
     {
-        _camera = Camera.main;
+        if (_instance == null)
+        {
+            _instance = this;
+            _camera   = Camera.main;
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 
-    public void OnDrop(PointerEventData eventData)
+    public static void PlayCard(PointerEventData eventData)
     {
         PlayableCardController c = eventData.pointerDrag.GetComponent<PlayableCardController>();
         if (!c) return;
 
         SpellCast.AttemptingToCast = c.CardObject;
         SpellCast.LastCardPlayed   = c;
-        SpellCast.CastPosition     = _camera.ScreenPointToRay(eventData.position).origin;
+        SpellCast.CastPosition     = _instance._camera.ScreenPointToRay(eventData.position).origin;
 
         SpellCast.CastPosition = new Vector2(
             Mathf.RoundToInt(SpellCast.CastPosition.x),
@@ -29,4 +39,9 @@ public class CardPlayableArea : MonoBehaviour, IDropHandler
         PlayerHand.DiscardCard(c);
         SpellCast.Resolve();
     }
+
+    /*public void OnDrop(PointerEventData eventData)
+    {
+        Debug.Log("Attempting to cast a drop");
+    }*/
 }

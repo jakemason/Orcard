@@ -4,7 +4,9 @@ using UnityEngine;
 public static class SpellCast
 {
     public static ITargetable Target = null;
+    public static ITargetable CardTarget = null;
     public static PlayableCardController LastCardPlayed;
+    public static bool AwaitingCardTarget;
     public static Card AttemptingToCast = null;
     public static Vector2 CastPosition;
 
@@ -60,6 +62,7 @@ public static class SpellCast
     {
         if (IncomeController.GetCurrentGold() < AttemptingToCast.CastingCost)
         {
+            Debug.Log("Need more cash to do that");
             return false;
         }
 
@@ -67,6 +70,7 @@ public static class SpellCast
         {
             if (!requirement.RequirementMet())
             {
+                Debug.Log("Requirement: " + requirement.name + " not met.");
                 return false;
             }
         }

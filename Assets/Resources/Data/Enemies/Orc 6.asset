@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Orc 6
   m_EditorClassIdentifier: 
   Name: Orc 6
-  Speed: 1
+  Speed: 2
   HP: 25
   MinSize: 1
   MaxSize: 1
@@ -26,4 +26,4 @@ MonoBehaviour:
   HasSmallShoulders: 0
   HasLargeShoulders: 1
   HasWarBanner: 0
-  OverallStrength: 26
+  OverallStrength: 27

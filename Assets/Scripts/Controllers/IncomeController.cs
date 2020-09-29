@@ -26,7 +26,7 @@ public class IncomeController : MonoBehaviour
 
         _tickCountdown          = SecondsBetweenIncomeTicks;
         _instance.GoldText.text = CurrentGold.ToString();
-        ModifyGold(Income);
+        SetGold(Income);
     }
 
     public static void SetMultiplier(int toSet)

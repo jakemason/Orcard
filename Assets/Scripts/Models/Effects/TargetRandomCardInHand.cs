@@ -7,12 +7,12 @@ public class TargetRandomCardInHand : Effect
     {
         if (PlayerHand.Instance.HeldCards.Count == 0)
         {
-            SpellCast.Target = null;
+            SpellCast.CardTarget = null;
             return;
         }
 
         int index = Random.Range(0, PlayerHand.Instance.HeldCards.Count);
-        SpellCast.Target = PlayerHand.Instance.HeldCards[index].GetComponent<CardRenderer>();
+        SpellCast.CardTarget = PlayerHand.Instance.HeldCards[index].GetComponent<PlayableCardController>();
     }
 
     public override void Deactivate()

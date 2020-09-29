@@ -41,10 +41,13 @@ public class BuildingManager : MonoBehaviour
     public static void AddBuilding(Vector2 pos, Building building, bool consumesPermit = true)
     {
         _instance.ConstructedBuildings.Add(pos, building);
+        //TODO: Uncomment to enable "Building Permit" functionality
+        /*
         if (consumesPermit)
         {
             BuildingPermitsUsed++;
         }
+        */
 
         LastPositionTouched = pos;
         if (building.Model != null)
