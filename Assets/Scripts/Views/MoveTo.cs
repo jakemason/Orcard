@@ -27,6 +27,7 @@ public class MoveTo : MonoBehaviour
         }
         else
         {
+            if (!ScriptToEnable) return;
             ScriptToEnable.enabled = true;
         }
     }
