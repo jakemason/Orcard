@@ -662,6 +662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cost: {fileID: 1039223414}
+  PurchaseSound: {fileID: 0}
 --- !u!222 &37749228
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7746,6 +7747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cost: {fileID: 1801951818}
+  PurchaseSound: {fileID: 0}
 --- !u!222 &424484536
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17483,6 +17485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cost: {fileID: 148136328}
+  PurchaseSound: {fileID: 0}
 --- !u!222 &1003404090
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18060,6 +18063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cost: {fileID: 751411922}
+  PurchaseSound: {fileID: 0}
 --- !u!222 &1057021582
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24211,6 +24215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cost: {fileID: 1887369338}
+  PurchaseSound: {fileID: 0}
 --- !u!222 &1199362378
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26053,6 +26058,7 @@ MonoBehaviour:
   RedrawGoldCost: 25
   RedrawGoldIncrease: 5
   FreeDrawCooldownInSeconds: 3
+  DrawHandSound: {fileID: 8300000, guid: 5ff90594ed26fc344988e6f14d11d17d, type: 3}
   DrawButton: {fileID: 299553215}
   DrawCooldownText: {fileID: 273207806}
   RedrawCostIndicator: {fileID: 1730978793}
@@ -26229,7 +26235,7 @@ MonoBehaviour:
   Income: 25
   GoldMultiplier: 1
   GoldText: {fileID: 202445682}
-  ToPlay: {fileID: 8300000, guid: e7711b553639dbe4f940fd50aa2536dc, type: 3}
+  ToPlay: {fileID: 8300000, guid: 351efc860d31b574a8acab7ddbb2b372, type: 3}
   AudioSource: {fileID: 519420030}
 --- !u!114 &1511839249
 MonoBehaviour:
@@ -31522,7 +31528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 0.36078432}
+  m_Color: {r: 0, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -32510,6 +32516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cost: {fileID: 1718381548}
+  PurchaseSound: {fileID: 0}
 --- !u!222 &2107530816
 CanvasRenderer:
   m_ObjectHideFlags: 0

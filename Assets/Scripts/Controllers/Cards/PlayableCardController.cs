@@ -156,6 +156,11 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         // on a layer above the playable card area. Maybe we do a manual raycast here and see if we hit a smaller
         // "don't cast" area. Refer to Slay the Spire for this so we can do keyboard shortcuts too, the Unity system
         // isn't good enough for us.
+        // Ideally we probably want a flow of:
+        // - Drag / "Activate" card
+        // - Card goes into a "preparing to cast" mode
+        // - Target is chosen, if needed
+        // - Spell is cast
         CardPlayableArea.PlayCard(eventData);
 
         _isDragging      = false;

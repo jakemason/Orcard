@@ -22,6 +22,7 @@ namespace Players
         public int RedrawGoldCost = 25;
         public int RedrawGoldIncrease = 5;
         public int FreeDrawCooldownInSeconds = 15;
+        public AudioClip DrawHandSound;
         public Button DrawButton;
         public TextMeshProUGUI DrawCooldownText;
         public GameObject RedrawCostIndicator;
@@ -120,6 +121,7 @@ namespace Players
                 PlayerHand.DiscardHand();
                 ShopView.Disable();
                 Instance.Draw(Instance.CardsToDraw);
+                PlayOneShotSound.Play(Instance.DrawHandSound, 0.8f, 1.2f);
                 IncomeController.SetGold(0);
                 TurnManager.StartTurn();
             }

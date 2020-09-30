@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 public class ShopCardController : MonoBehaviour, IPointerDownHandler
 {
     public TextMeshProUGUI Cost;
+    public AudioClip PurchaseSound;
     private Card _card;
 
     public void Start()
@@ -22,6 +23,7 @@ public class ShopCardController : MonoBehaviour, IPointerDownHandler
         {
             PlayerController.Instance.DeckForCurrentRun.Cards.Add(GetComponent<CardRenderer>().CardObject);
             IncomeController.ModifyGold(-_card.GoldCost);
+            PlayOneShotSound.Play(PurchaseSound, 1.5f, 2.0f);
             Destroy(gameObject);
         }
     }

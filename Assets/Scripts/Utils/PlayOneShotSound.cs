@@ -13,4 +13,12 @@ public class PlayOneShotSound : MonoBehaviour
         source.PlayOneShot(ToPlay);
         source.pitch = 1.0f;
     }
+
+    public static void Play(AudioClip clip, float pitchMin, float pitchMax)
+    {
+        AudioSource source = Camera.main.GetComponent<AudioSource>();
+        source.pitch = Random.Range(pitchMin, pitchMax);
+        source.PlayOneShot(clip);
+        source.pitch = 1.0f;
+    }
 }
