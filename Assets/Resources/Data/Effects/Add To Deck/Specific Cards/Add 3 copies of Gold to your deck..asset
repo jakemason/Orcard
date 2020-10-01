@@ -10,7 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c754e8bfb2de9547be8587329568535, type: 3}
-  m_Name: Add a Legendary card to your deck.
-  m_EditorClassIdentifier: Assembly-CSharp::AddCardToDeck
-  InstructionText: Add a Legendary card to your deck.
-  RarityToAdd: 4
+  m_Name: Add 3 copies of Gold to your deck.
+  m_EditorClassIdentifier: 
+  InstructionText: Add 3 copies of Gold to your deck.
+  RarityToAdd: 0
+  CardToAdd: {fileID: 11400000, guid: 41e68a9b095a2a2489cc7aff0f81c13c, type: 2}
+  NumberOfCopiesToAdd: 3
+  RandomRarity: 0

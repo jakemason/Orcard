@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c754e8bfb2de9547be8587329568535, type: 3}
-  m_Name: Add a random card to your deck.
-  m_EditorClassIdentifier: Assembly-CSharp::AddCardToDeck
-  InstructionText: Add a random card to your deck.
-  RarityToAdd: 1
-  RandomRarity: 1
+  m_Script: {fileID: 11500000, guid: dbd063dd44d9d41489be76682c6d2f9b, type: 3}
+  m_Name: Destroy Target Card.
+  m_EditorClassIdentifier: 
+  InstructionText: Destroy Target Card.
+  DestroyHand: 0
+  DestroyAllOfThem: 0
+  CardsToDestroy: 1

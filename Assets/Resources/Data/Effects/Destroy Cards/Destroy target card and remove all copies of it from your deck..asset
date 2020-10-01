@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dbd063dd44d9d41489be76682c6d2f9b, type: 3}
-  m_Name: Destroy the cards in your hand.
+  m_Name: Destroy target card and remove all copies of it from your deck.
   m_EditorClassIdentifier: 
-  InstructionText: Destroy the cards in your hand.
-  DestroyHand: 1
-  DestroyAllOfThem: 0
+  InstructionText: Destroy target card and remove all copies of it from your deck.
+  DestroyHand: 0
+  DestroyAllOfThem: 1
   CardsToDestroy: 1

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
+  m_Name: Purge
+  m_EditorClassIdentifier: 
+  Name: Purge
+  Artwork: {fileID: 0}
+  ArtworkOffset: {x: 0, y: 0}
+  ArtworkScale: {x: 1, y: 1}
+  Rarity: 2
+  Set: 0
+  CastingCost: 4
+  GoldCost: 5
+  CastingRequirements:
+  - {fileID: 11400000, guid: 9e0b292c5442cfb4981340330bd02502, type: 2}
+  DestroyOnCast: 0
+  IsTargeted: 1
+  InstructionText: 'Destroy target card and remove all copies of it from your deck.  '
+  AdditionalInstructionText: 
+  OverrideDefaultInstructionText: 
+  FlavorText: 
+  OnDrawEffects: []
+  ImmediateEffects:
+  - {fileID: 11400000, guid: bbde3b2e4f4ccc9428a8264d5cd107a2, type: 2}
+  PermanentStartOfTurnEffects: []
+  StartOfNextTurnEffects: []
+  DiscardEffects: []

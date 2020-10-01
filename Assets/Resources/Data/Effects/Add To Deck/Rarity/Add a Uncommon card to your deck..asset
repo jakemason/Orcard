@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AddCardToDeck
   InstructionText: Add a Uncommon card to your deck.
   RarityToAdd: 1
+  CardToAdd: {fileID: 0}
   RandomRarity: 0

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
+  m_Name: Printing Press
+  m_EditorClassIdentifier: 
+  Name: Printing Press
+  Artwork: {fileID: 0}
+  ArtworkOffset: {x: 0, y: 0}
+  ArtworkScale: {x: 1, y: 1}
+  Rarity: 0
+  Set: 0
+  CastingCost: 3
+  GoldCost: 3
+  CastingRequirements: []
+  DestroyOnCast: 0
+  IsTargeted: 0
+  InstructionText: 'Add a Silver to your deck.  '
+  AdditionalInstructionText: 
+  OverrideDefaultInstructionText: 
+  FlavorText: 
+  OnDrawEffects: []
+  ImmediateEffects:
+  - {fileID: 11400000, guid: 409fcf73f0f654f4e99ef7f482bebd1b, type: 2}
+  PermanentStartOfTurnEffects: []
+  StartOfNextTurnEffects: []
+  DiscardEffects: []

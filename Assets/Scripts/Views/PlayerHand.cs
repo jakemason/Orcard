@@ -116,7 +116,7 @@ public class PlayerHand : MonoBehaviour
     /// Destroys a card in the player's hand, effectively removing it from their deck entirely.
     /// </summary>
     /// <param name="cardToDestroy">The card to destroy.</param>
-    public static void DestroyCard(PlayableCardController cardToDestroy)
+    public static void DestroyCardInHand(PlayableCardController cardToDestroy)
     {
         GameObject go = cardToDestroy.gameObject;
 
