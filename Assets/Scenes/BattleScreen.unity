@@ -26059,6 +26059,7 @@ MonoBehaviour:
   RedrawGoldIncrease: 5
   FreeDrawCooldownInSeconds: 3
   DrawHandSound: {fileID: 8300000, guid: 5ff90594ed26fc344988e6f14d11d17d, type: 3}
+  TowerAttackSound: {fileID: 8300000, guid: 47f09b8281e2f2c4285bf8b5c7ddbe60, type: 3}
   DrawButton: {fileID: 299553215}
   DrawCooldownText: {fileID: 273207806}
   RedrawCostIndicator: {fileID: 1730978793}

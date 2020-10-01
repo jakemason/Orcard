@@ -23,6 +23,7 @@ namespace Players
         public int RedrawGoldIncrease = 5;
         public int FreeDrawCooldownInSeconds = 15;
         public AudioClip DrawHandSound;
+        public AudioClip TowerAttackSound;
         public Button DrawButton;
         public TextMeshProUGUI DrawCooldownText;
         public GameObject RedrawCostIndicator;

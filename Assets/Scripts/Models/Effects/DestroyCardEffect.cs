@@ -55,6 +55,7 @@ public class DestroyCardEffect : Effect
             PlayableCardController target = SpellCast.CardTarget as PlayableCardController;
             if (target == null) return;
 
+            //TODO: String comparison, can we do some sort of ID system instead?
             PlayerController.Instance.DeckForCurrentRun.Cards.RemoveAll(x => x.Name == target.CardObject.Name);
             PlayerController.Instance.DiscardPile.RemoveAll(x => x.Name             == target.CardObject.Name);
 
@@ -62,6 +63,8 @@ public class DestroyCardEffect : Effect
             {
                 PlayableCardController cardInHand =
                     PlayerHand.Instance.HeldCards[i].GetComponent<PlayableCardController>();
+
+                //TODO: String comparison, can we do some sort of ID system instead?
                 if (target.CardObject.Name == cardInHand.CardObject.Name)
                 {
                     PlayerHand.DestroyCardInHand(cardInHand);

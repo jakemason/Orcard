@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Players;
 using UnityEngine;
 
 public class Tower : Building, ITargetable
@@ -11,6 +12,7 @@ public class Tower : Building, ITargetable
     private GameObject _currentTarget = null;
     public DrawCircle RangeIndicator;
     public int MaxAmmo;
+    public AudioClip FiringSound;
     private GameObject _reloadAnimation;
     private Animator _animationController;
     public int RemainingAmmo;
@@ -68,6 +70,8 @@ public class Tower : Building, ITargetable
             _reloadAnimation = Instantiate(BuildingManager.GetReloadAnimation(), transform.position,
                 Quaternion.identity);
         }
+
+        PlayOneShotSound.Play(PlayerController.Instance.TowerAttackSound, 0.5f, 1.5f, 0.1f);
     }
 
     public void Reload()

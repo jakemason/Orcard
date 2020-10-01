@@ -26,12 +26,7 @@ public class PauseMenu : MonoBehaviour
 
     public void AdjustSound(float value)
     {
-        //TODO: Can avoid searching here...
-        AudioSource[] audioSources = FindObjectsOfType<AudioSource>();
-        foreach (AudioSource audioSource in audioSources)
-        {
-            audioSource.volume = value;
-        }
+        AudioListener.volume = value;
     }
 
     public void QuitGame()
