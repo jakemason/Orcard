@@ -25892,10 +25892,10 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 250, y: 350}
+  m_CellSize: {x: 140, y: 210}
   m_Spacing: {x: 60, y: 44}
   m_Constraint: 1
-  m_ConstraintCount: 3
+  m_ConstraintCount: 4
 --- !u!222 &1507065017
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26151,6 +26151,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 56b46f7102638034ab27fefcb75305ba, type: 2}
   - {fileID: 11400000, guid: 79f45f6f3c1664747a524ccb822271e6, type: 2}
   - {fileID: 11400000, guid: 41e68a9b095a2a2489cc7aff0f81c13c, type: 2}
+  - {fileID: 11400000, guid: ab0d16eb378abcc42b506e2f5f4fa918, type: 2}
   RerollCost: 1
 --- !u!114 &1511839244
 MonoBehaviour:
@@ -31239,8 +31240,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 30}
-  m_SizeDelta: {x: -477.9, y: -60}
+  m_AnchoredPosition: {x: 0, y: 0.005126953}
+  m_SizeDelta: {x: -606.9, y: 27.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1970618268
 MonoBehaviour:

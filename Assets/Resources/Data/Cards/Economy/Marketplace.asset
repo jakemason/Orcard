@@ -10,24 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69894cc6ff2e8404096c3dc490a7f98f, type: 3}
-  m_Name: Gold
+  m_Name: Marketplace
   m_EditorClassIdentifier: 
-  Name: Gold
-  Artwork: {fileID: 21300000, guid: b0cbc0057a93fc1449affd869228f4ed, type: 3}
+  Name: Marketplace
+  Artwork: {fileID: 0}
   ArtworkOffset: {x: 0, y: 0}
   ArtworkScale: {x: 1, y: 1}
   Rarity: 0
   Set: 0
   CastingCost: 0
-  GoldCost: 4
+  GoldCost: 0
   CastingRequirements: []
   DestroyOnCast: 0
   IsTargeted: 0
-  InstructionText: '+3 Gold.  '
+  InstructionText: 'When drawn, discard a random card. +3 Gold. '
   AdditionalInstructionText: 
-  OverrideDefaultInstructionText: 
+  OverrideDefaultInstructionText: When drawn, discard a random card. +3 Gold.
   FlavorText: 
-  OnDrawEffects: []
+  OnDrawEffects:
+  - {fileID: 11400000, guid: 146324a2d8c6794418652c019e869c60, type: 2}
+  - {fileID: 11400000, guid: 6c718d18b2b58804f8bab32235e73222, type: 2}
   ImmediateEffects:
   - {fileID: 11400000, guid: 6977678bd3e1c454fae7cf91879a5115, type: 2}
   PermanentStartOfTurnEffects: []

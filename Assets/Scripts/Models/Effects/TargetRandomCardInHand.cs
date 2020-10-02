@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Target Random Card Effect", menuName = "Effects/Target Random Card Effect")]
 public class TargetRandomCardInHand : Effect
@@ -11,8 +12,11 @@ public class TargetRandomCardInHand : Effect
             return;
         }
 
-        int index = Random.Range(0, PlayerHand.Instance.HeldCards.Count);
-        SpellCast.CardTarget = PlayerHand.Instance.HeldCards[index].GetComponent<PlayableCardController>();
+
+        List<PlayableCardController> cardsInHand = PlayerHand.Instance.GetHeldCardsControllers();
+        int                          index       = Random.Range(0, cardsInHand.Count);
+        SpellCast.CardTarget = cardsInHand[index];
+        Debug.Log($"We are randomly targeting {SpellCast.CardTarget} in the player's hand.");
     }
 
     public override void Deactivate()

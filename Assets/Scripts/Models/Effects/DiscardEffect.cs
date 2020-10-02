@@ -20,6 +20,7 @@ public class DiscardEffect : Effect
         PlayableCardController card = SpellCast.CardTarget as PlayableCardController;
         if (card == null) return;
 
+        Debug.Log($"Discarding {card.CardObject.Name}");
         PlayerHand.DiscardCard(card);
     }
 

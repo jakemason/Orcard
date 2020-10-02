@@ -95,6 +95,7 @@ namespace Players
         public void Update()
         {
             UpdateDrawTimer();
+            //TODO: Hardcoded KeyCode
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 if (_freeDrawCooldown <= 0f)
@@ -110,6 +111,10 @@ namespace Players
             DrawCooldownText.text =
                 _freeDrawCooldown <= 0f ? "" : _freeDrawCooldown.ToString("00");
             DrawButton.interactable = _freeDrawCooldown <= 0f; //|| IncomeController.GetCurrentGold() >= RedrawGoldCost;
+
+            // Uncommenting the following two lines will enable a number  representation of the cooldown, but I think
+            // it's likely unnecessary. 
+
             //RedrawCostText.text     = RedrawGoldCost.ToString();
             //RedrawCostIndicator.SetActive(_freeDrawCooldown >= 0.0f);
             DrawCooldownIcon.fillAmount = _freeDrawCooldown / FreeDrawCooldownInSeconds;
@@ -126,6 +131,8 @@ namespace Players
                 IncomeController.SetGold(0);
                 TurnManager.StartTurn();
             }
+            // This was back when we allowed paying gold to redraw whenever we like. This was probably a design
+            // balance nightmare to work with, so we cut it instead.
             /*else if (IncomeController.GetCurrentGold() >= RedrawGoldCost)
             {
                 PlayerHand.DiscardHand();
@@ -172,6 +179,27 @@ namespace Players
             {
                 DrawSingleCard();
             }
+
+            // Now that we've drawn our hand, we trigger our OnDraw effects. We only do this once ALL cards have been
+            // drawn because some draw effects might target cards in hand and we want them to affect all the cards
+            // in our hand or, at the very least, have the ability to do so
+            foreach (Card card in PlayerHand.Instance.GetHeldCardsData())
+            {
+                Debug.Log($"Checking {card} for OnDraw effects.");
+                /*
+                 * TODO: We need some sort of animation queue here to better demonstrate what is happening each Draw.
+                 *
+                 * For example, if I draw a card that has a "Discard a random card" OnDraw effect...it will simply
+                 * look like I drew 1 fewer card than I expected because I don't _see_ the discard happen. We also
+                 * don't get a chance to see what the card we're discarding is. This is also true of cards that ADD
+                 * cards to our deck -- we don't get to _see_ what we actually added.
+                 */
+                foreach (Effect drawEffect in card.OnDrawEffects)
+                {
+                    Debug.Log($"Activating Draw Effect [{drawEffect.name}] for card [{card.Name}].");
+                    drawEffect.Activate();
+                }
+            }
         }
 
         /// <summary>
@@ -186,17 +214,15 @@ namespace Players
             Card card = Instantiate(DeckForCurrentRun.Cards[0]);
             DeckForCurrentRun.Cards.RemoveAt(0);
 
-            foreach (Effect effect in card.OnDrawEffects)
-            {
-                effect.Activate();
-            }
-
             GameObject drawnCard = Instantiate(CardRendererTemplate, HandGameObject.transform);
             drawnCard.transform.position = DeckPosition.position;
-            PlayerHand.Instance.AddCardToHand(drawnCard);
+            PlayableCardController controller = drawnCard.GetComponent<PlayableCardController>();
+            controller.CardObject   = card;
+            controller.OriginalCard = card;
             CardRenderer drawnCardRenderer = drawnCard.GetComponent<CardRenderer>();
             drawnCardRenderer.CardObject = card;
             drawnCardRenderer.UpdateCardDetails();
+            PlayerHand.Instance.AddCardToHand(drawnCard);
         }
 
         /// <summary>

@@ -81,6 +81,21 @@ public class PlayerHand : MonoBehaviour
     }
 
     /// <summary>
+    /// Get the controllers of all Cards in the Player's hand
+    /// </summary>
+    /// <returns>A List of PlayableCardControllers</returns>
+    public List<PlayableCardController> GetHeldCardsControllers()
+    {
+        List<PlayableCardController> cardsToReturn = new List<PlayableCardController>();
+        foreach (GameObject heldCard in HeldCards)
+        {
+            cardsToReturn.Add(heldCard.GetComponent<PlayableCardController>());
+        }
+
+        return cardsToReturn;
+    }
+
+    /// <summary>
     /// Discards a card from the player's hand.
     /// </summary>
     /// <param name="cardToDiscard">The card to discard.</param>
@@ -95,8 +110,12 @@ public class PlayerHand : MonoBehaviour
         cardToDiscard.TargetPosition       = Instance.DiscardPile.anchoredPosition;
 
         Card card = cardToDiscard.CardObject;
+
+        //TODO:This check needs to happen in spellcast. Not here. Currently discard effects trigger this.
+        //If a "Destroy on CAST" card were discarded, it'd Destroy itself.
         if (!card.DestroyOnCast)
         {
+            Debug.Log($"Adding {cardToDiscard.CardObject.Name} to the Discard Pile.");
             PlayerController.Instance.DiscardPile.Add(cardToDiscard.OriginalCard);
         }
 
@@ -136,12 +155,12 @@ public class PlayerHand : MonoBehaviour
     {
         for (int i = 0; i < Instance.HeldCards.Count; i++)
         {
-            PlayableCardController rend = Instance.HeldCards[i].GetComponent<PlayableCardController>();
-            rend.TargetRotation       = Vector3.zero;
-            rend.TargetScale          = Vector3.zero;
-            rend.TargetPosition       = Instance.DiscardPile.anchoredPosition;
-            rend.MarkedForDestruction = true;
-            Card card = rend.CardObject;
+            PlayableCardController controller = Instance.HeldCards[i].GetComponent<PlayableCardController>();
+            controller.TargetRotation       = Vector3.zero;
+            controller.TargetScale          = Vector3.zero;
+            controller.TargetPosition       = Instance.DiscardPile.anchoredPosition;
+            controller.MarkedForDestruction = true;
+            Card card = controller.CardObject;
             PlayerController.Instance.DiscardPile.Add(card);
         }
 
