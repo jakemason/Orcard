@@ -22,6 +22,7 @@ MonoBehaviour:
   GoldCost: 2
   CastingRequirements: []
   DestroyOnCast: 0
+  DoNotRemoveFromShop: 1
   IsTargeted: 0
   InstructionText: '+2 Gold.  '
   AdditionalInstructionText: 

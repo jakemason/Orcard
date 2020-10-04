@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Players;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -105,11 +106,16 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         }
     }
 
+    private bool CardShouldTarget()
+    {
+        return !(MarkedForDestruction || (_isDragging && !SpellCast.AwaitingCardTarget));
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         SpellCast.CardTarget = this;
         Debug.Log("Card Target is now:" + SpellCast.CardTarget);
-        if (MarkedForDestruction || _isDragging) return;
+        if (!CardShouldTarget()) return;
 
         TargetPosition      = RestingPosition + HoverOffset;
         TargetRotation      = Vector3.zero;
@@ -120,10 +126,11 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (MarkedForDestruction || _isDragging) return;
-        TargetPosition = RestingPosition;
-        TargetRotation = RestingRotation;
-        TargetScale    = Vector3.one;
+        if (!CardShouldTarget()) return;
+        SpellCast.CardTarget = null;
+        TargetPosition       = RestingPosition;
+        TargetRotation       = RestingRotation;
+        TargetScale          = Vector3.one;
         transform.SetSiblingIndex(RestingSiblingIndex);
     }
 
@@ -144,6 +151,10 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
             TargetIndicator.Enable(buildingCard);
             TargetScale          = Vector3.zero;
             transform.localScale = Vector3.zero;
+            if (CardObject.CastingRequirements.OfType<RequiresCardTarget>().Any())
+            {
+                SpellCast.AwaitingCardTarget = true;
+            }
         }
 
         HoverCollider.raycastTarget = false;
@@ -163,8 +174,9 @@ public class PlayableCardController : MonoBehaviour, IPointerEnterHandler, IPoin
         // - Spell is cast
         CardPlayableArea.PlayCard(eventData);
 
-        _isDragging      = false;
-        MovementDisabled = false;
+        _isDragging                  = false;
+        MovementDisabled             = false;
+        SpellCast.AwaitingCardTarget = false;
 
         if (MarkedForDestruction) return;
         TargetPosition = RestingPosition;

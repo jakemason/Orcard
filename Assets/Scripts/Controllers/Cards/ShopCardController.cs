@@ -9,6 +9,7 @@ public class ShopCardController : MonoBehaviour, IPointerDownHandler
 {
     public TextMeshProUGUI Cost;
     public AudioClip PurchaseSound;
+    public bool DestroyOnPurchase = true;
     private Card _card;
 
     public void Start()
@@ -21,9 +22,15 @@ public class ShopCardController : MonoBehaviour, IPointerDownHandler
     {
         if (IncomeController.GetCurrentGold() >= _card.GoldCost)
         {
-            PlayerController.Instance.DeckForCurrentRun.Cards.Add(GetComponent<CardRenderer>().CardObject);
+            CardRenderer rend = GetComponent<CardRenderer>();
+            PlayerController.Instance.DeckForCurrentRun.Cards.Add(rend.CardObject);
             IncomeController.ModifyGold(-_card.GoldCost);
             PlayOneShotSound.Play(PurchaseSound, 1.5f, 2.0f);
+            if (rend.CardObject.DoNotRemoveFromShop)
+            {
+                return;
+            }
+
             Destroy(gameObject);
         }
     }

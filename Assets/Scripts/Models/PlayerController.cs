@@ -129,6 +129,9 @@ namespace Players
                 Instance.Draw(Instance.CardsToDraw);
                 PlayOneShotSound.Play(Instance.DrawHandSound, 0.8f, 1.2f);
                 IncomeController.SetGold(0);
+#if UNITY_EDITOR
+                IncomeController.SetGold(500);
+#endif
                 TurnManager.StartTurn();
             }
             // This was back when we allowed paying gold to redraw whenever we like. This was probably a design
