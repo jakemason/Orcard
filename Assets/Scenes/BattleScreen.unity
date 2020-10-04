@@ -663,6 +663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cost: {fileID: 1039223414}
   PurchaseSound: {fileID: 0}
+  DestroyOnPurchase: 1
 --- !u!222 &37749228
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7748,6 +7749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cost: {fileID: 1801951818}
   PurchaseSound: {fileID: 0}
+  DestroyOnPurchase: 1
 --- !u!222 &424484536
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17486,6 +17488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cost: {fileID: 148136328}
   PurchaseSound: {fileID: 0}
+  DestroyOnPurchase: 1
 --- !u!222 &1003404090
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18064,6 +18067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cost: {fileID: 751411922}
   PurchaseSound: {fileID: 0}
+  DestroyOnPurchase: 1
 --- !u!222 &1057021582
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24216,6 +24220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cost: {fileID: 1887369338}
   PurchaseSound: {fileID: 0}
+  DestroyOnPurchase: 1
 --- !u!222 &1199362378
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -32519,6 +32524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cost: {fileID: 1718381548}
   PurchaseSound: {fileID: 0}
+  DestroyOnPurchase: 1
 --- !u!222 &2107530816
 CanvasRenderer:
   m_ObjectHideFlags: 0
