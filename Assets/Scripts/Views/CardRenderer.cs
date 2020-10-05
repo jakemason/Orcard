@@ -51,6 +51,17 @@ public class CardRenderer : MonoBehaviour, ITargetable
         InstructionText.text = CardObject.InstructionText;
         Artwork.sprite       = CardObject.Artwork;
 
+        //TODO: This is just a temporary quickfix to make cards without assigned artwork easier to identify;
+        if (Artwork.sprite == null)
+        {
+            int     nameToInt = CardObject.Name[0] + CardObject.Name[CardObject.Name.Length - 1];
+            byte    r         = (byte) (nameToInt * 13  % 255);
+            byte    g         = (byte) (nameToInt / 23  % 255);
+            byte    b         = (byte) (nameToInt * 113 % 255);
+            Color32 col       = new Color32(r, g, b, 255);
+            Artwork.color = col;
+        }
+
         RectTransform artworkTransform = Artwork.gameObject.GetComponent<RectTransform>();
         //TODO: targetting position here is screwy when the game scales in screen size. Maybe _just_ in editor though?
         artworkTransform.position = new Vector3(

@@ -445,8 +445,8 @@ MonoBehaviour:
   m_text: "[Esc to Skip]\n\nThe content you see now is in a pre-alpha phase and is
     not indiciative of the quality of the final product. Bugs are expected. \n\nWhen
     possible, please provide information on any bugs you encounter and what you were
-    doing in-game when the bug occured.\n\nCopyright Jake Mason, 2020.\n\nPlease
-    don't redistribute. "
+    doing in-game when the bug occured.\n\n(I'll eventually add a Bug Report in the
+    options menu!)\n\nCopyright Jake Mason, 2020.\n\nPlease don't redistribute. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -474,7 +474,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 27.75
+  m_fontSize: 25.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -515,12 +515,12 @@ MonoBehaviour:
   m_margin: {x: 50, y: 50, z: 50, w: 50}
   m_textInfo:
     textComponent: {fileID: 1849265832}
-    characterCount: 323
+    characterCount: 380
     spriteCount: 0
-    spaceCount: 59
-    wordCount: 54
+    spaceCount: 70
+    wordCount: 64
     linkCount: 0
-    lineCount: 12
+    lineCount: 13
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
