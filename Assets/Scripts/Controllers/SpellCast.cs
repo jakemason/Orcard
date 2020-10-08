@@ -63,6 +63,8 @@ public static class SpellCast
         if (IncomeController.GetCurrentGold() < AttemptingToCast.CastingCost)
         {
             Debug.Log("Need more cash to do that");
+            PlayOneShotSound.Play(SoundLibrary.Global.ErrorSound, 0.8f, 1.0f);
+            ClosedCaptioning.CreateMessage("Not enough gold!");
             return false;
         }
 
@@ -71,6 +73,9 @@ public static class SpellCast
             if (!requirement.RequirementMet())
             {
                 Debug.Log("Requirement: " + requirement.name + " not met.");
+                PlayOneShotSound.Play(SoundLibrary.Global.ErrorSound, 0.8f, 1.0f);
+                //TODO: Give each casting requirement a "Failure Message" we can report here
+                ClosedCaptioning.CreateMessage("Error!");
                 return false;
             }
         }

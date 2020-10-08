@@ -289,6 +289,7 @@ GameObject:
   - component: {fileID: 9675657}
   - component: {fileID: 9675658}
   - component: {fileID: 9675659}
+  - component: {fileID: 9675660}
   m_Layer: 0
   m_Name: Core
   m_TagString: Core
@@ -401,6 +402,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 20
   HealthText: {fileID: 16113718}
+--- !u!114 &9675660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9675655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81fad3216a2a4104c87dc9783c02b621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ErrorSound: {fileID: 8300000, guid: 939ae2d64ca14f241aa88b5acebabb0a, type: 3}
 --- !u!1 &9798665
 GameObject:
   m_ObjectHideFlags: 0
@@ -15105,6 +15119,79 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 770163871}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &772638750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 772638751}
+  - component: {fileID: 772638753}
+  - component: {fileID: 772638752}
+  m_Layer: 5
+  m_Name: ClosedCaptions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &772638751
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772638750}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1145203176}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -402.29}
+  m_SizeDelta: {x: 0, y: -804.69}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &772638752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772638750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &772638753
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772638750}
+  m_CullTransparentMesh: 0
 --- !u!1001 &818726792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19077,6 +19164,7 @@ RectTransform:
   - {fileID: 203648384}
   - {fileID: 1648689041}
   - {fileID: 261214223}
+  - {fileID: 772638751}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25934,6 +26022,7 @@ GameObject:
   - component: {fileID: 1511839250}
   - component: {fileID: 1511839251}
   - component: {fileID: 1511839252}
+  - component: {fileID: 1511839253}
   m_Layer: 0
   m_Name: Controllers
   m_TagString: Untagged
@@ -26379,6 +26468,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuPanel: {fileID: 436386220}
+--- !u!114 &1511839253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511839235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3317c31f716768a44ae1bac9ca9d1e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FloatingTextPrefab: {fileID: 6196827555759257621, guid: d1883693062f9d64db7a515865d32908,
+    type: 3}
+  SpawnPoint: {fileID: 772638751}
 --- !u!224 &1524942126
 RectTransform:
   m_ObjectHideFlags: 0

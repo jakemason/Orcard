@@ -33,5 +33,10 @@ public class ShopCardController : MonoBehaviour, IPointerDownHandler
 
             Destroy(gameObject);
         }
+        else
+        {
+            PlayOneShotSound.Play(SoundLibrary.Global.ErrorSound, 0.9f, 1.0f);
+            ClosedCaptioning.CreateMessage("You can't afford this purchase");
+        }
     }
 }
