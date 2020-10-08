@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c517b40f447d5b408c2dba6e74576a2, type: 3}
   m_Name: RequiresTowerTarget
   m_EditorClassIdentifier: 
+  RequirementFailMessage: You must target a tower.

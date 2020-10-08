@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f54ad682b44a8d47b361750bbad199a, type: 3}
   m_Name: RequiresBuildingPermit
   m_EditorClassIdentifier: 
+  RequirementFailMessage: You do not have sufficient Building Permits.

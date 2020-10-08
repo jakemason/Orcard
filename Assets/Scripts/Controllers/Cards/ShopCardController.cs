@@ -36,7 +36,7 @@ public class ShopCardController : MonoBehaviour, IPointerDownHandler
         else
         {
             PlayOneShotSound.Play(SoundLibrary.Global.ErrorSound, 0.9f, 1.0f);
-            ClosedCaptioning.CreateMessage("You can't afford this purchase");
+            ClosedCaptioning.CreateMessage($"You don't have {_card.GoldCost} gold.");
         }
     }
 }

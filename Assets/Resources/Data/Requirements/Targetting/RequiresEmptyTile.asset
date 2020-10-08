@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0cd3cfab41bc4a4cb6ab060f4b490a1, type: 3}
   m_Name: RequiresEmptyTile
   m_EditorClassIdentifier: 
+  RequirementFailMessage: This must be placed on an empty tile.

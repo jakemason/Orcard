@@ -8,4 +8,5 @@
 public abstract class Requirement : ScriptableObject
 {
     public abstract bool RequirementMet();
+    public string RequirementFailMessage;
 }

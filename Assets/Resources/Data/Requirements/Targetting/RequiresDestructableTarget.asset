@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c698432d009e32d44b1b5426cf2067e7, type: 3}
   m_Name: RequiresDestructableTarget
   m_EditorClassIdentifier: 
+  RequirementFailMessage: You must target a Destructable building.

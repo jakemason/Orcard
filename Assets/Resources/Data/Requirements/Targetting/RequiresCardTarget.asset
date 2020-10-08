@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a89d063090b144af978781117eba4, type: 3}
   m_Name: RequiresCardTarget
   m_EditorClassIdentifier: 
+  RequirementFailMessage: You must target a card.

@@ -74,8 +74,7 @@ public static class SpellCast
             {
                 Debug.Log("Requirement: " + requirement.name + " not met.");
                 PlayOneShotSound.Play(SoundLibrary.Global.ErrorSound, 0.8f, 1.0f);
-                //TODO: Give each casting requirement a "Failure Message" we can report here
-                ClosedCaptioning.CreateMessage("Error!");
+                ClosedCaptioning.CreateMessage(requirement.RequirementFailMessage);
                 return false;
             }
         }

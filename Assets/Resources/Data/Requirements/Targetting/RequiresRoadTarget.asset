@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02ca51390b84d1144ba7318752c63b04, type: 3}
   m_Name: RequiresRoadTarget
   m_EditorClassIdentifier: 
+  RequirementFailMessage: This must be placed on a road.
