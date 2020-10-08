@@ -18,7 +18,7 @@ public class ShopCardController : MonoBehaviour, IPointerDownHandler
         Cost.text = _card.GoldCost.ToString();
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void OnPurchaseAttempt()
     {
         if (IncomeController.GetCurrentGold() >= _card.GoldCost)
         {
@@ -38,5 +38,10 @@ public class ShopCardController : MonoBehaviour, IPointerDownHandler
             PlayOneShotSound.Play(SoundLibrary.Global.ErrorSound, 0.9f, 1.0f);
             ClosedCaptioning.CreateMessage($"You don't have {_card.GoldCost} gold.");
         }
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        OnPurchaseAttempt();
     }
 }
