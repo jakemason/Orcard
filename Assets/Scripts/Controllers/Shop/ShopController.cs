@@ -118,6 +118,7 @@ public class ShopController : MonoBehaviour
         }
 
         ShopView.Toggle();
+        PlayOneShotSound.Play(SoundLibrary.Global.Click, 0.9f, 1.0f);
     }
 
     public static void OpenShop()

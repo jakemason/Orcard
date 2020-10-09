@@ -4,8 +4,9 @@ using UnityEngine.Serialization;
 public class SoundLibrary : MonoBehaviour
 {
     public static SoundLibrary Global;
-    [FormerlySerializedAs("ErrorSound")] public AudioClip Error;
-    public AudioClip ButtonClick;
+    public AudioClip Error;
+    public AudioClip ButtonHover;
+    public AudioClip Click;
 
     private void Start()
     {

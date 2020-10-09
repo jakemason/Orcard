@@ -194,4 +194,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Error: {fileID: 8300000, guid: 939ae2d64ca14f241aa88b5acebabb0a, type: 3}
-  ButtonClick: {fileID: 8300000, guid: b7a916698a483af41a23a8a4b221f86a, type: 3}
+  ButtonHover: {fileID: 8300000, guid: b7a916698a483af41a23a8a4b221f86a, type: 3}
+  Click: {fileID: 8300000, guid: 7d43d7f11f9bc654bbee0bddf6806513, type: 3}

@@ -415,7 +415,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Error: {fileID: 8300000, guid: 939ae2d64ca14f241aa88b5acebabb0a, type: 3}
-  ButtonClick: {fileID: 0}
+  ButtonHover: {fileID: 0}
+  Click: {fileID: 0}
 --- !u!1 &9798665
 GameObject:
   m_ObjectHideFlags: 0

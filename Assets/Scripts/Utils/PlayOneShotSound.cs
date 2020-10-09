@@ -14,7 +14,7 @@ public class PlayOneShotSound : MonoBehaviour
         source.pitch = 1.0f;
     }
 
-    public static void Play(AudioClip clip, float pitchMin, float pitchMax, float volume = 1.0f)
+    public static void Play(AudioClip clip, float pitchMin = 1.0f, float pitchMax = 1.0f, float volume = 1.0f)
     {
         // TODO:
         // A single Audio Source here isn't good enough because we can't control sound levels per Audio Type

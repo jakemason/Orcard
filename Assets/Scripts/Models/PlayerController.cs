@@ -124,10 +124,11 @@ namespace Players
         {
             if (_freeDrawCooldown <= 0f)
             {
+                PlayOneShotSound.Play(SoundLibrary.Global.Click, 0.9f, 1.0f);
                 PlayerHand.DiscardHand();
                 ShopView.Disable();
                 Instance.Draw(Instance.CardsToDraw);
-                PlayOneShotSound.Play(Instance.DrawHandSound, 0.8f, 1.2f);
+                //PlayOneShotSound.Play(Instance.DrawHandSound, 0.8f, 1.2f);
                 IncomeController.SetGold(0);
 #if UNITY_EDITOR
                 IncomeController.SetGold(500);
