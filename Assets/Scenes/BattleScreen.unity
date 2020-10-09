@@ -414,7 +414,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81fad3216a2a4104c87dc9783c02b621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ErrorSound: {fileID: 8300000, guid: 939ae2d64ca14f241aa88b5acebabb0a, type: 3}
+  Error: {fileID: 8300000, guid: 939ae2d64ca14f241aa88b5acebabb0a, type: 3}
+  ButtonClick: {fileID: 0}
 --- !u!1 &9798665
 GameObject:
   m_ObjectHideFlags: 0
@@ -33225,21 +33226,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3912485817795183434, guid: dac32aeae2b80444d98675000eff054a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3912485818605252646, guid: dac32aeae2b80444d98675000eff054a,
-        type: 3}
-      propertyPath: Bounds.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3912485818605252646, guid: dac32aeae2b80444d98675000eff054a,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3912485818605252647, guid: dac32aeae2b80444d98675000eff054a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33295,15 +33281,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3912485818605252824, guid: dac32aeae2b80444d98675000eff054a,
-        type: 3}
-      propertyPath: m_TargetTexture
-      value: 
-      objectReference: {fileID: 8400000, guid: 3e7b2dc345e5526448f5624d27983f01, type: 2}
     - target: {fileID: 3912485818605252827, guid: dac32aeae2b80444d98675000eff054a,
         type: 3}
       propertyPath: m_Name
-      value: Main Camera
+      value: Camera (Every Scene)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dac32aeae2b80444d98675000eff054a, type: 3}

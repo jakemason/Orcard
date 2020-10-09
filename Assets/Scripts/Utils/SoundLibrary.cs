@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 public class SoundLibrary : MonoBehaviour
 {
     public static SoundLibrary Global;
-    public AudioClip ErrorSound;
+    [FormerlySerializedAs("ErrorSound")] public AudioClip Error;
+    public AudioClip ButtonClick;
 
     private void Start()
     {

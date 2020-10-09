@@ -45,10 +45,12 @@ public class TargetIndicator : MonoBehaviour
 
         Instance.RangeDrawer.Change();
         Instance.Line.enabled = true;
+        Cursor.visible        = false;
     }
 
     public static void Disable()
     {
+        Cursor.visible        = true;
         Instance.Line.enabled = false;
         Instance.Indicator.SetActive(false);
     }

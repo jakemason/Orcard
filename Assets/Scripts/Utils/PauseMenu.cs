@@ -31,11 +31,13 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        PlayOneShotSound.Play(SoundLibrary.Global.ButtonClick, 0.9f, 1.0f);
         Application.Quit();
     }
 
     public void Restart()
     {
+        PlayOneShotSound.Play(SoundLibrary.Global.ButtonClick, 0.9f, 1.0f);
         Time.timeScale = 1.0f;
         _gamePaused    = false;
         SceneManager.LoadScene("BattleScreen");
