@@ -534,3 +534,4 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   SkipKey: 27
+  CanClickToSkip: 1

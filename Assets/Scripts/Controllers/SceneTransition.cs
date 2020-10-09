@@ -10,6 +10,7 @@ public class SceneTransition : MonoBehaviour
     public string SceneToLoad;
     public Color32 CameraColor;
     public KeyCode SkipKey;
+    public bool CanClickToSkip = true;
 
     private void Start()
     {
@@ -23,6 +24,12 @@ public class SceneTransition : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(SkipKey))
+        {
+            CancelInvoke();
+            GoToScene();
+        }
+
+        if (CanClickToSkip && Input.GetMouseButtonDown(0))
         {
             CancelInvoke();
             GoToScene();
