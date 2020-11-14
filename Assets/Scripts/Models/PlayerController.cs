@@ -30,6 +30,7 @@ namespace Players
         public TextMeshProUGUI RedrawCostText;
         public Image DrawCooldownIcon;
         private float _freeDrawCooldown;
+        private static bool _firstDraw = true; //we want to be able to NOT play sounds on the very first draw.
 
         [Header("Player Energy")]
         [Space(20)]
@@ -124,7 +125,13 @@ namespace Players
         {
             if (_freeDrawCooldown <= 0f)
             {
-                PlayOneShotSound.Play(SoundLibrary.Global.Click, 0.9f, 1.0f);
+                if (!_firstDraw)
+                    PlayOneShotSound.Play(SoundLibrary.Global.Click, 0.9f, 1.0f);
+
+                if (_firstDraw)
+                    _firstDraw = false;
+
+
                 PlayerHand.DiscardHand();
                 ShopView.Disable();
                 Instance.Draw(Instance.CardsToDraw);

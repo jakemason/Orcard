@@ -28,6 +28,9 @@ public class WaveController : MonoBehaviour
     public int AdditionalEnemiesPerWave = 2;
     public List<GameObject> EnemiesSpawned;
     
+     [Header("Early Wave Modifiers")]
+     public int EarlyHealthPerWaveIncrease = 1;
+    
     [Header("GameObject References")]
     public GameObject EnemyPrefab;
     // @formatter:on 

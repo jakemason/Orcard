@@ -2,6 +2,7 @@
 
 public class Clouds : MonoBehaviour
 {
+    //TODO: This no longer works with our new "Shadows" shader. Will need to update to fix it.
     public float ScrollSpeed = -.1f;
     public float Offset;
     private SpriteRenderer _renderer;
