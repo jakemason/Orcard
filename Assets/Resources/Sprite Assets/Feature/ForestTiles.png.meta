@@ -312,7 +312,7 @@ TextureImporter:
       213: 9113970646532192624
     second: ForestTiles_102
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -332,6 +332,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -341,8 +343,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -363,9 +365,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2567,6 +2573,110 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ForestTiles_39: 48797513864888106
+      ForestTiles_61: 2772654317961936060
+      ForestTiles_42: -7664860171005732859
+      ForestTiles_16: -4900863182986977471
+      ForestTiles_49: -5748478051470455444
+      ForestTiles_69: -8592775388920689549
+      ForestTiles_59: 7281238811201616683
+      ForestTiles_19: 8795801270484542481
+      ForestTiles_28: -6138230866663154418
+      ForestTiles_66: 3290546519513642109
+      ForestTiles_52: 846830382473486240
+      ForestTiles_2: 3847490660262498920
+      ForestTiles_37: 8420516166525891949
+      ForestTiles_53: 4104839743878758396
+      ForestTiles_86: 682183131144547585
+      ForestTiles_13: 1358309102615313915
+      ForestTiles_7: -4464364796118518949
+      ForestTiles_95: -1004153343720985446
+      ForestTiles_64: -263531156282637920
+      ForestTiles_101: -6645244175507468903
+      ForestTiles_70: 7685385759379764231
+      ForestTiles_25: 7304577109199283858
+      ForestTiles_18: -7164111972612806871
+      ForestTiles_0: -1564217899101464215
+      ForestTiles_10: -156757769026519931
+      ForestTiles_29: -7642852196986143308
+      ForestTiles_62: -5568114836611980537
+      ForestTiles_80: 7729679182946769735
+      ForestTiles_60: -6176885982025608785
+      ForestTiles_91: 6709790108704602932
+      ForestTiles_31: 3037930290960391489
+      ForestTiles_34: -5981036074831332901
+      ForestTiles_22: 3062669627882526940
+      ForestTiles_43: 5383620910504349078
+      ForestTiles_46: -65535901007580994
+      ForestTiles_5: -7150072477265416671
+      ForestTiles_63: -8263288546965418875
+      ForestTiles_84: -8281782619852534953
+      ForestTiles_87: 2754166249532621872
+      ForestTiles_54: 5466513050914969912
+      ForestTiles_73: 4807582576602276260
+      ForestTiles_17: -2017821370999096790
+      ForestTiles_57: 7729756209463198850
+      ForestTiles_72: 4749441024693636961
+      ForestTiles_90: -8283327638468469335
+      ForestTiles_20: 2868506896901693218
+      ForestTiles_33: 5966047541313954193
+      ForestTiles_56: -6499646837521177108
+      ForestTiles_93: -5983107246150082090
+      ForestTiles_81: -1049212118964037477
+      ForestTiles_85: -4133554617883728394
+      ForestTiles_92: 8181345816663804456
+      ForestTiles_8: 2615932525699309586
+      ForestTiles_3: -5397301504213093044
+      ForestTiles_47: 3946498533740243283
+      ForestTiles_4: 321930187580483771
+      ForestTiles_32: 4419270647186071974
+      ForestTiles_82: 2094057332260001344
+      ForestTiles_71: -6307015794499878859
+      ForestTiles_77: -1788069136369905592
+      ForestTiles_45: 8138578836006963451
+      ForestTiles_21: 4149649924976037055
+      ForestTiles_48: -2623127976937245693
+      ForestTiles_51: 7141905177006421401
+      ForestTiles_40: 3751912043534644554
+      ForestTiles_75: 734676898914940777
+      ForestTiles_12: 3705322207913962083
+      ForestTiles_24: 4402199618652103256
+      ForestTiles_74: 8912823981705584074
+      ForestTiles_50: 4671360815984533264
+      ForestTiles_76: -2742688972291656657
+      ForestTiles_9: 5954562191756303197
+      ForestTiles_65: -158879814561211980
+      ForestTiles_14: 8491067550791352530
+      ForestTiles_100: 8880519671546532986
+      ForestTiles_97: 2954375008193183143
+      ForestTiles_78: 6225644109664302229
+      ForestTiles_26: -3609481462354183055
+      ForestTiles_89: -3536193730877960838
+      ForestTiles_15: 4335186798089886321
+      ForestTiles_58: 4142747047622675410
+      ForestTiles_6: 6380761708789411937
+      ForestTiles_38: -8516813793510556873
+      ForestTiles_99: -7268568924079025400
+      ForestTiles_102: 9113970646532192624
+      ForestTiles_68: 3885896879181721225
+      ForestTiles_44: -8332596278541377703
+      ForestTiles_1: 6720702610520212751
+      ForestTiles_96: -7961853738939450620
+      ForestTiles_27: -330298551221417898
+      ForestTiles_30: -4079613656910075694
+      ForestTiles_94: 6526840010782923108
+      ForestTiles_55: 3258547222906838768
+      ForestTiles_88: -2194346713966059277
+      ForestTiles_98: -1583952302052483730
+      ForestTiles_11: 4153576205342519767
+      ForestTiles_41: -400233916177022325
+      ForestTiles_23: 3745806615584137142
+      ForestTiles_35: 2718298155662020403
+      ForestTiles_83: 2555282751577080450
+      ForestTiles_67: 135151211441985620
+      ForestTiles_36: 8940831538611742943
+      ForestTiles_79: -7066069701566576912
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

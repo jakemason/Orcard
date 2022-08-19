@@ -30,7 +30,7 @@ TextureImporter:
       213: 3110829806665180078
     second: Enemy Shadow
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -50,6 +50,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -59,8 +61,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -81,9 +83,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -128,7 +134,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b92b2cfa91f831190800000000000000
-      internalID: -7992887573166771557
+      internalID: -7091710371065449763
       vertices: []
       indices: 
       edges: []
@@ -149,7 +155,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c866500a1b5c69a40800000000000000
-      internalID: 5374700571997857420
+      internalID: -1919371625736947961
       vertices: []
       indices: 
       edges: []
@@ -170,7 +176,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 12387527bd9dcd150800000000000000
-      internalID: 5898829148487910177
+      internalID: -6223486697744503835
       vertices: []
       indices: 
       edges: []
@@ -191,7 +197,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b9a67b523621a0d10800000000000000
-      internalID: 2092505193910856347
+      internalID: -4914975280773618118
       vertices: []
       indices: 
       edges: []
@@ -227,6 +233,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      khelz_enemies_3: -4914975280773618118
+      Orc: -6223486697744503835
+      Enemy Shadow: 3110829806665180078
+      khelz_enemies_0: -7091710371065449763
+      khelz_enemies_1: -1919371625736947961
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

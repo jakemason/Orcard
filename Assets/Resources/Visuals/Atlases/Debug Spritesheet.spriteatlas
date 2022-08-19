@@ -40,12 +40,15 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: 3570e2dc4f548ff4194f59df297187e2, type: 3}
     - {fileID: 102900000, guid: 42dd180df0ad7f44f81e886db213f9ac, type: 3}
-    totalSpriteSurfaceArea: 1682406
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 93deb840df6e37f44a581c1a39d38404, type: 3}
@@ -454,7 +457,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: b9a69166d3b42ae42a122dd3989de8e3, type: 3}
   - {fileID: 7580485501735259298, guid: e0aa16865010f6742be952c50a963853, type: 3}
   - {fileID: -7548337415098396207, guid: e0aa16865010f6742be952c50a963853, type: 3}
-  - {fileID: -1062826434485080637, guid: e0aa16865010f6742be952c50a963853, type: 3}
+  - {fileID: 8936904212210922897, guid: e0aa16865010f6742be952c50a963853, type: 3}
   - {fileID: 21300000, guid: 8e8536a6bb379994abb763ee22558921, type: 3}
   - {fileID: 21300000, guid: e8c1104704036904fa335bd27bf7d32e, type: 3}
   - {fileID: 5521811750573606007, guid: ef5256474c2daec409239ef33cb92c78, type: 3}
@@ -1347,5 +1350,6 @@ SpriteAtlas:
   - BGArtwork
   - UI-Resources
   - SpeechBubble
+  m_RenderDataMap: {}
   m_Tag: Debug Spritesheet
   m_IsVariant: 0

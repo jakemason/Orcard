@@ -27,7 +27,7 @@ TextureImporter:
       213: -545569492944218381
     second: orc_banner_death_3
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -47,6 +47,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -56,8 +58,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -78,9 +80,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -125,7 +131,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 75d2f7f724ccb4b80800000000000000
-      internalID: -8409403293205320361
+      internalID: -5579359612072023402
       vertices: []
       indices: 
       edges: []
@@ -146,7 +152,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 73b7caf040e8f9560800000000000000
-      internalID: 7322727667221691191
+      internalID: -7274542069897510784
       vertices: []
       indices: 
       edges: []
@@ -167,7 +173,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: db6987e5fbaa30de0800000000000000
-      internalID: -1368062122890062147
+      internalID: -7047306057474309798
       vertices: []
       indices: 
       edges: []
@@ -188,7 +194,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3f615cccf6fbd68f0800000000000000
-      internalID: -545569492944218381
+      internalID: 776907730010060338
       vertices: []
       indices: 
       edges: []
@@ -203,6 +209,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      orc_banner_death_1: -7274542069897510784
+      orc_banner_death_3: 776907730010060338
+      orc_banner_death_0: -5579359612072023402
+      orc_banner_death_2: -7047306057474309798
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

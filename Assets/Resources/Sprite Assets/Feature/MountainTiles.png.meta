@@ -207,7 +207,7 @@ TextureImporter:
       213: -5338426287033262610
     second: MountainTiles_67
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -227,6 +227,8 @@ TextureImporter:
   isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -236,8 +238,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -258,9 +260,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1727,6 +1733,75 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      MountainTiles_27: -2674576112510800545
+      MountainTiles_5: 8024636781175311120
+      MountainTiles_12: -8856604095248346046
+      MountainTiles_51: 8830355854426363417
+      MountainTiles_21: -4883138964345980616
+      MountainTiles_14: -4479215318276930622
+      MountainTiles_0: -903095591391713707
+      MountainTiles_53: -246493521558272702
+      MountainTiles_15: 2675627889927694045
+      MountainTiles_19: -3110672215714017520
+      MountainTiles_63: 4580530258884327785
+      MountainTiles_11: -887831207691732764
+      MountainTiles_57: 8380590294939241685
+      MountainTiles_1: 1451830725133421483
+      MountainTiles_50: 186114773893571671
+      MountainTiles_61: -7622884546773637343
+      MountainTiles_4: -783112521471057890
+      MountainTiles_17: 7848189992464616631
+      MountainTiles_49: 6028739427439201685
+      MountainTiles_55: -4415564204994737870
+      MountainTiles_24: -8268554799088957844
+      MountainTiles_62: -5378744031287906260
+      MountainTiles_43: 2180046081139331302
+      MountainTiles_60: -1358546112276911642
+      MountainTiles_13: 6503816512318725029
+      MountainTiles_32: -1927125612478695548
+      MountainTiles_42: 6203660239462172928
+      MountainTiles_29: -8915079822899506792
+      MountainTiles_47: -5455888254109735235
+      MountainTiles_66: -6037279653093756687
+      MountainTiles_28: -7827611807491540216
+      MountainTiles_52: -5013961152379035032
+      MountainTiles_56: -9034306377240429726
+      MountainTiles_34: -8101026486220243930
+      MountainTiles_48: 6176123990644429538
+      MountainTiles_3: 4456896993621430599
+      MountainTiles_31: 8602474475153188862
+      MountainTiles_67: -5338426287033262610
+      MountainTiles_38: 5413958346455875835
+      MountainTiles_18: 2008788701621873392
+      MountainTiles_45: -8156147936179443018
+      MountainTiles_37: -4451693424865029690
+      MountainTiles_36: 7160761267768921803
+      MountainTiles_65: 4191673499728549565
+      MountainTiles_26: -1788993617494000148
+      MountainTiles_41: 7153256527812355878
+      MountainTiles_9: 1864959253946797033
+      MountainTiles_16: -839739029962698548
+      MountainTiles_59: 3539565149862749119
+      MountainTiles_7: -7826115416661802344
+      MountainTiles_25: -2292577543067595323
+      MountainTiles_8: 8456664329165043323
+      MountainTiles_44: -3795394090549612665
+      MountainTiles_58: 873421227108728438
+      MountainTiles_64: -106959081618891304
+      MountainTiles_40: 5773235022161030493
+      MountainTiles_23: -5749592734467610185
+      MountainTiles_6: -4945608991793196581
+      MountainTiles_39: -7081400952550840956
+      MountainTiles_35: 3269069163389640173
+      MountainTiles_33: 2818051334177452258
+      MountainTiles_10: -7028359100154529132
+      MountainTiles_54: -5874027874309539447
+      MountainTiles_20: 4378464609702710651
+      MountainTiles_22: -3625083972707966547
+      MountainTiles_30: 216980293997878809
+      MountainTiles_2: -7968289259917734184
+      MountainTiles_46: 8556787073772637594
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

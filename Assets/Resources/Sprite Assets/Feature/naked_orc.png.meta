@@ -36,7 +36,7 @@ TextureImporter:
       213: -4115549637990446095
     second: naked_orc_6
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -56,6 +56,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -65,8 +67,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -87,9 +89,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -134,7 +140,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 45517e9900b92db30800000000000000
-      internalID: 4310678220231349588
+      internalID: 5985956242139829448
       vertices: []
       indices: 
       edges: []
@@ -155,7 +161,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fec98e82806ef1fa0800000000000000
-      internalID: -5827686470073672465
+      internalID: -7618121031060936969
       vertices: []
       indices: 
       edges: []
@@ -176,7 +182,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3ccfe32935db172e0800000000000000
-      internalID: -2129712982135997245
+      internalID: -4048028670941725383
       vertices: []
       indices: 
       edges: []
@@ -197,7 +203,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 069fad7c92a0d7940800000000000000
-      internalID: 5295399911420524896
+      internalID: -3522093265501685102
       vertices: []
       indices: 
       edges: []
@@ -254,6 +260,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      naked_orc_0: 5985956242139829448
+      naked_orc_4: 5813271414626854330
+      naked_orc_2: -4048028670941725383
+      naked_orc_3: -3522093265501685102
+      naked_orc_1: -7618121031060936969
+      naked_orc_5: -7790839343476848172
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

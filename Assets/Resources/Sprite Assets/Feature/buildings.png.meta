@@ -78,7 +78,7 @@ TextureImporter:
       213: -2372858853108239839
     second: buildings_24
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -98,6 +98,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -106,9 +108,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -129,9 +131,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -695,6 +701,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      buildings_2: -5308527982003062785
+      buildings_3: -8922806545422484088
+      buildings_20: 7853409770426767552
+      buildings_12: -2434219546015377611
+      buildings_17: 2704936167174187159
+      buildings_14: -7025564087743128460
+      buildings_16: 5231429416509325250
+      buildings_11: 1775660474302345089
+      buildings_8: 961677336216162819
+      buildings_19: 7728155859371869844
+      buildings_0: 1168926902407322946
+      buildings_6: 8255314341044953143
+      buildings_18: 2982747736380097290
+      buildings_21: -8408605906689737264
+      buildings_15: -3636880086547968531
+      buildings_4: -7916908332688520428
+      buildings_5: 6625692385018236696
+      buildings_10: 3247767813255465682
+      buildings_9: -250298321781293072
+      buildings_13: -4401666002738899813
+      buildings_1: 7643761922474946111
+      buildings_23: -1982699832059996296
+      buildings_24: -2372858853108239839
+      buildings_7: -7657187661756687099
+      buildings_22: 3116890992287099372
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

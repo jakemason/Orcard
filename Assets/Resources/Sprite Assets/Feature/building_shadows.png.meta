@@ -24,7 +24,7 @@ TextureImporter:
       213: -8879989197353062235
     second: building_shadows_3
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -44,6 +44,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -53,8 +55,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -75,9 +77,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -122,7 +128,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 33b7c0376f3161600800000000000000
-      internalID: 438559962928282419
+      internalID: -9042556985643711739
       vertices: []
       indices: 
       edges: []
@@ -143,7 +149,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6f652fd8c5a60fba0800000000000000
-      internalID: -6057224553062312202
+      internalID: 5721250842784195442
       vertices: []
       indices: 
       edges: []
@@ -164,7 +170,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: cfd0124ffdb177c30800000000000000
-      internalID: 4356981813191708156
+      internalID: -7318744571221204795
       vertices: []
       indices: 
       edges: []
@@ -200,6 +206,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      building_shadows_1: 5721250842784195442
+      building_shadows_0: -9042556985643711739
+      building_shadows_3: -8879989197353062235
+      building_shadows_2: -7318744571221204795
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
