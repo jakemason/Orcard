@@ -28,5 +28,11 @@ fairly proud of:
 
 ## Gameplay Demo
 
-https://user-images.githubusercontent.com/12981369/185563867-a8f78548-cac3-4589-9881-ee9f59e090e3.mp4
+Below is a brief demonstration of what the gameplay was like. In this clip I had the developer mode
+running where you start with an enormous amount of gold (500) whereas you'd usually start with 0.
+You then play cards that generate money, use that money to build towers for defense, and then use
+your additional money to buy new cards which do a _very_ wide variety of things. Some are stronger
+towers, better draw spells, economy warping cards, double-edged swords that grant gold but cost
+life, etc, etc.
 
+https://user-images.githubusercontent.com/12981369/185563867-a8f78548-cac3-4589-9881-ee9f59e090e3.mp4
