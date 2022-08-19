@@ -27,3 +27,6 @@ fairly proud of:
   to make sure you could do all sorts of cool combos.
 
 ## Gameplay Demo
+
+https://user-images.githubusercontent.com/12981369/185563867-a8f78548-cac3-4589-9881-ee9f59e090e3.mp4
+
