@@ -1,6 +1,6 @@
 ![cover image](./Repo/cover.png)
 
-# Orccard
+# Orcard
 
 This is one of the first _real_ attempts I made at making a full game with Unity. I wanted to
 combine two genres that I hadn't seen mixed yet: Deck-building and Tower Defense. The idea was that
@@ -12,7 +12,7 @@ it was worth gambling another 1-3 years of development on it. The nail in the co
 I found another game being worked on by an entire team that was very similar conceptually: [ORX](https://store.steampowered.com/app/1071140/ORX/). ORX seems,
 to me, to be a very similar idea done with a production value I couldn't hope to compete with as
 a single person. I told myself I'd play it when its released and if it doesn't do what I was hoping
-to with Orrcard then I might revisit this project.
+to with Orcard then I might revisit this project.
 
 That said, I learned plenty about making games from this project and had several systems I was
 fairly proud of:
